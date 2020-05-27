@@ -228,8 +228,8 @@ export default () => (
           Free hardware from&nbsp;GitHub.
         </Heading>
         <Text as="p" variant="lead">
-          GitHub is sponsoring $50k worth of hardware grants for
-          student makers, alongside discounts from Adafruit & Arduino on gear.
+          GitHub is sponsoring $50k worth of hardware grants for student makers,
+          alongside discounts from Adafruit & Arduino on gear.
         </Text>
       </Container>
       <Box
@@ -277,14 +277,16 @@ export default () => (
           1-on-1 weekly coaching with a professional.
         </Heading>
         <Text as="p" variant="subtitle" my={3}>
-          Mentors are engineers from GitHub, Adafruit, & Arduino, as well as invited industry professionals.
+          Mentors are engineers from GitHub, Adafruit, & Arduino, as well as
+          invited industry professionals.
         </Text>
         <Text as="p" variant="subtitle" my={3}>
-          Every week, you’ll hop on a Zoom call with your mentor. They’ll set goals, give advice, & connect you with resources.
+          Every week, you’ll hop on a Zoom call with your mentor. They’ll set
+          goals, give advice, & connect you with resources.
         </Text>
         <Button as="a" variant="cta" href={APPLY_URL} mt={4} mb={[null, 4, 5]}>
           Pre-register
-          </Button>
+        </Button>
       </Container>
     </Box>
     <Box as="section" bg="white" color="black" py={[4, 5]}>
@@ -310,9 +312,10 @@ export default () => (
             Built-in project marketing
           </Heading>
           <Text variant="subtitle">
-            At the end of the summer, GitHub will promote great projects on
-            their blog & social media. Adafruit & Arduino will both host
-            livestreamed events. Hack Club will too. Edit this.
+            At the end of the summer, we’ll be working with our partners—Github,
+            Adafruit & Arduino—to share your project with the wider hacker
+            community. This will include live shows, blog posts & social media
+            shares!
           </Text>
         </div>
         <div>
