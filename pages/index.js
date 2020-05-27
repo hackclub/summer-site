@@ -268,7 +268,8 @@ export default () => (
           transform: 'translateX(-50%)',
           position: 'absolute',
           bottom: 0,
-          zIndex: 0
+          zIndex: 0,
+          paddingTop: '16px'
         }}
       >
         <source
@@ -337,11 +338,7 @@ export default () => (
         >
           Free hardware from&nbsp;GitHub.
         </Heading>
-        <Text 
-          as="p" 
-          variant="lead"
-          sx={{ marginBottom: '16px' }}
-        >
+        <Text as="p" variant="lead">
           GitHub is generously sponsoring $50k worth of hardware grants for
           student makers, alongside support from Adafruit & Arduino.
         </Text>
