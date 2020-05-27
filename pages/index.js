@@ -339,7 +339,7 @@ export default () => (
         </Heading>
         <Text as="p" variant="lead">
           GitHub is generously sponsoring $50k worth of hardware grants for
-          student makers, alongside discounts from Adafruit & Arduino.
+          student makers, alongside support from Adafruit & Arduino.
         </Text>
       </Container>
       <Box
