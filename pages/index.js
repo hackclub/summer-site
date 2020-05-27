@@ -269,6 +269,8 @@ export default () => (
           position: 'absolute',
           bottom: 0,
           zIndex: 0
+          margin-top: 16px;
+          margin-bottom: 16px;
         }}
       >
         <source
