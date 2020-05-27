@@ -213,7 +213,7 @@ export default () => (
       </Box>
       <Container
         sx={{
-          maxWidth: [null, 680],
+          maxWidth: [null, 720],
           textAlign: 'center',
           color: 'smoke',
           position: 'relative',
@@ -227,9 +227,9 @@ export default () => (
         >
           Free hardware from&nbsp;GitHub.
         </Heading>
-        <Text as="p" variant="lead">
+        <Text as="p" variant="subtitle">
           GitHub is sponsoring $50k worth of hardware grants for student makers,
-          alongside discounts from Adafruit & Arduino on gear.
+          alongside support from Adafruit & Arduino for gear.
         </Text>
       </Container>
       <Box
