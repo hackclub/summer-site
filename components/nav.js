@@ -35,10 +35,10 @@ export default () => {
         <Flex as="nav" sx={{ ml: 'auto', py: 2, alignItems: 'center' }}>
           <NavLink to="Mentorship" />
           <NavLink to="Hardware" />
-          <NavLink to="Slack" />
+          {/* <NavLink to="Slack" /> */}
           <NavLink to="About" />
           <Button as="a" href="https://hack.af/som-apply" bg="orange">
-            Apply
+            Pre-register
           </Button>
         </Flex>
       </Container>

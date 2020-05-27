@@ -121,12 +121,10 @@ export default () => (
           </Text>
           <Flex sx={{ alignItems: 'center' }}>
             <Button as="a" variant="cta" href={APPLY_URL} mr={3}>
-              Apply
+              Pre-register
             </Button>
             <Text as="p" variant="caption" color="slate">
               <strong>Ages 13–18</strong>
-              <br />
-              Apply by <strong>June&nbsp;5, 2020</strong>
             </Text>
           </Flex>
         </Card>
@@ -165,14 +163,9 @@ export default () => (
           professional in your project’s area. They’ll check in on your
           progress, set goals, give advice, & connect you with resources.
         </Text>
-        <Flex sx={{ alignItems: 'center', pb: [null, 4, 5] }}>
-          <Button as="a" variant="cta" href={APPLY_URL} mr={3}>
-            Apply
+        <Button as="a" variant="cta" href={APPLY_URL} mb={[null, 4, 5]}>
+          Pre-register
           </Button>
-          <Text as="p">
-            Due <strong>June 5</strong>
-          </Text>
-        </Flex>
       </Container>
     </Box>
     <Box as="section" bg="blue" color="white" py={[4, 5]}>
@@ -339,8 +332,8 @@ export default () => (
           Free hardware from&nbsp;GitHub.
         </Heading>
         <Text as="p" variant="lead">
-          GitHub is generously sponsoring $50k worth of hardware grants for
-          student makers, alongside support from Adafruit & Arduino.
+          GitHub is sponsoring $50k worth of hardware grants for
+          student makers, alongside discounts from Adafruit & Arduino.
         </Text>
       </Container>
       <Box
@@ -507,7 +500,7 @@ export default () => (
             & get free project promotion at the end of the summer.
           </Text>
           <Button as="a" variant="cta" href={APPLY_URL}>
-            Apply
+            Pre-register
           </Button>
         </div>
         <div>
