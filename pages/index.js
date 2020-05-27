@@ -168,10 +168,11 @@ export default () => (
         <Flex sx={{ alignItems: 'center', pb: [null, 4, 5] }}>
           <Button as="a" variant="cta" href={APPLY_URL} mr={3}>
             Apply
+            <Text as="p">
+              Due <strong>June 5</strong>
+            </Text>
           </Button>
-          <Text as="p">
-            Due <strong>June 5</strong>
-          </Text>
+          
         </Flex>
       </Container>
     </Box>
