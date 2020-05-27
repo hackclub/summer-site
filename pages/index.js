@@ -430,7 +430,7 @@ export default () => (
             >
               <IconButton
                 as="a"
-                href="mailto:sam@summer.hackclub.com"
+                href="mailto:summer@sampoder.com"
                 sx={{
                   bg: 'transparent',
                   border: 0,
