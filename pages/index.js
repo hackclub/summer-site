@@ -517,7 +517,7 @@ export default () => (
         </div>
         <div>
           <Heading as="h3" variant="headline">
-            A summer of community fun, guarenteed.
+            A summer of community fun, guaranteed.
           </Heading>
           <Text as="p" variant="subtitle">
             In the{' '}
