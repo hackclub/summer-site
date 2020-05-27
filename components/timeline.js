@@ -26,11 +26,20 @@ const Timeline = styled(Flex)`
 
 const Step = ({ name, duration, icon, color = 'red' }) => (
   <Flex sx={{ alignItems: 'center' }}>
-    <Box sx={{ p: 2, borderRadius: 'circle', bg: color, color: 'white', lineHeight: 0, mr: 3 }}>
+    <Box
+      sx={{
+        p: 2,
+        borderRadius: 'circle',
+        bg: color,
+        color: 'white',
+        lineHeight: 0,
+        mr: 3
+      }}
+    >
       <Icon glyph={icon} size={32} />
     </Box>
     <Box>
-      <Text as="span" variant="caption" color='snow'>
+      <Text as="span" variant="caption">
         {duration}
       </Text>
       <Heading as="h3" variant="subheadline" sx={{ mt: 1, mb: 0 }}>
@@ -46,25 +55,20 @@ export default () => (
       name="Application period"
       duration="Until June 5th"
       icon="send"
-      color='orange'
+      color="orange"
     />
     <Step
       name="Results released"
       duration="June 10th"
       icon="announcement"
-      color='yellow'
+      color="yellow"
     />
-    <Step
-      name="Get making!"
-      duration="July 6th"
-      icon="idea"
-      color='green'
-    />
+    <Step name="Get making!" duration="July 6th" icon="idea" color="green" />
     <Step
       name="Awards ceremony"
       duration="August 16th"
       icon="sticker"
-      color='cyan'
+      color="cyan"
     />
   </Grid>
 )

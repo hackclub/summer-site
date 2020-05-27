@@ -124,115 +124,11 @@ export default () => (
               Pre-register
             </Button>
             <Text as="p" variant="caption" color="slate">
-              <strong>Ages 13–18</strong>
+              Ages 13–18
             </Text>
           </Flex>
         </Card>
       </SlideUp>
-    </Box>
-    <Box
-      id="mentorship"
-      as="section"
-      sx={{
-        bg: 'snow',
-        backgroundImage: [
-          'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.125)), url(https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fmentorship-sm.jpg?v=1590592021018)',
-          'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0) 66%), url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2Fmentorship.jpg?v=1590473261619)'
-        ],
-        backgroundSize: 'cover',
-        backgroundPosition: 'top center'
-      }}
-    >
-      <Container
-        as="article"
-        sx={{
-          'h2,h3,p': { maxWidth: 'copy', textShadow: 'text' },
-          pt: [4, 5],
-          pb: [5, 6, 7],
-          color: 'white'
-        }}
-      >
-        <Text as="p" variant="eyebrow" color="yellow">
-          Mentorship program
-        </Text>
-        <Heading as="h2" variant="title">
-          1-on-1 weekly coaching with a professional.
-        </Heading>
-        <Text as="p" variant="subtitle" mt={3} mb={4}>
-          Every week, you’ll hop on a Zoom call with your mentor, an industry
-          professional in your project’s area. They’ll check in on your
-          progress, set goals, give advice, & connect you with resources.
-        </Text>
-        <Button as="a" variant="cta" href={APPLY_URL} mb={[null, 4, 5]}>
-          Pre-register
-          </Button>
-      </Container>
-    </Box>
-    <Box as="section" bg="blue" color="white" py={[4, 5]}>
-      <Grid
-        gap={4}
-        columns={[null, 2]}
-        variant="layout.container"
-        sx={{ h3: { mt: 0 } }}
-      >
-        <div>
-          <Heading as="h3" variant="headline">
-            Weekly community get-togethers
-          </Heading>
-          <Text variant="subtitle">
-            In addition to your mentor, you’ll join a weekly call with fellow
-            Summer Makers in your area (web dev, games, hardware, etc). You’ll
-            show off what you’re making, get help, make friends, & stay
-            motivated.
-          </Text>
-        </div>
-        <div>
-          <Heading as="h3" variant="headline">
-            Built-in project marketing
-          </Heading>
-          <Text variant="subtitle">
-            At the end of the summer, GitHub will promote great projects on
-            their blog & social media. Adafruit & Arduino will both host
-            livestreamed events. Hack Club will too. Edit this.
-          </Text>
-        </div>
-        <div>
-          <Heading as="h3" variant="headline">
-            Timeline
-          </Heading>
-          <Timeline />
-        </div>
-        <Grid
-          columns="32px 1fr"
-          sx={{
-            gridColumnGap: 3,
-            gridRowGap: 1,
-            color: 'white',
-            fontSize: 2,
-            lineHeight: 'caption',
-            svg: { color: 'smoke' }
-          }}
-        >
-          <Heading
-            as="h3"
-            variant="headline"
-            sx={{ mb: [3, 1], gridColumn: 'span 2' }}
-          >
-            Expectations
-          </Heading>
-          <Icon glyph="member-add" size={32} />
-          <Text as="p">You’ll be joining a group of 150-300 students.</Text>
-          <Icon glyph="clock" size={32} />
-          <Text as="p">
-            You should plan to spend 10+ hours/week on your project.
-          </Text>
-          <Icon glyph="event-check" size={32} />
-          <Text as="p">
-            Don’t worry if a camp or school interferes with the dates, as long
-            as you can still make your project.
-          </Text>
-        </Grid>
-      </Grid>
     </Box>
     <Box
       id="hardware"
@@ -316,8 +212,8 @@ export default () => (
         </g>
       </Box>
       <Container
-        variant="copy"
         sx={{
+          maxWidth: [null, 680],
           textAlign: 'center',
           color: 'smoke',
           position: 'relative',
@@ -333,7 +229,7 @@ export default () => (
         </Heading>
         <Text as="p" variant="lead">
           GitHub is sponsoring $50k worth of hardware grants for
-          student makers, alongside discounts from Adafruit & Arduino.
+          student makers, alongside discounts from Adafruit & Arduino on gear.
         </Text>
       </Container>
       <Box
@@ -351,6 +247,110 @@ export default () => (
         <Stat value="3" label="Sponsors" color="white" />
         <Stat value="∞" label="Possibilities" color="white" />
       </Box>
+    </Box>
+    <Box
+      id="mentorship"
+      as="section"
+      sx={{
+        bg: 'snow',
+        backgroundImage: [
+          'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.125)), url(https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fmentorship-sm.jpg?v=1590592021018)',
+          'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.25) 66%, rgba(0,0,0,0) 100%), url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2Fmentorship.jpg?v=1590473261619)'
+        ],
+        backgroundSize: 'cover',
+        backgroundPosition: 'top center'
+      }}
+    >
+      <Container
+        as="article"
+        sx={{
+          'h2,h3,p': { maxWidth: 'copy', textShadow: 'text' },
+          pt: [4, 5],
+          pb: [5, 6, 7],
+          color: 'white'
+        }}
+      >
+        <Text as="p" variant="eyebrow" color="yellow">
+          Mentorship program
+        </Text>
+        <Heading as="h2" variant="title">
+          1-on-1 weekly coaching with a professional.
+        </Heading>
+        <Text as="p" variant="subtitle" my={3}>
+          Mentors are engineers from GitHub, Adafruit, & Arduino, as well as invited industry professionals.
+        </Text>
+        <Text as="p" variant="subtitle" my={3}>
+          Every week, you’ll hop on a Zoom call with your mentor. They’ll set goals, give advice, & connect you with resources.
+        </Text>
+        <Button as="a" variant="cta" href={APPLY_URL} mt={4} mb={[null, 4, 5]}>
+          Pre-register
+          </Button>
+      </Container>
+    </Box>
+    <Box as="section" bg="white" color="black" py={[4, 5]}>
+      <Grid
+        gap={4}
+        columns={[null, 2]}
+        variant="layout.container"
+        sx={{ h3: { mt: 0 } }}
+      >
+        <div>
+          <Heading as="h3" variant="headline">
+            Weekly community get-togethers
+          </Heading>
+          <Text variant="subtitle">
+            In addition to your mentor, you’ll join a weekly call with fellow
+            Summer Makers in your area (web dev, games, hardware, etc). You’ll
+            show off what you’re making, get help, make friends, & stay
+            motivated.
+          </Text>
+        </div>
+        <div>
+          <Heading as="h3" variant="headline">
+            Built-in project marketing
+          </Heading>
+          <Text variant="subtitle">
+            At the end of the summer, GitHub will promote great projects on
+            their blog & social media. Adafruit & Arduino will both host
+            livestreamed events. Hack Club will too. Edit this.
+          </Text>
+        </div>
+        <div>
+          <Heading as="h3" variant="headline">
+            Timeline
+          </Heading>
+          <Timeline />
+        </div>
+        <Grid
+          columns="32px 1fr"
+          sx={{
+            gridColumnGap: 3,
+            gridRowGap: 1,
+            fontSize: 2,
+            lineHeight: 'caption',
+            svg: { color: 'muted' }
+          }}
+        >
+          <Heading
+            as="h3"
+            variant="headline"
+            sx={{ mb: [3, 1], gridColumn: 'span 2' }}
+          >
+            Expectations
+          </Heading>
+          <Icon glyph="member-add" size={32} />
+          <Text as="p">You’ll be joining a group of 150-300 students.</Text>
+          <Icon glyph="clock" size={32} />
+          <Text as="p">
+            You should plan to spend 10+ hours/week on your project.
+          </Text>
+          <Icon glyph="event-check" size={32} />
+          <Text as="p">
+            Don’t worry if a camp or school interferes with the dates, as long
+            as you can still make your project.
+          </Text>
+        </Grid>
+      </Grid>
     </Box>
     {/*
     <Box
@@ -499,9 +499,6 @@ export default () => (
             You’ll also get to join weekly get-togethers with like-minded peers
             & get free project promotion at the end of the summer.
           </Text>
-          <Button as="a" variant="cta" href={APPLY_URL}>
-            Pre-register
-          </Button>
         </div>
         <div>
           <Heading as="h3" variant="headline">
