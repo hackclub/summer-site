@@ -198,9 +198,10 @@ export default () => (
             Built-in project marketing
           </Heading>
           <Text variant="subtitle">
-            At the end of the summer, GitHub will promote great projects on
-            their blog & social media. Adafruit & Arduino will both host
-            livestreamed events. Hack Club will too. Edit this.
+            At the end of the summer, we'll be working with our
+            partners: Github, Adafruit & Arduino to share the
+            amazing things you make with the wider hacker community.
+            This will inculde live shows, blog posts and social media shares!
           </Text>
         </div>
         <div>
