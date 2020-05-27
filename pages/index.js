@@ -268,9 +268,8 @@ export default () => (
           transform: 'translateX(-50%)',
           position: 'absolute',
           bottom: 0,
-          zIndex: 0
-          margin-top: 16px;
-          margin-bottom: 16px;
+          zIndex: 0,
+          margin-top: 16px
         }}
       >
         <source
