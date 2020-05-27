@@ -269,7 +269,7 @@ export default () => (
           position: 'absolute',
           bottom: 0,
           zIndex: 0,
-          margin-top: 16px
+          marginTop: 16px
         }}
       >
         <source
