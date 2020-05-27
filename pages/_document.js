@@ -10,7 +10,10 @@ export default class extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <style dangerouslySetInnerHTML={{ __html: `html { scroll-behavior: smooth; }` }} />
+          <script src="https://embed.small.chat/T014PJR5A8ZG0149JRMDGD.js" async />
+        </Head>
         <body>
           <InitializeColorMode />
           <Main />

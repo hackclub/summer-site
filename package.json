@@ -10,10 +10,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@hackclub/icons": "^0.0.3",
     "@hackclub/meta": "^1.0.0",
     "@hackclub/theme": "^0.1.1",
     "@mdx-js/loader": "^1.6.4",
     "@next/mdx": "^9.4.2",
+    "lodash": "^4.17.15",
     "next": "^9.4.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
