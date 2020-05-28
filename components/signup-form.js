@@ -117,7 +117,7 @@ const SignupForm = () => {
             success: 'Submitted!'
           }}
         />
-        <p>(Summer of Making will begin in 3 weeks on June 18th. Hope to have you hacking with us soon!)</p>
+        <p>(Summer of Making will begin {timeago.format('2020-06-18')} on June 18th. Hope to have you hacking with us soon!)</p>
       </form >
     </Card >
   )
