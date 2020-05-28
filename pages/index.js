@@ -40,6 +40,16 @@ const bounce = keyframes`
   }
 `
 
+const fadein = keyframes`
+  0% {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+`
+
 const Contributor = ({ name, avatar }) => (
   <Flex sx={{ alignItems: 'center' }}>
     <Avatar src={avatar} alt={name} size={64} mr={3} />
@@ -56,10 +66,7 @@ const Contributor = ({ name, avatar }) => (
 
 const Collab = ({ img, alt }) => (
   <A
-    href={`https://${alt
-      .toLowerCase()
-      .split(' ')
-      .join('')}.com/`}
+    href={`https://${alt.toLowerCase().split(' ').join('')}.com/`}
     target="_blank"
     sx={{ display: 'block', mb: [3, 4] }}
   >
@@ -79,19 +86,43 @@ export default () => (
     <Box
       as="header"
       sx={{
-        bg: 'snow',
         py: 6,
         px: 3,
         minHeight: '100vh',
-        backgroundImage: [
-          'url(https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Flander-sm.jpg?v=1590592121598)',
-          'url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2Flander.jpg?v=1590473262091)'
-        ],
-        backgroundSize: 'cover',
-        backgroundPosition: ['center bottom', 'center'],
-        '@media (hover: hover)': { backgroundAttachment: 'fixed' }
+        overflow: 'hidden',
+        position: 'relative'
       }}
     >
+      <Box
+        as="video"
+        autoPlay
+        muted
+        loop
+        poster="slack-poster.png"
+        sx={{
+          animation: `${fadein} 3s linear`,
+          position: 'absolute',
+          bottom: 0,
+          top: 0,
+          left: 0,
+          right: 0,
+          zIndex: -1
+        }}
+      >
+        <source src="https://hackclub.github.io/summer-slack-video/slack.mp4" type="video/mp4" />
+      </Box>
+      <Box
+        sx={{
+          opacity: 0.85,
+          position: 'absolute',
+          bottom: 0,
+          top: 0,
+          left: 0,
+          right: 0,
+          backgroundImage: [theme.util.gradient('yellow', 'orange')],
+          zIndex: -1
+        }}
+      ></Box>
       <SlideUp duration={750}>
         <Card
           variant="translucent"
