@@ -76,7 +76,7 @@ const SignupForm = () => {
         </Label>
         <Label>
           Age
-          <Input {...useField('Age')} required />
+          <Input {...useField('Age')} placeholder={16} required />
         </Label>
         <Label>
           City, State
