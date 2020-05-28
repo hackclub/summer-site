@@ -134,7 +134,9 @@ export default () => (
           transform: 'translateX(-50%)',
           position: 'absolute',
           zIndex: 1,
-          animation: `${bounce} 1s linear`,
+          '@media (prefers-reduced-motion: no-preference)': {
+            animation: `${bounce} 1s linear`
+          },
           transformOrigin: 'center bottom'
         }}
       >
