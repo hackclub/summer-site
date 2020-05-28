@@ -335,11 +335,7 @@ export default () => (
             svg: { color: 'muted' }
           }}
         >
-          <Heading
-            as="h3"
-            variant="headline"
-            sx={{ gridColumn: 'span 2' }}
-          >
+          <Heading as="h3" variant="headline" sx={{ gridColumn: 'span 2' }}>
             Expectations
           </Heading>
           <Icon glyph="member-add" size={32} />
@@ -356,27 +352,57 @@ export default () => (
         </Grid>
       </Grid>
     </Box>
-    {/*
     <Box
       id="slack"
       as="section"
       sx={{
-        bg: 'red',
-        backgroundImage: t => t.util.gradient('orange', 'red'),
-        color: 'white',
-        py: [4, 5]
+        bg: 'snow',
+        backgroundImage: [
+          'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.125)), url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2F2020-05-16_screenshot.jpeg?v=1589633885855)',
+          'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.25) 66%, rgba(0,0,0,0) 100%), url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2F2020-05-16_screenshot.jpeg?v=1589633885855)'
+        ],
+        backgroundSize: 'cover',
+        backgroundPosition: 'top center'
       }}
     >
-      <Container>
-        <Text as="p" variant="eyebrow" color="white">
-          On the Slack
+      <Container
+        as="article"
+        sx={{
+          'h2,h3,p': { maxWidth: 'copy', textShadow: 'text' },
+          pt: [4, 5],
+          pb: [5, 6, 7],
+          color: 'white'
+        }}
+      >
+        <Text as="p" variant="eyebrow" color="green">
+          Community Slack
         </Text>
         <Heading as="h2" variant="title">
-          Awards show
+          Unlimited digital fun on the Hack Club Slack
         </Heading>
+        <Text as="p" variant="subtitle" my={3}>
+          The Hack Club Slack is the best place on the internet to be a teenager
+          into technology.
+        </Text>
+        <Text as="p" variant="subtitle" my={3}>
+          This summer we'll be having weekly themed weeks to get you making!
+          We've also got bi-weekly AMAs with some of most influential people in
+          tech, community-led events and a awards ceremony to conclude the
+          summer.
+        </Text>
+        <Button
+          as="a"
+          variant="cta"
+          href="https://hackclub.com/slack/"
+          target="_blank"
+          mt={4}
+          mb={[null, 4, 5]}
+          sx={{ backgroundImage: t => t.util.gradient('green', 'cyan') }}
+        >
+          Join the Slack
+        </Button>
       </Container>
     </Box>
-    */}
     <Box
       id="about"
       as="section"
@@ -525,8 +551,8 @@ export default () => (
             <A href="https://hackclub.com/slack/" color="red">
               Hack Club Slack
             </A>
-            , join themed spirit weeks, mini-hackathons, biweekly AMAs with the
-            most interesting people in tech, and an end-of-summer awards show.
+            , join themed weeks, mini-hackathons, biweekly AMAs with the most
+            interesting people in tech, and an end-of-summer awards show.
           </Text>
         </div>
       </Grid>
