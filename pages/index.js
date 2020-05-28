@@ -321,8 +321,7 @@ export default props => (
           <Text variant="subtitle">
             At the end of the summer, we’ll be working with our partners—Github,
             Adafruit & Arduino—to share your project with the wider hacker
-            community. This will include live shows, blog posts & social media
-            shares!
+            community. Expect live shows, blog posts & social media shares!
           </Text>
         </div>
         <Grid
