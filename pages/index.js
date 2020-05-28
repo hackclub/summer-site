@@ -22,6 +22,7 @@ import Icon from '../components/icon'
 import Stat from '../components/stat'
 import SlideUp from '../components/slide-up'
 import FadeIn from '../components/fade-in'
+import FadeOut from '../components/fade-out'
 
 import Timeline from '../components/timeline'
 import SamNote from '../components/sam-note.mdx'
@@ -37,16 +38,6 @@ const bounce = keyframes`
   to {
     opacity: 1;
     transform: translateX(-50%) translateZ(0)
-  }
-`
-
-const fadein = keyframes`
-  0% {
-    opacity: 0;
-  }
-  
-  to {
-    opacity: 1;
   }
 `
 
@@ -93,14 +84,15 @@ export default () => (
         position: 'relative'
       }}
     >
-      <Box
+      <FadeIn
         as="video"
         autoPlay
         muted
         loop
+        playsInline
         poster="slack-poster.png"
+        duration={2000}
         sx={{
-          animation: `${fadein} 3s linear`,
           position: 'absolute',
           bottom: 0,
           top: 0,
@@ -110,19 +102,20 @@ export default () => (
         }}
       >
         <source src="https://hackclub.github.io/summer-slack-video/slack.mp4" type="video/mp4" />
-      </Box>
-      <Box
+      </FadeIn>
+      <FadeOut
+        duration={8}
         sx={{
-          opacity: 0.85,
+          opacity: 0,
           position: 'absolute',
           bottom: 0,
           top: 0,
           left: 0,
           right: 0,
-          backgroundImage: [theme.util.gradient('yellow', 'orange')],
+          backgroundImage: theme.util.gradient('yellow', 'orange'),
           zIndex: -1
         }}
-      ></Box>
+      />
       <SlideUp duration={750}>
         <Card
           variant="translucent"
