@@ -4,60 +4,16 @@ import useForm from '../lib/use-form'
 import { timeSince } from '../lib/dates'
 import Submit from './submit'
 
-const PreviousResponse = () => {
-  const [status, setStatus] = useState('loading')
-  const [reason, setReason] = useState('')
-  const [timeSince, setTimeSince] = useState('')
-
-  useEffect(() => {
-    async function fetchData() {
-      let options = {
-        maxRecords: 1,
-        sort: [{ field: 'Created at', direction: 'desc' }],
-        filterByFormula: '{Approved for display} = 1'
-      }
-      const url = `https://api2.hackclub.com/v0.1/Pre-register/Applications?select=${JSON.stringify(
-        options
-      )}`
-      try {
-        const results = await fetch(url, { mode: 'cors' }).then(r => r.json())
-        const reason = results[0].fields
-        setReason(reason['What do you want to learn?'])
-        setTimeSince(timeSince(reason['Created at'], true, true))
-        setStatus('success')
-      } catch (e) {
-        setStatus('error')
-      }
-    }
-    fetchData()
-  }, [])
-
-  if (status === 'success') {
-    return (
-      <>
-        <Text variant="caption" sx={{ mt: 2, pb: 2 }}>
-          This was written by an applicant about {timeSince}:
-        </Text>
-        <Text variant="caption" color="slate" sx={{ paddingBottom: 1 }}>
-          {reason}
-        </Text>
-      </>
-    )
-  } else {
-    return null
-  }
-}
-
 const full = { gridColumn: [null, 'span 2'] }
 
-const SignupForm = () => {
+const SignupForm = ({ reason, time }) => {
   const { status, formProps, useField } = useForm('/api/prereg')
   return (
     <Card
       sx={{
         bg: 'smoke',
         maxWidth: 'narrow',
-        mx: 'auto',
+        mx: 'auto'
       }}
     >
       <Grid columns={[null, 2]} gap={3} as="form" {...formProps}>
@@ -96,7 +52,29 @@ const SignupForm = () => {
             placeholder="Write a sentence or two."
             required
           />
-          <PreviousResponse />
+          {reason && (
+            <>
+              <Text
+                variant="caption"
+                sx={{ textTransform: 'uppercase', fontSize: 1, mt: 3, mb: 1 }}
+              >
+                By an applicant {timeSince(time)}
+              </Text>
+              <Text
+                variant="caption"
+                color="slate"
+                sx={{
+                  fontSize: 2,
+                  lineHeight: 'subheading',
+                  borderLeft: '3px solid',
+                  borderColor: 'cyan',
+                  pl: 3
+                }}
+              >
+                {reason}
+              </Text>
+            </>
+          )}
         </Label>
         <Submit
           status={status}
