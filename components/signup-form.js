@@ -33,8 +33,12 @@ const PreviousResponse = () => {
   if (status == 'success') {
     return (
       <>
-        <Text variant="caption">Not sure what to put here? This was written by an applicant {timeSince}.</Text>
-        <Text>{reason}</Text>
+        <Text variant="caption">
+          This was written by an applicant about {timeSince}:
+        </Text>
+        <Text variant="caption" color="slate">
+          {reason}
+        </Text>
       </>
     )
   } else {
@@ -62,7 +66,7 @@ const SignupForm = () => {
     >
       <form {...formProps}>
         <Label>
-          Full name
+          First & last name
           <Input {...useField('name')} placeholder="Fiona Hackworth" required />
         </Label>
         <Label>
@@ -74,10 +78,17 @@ const SignupForm = () => {
           />
         </Label>
         <Label>
-          High School Graduation Year
+          Age
           <Input
             {...useField('gradYear')}
-            placeholder="2021"
+            required
+          />
+        </Label>
+        <Label>
+          City, State
+          <Input
+            {...useField('country')}
+            placeholder="Los Angeles, California"
             required
           />
         </Label>
@@ -85,29 +96,30 @@ const SignupForm = () => {
           Country
           <Input
             {...useField('country')}
-            placeholder="United States"
+            placeholder="USA"
             required
           />
         </Label>
         <Label>
-          What do you want to learn this summer?
+          What is something you want to learn this summer?
+          <PreviousResponse />
           <Textarea
             {...useField('learn')}
-            placeholder="Write a few sentences."
+            placeholder="Write a sentence or two."
             required
           />
         </Label>
-        <PreviousResponse />
         <Submit
           status={status}
           labels={{
-            default: 'Submit',
+            default: 'Submit Pre-Registration',
             error: 'Something went wrong',
             success: 'Submitted!'
           }}
         />
-      </form>
-    </Card>
+        <p>(Summer of Making will begin in 3 weeks on June 18th. Hope to have you hacking with us soon!)</p>
+      </form >
+    </Card >
   )
 }
 

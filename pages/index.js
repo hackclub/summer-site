@@ -550,7 +550,7 @@ export default () => (
           variant="title"
           sx={{
             mt: 0,
-            mb: [3, 4],
+            mb: [3, 4, 5],
             fontSize: [4, 6, 7],
             textAlign: 'center',
             color: 'white',
@@ -560,8 +560,11 @@ export default () => (
             textShadow: 'text'
           }}
         >
-          Get started
+          Pre-register
         </Heading>
+        <Heading as="h2" variant="subtitle" sx={{
+          textAlign: 'center',
+        }}>subtext test</Heading>
         <SignupForm />
       </Container>
     </Box>
