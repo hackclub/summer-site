@@ -1,8 +1,7 @@
-import { Card, Label, Input, Checkbox, Textarea, Text } from 'theme-ui'
+import { Card, Label, Input, Textarea, Text } from 'theme-ui'
 import { useState, useEffect } from 'react'
 import useForm from '../lib/use-form'
 import Submit from './submit'
-import fetch from 'isomorphic-unfetch'
 import * as timeago from 'timeago.js'
 
 const PreviousResponse = () => {
@@ -14,13 +13,12 @@ const PreviousResponse = () => {
     async function fetchData() {
       let options = {
         maxRecords: 1,
-        sort: [{field: 'Created at', direction: 'desc'}],
+        sort: [{ field: 'Created at', direction: 'desc' }],
         filterByFormula: "{Approved for display} = 1"
       }
       let endpointURL = `https://api2.hackclub.com/v0.1/Pre-register/Applications?select=${JSON.stringify(options)}`
       try {
-        let response = await fetch(endpointURL, { mode: 'cors' })
-        let results = await response.json()
+        let results = await fetch(endpointURL, { mode: 'cors' }).then(r => r.json())
         let reason = results[0].fields
         setReason(reason['What do you want to learn?'])
         setTimeSince(timeago.format(reason['Created at']))
@@ -35,10 +33,10 @@ const PreviousResponse = () => {
   if (status == 'success') {
     return (
       <>
-        <p>Not sure what to put here? This was written by an applicant {timeSince}.</p>
-        <pre>{reason}</pre>
+        <Text variant="caption">Not sure what to put here? This was written by an applicant {timeSince}.</Text>
+        <Text>{reason}</Text>
       </>
-      )
+    )
   } else {
     return null
   }
@@ -49,7 +47,8 @@ const SignupForm = () => {
   return (
     <Card
       sx={{
-        variant: 'cards.translucent',
+        // variant: 'cards.translucent',
+        bg: 'smoke',
         maxWidth: 'narrow',
         mx: 'auto',
         label: {

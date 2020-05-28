@@ -546,21 +546,21 @@ export default () => (
     >
       <Container pt={[3, 4]} pb={[5, 6]}>
         <Heading
-            as="h1"
-            variant="title"
-            sx={{
-              mt: 0,
-              mb: [3, 4, 5],
-              fontSize: [4, 6, 7],
-              textAlign: 'center',
-              color: 'white',
-              lineHeight: [0.875, 0.8],
-              position: 'relative',
-              zIndex: 1,
-              textShadow: 'text'
-            }}
-          >
-          Get yourself started 
+          as="h1"
+          variant="title"
+          sx={{
+            mt: 0,
+            mb: [3, 4],
+            fontSize: [4, 6, 7],
+            textAlign: 'center',
+            color: 'white',
+            lineHeight: [0.875, 0.8],
+            position: 'relative',
+            zIndex: 1,
+            textShadow: 'text'
+          }}
+        >
+          Get started
         </Heading>
         <SignupForm />
       </Container>
