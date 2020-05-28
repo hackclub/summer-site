@@ -16,16 +16,15 @@ const PreviousResponse = () => {
         sort: [{ field: 'Created at', direction: 'desc' }],
         filterByFormula: '{Approved for display} = 1'
       }
-      let endpointURL = `https://api2.hackclub.com/v0.1/Pre-register/Applications?select=${JSON.stringify(
+      const url = `https://api2.hackclub.com/v0.1/Pre-register/Applications?select=${JSON.stringify(
         options
       )}`
       try {
-        let results = await fetch(endpointURL, { mode: 'cors' }).then(r =>
-          r.json()
-        )
-        let reason = results[0].fields
+        const results = await fetch(url, { mode: 'cors' }).then(r => r.json())
+        const reason = results[0].fields
+        console.log(reason)
         setReason(reason['What do you want to learn?'])
-        setTimeSince(timeago.format(reason['Created at']))
+        setTimeSince(timeSince(reason['Created at'], true, true))
         setStatus('success')
       } catch (e) {
         setStatus('error')
@@ -34,13 +33,13 @@ const PreviousResponse = () => {
     fetchData()
   }, [])
 
-  if (status == 'success') {
+  if (status === 'success') {
     return (
       <>
-        <Text variant="caption" sx = {{paddingTop: '10px', paddingBottom: '10px'}}>
+        <Text variant="caption" sx={{ mt: 2, pb: 2 }}>
           This was written by an applicant about {timeSince}:
         </Text>
-        <Text variant="caption" color="slate" sx = {{paddingBottom: '10px'}}>
+        <Text variant="caption" color="slate" sx={{ paddingBottom: '10px' }}>
           {reason}
         </Text>
       </>
@@ -93,12 +92,12 @@ const SignupForm = () => {
         </Label>
         <Label sx={full}>
           What is something you want to learn this summer?
-          <PreviousResponse />
           <Textarea
             {...useField('What do you want to learn?')}
             placeholder="Write a sentence or two."
             required
           />
+          <PreviousResponse />
         </Label>
         <Submit
           status={status}
