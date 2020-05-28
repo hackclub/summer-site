@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Text } from 'theme-ui'
 import * as timeago from 'timeago.js'
 
-const PreviousResponse = (props) => {
+const PreviousResponse = ({ reason, timeSince, status }) => {
   // const [status, setStatus] = useState('loading')
   // const [reason, setReason] = useState('')
   // const [timeSince, setTimeSince] = useState('')
@@ -28,7 +28,6 @@ const PreviousResponse = (props) => {
   //   fetchData()
   // }, [])
 
-  return JSON.stringify(props)
   if (status == 'success') {
     return (
       <>
@@ -65,7 +64,7 @@ export const getStaticProps = async () => {
   } catch (e) {
     props.status = 'error'
   }
-  return { props }
+  return { props, unstable_revalidate: 1 }
 }
 
 export default PreviousResponse
