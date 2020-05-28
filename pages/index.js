@@ -334,11 +334,7 @@ export default () => (
             svg: { color: 'muted' }
           }}
         >
-          <Heading
-            as="h3"
-            variant="headline"
-            sx={{ gridColumn: 'span 2' }}
-          >
+          <Heading as="h3" variant="headline" sx={{ gridColumn: 'span 2' }}>
             Expectations
           </Heading>
           <Icon glyph="member-add" size={32} />
@@ -377,23 +373,31 @@ export default () => (
           color: 'white'
         }}
       >
-        <Text as="p" variant="eyebrow" color="yellow">
-          Community Slack 
+        <Text as="p" variant="eyebrow" color="green">
+          Community Slack
         </Text>
         <Heading as="h2" variant="title">
           Unlimited digital fun on the Hack Club Slack
         </Heading>
         <Text as="p" variant="subtitle" my={3}>
-          The Hack Club Slack is the best place on the internet 
-          to be a teenager into technology. 
+          The Hack Club Slack is the best place on the internet to be a teenager
+          into technology.
         </Text>
         <Text as="p" variant="subtitle" my={3}>
-          This summer we'll be having weekly themed weeks to get 
-          you making! We've also got bi-weekly AMAs with some of
-           most influential people in tech, community-led events 
-           and a awards ceremony to conclude the summer.
+          This summer we'll be having weekly themed weeks to get you making!
+          We've also got bi-weekly AMAs with some of most influential people in
+          tech, community-led events and a awards ceremony to conclude the
+          summer.
         </Text>
-        <Button as="a" variant="cta" href="https://hackclub.com/slack" target="_blank" mt={4} mb={[null, 4, 5]}>
+        <Button
+          as="a"
+          variant="cta"
+          href="https://hackclub.com/slack/"
+          target="_blank"
+          mt={4}
+          mb={[null, 4, 5]}
+          sx={{ backgroundImage: t => t.util.gradient('green', 'cyan') }}
+        >
           Join the Slack
         </Button>
       </Container>
@@ -546,8 +550,8 @@ export default () => (
             <A href="https://hackclub.com/slack/" color="red">
               Hack Club Slack
             </A>
-            , join themed weeks, mini-hackathons, biweekly AMAs with the
-            most interesting people in tech, and an end-of-summer awards show.
+            , join themed weeks, mini-hackathons, biweekly AMAs with the most
+            interesting people in tech, and an end-of-summer awards show.
           </Text>
         </div>
       </Grid>
