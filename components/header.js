@@ -106,7 +106,7 @@ const Header = () => {
           />
           <source
             src="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fslack.mov?v=1590694211489"
-            type="video/quicktype"
+            type="video/quicktime"
           />
         </Box>
         <FadeOut
