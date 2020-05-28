@@ -20,15 +20,13 @@ import theme from '../lib/theme'
 import Nav from '../components/nav'
 import Icon from '../components/icon'
 import Stat from '../components/stat'
-import SlideUp from '../components/slide-up'
-// import FadeOut from '../components/fade-out'
 
 import Header from '../components/header'
 import SignupForm from '../components/signup-form'
 import Timeline from '../components/timeline'
 import SamNote from '../components/sam-note.mdx'
 
-const APPLY_URL = '#apply'
+const APPLY_URL = '#register'
 
 const bounce = keyframes`
   0% {
@@ -505,7 +503,7 @@ export default () => (
       </Grid>
     </Box>
     <Box
-      id="apply"
+      id="register"
       as="header"
       sx={{
         bg: 'dark',

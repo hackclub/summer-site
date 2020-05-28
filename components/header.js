@@ -1,4 +1,4 @@
-import { Box, Image, Card, Button, Flex, Heading, Text } from 'theme-ui'
+import { Box, Card, Button, Grid, Heading, Text } from 'theme-ui'
 import theme from '../lib/theme'
 import usePrefersMotion from '../lib/use-prefers-motion'
 import useHasMounted from '../lib/use-has-mounted'
@@ -26,20 +26,22 @@ const Sheet = () => (
       }}
     >
       Make something amazing this summer.
-          </Heading>
+    </Heading>
     <Text as="p" variant="lead" my={3}>
-      <strong>Hack Club Summer of Making</strong> brings 6 weeks of
-            mentorship, $50k of hardware grants, weekly get-togethers, & nonstop
-            making—culminating in an awards show.
-          </Text>
-    <Flex sx={{ alignItems: 'center' }}>
-      <Button as="a" variant="cta" href="#apply" mr={3}>
+      <strong>Hack Club Summer of Making</strong> brings 6 weeks of mentorship,
+      $50k of hardware grants, weekly get-togethers, & nonstop
+      making—culminating in an awards show.
+    </Text>
+    <Grid columns={[null, 'auto 1fr']} gap={3} sx={{ alignItems: 'center' }}>
+      <Button as="a" variant="cta" href="#register">
         Pre-register
-            </Button>
+      </Button>
       <Text as="p" variant="caption" color="slate">
-        Ages 13–18
-            </Text>
-    </Flex>
+        Signups open <strong>June 18</strong>
+        <br />
+        <strong>Ages 13–18</strong>, for students anywhere worldwide
+      </Text>
+    </Grid>
   </Card>
 )
 
@@ -51,7 +53,8 @@ const Static = () => (
       px: 3,
       minHeight: '100vh',
       overflow: 'hidden',
-      position: 'relative', backgroundImage: 'url(slack-poster.png)',
+      position: 'relative',
+      backgroundImage: 'url(slack-poster.png)',
       backgroundSize: 'cover'
     }}
   >
@@ -60,9 +63,9 @@ const Static = () => (
 )
 
 const Header = () => {
-  const hasMounted = useHasMounted();
+  const hasMounted = useHasMounted()
   const prefersMotion = usePrefersMotion()
-  if (!hasMounted) return Static;
+  if (!hasMounted) return Static
   if (prefersMotion) {
     return (
       <Box
@@ -89,12 +92,21 @@ const Header = () => {
             top: 0,
             left: 0,
             right: 0,
+            height: '100%',
             zIndex: -1
           }}
         >
           <source
-            src="https://hackclub.github.io/summer-slack-video/slack.mp4"
-            type="video/mp4"
+            src="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fslack.hevc.mp4?v=1590694006597"
+            type="video/mp4; codecs=hevc"
+          />
+          <source
+            src="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fslack.webm?v=1590694212094"
+            type="video/webm; codecs=vp9,opus"
+          />
+          <source
+            src="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fslack.mov?v=1590694211489"
+            type="video/quicktype"
           />
         </Box>
         <FadeOut
@@ -116,9 +128,7 @@ const Header = () => {
       </Box>
     )
   } else {
-    return (
-      <Static />
-    )
+    return <Static />
   }
 }
 

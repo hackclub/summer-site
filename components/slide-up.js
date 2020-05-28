@@ -13,18 +13,20 @@ const SlideUp = ({ duration = 300, delay = 0, ...props }) => {
   const prefersMotion = usePrefersMotion()
   console.log('slide', prefersMotion)
   if (prefersMotion) {
-    return <Box
-      {...props}
-      sx={{
-        ...(props.sx || {}),
-        '@media (prefers-reduced-motion: no-preference)': {
-          animationName: slideUp,
-          animationFillMode: 'backwards',
-          animationDuration: duration + 'ms',
-          animationDelay: delay + 'ms'
-        }
-      }}
-    />
+    return (
+      <Box
+        {...props}
+        sx={{
+          ...(props.sx || {}),
+          '@media (prefers-reduced-motion: no-preference)': {
+            animationName: slideUp,
+            animationFillMode: 'backwards',
+            animationDuration: duration + 'ms',
+            animationDelay: delay + 'ms'
+          }
+        }}
+      />
+    )
   } else {
     return props.children
   }
