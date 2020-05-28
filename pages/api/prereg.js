@@ -7,7 +7,7 @@ let preregBase = new AirtablePlus({
   tableName: 'Applications'
 })
 
-export default (req, res) => {
+export default async (req, res) => {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed, use POST' })
   }
@@ -21,6 +21,6 @@ export default (req, res) => {
     'City & State'
   ])
 
-  preregBase.create(whitelistedData)
+  await preregBase.create(whitelistedData)
   res.json({ status: 'success' })
 }
