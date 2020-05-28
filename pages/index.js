@@ -26,7 +26,7 @@ import FadeIn from '../components/fade-in'
 import SignupForm from '../components/signup-form'
 import SamNote from '../components/sam-note.mdx'
 
-const APPLY_URL = '#apply'
+const APPLY_URL = 'https://airtable.com/shrBurjJOKEY8KntA'
 
 const bounce = keyframes`
   0% {
@@ -553,6 +553,7 @@ export default () => (
         </div>
       </Grid>
     </Box>
+    {/*
     <Box
       id="apply"
       as="header"
@@ -599,6 +600,7 @@ export default () => (
         <SignupForm />
       </Container>
     </Box>
+        */}
     <Box
       as="footer"
       sx={{ bg: 'smoke', color: 'black', py: [4, 5], a: { color: 'orange' } }}
