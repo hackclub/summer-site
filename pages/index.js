@@ -565,6 +565,9 @@ export default () => (
           >
           Pre-register
         </Heading>
+        <Heading as="h2" sx={{
+              textAlign: 'center',
+        }}>subtext test</Heading>
         <SignupForm />
       </Container>
     </Box>

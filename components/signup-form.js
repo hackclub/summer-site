@@ -1,4 +1,4 @@
-import { Card, Label, Input, Checkbox, Textarea, Text } from 'theme-ui'
+import { Card, Label, Input, Textarea, Text } from 'theme-ui'
 import { useState, useEffect } from 'react'
 import useForm from '../lib/use-form'
 import Submit from './submit'
@@ -35,8 +35,16 @@ const PreviousResponse = () => {
   if (status == 'success') {
     return (
       <>
-        <p>Not sure what to put here? This was written by an applicant {timeSince}.</p>
-        <pre>{reason}</pre>
+        <Text sx={{fontSize: 1}}>
+        This was written by an applicant about {timeSince}:
+        </Text>
+        <Text sx={{
+          color: 'muted',
+          fontStyle: 'italic',
+          fontSize: 1
+        }}>
+          {reason}
+        </Text>
       </>
       )
   } else {
@@ -63,7 +71,7 @@ const SignupForm = () => {
     >
       <form {...formProps}>
         <Label>
-          Full name
+          First & last name
           <Input {...useField('name')} placeholder="Fiona Hackworth" required />
         </Label>
         <Label>
@@ -75,10 +83,17 @@ const SignupForm = () => {
           />
         </Label>
         <Label>
-          High School Graduation Year
+          Age
           <Input
             {...useField('gradYear')}
-            placeholder="2021"
+            required
+          />
+        </Label>
+        <Label>
+          City, State
+          <Input
+            {...useField('country')}
+            placeholder="Los Angeles, California"
             required
           />
         </Label>
@@ -86,19 +101,19 @@ const SignupForm = () => {
           Country
           <Input
             {...useField('country')}
-            placeholder="United States"
+            placeholder="USA"
             required
           />
         </Label>
         <Label>
-          What do you want to learn this summer?
+          What is something you want to learn this summer?
+          <PreviousResponse />
           <Textarea
             {...useField('learn')}
-            placeholder="Write a few sentences."
+            placeholder="Write a sentence or two."
             required
           />
         </Label>
-        <PreviousResponse />
         <Submit
           status={status}
           labels={{
@@ -107,6 +122,7 @@ const SignupForm = () => {
             success: 'Submitted!'
           }}
         />
+        <p>(Summer of Making will begin in 3 weeks on June 18th. Hope to have you hacking with us soon!)</p>
       </form>
     </Card>
   )
