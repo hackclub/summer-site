@@ -11,9 +11,8 @@ export default (req, res) => {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed, use POST' })
   }
-  
-  let data = JSON.parse(req?.body || '{}')
-  let whitelistedData = pick(data, [
+
+  let whitelistedData = pick(req.body, [
     'Name',
     'Email',
     'What do you want to learn?',
@@ -21,6 +20,7 @@ export default (req, res) => {
     'Country',
     'City & State'
   ])
+
   preregBase.create(whitelistedData)
   res.json({ status: 'success' })
 }
