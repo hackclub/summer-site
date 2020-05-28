@@ -37,7 +37,7 @@ const SignupForm = ({ reason, time }) => {
           City, State
           <Input
             {...useField('City & State')}
-            placeholder="Los Angeles, California"
+            placeholder="New Atlantis, Neo Victoria"
             required
           />
         </Label>
