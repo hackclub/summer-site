@@ -23,10 +23,11 @@ import Stat from '../components/stat'
 import SlideUp from '../components/slide-up'
 import FadeIn from '../components/fade-in'
 
+import SignupForm from '../components/signup-form'
 import Timeline from '../components/timeline'
 import SamNote from '../components/sam-note.mdx'
 
-const APPLY_URL = 'https://hack.af/som-apply'
+const APPLY_URL = '#apply'
 
 const bounce = keyframes`
   0% {
@@ -121,7 +122,7 @@ export default () => (
           </Text>
           <Flex sx={{ alignItems: 'center' }}>
             <Button as="a" variant="cta" href={APPLY_URL} mr={3}>
-              Pre-register
+              Apply
             </Button>
             <Text as="p" variant="caption" color="slate">
               Ages 13–18
@@ -285,7 +286,7 @@ export default () => (
           goals, give advice, & connect you with resources.
         </Text>
         <Button as="a" variant="cta" href={APPLY_URL} mt={4} mb={[null, 4, 5]}>
-          Pre-register
+          Apply
         </Button>
       </Container>
     </Box>
@@ -529,6 +530,40 @@ export default () => (
           </Text>
         </div>
       </Grid>
+    </Box>
+    <Box
+      id="apply"
+      as="header"
+      sx={{
+        bg: 'dark',
+        pt: [5, 6],
+        display: 'flex',
+        flexDirection: 'column',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        '@media (hover: hover)': { backgroundAttachment: 'fixed' }
+      }}
+    >
+      <Container pt={[3, 4]} pb={[5, 6]}>
+        <Heading
+            as="h1"
+            variant="title"
+            sx={{
+              mt: 0,
+              mb: [3, 4, 5],
+              fontSize: [4, 6, 7],
+              textAlign: 'center',
+              color: 'white',
+              lineHeight: [0.875, 0.8],
+              position: 'relative',
+              zIndex: 1,
+              textShadow: 'text'
+            }}
+          >
+          Get yourself started 
+        </Heading>
+        <SignupForm />
+      </Container>
     </Box>
     <Box
       as="footer"
