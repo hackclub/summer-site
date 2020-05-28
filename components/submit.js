@@ -17,7 +17,9 @@ const bg = {
   error: {
     bg: 'orange',
     backgroundImage: theme.util.gradient('orange', 'red'),
-    boxShadow: `0 0 0 1px ${theme.colors.white}, 0 0 0 4px ${theme.colors.primary}`
+    boxShadow: `0 0 0 1px ${theme.colors.white}, 0 0 0 4px ${
+      theme.colors.primary
+    }`
   }
 }
 

@@ -14,11 +14,15 @@ const PreviousResponse = () => {
       let options = {
         maxRecords: 1,
         sort: [{ field: 'Created at', direction: 'desc' }],
-        filterByFormula: "{Approved for display} = 1"
+        filterByFormula: '{Approved for display} = 1'
       }
-      let endpointURL = `https://api2.hackclub.com/v0.1/Pre-register/Applications?select=${JSON.stringify(options)}`
+      let endpointURL = `https://api2.hackclub.com/v0.1/Pre-register/Applications?select=${JSON.stringify(
+        options
+      )}`
       try {
-        let results = await fetch(endpointURL, { mode: 'cors' }).then(r => r.json())
+        let results = await fetch(endpointURL, { mode: 'cors' }).then(r =>
+          r.json()
+        )
         let reason = results[0].fields
         setReason(reason['What do you want to learn?'])
         setTimeSince(timeago.format(reason['Created at']))
@@ -79,10 +83,7 @@ const SignupForm = () => {
         </Label>
         <Label>
           Age
-          <Input
-            {...useField('Age')}
-            required
-          />
+          <Input {...useField('Age')} required />
         </Label>
         <Label>
           City, State
@@ -94,11 +95,7 @@ const SignupForm = () => {
         </Label>
         <Label>
           Country
-          <Input
-            {...useField('Country')}
-            placeholder="USA"
-            required
-          />
+          <Input {...useField('Country')} placeholder="USA" required />
         </Label>
         <Label>
           What is something you want to learn this summer?
@@ -117,9 +114,12 @@ const SignupForm = () => {
             success: 'Submitted!'
           }}
         />
-        <p>(Summer of Making will begin {timeago.format('2020-06-18')} on June 18th. Hope to have you hacking with us soon!)</p>
-      </form >
-    </Card >
+        <p>
+          (Summer of Making will begin {timeago.format('2020-06-18')} on June
+          18th. Hope to have you hacking with us soon!)
+        </p>
+      </form>
+    </Card>
   )
 }
 
