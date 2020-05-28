@@ -1,26 +1,22 @@
 import React from 'react'
 import { Box } from 'theme-ui'
-import styled from '@emotion/styled'
 import { keyframes } from '@emotion/core'
 
 const fadeOut = keyframes({ from: { opacity: 1 }, to: { opacity: 0 } })
 
-const Wrapper = styled(Box)`
-  @media (prefers-reduced-motion: no-preference) {
-    animation-name: ${fadeOut};
-    // animation-fill-mode: backwards;
-  }
-`
-
-const FadeIn = ({ duration = 8, delay = 0, ...props }) => (
-  <Wrapper
+const FadeOut = ({ duration = 300, delay = 0, ...props }) => (
+  <Box
     {...props}
-    style={{
-      ...(props.style || {}),
-      animationDuration: duration + 's',
-      animationDelay: delay + 'ms'
+    sx={{
+      ...(props.sx || {}),
+      '@media (prefers-reduced-motion: no-preference)': {
+        animationName: fadeOut,
+        animationFillMode: 'backwards',
+        animationDuration: duration + 'ms',
+        animationDelay: delay + 'ms'
+      }
     }}
   />
 )
 
-export default FadeIn
+export default FadeOut

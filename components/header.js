@@ -110,7 +110,7 @@ const Header = () => {
           />
         </Box>
         <FadeOut
-          duration={8}
+          duration={8000}
           sx={{
             opacity: 0,
             position: 'absolute',
