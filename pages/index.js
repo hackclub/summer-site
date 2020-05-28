@@ -378,7 +378,7 @@ export default () => (
         }}
       >
         <Text as="p" variant="eyebrow" color="yellow">
-          Mentorship program
+          Slack 
         </Text>
         <Heading as="h2" variant="title">
           1-on-1 weekly coaching with a professional.
