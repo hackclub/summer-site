@@ -244,7 +244,7 @@ export default () => (
         }}
       >
         <Stat value="50k" unit="$" label="In grants" color="white" />
-        <Stat value="3" label="Sponsors" color="white" />
+        <Stat value="3" label="Partners" color="white" />
         <Stat value="∞" label="Possibilities" color="white" />
       </Box>
     </Box>
