@@ -355,7 +355,48 @@ export default () => (
         </Grid>
       </Grid>
     </Box>
-    {/*
+    <Box
+      id="mentorship"
+      as="section"
+      sx={{
+        bg: 'snow',
+        backgroundImage: [
+          'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.125)), url(https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fmentorship-sm.jpg?v=1590592021018)',
+          'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.25) 66%, rgba(0,0,0,0) 100%), url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2Fmentorship.jpg?v=1590473261619)'
+        ],
+        backgroundSize: 'cover',
+        backgroundPosition: 'top center'
+      }}
+    >
+      <Container
+        as="article"
+        sx={{
+          'h2,h3,p': { maxWidth: 'copy', textShadow: 'text' },
+          pt: [4, 5],
+          pb: [5, 6, 7],
+          color: 'white'
+        }}
+      >
+        <Text as="p" variant="eyebrow" color="yellow">
+          Mentorship program
+        </Text>
+        <Heading as="h2" variant="title">
+          1-on-1 weekly coaching with a professional.
+        </Heading>
+        <Text as="p" variant="subtitle" my={3}>
+          Mentors are engineers from GitHub, Adafruit, & Arduino, as well as
+          invited industry professionals.
+        </Text>
+        <Text as="p" variant="subtitle" my={3}>
+          Every week, you’ll hop on a Zoom call with your mentor. They’ll set
+          goals, give advice, & connect you with resources.
+        </Text>
+        <Button as="a" variant="cta" href={APPLY_URL} mt={4} mb={[null, 4, 5]}>
+          Pre-register
+        </Button>
+      </Container>
+    </Box>
+    
     <Box
       id="slack"
       as="section"
@@ -375,7 +416,7 @@ export default () => (
         </Heading>
       </Container>
     </Box>
-    */}
+    
     <Box
       id="about"
       as="section"
