@@ -120,14 +120,16 @@ export default () => (
             mentorship, $50k of hardware grants, weekly get-togethers, & nonstop
             making—culminating in an awards show.
           </Text>
-          <Flex sx={{ alignItems: 'center' }}>
-            <Button as="a" variant="cta" href={APPLY_URL} mr={3}>
+          <Grid columns={[null, "auto 1fr"]} gap={3} sx={{ alignItems: 'center' }}>
+            <Button as="a" variant="cta" href={APPLY_URL}>
               Pre-register
             </Button>
             <Text as="p" variant="caption" color="slate">
-              Ages 13–18
+              Signups open <strong>June 18</strong>
+              <br />
+              <strong>Ages 13–18</strong>, for students anywhere worldwide
             </Text>
-          </Flex>
+          </Grid>
         </Card>
       </SlideUp>
     </Box>
