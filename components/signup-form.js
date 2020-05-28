@@ -1,8 +1,8 @@
-import { Card, Label, Input, Textarea, Text, Grid } from 'theme-ui'
+import { Card, Label, Input, Textarea, Text } from 'theme-ui'
 import { useState, useEffect } from 'react'
 import useForm from '../lib/use-form'
-import { timeSince } from '../lib/dates'
 import Submit from './submit'
+import * as timeago from 'timeago.js'
 
 const PreviousResponse = () => {
   const [status, setStatus] = useState('loading')
@@ -50,20 +50,26 @@ const PreviousResponse = () => {
   }
 }
 
-const full = { gridColumn: [null, 'span 2'] }
-
 const SignupForm = () => {
   const { status, formProps, useField } = useForm('/api/prereg')
   return (
     <Card
       sx={{
+        // variant: 'cards.translucent',
         bg: 'smoke',
         maxWidth: 'narrow',
         mx: 'auto',
+        label: {
+          display: 'flex',
+          flexDirection: 'column',
+          textAlign: 'left',
+          fontSize: 2,
+          mb: 3
+        }
       }}
     >
-      <Grid columns={[null, 2]} gap={3} as="form" {...formProps}>
-        <Label sx={full}>
+      <form {...formProps}>
+        <Label>
           First & last name
           <Input {...useField('Name')} placeholder="Fiona Hackworth" required />
         </Label>
@@ -77,7 +83,7 @@ const SignupForm = () => {
         </Label>
         <Label>
           Age
-          <Input {...useField('Age')} required />
+          <Input {...useField('Age')} placeholder="15" required />
         </Label>
         <Label>
           City, State
@@ -91,7 +97,7 @@ const SignupForm = () => {
           Country
           <Input {...useField('Country')} placeholder="USA" required />
         </Label>
-        <Label sx={full}>
+        <Label>
           What is something you want to learn this summer?
           <PreviousResponse />
           <Textarea
@@ -107,13 +113,12 @@ const SignupForm = () => {
             error: 'Something went wrong',
             success: 'Submitted!'
           }}
-          sx={full}
         />
-        <Text sx={{ ...full, textAlign: 'center' }}>
-          Summer of Making will begin in {timeSince('2020-06-18', true, true)} on June
-          18th. Hope to have you hacking with us soon!
-        </Text>
-      </Grid>
+        <p>
+          (Summer of Making will begin {timeago.format('2020-06-18')} on June
+          18th. Hope to have you hacking with us soon!)
+        </p>
+      </form>
     </Card>
   )
 }
