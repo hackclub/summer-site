@@ -57,7 +57,7 @@ const SignupForm = ({ reason, time }) => {
                 variant="caption"
                 sx={{ textTransform: 'uppercase', fontSize: 1, mt: 3, mb: 1 }}
               >
-                By someone {timeSince(time)}
+                {timeSince(time)} someone submitted:
               </Text>
               <Text
                 variant="caption"
