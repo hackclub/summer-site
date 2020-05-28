@@ -20,14 +20,12 @@ import theme from '../lib/theme'
 import Nav from '../components/nav'
 import Icon from '../components/icon'
 import Stat from '../components/stat'
-import SlideUp from '../components/slide-up'
-import FadeIn from '../components/fade-in'
-import { timeSince } from '../lib/dates'
 
+import Header from '../components/header'
 import SignupForm from '../components/signup-form'
 import SamNote from '../components/sam-note.mdx'
 
-const APPLY_URL = '#apply'
+const APPLY_URL = '#register'
 
 const bounce = keyframes`
   0% {
@@ -57,10 +55,7 @@ const Contributor = ({ name, avatar }) => (
 
 const Collab = ({ img, alt }) => (
   <A
-    href={`https://${alt
-      .toLowerCase()
-      .split(' ')
-      .join('')}.com/`}
+    href={`https://${alt.toLowerCase().split(' ').join('')}.com/`}
     target="_blank"
     sx={{ display: 'block', mb: [3, 4] }}
   >
@@ -77,66 +72,7 @@ export default props => (
       image="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fsummer.jpg?v=1590594017411"
     />
     <Nav />
-    <Box
-      as="header"
-      sx={{
-        bg: 'snow',
-        py: 6,
-        px: 3,
-        minHeight: '100vh',
-        backgroundImage: [
-          'url(https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Flander-sm.jpg?v=1590592121598)',
-          'url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2Flander.jpg?v=1590473262091)'
-        ],
-        backgroundSize: 'cover',
-        backgroundPosition: ['center bottom', 'center'],
-        '@media (hover: hover)': { backgroundAttachment: 'fixed' }
-      }}
-    >
-      <SlideUp duration={750}>
-        <Card
-          variant="translucent"
-          sx={{
-            variant: 'layout.container',
-            maxWidth: [null, 680, 680],
-            borderRadius: 'extra',
-            p: [3, 4],
-            color: 'black'
-          }}
-        >
-          <Heading
-            as="h2"
-            variant="title"
-            sx={{
-              ...theme.util.gradientText('cyan', 'blue'),
-              lineHeight: 'limit',
-              pb: 2
-            }}
-          >
-            Make something amazing this summer.
-          </Heading>
-          <Text as="p" variant="lead" my={3}>
-            <strong>Hack Club Summer of Making</strong> brings 6 weeks of
-            mentorship, $50k of hardware grants, weekly get-togethers, & nonstop
-            making—culminating in an awards show.
-          </Text>
-          <Grid
-            columns={[null, 'auto 1fr']}
-            gap={3}
-            sx={{ alignItems: 'center' }}
-          >
-            <Button as="a" variant="cta" href={APPLY_URL}>
-              Pre-register
-            </Button>
-            <Text as="p" variant="caption" color="slate">
-              Signups open <strong>June 18</strong>
-              <br />
-              <strong>Ages 13–18</strong>, for students anywhere worldwide
-            </Text>
-          </Grid>
-        </Card>
-      </SlideUp>
-    </Box>
+    <Header />
     <Box
       id="hardware"
       as="section"
@@ -195,7 +131,9 @@ export default props => (
           transform: 'translateX(-50%)',
           position: 'absolute',
           zIndex: 1,
-          animation: `${bounce} 1s linear`,
+          '@media (prefers-reduced-motion: no-preference)': {
+            animation: `${bounce} 1s linear`
+          },
           transformOrigin: 'center bottom'
         }}
       >
@@ -553,7 +491,7 @@ export default props => (
       </Grid>
     </Box>
     <Box
-      id="apply"
+      id="register"
       as="header"
       sx={{
         bg: 'dark',

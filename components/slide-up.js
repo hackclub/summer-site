@@ -1,6 +1,5 @@
 import React from 'react'
 import { Box } from 'theme-ui'
-import styled from '@emotion/styled'
 import { keyframes } from '@emotion/core'
 
 const slideUp = keyframes({
@@ -8,20 +7,17 @@ const slideUp = keyframes({
   to: { transform: 'translateY(0)', opacity: 1 }
 })
 
-const Wrapper = styled(Box)`
-  @media (prefers-reduced-motion: no-preference) {
-    animation-name: ${slideUp};
-    animation-fill-mode: backwards;
-  }
-`
-
 const SlideUp = ({ duration = 300, delay = 0, ...props }) => (
-  <Wrapper
+  <Box
     {...props}
-    style={{
-      ...(props.style || {}),
-      animationDuration: duration + 'ms',
-      animationDelay: delay + 'ms'
+    sx={{
+      ...(props.sx || {}),
+      '@media (prefers-reduced-motion: no-preference)': {
+        animationName: slideUp,
+        animationFillMode: 'backwards',
+        animationDuration: duration + 'ms',
+        animationDelay: delay + 'ms'
+      }
     }}
   />
 )
