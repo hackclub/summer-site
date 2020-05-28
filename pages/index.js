@@ -82,7 +82,7 @@ export default () => (
         bg: 'snow',
         py: 6,
         px: 3,
-        minHeight: '98vh',
+        minHeight: '100vh',
         backgroundImage: [
           'url(https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Flander-sm.jpg?v=1590592121598)',
           'url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2Flander.jpg?v=1590473262091)'
@@ -244,7 +244,7 @@ export default () => (
         }}
       >
         <Stat value="50k" unit="$" label="In grants" color="white" />
-        <Stat value="3" label="Sponsors" color="white" />
+        <Stat value="3" label="Partners" color="white" />
         <Stat value="∞" label="Possibilities" color="white" />
       </Box>
     </Box>
@@ -337,7 +337,7 @@ export default () => (
           <Heading
             as="h3"
             variant="headline"
-            sx={{ mb: [3, 1], gridColumn: 'span 2' }}
+            sx={{ gridColumn: 'span 2' }}
           >
             Expectations
           </Heading>
@@ -398,7 +398,6 @@ export default () => (
         </Button>
       </Container>
     </Box>
-    
     <Box
       id="about"
       as="section"
@@ -550,9 +549,6 @@ export default () => (
             , join themed weeks, mini-hackathons, biweekly AMAs with the
             most interesting people in tech, and an end-of-summer awards show.
           </Text>
-          <Button as="a" variant="cta" href="https://hackclub.com/slack/">
-            Join now
-          </Button>
         </div>
       </Grid>
     </Box>
