@@ -24,7 +24,6 @@ import SlideUp from '../components/slide-up'
 import FadeIn from '../components/fade-in'
 
 import SignupForm from '../components/signup-form'
-import Timeline from '../components/timeline'
 import SamNote from '../components/sam-note.mdx'
 
 const APPLY_URL = '#apply'
@@ -324,12 +323,6 @@ export default () => (
             community. This will include live shows, blog posts & social media
             shares!
           </Text>
-        </div>
-        <div>
-          <Heading as="h3" variant="headline">
-            Timeline
-          </Heading>
-          <Timeline />
         </div>
         <Grid
           columns="32px 1fr"
