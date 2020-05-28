@@ -380,13 +380,13 @@ export default () => (
           Unlimited digital fun on the Hack Club Slack
         </Heading>
         <Text as="p" variant="subtitle" my={3}>
-          The Hack Club Slack is the best place on the internet to be a teenager
-          into technology.
+          We’re trying to make the Hack Club Slack the best place on the
+          internet to be a teenager into technology.
         </Text>
         <Text as="p" variant="subtitle" my={3}>
-          This summer we'll be having weekly themed weeks to get you making!
-          We've also got bi-weekly AMAs with some of most influential people in
-          tech, community-led events and a awards ceremony to conclude the
+          This summer we’ll be having themed weeks to get you making.
+          We’ve also got bi-weekly AMAs with some of most influential people in
+          tech, community-led events & an awards ceremony to conclude the
           summer.
         </Text>
         <Button
@@ -566,7 +566,7 @@ export default () => (
         '@media (hover: hover)': { backgroundAttachment: 'fixed' }
       }}
     >
-      <Container >
+      <Container>
         <Heading
           as="h1"
           variant="title"
@@ -605,7 +605,7 @@ export default () => (
     >
       <Container>
         <Heading as="h3" variant="subheadline">
-          A project by <A href="https://hackclub.com/">Hack Club</A>
+          A project by <A href="https://hackclub.com/">Hack Club</A> students
         </Heading>
         <Text as="p" variant="caption" mb={1}>
           Site by <A href="https://lachlanjc.com/">@lachlanjc</A>. Always{' '}
