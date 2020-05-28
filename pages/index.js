@@ -82,7 +82,7 @@ export default () => (
         bg: 'snow',
         py: 6,
         px: 3,
-        minHeight: '98vh',
+        minHeight: '100vh',
         backgroundImage: [
           'url(https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Flander-sm.jpg?v=1590592121598)',
           'url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2Flander.jpg?v=1590473262091)'
