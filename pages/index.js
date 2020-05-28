@@ -527,6 +527,9 @@ export default () => (
             , join themed spirit weeks, mini-hackathons, biweekly AMAs with the
             most interesting people in tech, and an end-of-summer awards show.
           </Text>
+          <Button as="a" variant="cta" href="https://hackclub.com/slack/">
+            Join now
+          </Button>
         </div>
       </Grid>
     </Box>
