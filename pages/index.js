@@ -122,7 +122,7 @@ export default () => (
           </Text>
           <Flex sx={{ alignItems: 'center' }}>
             <Button as="a" variant="cta" href={APPLY_URL} mr={3}>
-              Apply
+              Pre-register
             </Button>
             <Text as="p" variant="caption" color="slate">
               Ages 13–18
@@ -286,7 +286,7 @@ export default () => (
           goals, give advice, & connect you with resources.
         </Text>
         <Button as="a" variant="cta" href={APPLY_URL} mt={4} mb={[null, 4, 5]}>
-          Apply
+          Pre-register
         </Button>
       </Container>
     </Box>
@@ -563,7 +563,7 @@ export default () => (
               textShadow: 'text'
             }}
           >
-          Get yourself started 
+          Pre-register
         </Heading>
         <SignupForm />
       </Container>

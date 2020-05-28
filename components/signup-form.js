@@ -102,7 +102,7 @@ const SignupForm = () => {
         <Submit
           status={status}
           labels={{
-            default: 'Submit',
+            default: 'Submit Pre-Registration',
             error: 'Something went wrong',
             success: 'Submitted!'
           }}
