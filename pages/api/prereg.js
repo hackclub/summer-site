@@ -1,4 +1,5 @@
 import AirtablePlus from 'airtable-plus'
+import { pick } from 'lodash'
 
 let preregBase = new AirtablePlus({
   token: process.env.AIRTABLE_API_KEY,
@@ -12,12 +13,14 @@ export default (req, res) => {
   }
   
   let data = JSON.parse(req?.body || '{}')
-  preregBase.create({
-    'Full Name': data.name,
-    'Email': data.email,
-    'Want to learn': data.learn,
-    'High School Graduation Year': data.gradYear,
-    'Home Country (Currently Residing)': data.country
-  })
+  let whitelistedData = pick(data, [
+    'Name',
+    'Email',
+    'What do you want to learn?',
+    'Age',
+    'Country',
+    'City & State'
+  ])
+  preregBase.create(whitelistedData)
   res.json({ status: 'success' })
 }

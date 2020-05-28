@@ -67,12 +67,12 @@ const SignupForm = () => {
       <form {...formProps}>
         <Label>
           First & last name
-          <Input {...useField('name')} placeholder="Fiona Hackworth" required />
+          <Input {...useField('Name')} placeholder="Fiona Hackworth" required />
         </Label>
         <Label>
           Email address
           <Input
-            {...useField('email')}
+            {...useField('Email')}
             placeholder="fiona@hackclub.com"
             required
           />
@@ -80,14 +80,14 @@ const SignupForm = () => {
         <Label>
           Age
           <Input
-            {...useField('gradYear')}
+            {...useField('Age')}
             required
           />
         </Label>
         <Label>
           City, State
           <Input
-            {...useField('country')}
+            {...useField('City & State')}
             placeholder="Los Angeles, California"
             required
           />
@@ -95,7 +95,7 @@ const SignupForm = () => {
         <Label>
           Country
           <Input
-            {...useField('country')}
+            {...useField('Country')}
             placeholder="USA"
             required
           />
@@ -104,7 +104,7 @@ const SignupForm = () => {
           What is something you want to learn this summer?
           <PreviousResponse />
           <Textarea
-            {...useField('learn')}
+            {...useField('What do you want to learn?')}
             placeholder="Write a sentence or two."
             required
           />
