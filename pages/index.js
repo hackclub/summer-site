@@ -337,7 +337,7 @@ export default () => (
           <Heading
             as="h3"
             variant="headline"
-            sx={{ mb: '16px', gridColumn: 'span 2' }}
+            sx={{ gridColumn: 'span 2' }}
           >
             Expectations
           </Heading>
