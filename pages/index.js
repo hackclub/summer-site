@@ -23,7 +23,7 @@ import Stat from '../components/stat'
 import SlideUp from '../components/slide-up'
 // import FadeOut from '../components/fade-out'
 
-import HeaderVideo from '../components/header-video'
+import Header from '../components/header'
 import SignupForm from '../components/signup-form'
 import Timeline from '../components/timeline'
 import SamNote from '../components/sam-note.mdx'
@@ -75,55 +75,7 @@ export default () => (
       image="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fsummer.jpg?v=1590594017411"
     />
     <Nav />
-    <Box
-      as="header"
-      sx={{
-        py: 6,
-        px: 3,
-        minHeight: '100vh',
-        overflow: 'hidden',
-        position: 'relative'
-      }}
-    >
-      <HeaderVideo />
-      <SlideUp duration={750}>
-        <Card
-          variant="translucent"
-          sx={{
-            variant: 'layout.container',
-            maxWidth: [null, 680, 680],
-            borderRadius: 'extra',
-            p: [3, 4],
-            color: 'black'
-          }}
-        >
-          <Heading
-            as="h2"
-            variant="title"
-            sx={{
-              ...theme.util.gradientText('cyan', 'blue'),
-              lineHeight: 'limit',
-              pb: 2
-            }}
-          >
-            Make something amazing this summer.
-          </Heading>
-          <Text as="p" variant="lead" my={3}>
-            <strong>Hack Club Summer of Making</strong> brings 6 weeks of
-            mentorship, $50k of hardware grants, weekly get-togethers, & nonstop
-            making—culminating in an awards show.
-          </Text>
-          <Flex sx={{ alignItems: 'center' }}>
-            <Button as="a" variant="cta" href={APPLY_URL} mr={3}>
-              Pre-register
-            </Button>
-            <Text as="p" variant="caption" color="slate">
-              Ages 13–18
-            </Text>
-          </Flex>
-        </Card>
-      </SlideUp>
-    </Box>
+    <Header />
     <Box
       id="hardware"
       as="section"
