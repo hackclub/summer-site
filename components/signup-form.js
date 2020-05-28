@@ -1,5 +1,4 @@
 import { Card, Label, Input, Textarea, Text, Grid } from 'theme-ui'
-import { useState, useEffect } from 'react'
 import useForm from '../lib/use-form'
 import { timeSince } from '../lib/dates'
 import Submit from './submit'
@@ -58,7 +57,7 @@ const SignupForm = ({ reason, time }) => {
                 variant="caption"
                 sx={{ textTransform: 'uppercase', fontSize: 1, mt: 3, mb: 1 }}
               >
-                By an applicant {timeSince(time)}
+                By someone {timeSince(time)}
               </Text>
               <Text
                 variant="caption"
