@@ -20,7 +20,7 @@ const SignupForm = () => {
       })
       let data = await latestReason.json()
       setReason(data[0].fields['What do you want to learn?'])
-      setTimeSince(data[0].fields['Time since'])
+      setTimeSince(parseInt(data[0].fields['Time Since'] / 60))
     }
     fetchData()
   }, [])
@@ -70,7 +70,7 @@ const SignupForm = () => {
           />
         </Label>
         <Label>
-          What do you want to learn this summer? The last person who submitted: {reason}
+          What do you want to learn this summer? The last person who submitted: {reason}, {timeSince} minutes ago
           <Textarea
             {...useField('learn')}
             placeholder="Write a few sentences."
