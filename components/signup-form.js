@@ -37,10 +37,10 @@ const PreviousResponse = () => {
   if (status == 'success') {
     return (
       <>
-        <Text variant="caption">
+        <Text variant="caption" sx = {{paddingTop: '10px', paddingBottom: '10px'}}>
           This was written by an applicant about {timeSince}:
         </Text>
-        <Text variant="caption" color="slate">
+        <Text variant="caption" color="slate" sx = {{paddingBottom: '10px'}}>
           {reason}
         </Text>
       </>
