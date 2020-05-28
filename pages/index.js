@@ -393,7 +393,7 @@ export default () => (
            most influential people in tech, community-led events 
            and a awards ceremony to conclude the summer.
         </Text>
-        <Button as="a" variant="cta" href={APPLY_URL} mt={4} mb={[null, 4, 5]}>
+        <Button as="a" variant="cta" href="https://hackclub.com/slack" target="_blank" mt={4} mb={[null, 4, 5]}>
           Join the Slack
         </Button>
       </Container>
