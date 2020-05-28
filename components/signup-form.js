@@ -22,7 +22,6 @@ const PreviousResponse = () => {
       try {
         const results = await fetch(url, { mode: 'cors' }).then(r => r.json())
         const reason = results[0].fields
-        console.log(reason)
         setReason(reason['What do you want to learn?'])
         setTimeSince(timeSince(reason['Created at'], true, true))
         setStatus('success')
@@ -39,7 +38,7 @@ const PreviousResponse = () => {
         <Text variant="caption" sx={{ mt: 2, pb: 2 }}>
           This was written by an applicant about {timeSince}:
         </Text>
-        <Text variant="caption" color="slate" sx={{ paddingBottom: '10px' }}>
+        <Text variant="caption" color="slate" sx={{ paddingBottom: 1 }}>
           {reason}
         </Text>
       </>
@@ -108,10 +107,6 @@ const SignupForm = () => {
           }}
           sx={full}
         />
-        <Text sx={{ ...full, textAlign: 'center' }}>
-          Summer of Making will begin in {timeSince('2020-06-18', true, true)} on June
-          18th. Hope to have you hacking with us soon!
-        </Text>
       </Grid>
     </Card>
   )

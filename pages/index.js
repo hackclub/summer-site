@@ -22,6 +22,7 @@ import Icon from '../components/icon'
 import Stat from '../components/stat'
 import SlideUp from '../components/slide-up'
 import FadeIn from '../components/fade-in'
+import { timeSince } from '../lib/dates'
 
 import SignupForm from '../components/signup-form'
 import SamNote from '../components/sam-note.mdx'
@@ -384,10 +385,9 @@ export default () => (
           internet to be a teenager into technology.
         </Text>
         <Text as="p" variant="subtitle" my={3}>
-          This summer we’ll be having themed weeks to get you making.
-          We’ve also got bi-weekly AMAs with some of most influential people in
-          tech, community-led events & an awards ceremony to conclude the
-          summer.
+          This summer we’ll be having themed weeks to get you making. We’ve also
+          got bi-weekly AMAs with some of most influential people in tech,
+          community-led events & an awards ceremony to conclude the summer.
         </Text>
         <Button
           as="a"
@@ -566,7 +566,7 @@ export default () => (
         '@media (hover: hover)': { backgroundAttachment: 'fixed' }
       }}
     >
-      <Container>
+      <Container variant="narrow" sx={{ textAlign: 'center' }}>
         <Heading
           as="h1"
           variant="title"
@@ -574,7 +574,6 @@ export default () => (
             mt: 0,
             mb: 3,
             fontSize: [4, 6, 7],
-            textAlign: 'center',
             color: 'white',
             lineHeight: [0.875, 0.8],
             position: 'relative',
@@ -588,13 +587,14 @@ export default () => (
           as="h2"
           variant="subtitle"
           sx={{
-            textAlign: 'center',
             color: 'smoke',
             mb: [3, 4],
             strong: { color: 'snow' }
           }}
         >
-          Signups open & the program starts <strong>June 18</strong>.
+          Signups open & the program starts in{' '}
+          {timeSince('2020-06-18', true, true)} on <strong>June&nbsp;18th</strong>.
+          We can’t wait to start hacking with you!
         </Heading>
         <SignupForm />
       </Container>
