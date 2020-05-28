@@ -65,7 +65,7 @@ const Static = () => (
 const Header = () => {
   const hasMounted = useHasMounted()
   const prefersMotion = usePrefersMotion()
-  if (!hasMounted) return Static
+  if (!hasMounted) return <Static />
   if (prefersMotion) {
     return (
       <Box

@@ -1,6 +1,5 @@
 import {
   Box,
-  Card,
   IconButton,
   Container,
   Image,
@@ -16,10 +15,10 @@ import {
 import { keyframes } from '@emotion/core'
 import Head from 'next/head'
 import Meta from '@hackclub/meta'
-import theme from '../lib/theme'
 import Nav from '../components/nav'
 import Icon from '../components/icon'
 import Stat from '../components/stat'
+import { timeSince } from '../lib/dates'
 
 import Header from '../components/header'
 import SignupForm from '../components/signup-form'
