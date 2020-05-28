@@ -14,7 +14,8 @@ const PreviousResponse = () => {
     async function fetchData() {
       let options = {
         maxRecords: 1,
-        sort: [{field: 'Created at', direction: 'desc'}]
+        sort: [{field: 'Created at', direction: 'desc'}],
+        filterByFormula: "{Approved for display} = 1"
       }
       let endpointURL = `https://api2.hackclub.com/v0.1/Pre-register/Applications?select=${JSON.stringify(options)}`
       try {
