@@ -284,7 +284,7 @@ export default props => (
           1-on-1 weekly coaching with a professional.
         </Heading>
         <Text as="p" variant="subtitle" my={3}>
-          Mentors are engineers from GitHub, Adafruit, & Arduino, as well as
+          Our mentors are engineers from our partners as well as
           invited industry professionals.
         </Text>
         <Text as="p" variant="subtitle" my={3}>
