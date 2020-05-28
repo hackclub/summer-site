@@ -122,7 +122,7 @@ export default () => (
           </Text>
           <Flex sx={{ alignItems: 'center' }}>
             <Button as="a" variant="cta" href={APPLY_URL} mr={3}>
-              Apply
+              Pre-register
             </Button>
             <Text as="p" variant="caption" color="slate">
               Ages 13–18
