@@ -358,7 +358,7 @@ export default () => (
         bg: 'snow',
         backgroundImage: [
           'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.125)), url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2F2020-05-16_screenshot.jpeg?v=1589633885855)',
-          'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.25) 66%, rgba(0,0,0,0) 100%), url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2F2020-05-16_screenshot.jpeg?v=1589633885855)'
+          'linear-gradient(to bottom, rgba(0,0,0,0.625), rgba(0,0,0,0.375) 66%, rgba(0,0,0,0) 100%), url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2F2020-05-16_screenshot.jpeg?v=1589633885855)'
         ],
         backgroundSize: 'cover',
         backgroundPosition: 'top center'
@@ -377,7 +377,7 @@ export default () => (
           Community Slack
         </Text>
         <Heading as="h2" variant="title">
-          Unlimited digital fun on the Hack Club Slack
+          Unlimited digital fun on the Hack Club Slack.
         </Heading>
         <Text as="p" variant="subtitle" my={3}>
           We’re trying to make the Hack Club Slack the best place on the
