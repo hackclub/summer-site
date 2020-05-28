@@ -120,7 +120,11 @@ export default () => (
             mentorship, $50k of hardware grants, weekly get-togethers, & nonstop
             making—culminating in an awards show.
           </Text>
-          <Grid columns={[null, "auto 1fr"]} gap={3} sx={{ alignItems: 'center' }}>
+          <Grid
+            columns={[null, 'auto 1fr']}
+            gap={3}
+            sx={{ alignItems: 'center' }}
+          >
             <Button as="a" variant="cta" href={APPLY_URL}>
               Pre-register
             </Button>
@@ -288,7 +292,7 @@ export default () => (
           goals, give advice, & connect you with resources.
         </Text>
         <Button as="a" variant="cta" href={APPLY_URL} mt={4} mb={[null, 4, 5]}>
-          Apply
+          Pre-register
         </Button>
       </Container>
     </Box>
@@ -540,9 +544,6 @@ export default () => (
             Whether or not you join the Mentorship Program, you can apply for
             hardware grants, sponsored by GitHub, Adafruit, & Arduino.
           </Text>
-          <Text as="p" variant="caption" mt={3}>
-            Application form coming soon.
-          </Text>
         </div>
         <div>
           <Heading as="h3" variant="headline">
@@ -564,7 +565,7 @@ export default () => (
       as="header"
       sx={{
         bg: 'dark',
-        pt: [5, 6],
+        py: [4, 5],
         display: 'flex',
         flexDirection: 'column',
         backgroundPosition: 'center',
@@ -572,13 +573,13 @@ export default () => (
         '@media (hover: hover)': { backgroundAttachment: 'fixed' }
       }}
     >
-      <Container pt={[3, 4]} pb={[5, 6]}>
+      <Container >
         <Heading
           as="h1"
           variant="title"
           sx={{
             mt: 0,
-            mb: [3, 4, 5],
+            mb: 3,
             fontSize: [4, 6, 7],
             textAlign: 'center',
             color: 'white',
@@ -590,9 +591,18 @@ export default () => (
         >
           Pre-register
         </Heading>
-        <Heading as="h2" variant="subtitle" sx={{
-          textAlign: 'center',
-        }}>subtext test</Heading>
+        <Heading
+          as="h2"
+          variant="subtitle"
+          sx={{
+            textAlign: 'center',
+            color: 'smoke',
+            mb: [3, 4],
+            strong: { color: 'snow' }
+          }}
+        >
+          Signups open & the program starts <strong>June 18</strong>.
+        </Heading>
         <SignupForm />
       </Container>
     </Box>
