@@ -378,21 +378,27 @@ export default () => (
         }}
       >
         <Text as="p" variant="eyebrow" color="yellow">
-          Slack 
+          Community Slack 
         </Text>
         <Heading as="h2" variant="title">
-          1-on-1 weekly coaching with a professional.
+          Unlimited digital fun on the Hack Club Slack
         </Heading>
         <Text as="p" variant="subtitle" my={3}>
-          Mentors are engineers from GitHub, Adafruit, & Arduino, as well as
-          invited industry professionals.
+          The Hack Club Slack is the best place on the internet 
+          to be a teenager into technology. 
         </Text>
         <Text as="p" variant="subtitle" my={3}>
-          Every week, you’ll hop on a Zoom call with your mentor. They’ll set
-          goals, give advice, & connect you with resources.
+          This summer we'll be having weekly themed weeks to get 
+          you making! From "Lift Off" to "Big Things", we've got 
+          some exciting themes lined up for you.
+        </Text>
+        <Text as="p" variant="subtitle" my={3}>
+          That's not all. We've got bi-weekly AMAs with some of
+           most influential people in tech,  mini-hackathons, 
+           community-led events and a awards ceremony to conclude the summer.
         </Text>
         <Button as="a" variant="cta" href={APPLY_URL} mt={4} mb={[null, 4, 5]}>
-          Pre-register
+          Join the Slack
         </Button>
       </Container>
     </Box>
