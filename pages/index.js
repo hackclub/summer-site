@@ -389,13 +389,9 @@ export default () => (
         </Text>
         <Text as="p" variant="subtitle" my={3}>
           This summer we'll be having weekly themed weeks to get 
-          you making! From "Lift Off" to "Big Things", we've got 
-          some exciting themes lined up for you.
-        </Text>
-        <Text as="p" variant="subtitle" my={3}>
-          That's not all. We've got bi-weekly AMAs with some of
-           most influential people in tech,  mini-hackathons, 
-           community-led events and a awards ceremony to conclude the summer.
+          you making! We've also got bi-weekly AMAs with some of
+           most influential people in tech, community-led events 
+           and a awards ceremony to conclude the summer.
         </Text>
         <Button as="a" variant="cta" href={APPLY_URL} mt={4} mb={[null, 4, 5]}>
           Join the Slack
@@ -571,7 +567,7 @@ export default () => (
             <A href="https://hackclub.com/slack/" color="red">
               Hack Club Slack
             </A>
-            , join themed spirit weeks, mini-hackathons, biweekly AMAs with the
+            , join themed weeks, mini-hackathons, biweekly AMAs with the
             most interesting people in tech, and an end-of-summer awards show.
           </Text>
           <Button as="a" variant="cta" href="https://hackclub.com/slack/">
