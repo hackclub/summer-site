@@ -3,7 +3,7 @@ import useForm from '../lib/use-form'
 import Submit from './submit'
 
 const SignupForm = () => {
-  const { status, formProps, useField } = useForm('/api/join')
+  const { status, formProps, useField } = useForm('/api/prereg')
 
   return (
     <Card
@@ -34,9 +34,25 @@ const SignupForm = () => {
           />
         </Label>
         <Label>
+          High School Graduation Year
+          <Input
+            {...useField('gradYear')}
+            placeholder="2021"
+            required
+          />
+        </Label>
+        <Label>
+          Country
+          <Input
+            {...useField('country')}
+            placeholder="United States"
+            required
+          />
+        </Label>
+        <Label>
           What do you want to learn this summer?
           <Textarea
-            {...useField('reason')}
+            {...useField('learn')}
             placeholder="Write a few sentences."
             required
           />
