@@ -14,7 +14,7 @@ const Timeline = styled(Flex)`
     margin-left: 6px;
     position: absolute;
     z-index: 0;
-    backgroundImage: linear-gradient(
+    backgroundimage: linear-gradient(
       to bottom,
       ${theme.colors.blue} 0%,
       ${theme.colors.cyan} 15%,

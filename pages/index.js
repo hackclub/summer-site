@@ -21,9 +21,9 @@ import Nav from '../components/nav'
 import Icon from '../components/icon'
 import Stat from '../components/stat'
 import SlideUp from '../components/slide-up'
-import FadeIn from '../components/fade-in'
-import FadeOut from '../components/fade-out'
+// import FadeOut from '../components/fade-out'
 
+import HeaderVideo from '../components/header-video'
 import Timeline from '../components/timeline'
 import SamNote from '../components/sam-note.mdx'
 
@@ -84,38 +84,7 @@ export default () => (
         position: 'relative'
       }}
     >
-      <FadeIn
-        as="video"
-        autoPlay
-        muted
-        loop
-        playsInline
-        poster="slack-poster.png"
-        duration={2000}
-        sx={{
-          position: 'absolute',
-          bottom: 0,
-          top: 0,
-          left: 0,
-          right: 0,
-          zIndex: -1
-        }}
-      >
-        <source src="https://hackclub.github.io/summer-slack-video/slack.mp4" type="video/mp4" />
-      </FadeIn>
-      <FadeOut
-        duration={8}
-        sx={{
-          opacity: 0,
-          position: 'absolute',
-          bottom: 0,
-          top: 0,
-          left: 0,
-          right: 0,
-          backgroundImage: theme.util.gradient('yellow', 'orange'),
-          zIndex: -1
-        }}
-      />
+      <HeaderVideo />
       <SlideUp duration={750}>
         <Card
           variant="translucent"
