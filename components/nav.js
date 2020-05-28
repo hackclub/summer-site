@@ -37,8 +37,8 @@ export default () => {
           <NavLink to="Mentorship" />
           {/* <NavLink to="Slack" /> */}
           <NavLink to="About" />
-          <Button as="a" href="https://hack.af/som-apply" bg="orange">
-            Pre-register
+          <Button as="a" href="#apply" bg="orange">
+            Apply
           </Button>
         </Flex>
       </Container>
