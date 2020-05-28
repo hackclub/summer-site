@@ -12,6 +12,8 @@ export default async (req, res) => {
     return res.status(405).json({ error: 'Method not allowed, use POST' })
   }
 
+  console.log('Submission:', req.body)
+
   let whitelistedData = pick(req.body, [
     'Name',
     'Email',
