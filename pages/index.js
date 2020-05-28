@@ -400,26 +400,6 @@ export default () => (
     </Box>
     
     <Box
-      id="slack"
-      as="section"
-      sx={{
-        bg: 'red',
-        backgroundImage: t => t.util.gradient('orange', 'red'),
-        color: 'white',
-        py: [4, 5]
-      }}
-    >
-      <Container>
-        <Text as="p" variant="eyebrow" color="white">
-          On the Slack
-        </Text>
-        <Heading as="h2" variant="title">
-          Awards show
-        </Heading>
-      </Container>
-    </Box>
-    
-    <Box
       id="about"
       as="section"
       sx={{
