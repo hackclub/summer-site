@@ -117,11 +117,11 @@ const Header = () => {
             top: 0,
             left: 0,
             right: 0,
-            backgroundImage: t => t.util.gradient('yellow', 'orange'),
+            backgroundImage: t => t.util.gradient('cyan', 'blue'),
             zIndex: -1
           }}
           start={1}
-          end={0.75}
+          end={0.85}
         />
         <SlideUp duration={750}>
           <Sheet />
