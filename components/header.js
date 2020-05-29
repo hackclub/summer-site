@@ -112,7 +112,6 @@ const Header = () => {
         <FadeOut
           duration={8000}
           sx={{
-            opacity: 0,
             position: 'absolute',
             bottom: 0,
             top: 0,
@@ -121,6 +120,8 @@ const Header = () => {
             backgroundImage: t => t.util.gradient('yellow', 'orange'),
             zIndex: -1
           }}
+          start={1}
+          end={0.75}
         />
         <SlideUp duration={750}>
           <Sheet />
