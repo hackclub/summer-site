@@ -75,7 +75,10 @@ const Header = () => {
           px: 3,
           minHeight: '100vh',
           overflow: 'hidden',
-          position: 'relative'
+          position: 'relative',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
         }}
       >
         <Box
