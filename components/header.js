@@ -97,15 +97,15 @@ const Header = () => {
           }}
         >
           <source
-            src="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fslack.hevc.mp4?v=1590694006597"
+            src="https://cdn.glitch.com/2d637c98-ed35-417a-bf89-cecc165d7398%2Foutput-no-duplicate-frames.hecv.mp4?v=1590780967658"
             type="video/mp4; codecs=hevc"
           />
           <source
-            src="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fslack.webm?v=1590694212094"
+            src="https://cdn.glitch.com/2d637c98-ed35-417a-bf89-cecc165d7398%2Foutput-no-duplicate-frames.webm?v=1590781698834"
             type="video/webm; codecs=vp9,opus"
           />
           <source
-            src="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fslack.mov?v=1590694211489"
+            src="https://cdn.glitch.com/2d637c98-ed35-417a-bf89-cecc165d7398%2Foutput-no-duplicate-frames.mov?v=1590781491717"
             type="video/quicktime"
           />
         </Box>
