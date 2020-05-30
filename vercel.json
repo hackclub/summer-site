@@ -6,5 +6,8 @@
       "source": "/api/prereg",
       "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
     }
+  ],
+  "rewrites": [
+    { "source": "/countdown", "destination": "/countdown.html" }
   ]
 }
