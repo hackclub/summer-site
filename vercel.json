@@ -8,6 +8,6 @@
     }
   ],
   "redirects": [
-    { "source": "/countdown", "destination": "/countdown.html" },
+    { "source": "/countdown", "destination": "/countdown.html" }
   ]
 }
