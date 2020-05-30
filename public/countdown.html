@@ -1,10 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <style>
+      body {
+        margin: 0px;
+        font-family: Phantom Sans;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        height: 100vh;
+      }
+      .grid-item {
+        background-color: black;
+        font-size: 30px;
+        height: 100vh;
+      }
 
+      #rocket {
+        left: 12.5%;
+        position: absolute;
+        height: 20vh;
+        margin: 0px;
+      }
 
+      #moon {
+        left: 12.5%;
+        position: absolute;
+        height: 10vh;
+        margin-top: 5vh;
+      }
+      @font-face {
+        font-family: "Phantom Sans";
+        src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff")
+            format("woff"),
+          url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2")
+            format("woff2");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Phantom Sans";
+        src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff")
+            format("woff"),
+          url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2")
+            format("woff2");
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Phantom Sans";
+        src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff")
+            format("woff"),
+          url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2")
+            format("woff2");
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+      }
+      .css-1rkl5kp {
+        box-sizing: border-box;
+        margin: 0;
+        min-width: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        display: inline-block;
+        text-align: center;
+        line-height: inherit;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+        font-size: inherit;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        color: var(--theme-ui-colors-white, #ffffff);
+        background-color: var(--theme-ui-colors-primary, #ec3750);
+        border: 0;
+        border-radius: 4px;
+        background-color: var(--theme-ui-colors-primary, #ec3750);
+        color: var(--theme-ui-colors-background, #ffffff);
+        cursor: pointer;
+        font-family: inherit;
+        font-weight: 700;
+        border-radius: 8px;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-right: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <! –– 4.2857142857 ––>
 
-sampoder-summer-rocket-countdown
-
-Show
-index.html
+    <div class="grid-container">
+      <div
+        class="grid-item"
+        style="background-image: url('https://cutewallpaper.org/21/starry-night-backgrounds/Starry-Night-Backgrounds-30-+-Background-Pictures-.png');"
+      >
+        <img
+          id="moon"
           src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/full-moon-symbol_1f315.png"
         />
         <img
@@ -37,7 +145,7 @@ index.html
         </div>
       </div>
     </div>
-​
+
     <script>
       var d1 = new Date(); //"now"
       var d2 = new Date("2020/06/18"); // some date
@@ -53,4 +161,3 @@ index.html
     </script>
   </body>
 </html>
-​
