@@ -75,7 +75,10 @@ const Header = () => {
           px: 3,
           minHeight: '100vh',
           overflow: 'hidden',
-          position: 'relative'
+          position: 'relative',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
         }}
       >
         <Box
@@ -112,15 +115,16 @@ const Header = () => {
         <FadeOut
           duration={8000}
           sx={{
-            opacity: 0,
             position: 'absolute',
             bottom: 0,
             top: 0,
             left: 0,
             right: 0,
-            backgroundImage: t => t.util.gradient('yellow', 'orange'),
+            backgroundImage: t => t.util.gradient('cyan', 'blue'),
             zIndex: -1
           }}
+          start={1}
+          end={0.85}
         />
         <SlideUp duration={750}>
           <Sheet />
