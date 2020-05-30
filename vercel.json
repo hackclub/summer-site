@@ -6,7 +6,7 @@
       "source": "/api/prereg",
       "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
     }
-  ]
+  ],
   "redirects": [
     { "source": "/countdown", "destination": "/countdown.html" },
   ]
