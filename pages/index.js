@@ -497,6 +497,7 @@ export default props => (
         py: [4, 5],
         display: 'flex',
         flexDirection: 'column',
+	backgroundImage: 'url("/register-bg.svg")'
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         '@media (hover: hover)': { backgroundAttachment: 'fixed' }
