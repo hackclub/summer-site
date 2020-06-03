@@ -99,6 +99,7 @@ const stacks = [
   'React.js',
   'a CLI',
   'Redwood.js',
+  'Markdown',
   'Rust',
   'Go',
   'JavaScript',
