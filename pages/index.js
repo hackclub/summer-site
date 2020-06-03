@@ -551,6 +551,10 @@ export default props => (
           from{' '}
           <A href="https://photos.app.goo.gl/F5JDxq5FzfhofTMD9">
             Flagship 2019
+          </A>. Additional graphics
+          from{' '}
+          <A href="https://github.com/fritzing/fritzing-parts">
+            Fritzing
           </A>
           .
         </Text>
