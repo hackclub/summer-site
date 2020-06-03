@@ -130,15 +130,12 @@ export default () => {
 
   const makeText = () =>
     `${platforms[indices[0]]} that ${verbs[indices[1]]} ${
-    subjects[indices[2]]
+      subjects[indices[2]]
     } using ${stacks[indices[3]]}`
   const [text, setText] = useState('')
-  useEffect(
-    () => {
-      setText(makeText())
-    },
-    [indices]
-  )
+  useEffect(() => {
+    setText(makeText())
+  }, [indices])
 
   return (
     <>
@@ -151,18 +148,22 @@ export default () => {
           <Flag />
           <Flex as="nav" sx={{ ml: 'auto', py: 2, alignItems: 'center' }}>
             <Link href="/" passHref>
-              <A sx={{
-                fontSize: 1,
-                textDecoration: 'none',
-                mr: [3, 4],
-                color: 'black',
-                transition: '.125s color ease-in-out',
-                ':hover,:focus': { color: 'orange' }
-              }}>Summer of Making</A>
+              <A
+                sx={{
+                  fontSize: 1,
+                  textDecoration: 'none',
+                  mr: [3, 4],
+                  color: 'black',
+                  transition: '.125s color ease-in-out',
+                  ':hover,:focus': { color: 'orange' }
+                }}
+              >
+                Summer of Making
+              </A>
             </Link>
             <Button as="a" href="https://hack.af/som-apply" bg="orange">
               Apply
-          </Button>
+            </Button>
           </Flex>
         </Container>
       </Box>
@@ -200,23 +201,20 @@ export default () => {
               flexWrap: 'wrap',
               button: {
                 color: 'rgb(24, 218, 255)',
-                borderRadius: 'circle',
+                backgroundImage: 'none',
+                bg: 'white',
                 fontSize: 3,
                 textTransform: 'uppercase',
                 py: 3,
                 px: 4,
-                m: 2,
-                ':after': {
-                  backgroundImage: 'none',
-                  bg: 'white'
-                }
+                m: 2
               }
             }}
           >
             <Button onClick={() => setIndices(randomize())}>
               <Icon glyph="bolt" size={32} />
-            Regenerate
-          </Button>
+              Regenerate
+            </Button>
             <Button
               onClick={() =>
                 navigator.share({
@@ -226,8 +224,8 @@ export default () => {
               }
             >
               <Icon glyph="share" size={32} />
-            Share
-          </Button>
+              Share
+            </Button>
           </Flex>
         </Container>
       </Flex>
