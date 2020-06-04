@@ -208,7 +208,10 @@ export default () => {
                 textTransform: 'uppercase',
                 py: 3,
                 px: 4,
-                m: 2
+                m: 2,
+                display: 'inline-flex',
+                alignItems: 'center',
+                svg: { ml: -2, mr: 2 }
               }
             }}
           >
@@ -217,12 +220,15 @@ export default () => {
               Regenerate
             </Button>
             <Button
-              onClick={() =>
-                navigator.share({
-                  text,
-                  url: 'https://summer.hackclub.com/ideas'
-                })
-              }
+              onClick={() => {
+                try {
+                  navigator.share({
+                    title: 'Summer of Making Ideas',
+                    text,
+                    url: 'https://summer.hackclub.com/ideas'
+                  })
+                } catch (e) {}
+              }}
             >
               <Icon glyph="share" size={32} />
               Share
