@@ -225,10 +225,10 @@ export default props => (
           invited industry professionals.
         </Text>
         <Text as="p" variant="subtitle" my={3}>
-          Throughout the summer, you’ll be able to hop on Zoom calls with our exciting mentors. 
-	  They’ll provide career advice, talk with you about your projects and discuss whatever you'd like.
+          Throughout the summer, you’ll be able to hop on Zoom calls with our mentors.
+	  They’ll provide career advice, talk with you about your projects and discuss whatever you’d like.
         </Text>
-        <Button as="a" variant="cta" href={APPLY_URL} mt={4} mb={[null, 4, 5]}>
+        <Button as="a" variant="cta" href={APPLY_URL} mt={3} mb={[null, 4, 5]}>
           Pre-register
         </Button>
       </Container>
