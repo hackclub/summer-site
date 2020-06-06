@@ -67,7 +67,7 @@ export default props => (
     <Meta
       as={Head}
       title="Summer of Making"
-      description="Join Hack Club’s Summer of Making: 6 weeks of professional mentorship, $50k in GitHub hardware grants, & an unparalleled online community. Starting June 18, ages 13–18."
+      description="Join Hack Club’s Summer of Making: professional mentorship, $50k in GitHub hardware grants, & an unparalleled online community. Starting June 18, ages 13–18."
       image="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fsummer.jpg?v=1590594017411"
     />
     <Nav />
