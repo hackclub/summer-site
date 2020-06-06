@@ -218,15 +218,15 @@ export default props => (
           Mentorship program
         </Text>
         <Heading as="h2" variant="title">
-          1-on-1 weekly coaching with a professional.
+          1-on-1 coaching with a professional.
         </Heading>
         <Text as="p" variant="subtitle" my={3}>
           Our mentors are engineers from our partners as well as
           invited industry professionals.
         </Text>
         <Text as="p" variant="subtitle" my={3}>
-          Every week, you’ll hop on a Zoom call with your mentor. They’ll set
-          goals, give advice, & connect you with resources.
+          Throughout the summer, you’ll be able to hop on Zoom calls with our exciting mentors. 
+	  They’ll provide career advice, talk with you about your projects and discuss whatever you'd like.
         </Text>
         <Button as="a" variant="cta" href={APPLY_URL} mt={4} mb={[null, 4, 5]}>
           Pre-register
@@ -245,7 +245,7 @@ export default props => (
             Weekly community get-togethers
           </Heading>
           <Text variant="subtitle">
-            In addition to your mentor, you’ll join a weekly call with fellow
+            In addition to mentoring opportunities, you’ll join a weekly call with fellow
             Summer Makers in your area (web dev, games, hardware, etc). You’ll
             show off what you’re making, get help, make friends, & stay
             motivated.
