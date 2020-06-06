@@ -28,7 +28,7 @@ const Sheet = () => (
       Make something amazing this summer.
     </Heading>
     <Text as="p" variant="lead" my={3}>
-      <strong>Hack Club Summer of Making</strong> brings 6 weeks of mentorship,
+      <strong>Hack Club Summer of Making</strong> brings professional mentorship,
       $50k of hardware grants, weekly get-togethers, & nonstop
       making—culminating in an awards show.
     </Text>
