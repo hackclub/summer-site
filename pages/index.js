@@ -192,6 +192,7 @@ export default props => (
         <Stat value="∞" label="Possibilities" color="white" />
       </Box>
     </Box>
+    {/*
     <Box
       id="mentorship"
       as="section"
@@ -233,6 +234,7 @@ export default props => (
         </Button>
       </Container>
     </Box>
+    */}
     <Box as="section" bg="white" color="black" py={[4, 5]}>
       <Grid
         gap={4}
@@ -245,10 +247,10 @@ export default props => (
             Weekly community get-togethers
           </Heading>
           <Text variant="subtitle">
-            In addition to mentoring opportunities, you’ll join a weekly call with fellow
-            Summer Makers in your area (web dev, games, hardware, etc). You’ll
-            show off what you’re making, get help, make friends, & stay
-            motivated.
+            In addition to mentoring opportunities, you’ll join a weekly call
+            with fellow Summer Makers in your area (web dev, games, hardware,
+            etc). You’ll show off what you’re making, get help, make friends, &
+            stay motivated.
           </Text>
         </div>
         <div>
@@ -493,11 +495,11 @@ export default props => (
       id="register"
       as="header"
       sx={{
-        bg: 'dark',
+        bg: 'darkless',
         py: [4, 5],
         display: 'flex',
         flexDirection: 'column',
-	backgroundImage: 'url("/register-bg.svg")',
+        backgroundImage: 'url("/register-bg.svg")',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         '@media (hover: hover)': { backgroundAttachment: 'fixed' }
@@ -551,12 +553,9 @@ export default props => (
           from{' '}
           <A href="https://photos.app.goo.gl/F5JDxq5FzfhofTMD9">
             Flagship 2019
-          </A>. Additional graphics
-          from{' '}
-          <A href="https://github.com/fritzing/fritzing-parts">
-            Fritzing
           </A>
-          .
+          . Additional graphics from{' '}
+          <A href="https://github.com/fritzing/fritzing-parts">Fritzing</A>.
         </Text>
         <Text as="p" variant="caption">
           Program follows the{' '}
