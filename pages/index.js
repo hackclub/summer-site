@@ -192,7 +192,6 @@ export default props => (
         <Stat value="∞" label="Possibilities" color="white" />
       </Box>
     </Box>
-    {/*
     <Box
       id="mentorship"
       as="section"
