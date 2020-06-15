@@ -221,8 +221,8 @@ export default props => (
           Make your dream a reality
         </Heading>
         <Text as="p" variant="subtitle" my={3}>
-          The marathon making program is built around supporting 
-	  you every step of the way as you make a large project.
+          The marathon making program is built around supporting
+	  you every step of the way as you build a large project.
         </Text>
         <Text as="p" variant="subtitle" my={3}>
           You will have a community behind you, mentors to support you 
@@ -245,7 +245,7 @@ export default props => (
             Mentorship program
           </Heading>
           <Text variant="subtitle">
-            Once you make significant progress with your project, you’ll be paired 
+            Once you've made significant progress with your project, you’ll be paired 
 	    with a mentor who will provide career advice, talk with 
             you about your projects and discuss whatever you’d like.
           </Text>
