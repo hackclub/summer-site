@@ -216,14 +216,14 @@ export default props => (
         }}
       >
         <Text as="p" variant="eyebrow" color="yellow">
-          Mentorship program
+          Marathon program
         </Text>
         <Heading as="h2" variant="title">
-          1-on-1 coaching with a professional.
+          Make your dream a reality
         </Heading>
         <Text as="p" variant="subtitle" my={3}>
-          Our mentors are engineers from our partners as well as
-          invited industry professionals.
+          The marathon making program is built around supporting 
+	  you every step of the way as you make a large project.
         </Text>
         <Text as="p" variant="subtitle" my={3}>
           Throughout the summer, you’ll be able to hop on Zoom calls with our mentors.
@@ -234,7 +234,6 @@ export default props => (
         </Button>
       </Container>
     </Box>
-    */}
     <Box as="section" bg="white" color="black" py={[4, 5]}>
       <Grid
         gap={4}
