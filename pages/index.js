@@ -225,8 +225,8 @@ export default props => (
 	  you every step of the way as you make a large project.
         </Text>
         <Text as="p" variant="subtitle" my={3}>
-          Throughout the summer, you’ll be able to hop on Zoom calls with our mentors.
-	  They’ll provide career advice, talk with you about your projects and discuss whatever you’d like.
+          You will have a community behind you, mentors to support you 
+	  and all our partners are excited to share your work.
         </Text>
         <Button as="a" variant="cta" href={APPLY_URL} mt={3} mb={[null, 4, 5]}>
           Pre-register
@@ -240,6 +240,16 @@ export default props => (
         variant="layout.container"
         sx={{ h3: { mt: 0 } }}
       >
+	<div>
+          <Heading as="h3" variant="headline">
+            Mentorship program
+          </Heading>
+          <Text variant="subtitle">
+            Once you make significant progress with your project, you’ll be paired 
+	    with a mentor who will provide career advice, talk with 
+            you about your projects and discuss whatever you’d like.
+          </Text>
+        </div>
         <div>
           <Heading as="h3" variant="headline">
             Weekly community get-togethers
