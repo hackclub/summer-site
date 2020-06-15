@@ -285,7 +285,7 @@ export default props => (
             Expectations
           </Heading>
           <Icon glyph="member-add" size={32} />
-          <Text as="p">You’ll be joining a group of 150-300 students.</Text>
+          <Text as="p">You’ll be joining a group of 100 students.</Text>
           <Icon glyph="clock" size={32} />
           <Text as="p">
             You should plan to spend 10+ hours/week on your project.
