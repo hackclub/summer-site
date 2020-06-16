@@ -34,6 +34,7 @@ const Stat = ({
         sx={{
           color,
           fontSize: lg ? [5, 6, 7] : [4, 5, 6],
+          fontFamily: 'display',
           fontWeight: 'heading',
           letterSpacing: 'title',
           my: 0

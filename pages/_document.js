@@ -21,8 +21,20 @@ export default class extends Document {
     return (
       <Html lang="en">
         <Head>
-          <style dangerouslySetInnerHTML={{ __html: `html { scroll-behavior: smooth; }` }} />
-          <script src="https://embed.small.chat/T014PJR5A8ZG0149JRMDGD.js" async />
+          <style
+            dangerouslySetInnerHTML={{
+              __html: `html { scroll-behavior: smooth; }`
+            }}
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700&family=Shrikhand&display=swap"
+            rel="stylesheet"
+          />
+          <meta name="format-detection" content="telephone=no" />
+          <script
+            src="https://embed.small.chat/T014PJR5A8ZG0149JRMDGD.js"
+            async
+          />
         </Head>
         <body>
           <Main />

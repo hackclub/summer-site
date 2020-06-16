@@ -312,7 +312,7 @@ export default props => (
           color: 'white'
         }}
       >
-        <Text as="p" variant="eyebrow" color="green">
+        <Text as="p" variant="eyebrow" color="cyan">
           Community Slack
         </Text>
         <Heading as="h2" variant="title">
@@ -334,7 +334,7 @@ export default props => (
           target="_blank"
           mt={4}
           mb={[null, 4, 5]}
-          sx={{ backgroundImage: t => t.util.gradient('green', 'cyan') }}
+          sx={{ bg: 'cyan' }}
         >
           Join the Slack
         </Button>
@@ -533,8 +533,8 @@ export default props => (
         >
           Signups open & the program starts in{' '}
           {timeSince('2020-06-18', true, true)} on{' '}
-          <strong>June&nbsp;18th</strong>. We can’t wait to start hacking with
-          you!
+          <strong>June&nbsp;18th</strong>. We&nbsp;can’t wait to start hacking
+          with you!
         </Heading>
         <SignupForm {...props} />
       </Container>
