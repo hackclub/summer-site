@@ -128,6 +128,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
               backgroundPosition: 'top center',
               padding: '50px!important',
               backgroundSize: 'cover',
+              height: '300px',
               p: { color: 'smoke', fontSize: 2, mt: 1, lineHeight: 'caption' }
             }}
           >
@@ -137,7 +138,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           <Card
             as="aside"
             sx={{
-              
+              height: '300px',
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
@@ -153,7 +154,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           <Card
             as="aside"
             sx={{
-              
+              height: '300px',
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
@@ -169,7 +170,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           <Card
             as="aside"
             sx={{
-              
+              height: '300px',
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
@@ -185,7 +186,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           <Card
             as="aside"
             sx={{
-              
+              height: '300px',
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
