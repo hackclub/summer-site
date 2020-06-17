@@ -14,7 +14,7 @@ import {
   Link as A
 } from 'theme-ui'
 
-const Scrapbook = ({ image, image1, image2 }) => {
+const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, image7, image8 }) => {
 
   return (
     <Box
@@ -120,7 +120,7 @@ const Scrapbook = ({ image, image1, image2 }) => {
           <Card
             as="aside"
             sx={{
-              gridRow: [null, 'span 1'],
+              gridRow: [null, 'span 2'],
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
@@ -132,49 +132,86 @@ const Scrapbook = ({ image, image1, image2 }) => {
           >
           </Card>
           )}
-          <Card bg="orange">
-            <h3>#support</h3>
-          </Card>
-          <Card bg="blue">
-            <h3>#code</h3>
-          </Card>
+          {image3 && (
           <Card
-            bg="red"
+            as="aside"
             sx={{
-              backgroundImage: ({ colors }) =>
-                `linear-gradient(${colors.red} 0%, ${colors.red} 16.6666%, ${colors.orange} 16.6666%, ${colors.orange} 33.333%, ${colors.yellow} 33.333%, ${colors.yellow} 50%, ${colors.green} 50%, ${colors.green} 66.6666%, ${colors.blue} 66.6666%, ${colors.blue} 83.3333%, #8067C3 83.3333%, #8067C3 100%)`
-            }}
-          >
-            <h3>#lgbtq</h3>
-          </Card>
-          <Card bg="dark">
-            <h3>#gamedev</h3>
-          </Card>
-          <Card bg="red">
-            <h3>#design</h3>
-          </Card>
-          <Card bg="green">
-            <h3>
-              #photo-
-              <br />
-              graphy
-            </h3>
-          </Card>
-          <Card
-            bg="yellow"
-            sx={{
+              gridRow: [null, 'span 2'],
+              gridColumn: ['span 1', 'span 3'],
+              bg: 'dark',
               backgroundImage:
-                'url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2FImage%20from%20iOS%202.jpg?v=1587695033603)',
-              backgroundSize: '100%',
-              backgroundPosition: 'center',
-              textShadow: 'text'
+                `url(${image3})`,
+              backgroundPosition: 'top center',
+              backgroundSize: 'cover',
+              p: { color: 'smoke', fontSize: 2, mt: 1, lineHeight: 'caption' }
             }}
           >
-            <h3>#dogs</h3>
           </Card>
-          <Card bg="green">
-            <h3>#music</h3>
+          )}
+          {image4 && (
+          <Card
+            as="aside"
+            sx={{
+              gridRow: [null, 'span 2'],
+              gridColumn: ['span 1', 'span 3'],
+              bg: 'dark',
+              backgroundImage:
+                `url(${image4})`,
+              backgroundPosition: 'top center',
+              backgroundSize: 'cover',
+              p: { color: 'smoke', fontSize: 2, mt: 1, lineHeight: 'caption' }
+            }}
+          >
           </Card>
+          )}
+          {image5 && (
+          <Card
+            as="aside"
+            sx={{
+              gridRow: [null, 'span 2'],
+              gridColumn: ['span 1', 'span 3'],
+              bg: 'dark',
+              backgroundImage:
+                `url(${image5})`,
+              backgroundPosition: 'top center',
+              backgroundSize: 'cover',
+              p: { color: 'smoke', fontSize: 2, mt: 1, lineHeight: 'caption' }
+            }}
+          >
+          </Card>
+          )}
+          {image6 && (
+          <Card
+            as="aside"
+            sx={{
+              gridRow: [null, 'span 2'],
+              gridColumn: ['span 1', 'span 3'],
+              bg: 'dark',
+              backgroundImage:
+                `url(${image6})`,
+              backgroundPosition: 'top center',
+              backgroundSize: 'cover',
+              p: { color: 'smoke', fontSize: 2, mt: 1, lineHeight: 'caption' }
+            }}
+          >
+          </Card>
+          )}
+          {image7 && (
+          <Card
+            as="aside"
+            sx={{
+              gridRow: [null, 'span 2'],
+              gridColumn: ['span 1', 'span 3'],
+              bg: 'dark',
+              backgroundImage:
+                `url(${image7})`,
+              backgroundPosition: 'top center',
+              backgroundSize: 'cover',
+              p: { color: 'smoke', fontSize: 2, mt: 1, lineHeight: 'caption' }
+            }}
+          >
+          </Card>
+          )}
         </Grid>
       </Container>
     </Box>
