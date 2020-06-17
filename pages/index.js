@@ -18,10 +18,8 @@ import Meta from '@hackclub/meta'
 import Nav from '../components/nav'
 import Icon from '../components/icon'
 import Stat from '../components/stat'
-import { timeSince } from '../lib/dates'
 
 import Header from '../components/header'
-import SignupForm from '../components/signup-form'
 import SamNote from '../components/sam-note.mdx'
 
 const APPLY_URL = '#register'
@@ -491,54 +489,7 @@ export default props => (
         </div>
       </Grid>
     </Box>
-    <Box
-      id="register"
-      as="header"
-      sx={{
-        bg: 'darkless',
-        py: [4, 5],
-        display: 'flex',
-        flexDirection: 'column',
-        backgroundImage: 'url("/register-bg.svg")',
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        '@media (hover: hover)': { backgroundAttachment: 'fixed' }
-      }}
-    >
-      <Container variant="narrow" sx={{ textAlign: 'center' }}>
-        <Heading
-          as="h1"
-          variant="title"
-          sx={{
-            mt: 0,
-            mb: 3,
-            fontSize: [4, 6, 7],
-            color: 'white',
-            lineHeight: [0.875, 0.8],
-            position: 'relative',
-            zIndex: 1,
-            textShadow: 'text'
-          }}
-        >
-          Pre-register
-        </Heading>
-        <Heading
-          as="h2"
-          variant="subtitle"
-          sx={{
-            color: 'smoke',
-            mb: [3, 4],
-            strong: { color: 'snow' }
-          }}
-        >
-          Signups open & the program starts in{' '}
-          {timeSince('2020-06-18', true, true)} on{' '}
-          <strong>June&nbsp;18th</strong>. We&nbsp;can’t wait to start hacking
-          with you!
-        </Heading>
-        <SignupForm {...props} />
-      </Container>
-    </Box>
+
     <Box
       as="footer"
       sx={{ bg: 'smoke', color: 'black', py: [4, 5], a: { color: 'orange' } }}
@@ -558,7 +509,7 @@ export default props => (
           <A href="https://github.com/fritzing/fritzing-parts">Fritzing</A>.
         </Text>
         <Text as="p" variant="caption">
-          Program follows the{' '}
+          Following the{' '}
           <A href="https://hackclub.com/conduct/">Hack Club Code of Conduct</A>.
         </Text>
         <Text
@@ -572,27 +523,3 @@ export default props => (
     </Box>
   </>
 )
-
-export const getStaticProps = async () => {
-  const props = {}
-
-  let options = {
-    maxRecords: 1,
-    sort: [{ field: 'Created at', direction: 'desc' }],
-    filterByFormula: '{Approved for display} = 1'
-  }
-  let endpointURL = `https://api2.hackclub.com/v0.1/Pre-register/Applications?select=${JSON.stringify(
-    options
-  )}`
-
-  try {
-    let results = await fetch(endpointURL, { mode: 'cors' }).then(r => r.json())
-    let reason = results[0].fields
-    props.reason = reason['What do you want to learn?']
-    props.time = reason['Created at']
-    props.status = 'success'
-  } catch (e) {
-    props.status = 'error'
-  }
-  return { props, unstable_revalidate: 1 }
-}
