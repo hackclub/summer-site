@@ -106,7 +106,7 @@ const Scrapbook = ({ image }) => {
               gridColumn: ['span 2', 'span 6'],
               bg: 'dark',
               backgroundImage:
-                `url({image})`,
+                `url(${image})`,
               backgroundPosition: 'top center',
               backgroundSize: 'cover',
               p: { color: 'smoke', fontSize: 2, mt: 1, lineHeight: 'caption' }

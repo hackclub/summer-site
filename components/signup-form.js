@@ -5,7 +5,7 @@ import Submit from './submit'
 
 const full = { gridColumn: [null, 'span 2'] }
 
-const SignupForm = ({ reason, time, image }) => {
+const SignupForm = ({ reason, time }) => {
   const { status, formProps, useField } = useForm('/api/prereg')
   return (
     <Card
