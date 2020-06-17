@@ -120,7 +120,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           <Card
             as="aside"
             sx={{
-              gridRow: [null, 'span'],
+              gridRow: [null, 'span 2'],
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
@@ -136,7 +136,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           <Card
             as="aside"
             sx={{
-              gridRow: [null, 'span'],
+              gridRow: [null, 'span 2'],
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
@@ -152,7 +152,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           <Card
             as="aside"
             sx={{
-              gridRow: [null, 'span'],
+              gridRow: [null, 'span 2'],
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
@@ -168,7 +168,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           <Card
             as="aside"
             sx={{
-              gridRow: [null, 'span'],
+              gridRow: [null, 'span 2'],
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
@@ -184,7 +184,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           <Card
             as="aside"
             sx={{
-              gridRow: [null, 'span'],
+              gridRow: [null, 'span 2'],
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
@@ -196,22 +196,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           >
           </Card>
           )}
-          {image7 && (
-          <Card
-            as="aside"
-            sx={{
-              gridRow: [null, 'span'],
-              gridColumn: ['span 1', 'span 3'],
-              bg: 'dark',
-              backgroundImage:
-                `url(${image7})`,
-              backgroundPosition: 'top center',
-              backgroundSize: 'cover',
-              p: { color: 'smoke', fontSize: 2, mt: 1, lineHeight: 'caption' }
-            }}
-          >
-          </Card>
-          )}
+        
         </Grid>
       </Container>
     </Box>
