@@ -410,6 +410,7 @@ export default props => (
             >
               Explore
             </Button>
+          </Box>
           <Card
             as="aside"
             sx={{
