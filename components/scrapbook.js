@@ -120,7 +120,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           <Card
             as="aside"
             sx={{
-              gridRow: [null, 'span 2'],
+              gridRow: [null, 'span'],
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
@@ -136,7 +136,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           <Card
             as="aside"
             sx={{
-              gridRow: [null, 'span 2'],
+              gridRow: [null, 'span'],
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
@@ -152,7 +152,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           <Card
             as="aside"
             sx={{
-              gridRow: [null, 'span 2'],
+              gridRow: [null, 'span'],
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
@@ -168,7 +168,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           <Card
             as="aside"
             sx={{
-              gridRow: [null, 'span 2'],
+              gridRow: [null, 'span'],
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
@@ -184,7 +184,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           <Card
             as="aside"
             sx={{
-              gridRow: [null, 'span 2'],
+              gridRow: [null, 'span'],
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
@@ -200,7 +200,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           <Card
             as="aside"
             sx={{
-              gridRow: [null, 'span 2'],
+              gridRow: [null, 'span'],
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
