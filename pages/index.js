@@ -605,6 +605,7 @@ export const getStaticProps = async () => {
         x++
       }
     props.status = 'success'
+    }
   } catch (e) {
     props.status = 'error'
   }
