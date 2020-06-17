@@ -602,10 +602,13 @@ export const getStaticProps = async () => {
     var image = []
     for (i in results1) {
       if (results1[0]['fields']['Attachments'][0]['type'].contains('image')){
+        console.log('hi')
         image[x] = results1[i]['fields']['Attachments'][0]['url']
         x++
       }
+      console.log('bye')
     }
+    console.log('sad')
     props.image = image[0]
     props.image1 = image[1]
     props.image2 = image[2]
