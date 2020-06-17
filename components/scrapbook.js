@@ -14,7 +14,7 @@ import {
   Link as A
 } from 'theme-ui'
 
-const Scrapbook = ({ image }) => {
+const Scrapbook = ({ image, image1 }) => {
 
   return (
     <Box
@@ -84,21 +84,21 @@ const Scrapbook = ({ image }) => {
               Explore
             </Button>
           </Box>
+          {image1 && (
           <Card
             as="aside"
             sx={{
               gridColumn: ['span 2', 'span 6'],
-              bg: 'blue',
-              backgroundImage: theme => `radial-gradient(
-    ellipse farthest-corner at top left, ${theme.colors.cyan}, ${theme.colors.blue})`,
+              bg: 'dark',
+              backgroundImage:
+                `url(${image1})`,
+              backgroundPosition: 'top center',
+              backgroundSize: 'cover',
               p: { color: 'smoke', fontSize: 2, mt: 1, lineHeight: 'caption' }
             }}
           >
-            <Heading as="h3" variant="headline">
-              #ship
-            </Heading>
-            <Text as="p">Share your latest projects & get feedback</Text>
           </Card>
+          )}
           {image && (
           <Card
             as="aside"
@@ -112,10 +112,6 @@ const Scrapbook = ({ image }) => {
               p: { color: 'smoke', fontSize: 2, mt: 1, lineHeight: 'caption' }
             }}
           >
-            <Heading as="h3" variant="headline">
-              {image}
-            </Heading>
-            <Text as="p">Biweekly mini-hackathon & video call hangout</Text>
           </Card>
           )}
           <Card bg="cyan">
