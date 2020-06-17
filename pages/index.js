@@ -598,16 +598,12 @@ export const getStaticProps = async () => {
     let reason = results[0].fields
     props.reason = reason['What do you want to learn?']
     props.time = reason['Created at']
-    props.image = results1[0]['fields']['Attachments'][0]['url']
-    props.image1 = results1[1]['fields']['Attachments'][0]['url']
-    props.image2 = results1[2]['fields']['Attachments'][0]['url']
-    props.image3 = results1[3]['fields']['Attachments'][0]['url']
-    props.image4 = results1[4]['fields']['Attachments'][0]['url']
-    props.image5 = results1[5]['fields']['Attachments'][0]['url']
-    props.image6 = results1[6]['fields']['Attachments'][0]['url']
-    props.image7 = results1[7]['fields']['Attachments'][0]['url']
-    props.image8 = results1[8]['fields']['Attachments'][0]['url']
-    props.image9 = results1[9]['fields']['Attachments'][0]['url']
+    var x =0 
+    for (i in results1) {
+      if (results1[0]['fields']['Attachments'][0]['type'].contains('image')){
+        props.image[x] = results1[i]['fields']['Attachments'][0]['url']
+        x++
+      }
     props.status = 'success'
   } catch (e) {
     props.status = 'error'
