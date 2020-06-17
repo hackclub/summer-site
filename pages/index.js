@@ -585,7 +585,7 @@ export default props => (
             >
               Live from our&nbsp;Slack
             </Heading>
-            <SlackEvents />
+            
           </Box>
           <Card
             as="aside"
