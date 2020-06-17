@@ -48,7 +48,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
             as="aside"
             sx={{
               gridRow: [null, 'span 2'],
-              gridColumn: ['span 2', 'span 3']
+              gridColumn: ['span 2', 'span 5']
             }}
           >
             <Heading
@@ -89,7 +89,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
             as="aside"
             sx={{
               gridRow: [null, 'span 2'],
-              gridColumn: ['span 2', 'span 6'],
+              gridColumn: ['span 2', 'span 4'],
               bg: 'dark',
               backgroundImage:
                 `url(${image1})`,
