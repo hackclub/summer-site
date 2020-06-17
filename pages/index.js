@@ -342,7 +342,7 @@ export default props => (
         </Button>
       </Container>
     </Box>
-    <Scrapbook />
+    <Scrapbook {...props} />
     <Box
       id="about"
       as="section"
