@@ -88,6 +88,7 @@ const Scrapbook = ({ image, image1 }) => {
           <Card
             as="aside"
             sx={{
+              gridRow: [null, 'span 2'],
               gridColumn: ['span 2', 'span 6'],
               bg: 'dark',
               backgroundImage:
@@ -103,6 +104,7 @@ const Scrapbook = ({ image, image1 }) => {
           <Card
             as="aside"
             sx={{
+              gridRow: [null, 'span 2'],
               gridColumn: ['span 2', 'span 6'],
               bg: 'dark',
               backgroundImage:
