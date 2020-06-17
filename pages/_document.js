@@ -27,7 +27,7 @@ export default class extends Document {
             }}
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700&family=Shrikhand&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Shrikhand&display=swap"
             rel="stylesheet"
           />
           <meta name="format-detection" content="telephone=no" />
