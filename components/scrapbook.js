@@ -94,6 +94,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
               bg: 'dark',
               backgroundImage:
                 `url(${image1})`,
+              padding: '150px',
               backgroundPosition: 'top center',
               backgroundSize: 'cover',
               p: { color: 'smoke', fontSize: 2, mt: 1, lineHeight: 'caption' }
@@ -108,6 +109,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
               gridRow: [null, 'span 2'],
               gridColumn: ['span 2', 'span 6'],
               bg: 'dark',
+              padding: '150px',
               backgroundImage:
                 `url(${image})`,
               backgroundPosition: 'top center',
