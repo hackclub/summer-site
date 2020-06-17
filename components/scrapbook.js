@@ -14,7 +14,7 @@ import {
   Link as A
 } from 'theme-ui'
 
-const Scrapbook = ({ image, image1 }) => {
+const Scrapbook = ({ image, image1, image2 }) => {
 
   return (
     <Box
@@ -116,9 +116,22 @@ const Scrapbook = ({ image, image1 }) => {
           >
           </Card>
           )}
-          <Card bg="cyan">
-            <h3>#lounge</h3>
+          {image2 && (
+          <Card
+            as="aside"
+            sx={{
+              gridRow: [null, 'span 1'],
+              gridColumn: ['span 1', 'span 3'],
+              bg: 'dark',
+              backgroundImage:
+                `url(${image2})`,
+              backgroundPosition: 'top center',
+              backgroundSize: 'cover',
+              p: { color: 'smoke', fontSize: 2, mt: 1, lineHeight: 'caption' }
+            }}
+          >
           </Card>
+          )}
           <Card bg="orange">
             <h3>#support</h3>
           </Card>
