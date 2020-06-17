@@ -1,5 +1,4 @@
 import { Box, Card, Button, Grid, Heading, Text } from 'theme-ui'
-import theme from '../lib/theme'
 import usePrefersMotion from '../lib/use-prefers-motion'
 import useHasMounted from '../lib/use-has-mounted'
 import FadeOut from './fade-out'
@@ -29,8 +28,6 @@ const Sheet = () => (
         Pre-register
       </Button>
       <Text as="p" variant="caption" color="slate">
-        Signups open <strong>June 18</strong>
-        <br />
         <strong>Ages 13–18</strong>, for students anywhere worldwide
       </Text>
     </Grid>
