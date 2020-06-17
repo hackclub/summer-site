@@ -85,7 +85,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
               Explore
             </Button>
           </Box>
-          {image && (
+          {image1 && (
           <Card
             as="aside"
             sx={{
@@ -93,7 +93,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
               gridColumn: ['span 2', 'span 4'],
               bg: 'dark',
               backgroundImage:
-                `url(${image[0]})`,
+                `url(${image1})`,
               padding: '150px',
               backgroundPosition: 'top center',
               backgroundSize: 'cover',
@@ -111,7 +111,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
               bg: 'dark',
               padding: '150px',
               backgroundImage:
-                `url(${image[0]})`,
+                `url(${image})`,
               backgroundPosition: 'top center',
               backgroundSize: 'cover',
               p: { color: 'smoke', fontSize: 2, mt: 1, lineHeight: 'caption' }
@@ -119,7 +119,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           >
           </Card>
           )}
-          {image && (
+          {image2 && (
           <Card
             as="aside"
             sx={{
@@ -127,7 +127,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
-                `url(${image[0]})`,
+                `url(${image2})`,
               backgroundPosition: 'top center',
               padding: '50px!important',
               backgroundSize: 'cover',
@@ -137,7 +137,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           >
           </Card>
           )}
-          {image && (
+          {image3 && (
           <Card
             as="aside"
             sx={{
@@ -145,7 +145,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
-                `url(${image[0]})`,
+                `url(${image3})`,
               backgroundPosition: 'top center',
               backgroundSize: 'cover',
               p: { color: 'smoke', fontSize: 2, mt: 1, lineHeight: 'caption' }
@@ -153,7 +153,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           >
           </Card>
           )}
-          {image && (
+          {image4 && (
           <Card
             as="aside"
             sx={{
@@ -161,7 +161,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
-                `url(${image[0]})`,
+                `url(${image4})`,
               backgroundPosition: 'top center',
               backgroundSize: 'cover',
               p: { color: 'smoke', fontSize: 2, mt: 1, lineHeight: 'caption' }
@@ -169,7 +169,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           >
           </Card>
           )}
-          {image && (
+          {image5 && (
           <Card
             as="aside"
             sx={{
@@ -177,7 +177,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
-                `url(${image[0]})`,
+                `url(${image5})`,
               backgroundPosition: 'top center',
               backgroundSize: 'cover',
               p: { color: 'smoke', fontSize: 2, mt: 1, lineHeight: 'caption' }
@@ -185,7 +185,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
           >
           </Card>
           )}
-          {image && (
+          {image6 && (
           <Card
             as="aside"
             sx={{
@@ -193,7 +193,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
               gridColumn: ['span 1', 'span 3'],
               bg: 'dark',
               backgroundImage:
-                `url(${image[0]})`,
+                `url(${image6})`,
               backgroundPosition: 'top center',
               backgroundSize: 'cover',
               p: { color: 'smoke', fontSize: 2, mt: 1, lineHeight: 'caption' }
