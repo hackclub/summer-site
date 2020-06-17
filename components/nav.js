@@ -34,12 +34,8 @@ export default () => {
         <Flag />
         <Flex as="nav" sx={{ ml: 'auto', py: 2, alignItems: 'center' }}>
           <NavLink to="Hardware" />
-          {/* <NavLink to="Mentorship" /> */}
           <NavLink to="Slack" />
-          <NavLink to="About" />
-          <Button as="a" href="#register" bg="orange">
-            Pre-register
-          </Button>
+          <NavLink to="Scrapbook" />
         </Flex>
       </Container>
     </Box>

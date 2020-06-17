@@ -52,7 +52,10 @@ const Contributor = ({ name, avatar }) => (
 
 const Collab = ({ img, alt }) => (
   <A
-    href={`https://${alt.toLowerCase().split(' ').join('')}.com/`}
+    href={`https://${alt
+      .toLowerCase()
+      .split(' ')
+      .join('')}.com/`}
     target="_blank"
     sx={{ display: 'block', mb: [3, 4] }}
   >
@@ -275,61 +278,6 @@ export default props => (
         </Button>
       </Container>
     </Box>
-    <Box as="section" bg="white" color="black" py={[4, 5]}>
-      <Grid
-        gap={4}
-        columns={[null, 2]}
-        variant="layout.container"
-        sx={{ h3: { mt: 0 } }}
-      >
-        <div>
-          <Heading as="h3" variant="headline">
-            Weekly community get-togethers
-          </Heading>
-          <Text variant="subtitle">
-            In addition to mentoring opportunities, you’ll join a weekly call
-            with fellow Summer Makers in your area (web dev, games, hardware,
-            etc). You’ll show off what you’re making, get help, make friends, &
-            stay motivated.
-          </Text>
-        </div>
-        <div>
-          <Heading as="h3" variant="headline">
-            Built-in project marketing
-          </Heading>
-          <Text variant="subtitle">
-            At the end of the summer, we’ll be working with our partners—Github,
-            Adafruit & Arduino—to share your project with the wider hacker
-            community. Expect live shows, blog posts & social media shares!
-          </Text>
-        </div>
-        <Grid
-          columns="32px 1fr"
-          sx={{
-            gridColumnGap: 3,
-            gridRowGap: 1,
-            fontSize: 2,
-            lineHeight: 'caption',
-            svg: { color: 'muted' }
-          }}
-        >
-          <Heading as="h3" variant="headline" sx={{ gridColumn: 'span 2' }}>
-            Expectations
-          </Heading>
-          <Icon glyph="member-add" size={32} />
-          <Text as="p">You’ll be joining a group of 150-300 students.</Text>
-          <Icon glyph="clock" size={32} />
-          <Text as="p">
-            You should plan to spend 10+ hours/week on your project.
-          </Text>
-          <Icon glyph="event-check" size={32} />
-          <Text as="p">
-            Don’t worry if a camp or school interferes with the dates, as long
-            as you can still make your project.
-          </Text>
-        </Grid>
-      </Grid>
-    </Box>
     */}
     <Box
       id="slack"
@@ -338,7 +286,7 @@ export default props => (
         bg: 'snow',
         backgroundImage: [
           'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.125)), url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2F2020-05-16_screenshot.jpeg?v=1589633885855)',
-          'linear-gradient(to bottom, rgba(0,0,0,0.625), rgba(0,0,0,0.375) 66%, rgba(0,0,0,0) 100%), url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2F2020-05-16_screenshot.jpeg?v=1589633885855)'
+          'linear-gradient(to bottom, rgba(0,0,0,0.625), rgba(0,0,0,0.5) 66%, rgba(0,0,0,0) 100%), url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2F2020-05-16_screenshot.jpeg?v=1589633885855)'
         ],
         backgroundSize: 'cover',
         backgroundPosition: 'top center'
@@ -357,23 +305,23 @@ export default props => (
           Community Slack
         </Text>
         <Heading as="h2" variant="title">
-          Unlimited digital fun on the Hack Club Slack.
+          Friends, mentors, & fun on the Slack.
         </Heading>
         <Text as="p" variant="subtitle" my={3}>
           We’re trying to make the Hack Club Slack the best place on the
           internet to be a teenager into technology.
         </Text>
         <Text as="p" variant="subtitle" my={3}>
-          This summer we’ll be having themed weeks to get you making. We’ve also
-          got bi-weekly AMAs with some of most influential people in tech,
-          community-led events & an awards ceremony to conclude the summer.
+          You’ll be entering an incredibly welcoming community of teenager
+          makers. All summer, we’re running weekly live events, including AMAs,
+          coding workshops, show & tells, office hours, and more.
         </Text>
         <Button
           as="a"
           variant="cta"
           href="https://hackclub.com/slack/"
           target="_blank"
-          mt={4}
+          mt={3}
           mb={[null, 4, 5]}
           sx={{ bg: 'cyan' }}
         >
@@ -381,98 +329,53 @@ export default props => (
         </Button>
       </Container>
     </Box>
-    <Box
-      id="about"
-      as="section"
-      sx={{
-        bg: 'green',
-        backgroundImage: t => t.util.gradient('cyan', 'blue'),
-        color: 'white',
-        py: [4, 5]
-      }}
-    >
-      <Grid
-        variant="layout.container"
-        columns={[null, null, '4fr 2fr']}
-        gap={4}
-      >
-        <div>
-          <Heading as="h2" variant="title" sx={{ maxWidth: 'narrow' }}>
-            By a teenager, for&nbsp;teenagers.
-          </Heading>
-          <Grid
-            columns="72px 1fr"
-            sx={{
-              maxWidth: 'copy',
-              alignItems: ['center', 'start'],
-              mt: 4,
-              mb: 3
-            }}
-          >
-            <Avatar
-              src="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fsam.jpg?v=1590595277523"
-              alt="Sam Poder avatar"
-              size={72}
-            />
-            <Box>
-              <Heading as="h3" variant="headline" sx={{ my: 1 }}>
-                Sam Poder
-              </Heading>
-              <Badge as="span" variant="default">
-                Creator, he/him
-              </Badge>
-            </Box>
-            <Flex
-              sx={{
-                justifyContent: 'center',
-                gridRow: ['1', 'auto'],
-                gridColumn: ['3', '1']
-              }}
-            >
-              <IconButton
-                as="a"
-                href="mailto:summer@sampoder.com"
-                sx={{
-                  bg: 'transparent',
-                  border: 0,
-                  p: 0,
-                  borderRadius: 'circle'
-                }}
-              >
-                <Icon glyph="email" size={32} />
-              </IconButton>
-            </Flex>
-
-            <Box
-              sx={{
-                fontSize: [2, 3],
-                lineHeight: 'subheading',
-                gridColumn: ['span 2', '2'],
-                p: { mt: 0 }
-              }}
-            >
-              <SamNote />
-            </Box>
-          </Grid>
-          <Grid columns={[null, 2]} gap={[3, 4]} sx={{ maxWidth: 'copyPlus' }}>
-            <Contributor
-              name="Roshan Palakkal"
-              avatar="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Froshan.jpg?v=1590595332922"
-            />
-            <Contributor
-              name="Neel Redkar"
-              avatar="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fneel.jpg?v=1590595277246"
-            />
-          </Grid>
-        </div>
-        <Box as="aside" sx={{ textAlign: 'center' }}>
-          <Heading
-            as="h3"
-            variant="eyebrow"
-            sx={{ maxWidth: 'narrow', color: 'white', mb: 4 }}
-          >
-            In collaboration with
-          </Heading>
+    <Box as="section" sx={{ bg: 'purple', backgroundImage: t => t.util.gradient('blue', 'purple'), color: 'white', py: [4, 5] }}>
+      <Container>
+        <Heading as="h2" variant="title">
+          Let’s review.
+        </Heading>
+        <Grid columns={[null, 3]} gap={4} sx={{ mt: 3, a: { mt: 3 } }}>
+          <div>
+            <Heading as="h3" variant="headline">
+              A scrapbook you’re proud of.
+            </Heading>
+            <Text as="p" variant="subtitle">
+              Share updates of your learning every day: Every day this summer, Hack Clubbers are learning & building projects, sharing short video & photo updates each day. See the in-progress projects and join.
+            </Text>
+          </div>
+          <div>
+            <Heading as="h3" variant="headline">
+              $50k in hardware grants.
+            </Heading>
+            <Text as="p" variant="subtitle">
+              Whether it’s your first hardware project or hundredth, you can apply for
+              hardware grants, sponsored by GitHub, Adafruit, & Arduino.
+            </Text>
+          </div>
+          <div>
+            <Heading as="h3" variant="headline">
+              A summer of new friends.
+            </Heading>
+            <Text as="p" variant="subtitle">
+              In the{' '}
+              <A href="https://hackclub.com/slack/" color="red">
+                Hack Club Slack
+              </A>
+              , join weekly events, mini-hackathons, biweekly AMAs with the most
+              interesting people in tech, and a friendly community of 10k high
+              school hackers.
+            </Text>
+          </div>
+        </Grid>
+        <Heading
+          as="h3"
+          variant="eyebrow"
+          id="about"
+          sx={{ color: 'white', py: 4 }}
+        >
+          In collaboration with
+        </Heading>
+        <Grid columns={[null, 2, 4]} gap={3}>
           <Collab
             alt="Hack Club"
             img="https://assets.hackclub.com/flag-standalone.svg"
@@ -480,59 +383,9 @@ export default props => (
           <Collab alt="GitHub" img="/sponsors/github.svg" />
           <Collab alt="Adafruit" img="/sponsors/adafruit.png" />
           <Collab alt="Arduino" img="/sponsors/arduino.svg" />
-        </Box>
-      </Grid>
-    </Box>
-    <Box as="section" sx={{ bg: 'snow', color: 'black', py: [4, 5] }}>
-      <Container>
-        <Heading as="h2" variant="title" sx={{ color: 'orange' }}>
-          Let’s review.
-        </Heading>
+        </Grid>
       </Container>
-      <Grid
-        columns={[null, 3]}
-        gap={4}
-        variant="layout.container"
-        sx={{ a: { mt: 3 } }}
-      >
-        <div>
-          <Heading as="h3" variant="headline">
-            6 weeks of exclusive project mentorship.
-          </Heading>
-          <Text as="p" variant="subtitle">
-            You’ll submit an application with your project idea, be paired with
-            an incredible industry professional, then spend 6 weeks building.
-          </Text>
-          <Text as="p" variant="subtitle">
-            You’ll also get to join weekly get-togethers with like-minded peers
-            & get free project promotion at the end of the summer.
-          </Text>
-        </div>
-        <div>
-          <Heading as="h3" variant="headline">
-            $50k in hardware grants, for all.
-          </Heading>
-          <Text as="p" variant="subtitle">
-            Whether or not you join the Mentorship Program, you can apply for
-            hardware grants, sponsored by GitHub, Adafruit, & Arduino.
-          </Text>
-        </div>
-        <div>
-          <Heading as="h3" variant="headline">
-            A summer of community fun, guaranteed.
-          </Heading>
-          <Text as="p" variant="subtitle">
-            In the{' '}
-            <A href="https://hackclub.com/slack/" color="red">
-              Hack Club Slack
-            </A>
-            , join themed weeks, mini-hackathons, biweekly AMAs with the most
-            interesting people in tech, and an end-of-summer awards show.
-          </Text>
-        </div>
-      </Grid>
     </Box>
-
     <Box
       as="footer"
       sx={{ bg: 'smoke', color: 'black', py: [4, 5], a: { color: 'orange' } }}
@@ -543,13 +396,9 @@ export default props => (
         </Heading>
         <Text as="p" variant="caption" mb={1}>
           Site by <A href="https://lachlanjc.com/">@lachlanjc</A>. Always{' '}
-          <A href="https://github.com/hackclub/summer/">open source</A>. Photos
-          from{' '}
-          <A href="https://photos.app.goo.gl/F5JDxq5FzfhofTMD9">
-            Flagship 2019
-          </A>
-          . Additional graphics from{' '}
-          <A href="https://github.com/fritzing/fritzing-parts">Fritzing</A>.
+          <A href="https://github.com/hackclub/summer/">open source</A>. Graphic
+          from <A href="https://github.com/fritzing/fritzing-parts">Fritzing</A>
+          .
         </Text>
         <Text as="p" variant="caption">
           Following the{' '}
