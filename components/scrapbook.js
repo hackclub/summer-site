@@ -16,6 +16,8 @@ import {
 
 const Scrapbook = ({ image }) => {
 
+  
+
   return (
     <Box
       as="section"
@@ -99,6 +101,7 @@ const Scrapbook = ({ image }) => {
             </Heading>
             <Text as="p">Share your latest projects & get feedback</Text>
           </Card>
+          {image && (
           <Card
             as="aside"
             sx={{
@@ -116,6 +119,7 @@ const Scrapbook = ({ image }) => {
             </Heading>
             <Text as="p">Biweekly mini-hackathon & video call hangout</Text>
           </Card>
+          )}
           <Card bg="cyan">
             <h3>#lounge</h3>
           </Card>
