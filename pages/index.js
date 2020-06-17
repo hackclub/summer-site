@@ -760,4 +760,3 @@ export const getStaticProps = async () => {
   }
   return { props, unstable_revalidate: 1 }
   }
-}
