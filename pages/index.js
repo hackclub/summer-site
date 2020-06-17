@@ -589,7 +589,7 @@ export const getStaticProps = async () => {
   let endpointURL = `https://api2.hackclub.com/v0.1/Pre-register/Applications?select=${JSON.stringify(
     options
   )}`
-  let endpointURL1 = `https://api2.hackclub.com/v0.1/Summer%20of%20Making%20Streaks/Updates?select={"maxRecords":10,"fields":["Attachments"],"filterByFormula:":"FIND('.png', {Attachments}[0]['url']) > 0"}`
+  let endpointURL1 = `https://api2.hackclub.com/v0.1/Summer%20of%20Making%20Streaks/Updates?select={"maxRecords":10,"fields":["Attachments"],"filterByFormula:":"FIND('.png', MID(Attachments,FIND("(",Attachments)+1,(FIND(")",Attachments)-1)-(FIND("(",Attachments)))) > 0"}`
 
 
   try {
