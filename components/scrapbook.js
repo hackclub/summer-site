@@ -126,7 +126,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
               backgroundImage:
                 `url(${image2})`,
               backgroundPosition: 'top center',
-              padding: '50px',
+              padding: '50px!important',
               backgroundSize: 'cover',
               p: { color: 'smoke', fontSize: 2, mt: 1, lineHeight: 'caption' }
             }}
