@@ -19,7 +19,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
   return (
     <Box
       as="section"
-      sx={{ bg: 'white', color: 'black', position: 'relative', pb: [4, 5] }}
+      sx={{ bg: 'white', color: 'black', position: 'relative',pt: [4, 5], pb: [4, 5] }}
     >
       <Container>
         <Grid
