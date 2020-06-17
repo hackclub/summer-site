@@ -2,6 +2,7 @@ import {
   Box,
   IconButton,
   Container,
+  Card,
   Image,
   Text,
   Flex,
