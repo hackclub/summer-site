@@ -601,9 +601,9 @@ export const getStaticProps = async () => {
     var x =0 
     var image = []
     for (i in results1) {
-      if (results1[0]['fields']['Attachments'][0]['type'].contains('image')){
+      if (results1[0].fields['Attachments'][0]['type'].includes('image')){
         console.log('hi')
-        image[x] = results1[i]['fields']['Attachments'][0]['url']
+        image[x] = results1[i].fields['Attachments'][0]['url']
         x++
       }
       console.log('bye')
@@ -618,7 +618,7 @@ export const getStaticProps = async () => {
     props.image6 = image[6]
     props.image7 = image[7]
   } catch (e) {
-    props.status = 'error'
+    console.log('error')
   }
   return { props, unstable_revalidate: 1 }
   }
