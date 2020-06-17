@@ -56,6 +56,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
               variant="title"
               sx={{
                 mt: 0,
+                marginBottom: 30,
                 letterSpacing: 'headline'
               }}
             >
@@ -77,7 +78,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
               variant="cta"
               href="https://scrapbook.hackclub.com"
               target="_blank"
-              mt={4}
+              mt={2}
               mb={[null, 4, 5]}
               sx={{ backgroundImage: t => t.util.gradient('red', 'orange') }}
             >
