@@ -186,9 +186,52 @@ export default props => (
         }}
       >
         <Stat value="50k" unit="$" label="In grants" color="white" />
-        <Stat value="3" label="Partners" color="white" />
+        <Stat value={100} unit="$" label="Per project" color="white" />
         <Stat value="∞" label="Possibilities" color="white" />
       </Box>
+    </Box>
+    <Box
+      as="section"
+      sx={{
+        backgroundImage: 'url(/register-bg.svg)',
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        '@media (hover: hover)': { backgroundAttachment: 'fixed' },
+        py: 5
+      }}
+    >
+      <Grid
+        columns={[null, '1fr 2fr']}
+        gap={3}
+        variant="layout.container"
+        sx={{ maxWidth: [null, 980], gridColumnGap: [null, 4] }}
+      >
+        <Heading as="h2" variant="title" color="white">
+          Calling beginners and pros.
+        </Heading>
+        <Text as="p" variant="subtitle" color="smoke" mt={0}>
+          If building physical things sounds exciting, we highly encourage you
+          to dream something up. We want hardware hackers of any experience and
+          no experience—whether it’ll be your first time soldering or your
+          thousandth. Any 1) Plausible, 2) Cost-Effective, and 3) Inspired idea
+          is eligible.
+        </Text>
+        <div />
+        <div>
+          <Button
+            as="a"
+            variant="cta"
+            href="https://hack.af/hwp-apply/"
+            target="_blank"
+            sx={{
+              bg: 'pink',
+              backgroundImage: t => t.util.gradient('pink', 'orange')
+            }}
+          >
+            Apply now
+          </Button>
+        </div>
+      </Grid>
     </Box>
     {/*
     <Box
@@ -232,7 +275,6 @@ export default props => (
         </Button>
       </Container>
     </Box>
-    */}
     <Box as="section" bg="white" color="black" py={[4, 5]}>
       <Grid
         gap={4}
@@ -288,6 +330,7 @@ export default props => (
         </Grid>
       </Grid>
     </Box>
+    */}
     <Box
       id="slack"
       as="section"

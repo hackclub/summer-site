@@ -6,7 +6,6 @@ const Stat = ({
   label,
   unit = '',
   color = 'text',
-  of,
   center = false,
   reversed = false,
   lg = false,
@@ -23,24 +22,11 @@ const Stat = ({
   >
     <Flex
       sx={{
-        flexDirection: unit === '$' ? 'row-reverse' : null,
         alignItems: unit === '$' ? 'start' : 'center',
         justifyContent: center ? 'center' : 'start',
         position: 'relative'
       }}
     >
-      <Text
-        as="span"
-        sx={{
-          color,
-          fontSize: lg ? [5, 6, 7] : [4, 5, 6],
-          fontFamily: 'display',
-          fontWeight: 'heading',
-          letterSpacing: 'title',
-          my: 0
-        }}
-        children={value || '—'}
-      />
       {!isEmpty(unit) && (
         <Text
           as="sup"
@@ -54,21 +40,18 @@ const Stat = ({
           children={unit}
         />
       )}
-      {!isEmpty(of) && (
-        <Text
-          as="sup"
-          sx={{
-            fontSize: lg ? [2, 3] : [1, 2],
-            color: 'muted',
-            ml: [null, 1],
-            pt: [null, 1],
-            '::before': {
-              content: '"/"'
-            }
-          }}
-          children={of}
-        />
-      )}
+      <Text
+        as="span"
+        sx={{
+          color,
+          fontSize: lg ? [5, 6, 7] : [4, 5, 6],
+          fontFamily: 'display',
+          fontWeight: 'heading',
+          letterSpacing: 'title',
+          my: 0
+        }}
+        children={value || '—'}
+      />
     </Flex>
     {!isEmpty(label) && (
       <Text
