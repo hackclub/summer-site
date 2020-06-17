@@ -376,24 +376,21 @@ export default props => (
             }}
           >
             <Heading
-              as="h1"
-              variant="subheadline"
+              as="h2"
+              variant="headline"
               sx={{
                 mt: 0,
                 color: 'red',
-                textTransform: 'uppercase',
                 letterSpacing: 'headline'
               }}
             >
-              Daily making from the Summer Scrapbook
+              Summer Scrapbook
             </Heading>
             <Heading
               as="h4"
               variant="subheadline"
               sx={{
                 mt: 0,
-                color: 'red',
-                textTransform: 'uppercase',
                 letterSpacing: 'headline'
               }}
             >
