@@ -52,11 +52,10 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
             }}
           >
             <Heading
-              as="h2"
-              variant="headline"
+              as="h1"
+              variant="title"
               sx={{
                 mt: 0,
-                color: 'red',
                 letterSpacing: 'headline'
               }}
             >
@@ -67,6 +66,7 @@ const Scrapbook = ({ image, image1, image2, image3, image4, image5, image6, imag
               variant="subheadline"
               sx={{
                 mt: 0,
+                marginRight: 80,
                 letterSpacing: 'headline'
               }}
             >
