@@ -589,7 +589,7 @@ export const getStaticProps = async () => {
   let endpointURL = `https://api2.hackclub.com/v0.1/Pre-register/Applications?select=${JSON.stringify(
     options
   )}`
-  let endpointURL1 = `https://api2.hackclub.com/v0.1/Summer%20of%20Making%20Streaks/Updates?select={"maxRecords":10,"fields":["Attachments"],"filterByFormula:":"FIND('.png', LEFT(images,FIND('  ',images)-1)) > 0"}`
+  let endpointURL1 = `https://api2.hackclub.com/v0.1/Summer%20of%20Making%20Streaks/Updates?select={"maxRecords":50,"fields":["Attachments"],"filterByFormula:":"FIND('.png', LEFT(images,FIND('  ',images)-1)) > 0"}`
 
 
   try {
@@ -601,7 +601,7 @@ export const getStaticProps = async () => {
     var x =0 
     var image = []
     for (i in results1) {
-      if (results1[0].fields['Attachments'][0]['type'].includes('image')){
+      if (results1[i].fields['Attachments'][0]['type'].includes('image')){
         console.log('hi')
         image[x] = results1[i].fields['Attachments'][0]['url']
         x++
@@ -617,6 +617,7 @@ export const getStaticProps = async () => {
     props.image5 = image[5]
     props.image6 = image[6]
     props.image7 = image[7]
+    console.log(props)
   } catch (e) {
     console.log('error')
   }
