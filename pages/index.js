@@ -735,15 +735,29 @@ export const getStaticProps = async () => {
   let endpointURL = `https://api2.hackclub.com/v0.1/Pre-register/Applications?select=${JSON.stringify(
     options
   )}`
+  let endpointURL1 = `https://api2.hackclub.com/v0.1/Summer%20of%20Making%20Streaks/Updates?select={"maxRecords":10,"fields":["Attachments"]}`
+
 
   try {
     let results = await fetch(endpointURL, { mode: 'cors' }).then(r => r.json())
+    let results1 = await fetch(endpointURL1, { mode: 'cors' }).then(r => r.json())
     let reason = results[0].fields
     props.reason = reason['What do you want to learn?']
     props.time = reason['Created at']
+    props.image = results1[0]['fields']['Attachments'][0]['url']
+    props.image1 = results1[1]['fields']['Attachments'][0]['url']
+    props.image2 = results1[2]['fields']['Attachments'][0]['url']
+    props.image3 = results1[3]['fields']['Attachments'][0]['url']
+    props.image4 = results1[4]['fields']['Attachments'][0]['url']
+    props.image5 = results1[5]['fields']['Attachments'][0]['url']
+    props.image6 = results1[6]['fields']['Attachments'][0]['url']
+    props.image7 = results1[7]['fields']['Attachments'][0]['url']
+    props.image8 = results1[8]['fields']['Attachments'][0]['url']
+    props.image9 = results1[9]['fields']['Attachments'][0]['url']
     props.status = 'success'
   } catch (e) {
     props.status = 'error'
   }
   return { props, unstable_revalidate: 1 }
+  }
 }
