@@ -105,7 +105,7 @@ const Scrapbook = ({ image }) => {
               gridColumn: ['span 2', 'span 6'],
               bg: 'dark',
               backgroundImage:
-                'url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2Fnight.jpg?v=1587692925213)',
+                `url(${image})`,
               backgroundPosition: 'top center',
               backgroundSize: 'cover',
               p: { color: 'smoke', fontSize: 2, mt: 1, lineHeight: 'caption' }
