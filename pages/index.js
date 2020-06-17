@@ -376,7 +376,7 @@ export default props => (
             }}
           >
             <Heading
-              as="h2"
+              as="h1"
               variant="subheadline"
               sx={{
                 mt: 0,
@@ -385,10 +385,31 @@ export default props => (
                 letterSpacing: 'headline'
               }}
             >
-              Live from our&nbsp;Slack
+              Daily making from the Summer Scrapbook
             </Heading>
-            
-          </Box>
+            <Heading
+              as="h4"
+              variant="subheadline"
+              sx={{
+                mt: 0,
+                color: 'red',
+                textTransform: 'uppercase',
+                letterSpacing: 'headline'
+              }}
+            >
+              Hack Clubbers are sharing everything they make in their personal scrapbook.
+            </Heading>
+            <Button
+              as="a"
+              variant="cta"
+              href="https://scrapbook.hackclub.com"
+              target="_blank"
+              mt={4}
+              mb={[null, 4, 5]}
+              sx={{ backgroundImage: t => t.util.gradient('red', 'orange') }}
+            >
+              Explore
+            </Button>
           <Card
             as="aside"
             sx={{
