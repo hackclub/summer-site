@@ -16,8 +16,6 @@ import {
 
 const Scrapbook = ({ image }) => {
 
-  
-
   return (
     <Box
       as="section"
