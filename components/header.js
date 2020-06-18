@@ -1,4 +1,4 @@
-import { Box, Card, Button, Grid, Heading, Text } from 'theme-ui'
+import { Box, Card, Button, Heading, Text } from 'theme-ui'
 import usePrefersMotion from '../lib/use-prefers-motion'
 import useHasMounted from '../lib/use-has-mounted'
 import FadeOut from './fade-out'
@@ -9,28 +9,25 @@ const Sheet = () => (
     variant="translucent"
     sx={{
       variant: 'layout.container',
-      maxWidth: [null, 680, 680],
+      maxWidth: [null, 660, 660],
       borderRadius: 'extra',
       p: [3, 4],
       color: 'black'
     }}
   >
-    <Heading as="h2" variant="title" sx={{ color: 'orange', pb: 2 }}>
-      Make something amazing this summer.
-    </Heading>
-    <Text as="p" variant="lead" my={3}>
-      <strong>Hack Club Summer of Making</strong> brings professional
-      mentorship, $50k of hardware grants, weekly get-togethers, & nonstop
-      making—culminating in an awards show.
+    <Text as="p" variant="headline" sx={{ maxWidth: 600, mt: 0, color: 'muted' }}>
+      53 years ago, 100,000 people gathered in San&nbsp;Francisco for what was later called the Summer of Love.
     </Text>
-    <Grid columns={[null, 'auto 1fr']} gap={3} sx={{ alignItems: 'center' }}>
-      <Button as="a" variant="cta" href="#register">
-        Pre-register
-      </Button>
-      <Text as="p" variant="caption" color="slate">
-        <strong>Ages 13–18</strong>, for students anywhere worldwide
-      </Text>
-    </Grid>
+    <Heading as="h2" variant="title" sx={{ color: 'orange', pb: 2 }}>
+      Now, we’ve entered the Hack Club{' '}
+      <Text as="span" sx={t => t.util.gradientText('pink', 'orange')}>Summer of Making.</Text>
+    </Heading>
+    <Text as="p" variant="subtitle" mb={4} sx={{ maxWidth: 600 }}>
+      It’s not an event, or a program with a start and end date. It’s a theme for this summer and a challenge to every teenager reading this: What will you make? What will you learn?
+    </Text>
+    <Button as="a" variant="cta" href="https://hack.af/som-stickers" sx={{ backgroundImage: t => t.util.gradient('yellow', 'pink') }}>
+      Get stickers
+    </Button>
   </Card>
 )
 
@@ -109,7 +106,7 @@ const Header = () => {
             top: 0,
             left: 0,
             right: 0,
-            backgroundImage: t => t.util.gradient('cyan', 'blue'),
+            backgroundImage: t => t.util.gradient('yellow', 'cyan'),
             zIndex: -1
           }}
           start={1}

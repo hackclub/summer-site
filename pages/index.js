@@ -323,7 +323,7 @@ export default props => (
           target="_blank"
           mt={3}
           mb={[null, 4, 5]}
-          sx={{ bg: 'cyan' }}
+          sx={{ bg: 'cyan', backgroundImage: t => t.util.gradient('cyan', 'green'), color: 'slate' }}
         >
           Join the Slack
         </Button>
