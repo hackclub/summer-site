@@ -275,9 +275,12 @@ export default ({ scraps, images }) => (
       sx={{ bg: 'smoke', color: 'black', py: [4, 5], a: { color: 'orange' } }}
     >
       <Container>
-        <Heading as="h3" variant="subheadline">
+        <Heading as="h3" variant="subheadline" mb={2}>
           A project by <A href="https://hackclub.com/">Hack Club</A>.
         </Heading>
+        <Text as="p" variant="caption" mb={3}>
+          Thank you: Sam Poder, Max Wofford, Zach Latta, Lachlan Campbell, Matthew Stanciu, Chris Walker, Roshan Palakkal, Neel Redkar.
+          </Text>
         <Text as="p" variant="caption" mb={1}>
           Site by <A href="https://lachlanjc.com/">@lachlanjc</A>. Always{' '}
           <A href="https://github.com/hackclub/summer/">open source</A>. Graphic
