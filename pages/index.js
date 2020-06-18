@@ -37,8 +37,8 @@ export default ({ scraps, images }) => (
     <Meta
       as={Head}
       title="Summer of Making"
-      description="Join Hack Club’s Summer of Making: $50k in GitHub hardware grants, a place to post daily updates, & weekly online events & community. Starting June 18, ages 13–18."
-      image="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fsummer.jpg?v=1590594017411"
+      description="$50k in GitHub hardware grants, daily streak system, Slack community with 10k hackers, & weekly online events. Open to teenagers worldwide. What will you make?"
+      image="https://assets.hackclub.com/log/2020-06-18_summer.jpg"
     />
     <Nav />
     <Header />
@@ -235,7 +235,7 @@ export default ({ scraps, images }) => (
               Share daily updates of your learning in a beautiful portfolio with
               your own CSS—and build up a streak.
             </Text>
-            <Button as="a" variant="cta" href="https://hack.af/scrapbook">
+            <Button as="a" variant="cta" href="https://scrapbook.hackclub.com/">
               Join now
             </Button>
           </div>
@@ -247,7 +247,7 @@ export default ({ scraps, images }) => (
               Join weekly live events, including coding workshops, show & tells,
               office hours, biweekly AMAs, and more.
             </Text>
-            <Button as="a" variant="cta" href="https://hackclub.com/slack">
+            <Button as="a" variant="cta" href="https://hackclub.com/slack/">
               Apply for Slack
             </Button>
           </div>

@@ -180,7 +180,8 @@ export default () => {
         as={Head}
         name="Hack Club Summer of Making"
         title="Idea Generator"
-        image="https://workshop-cards.hackclub.com/Idea%20Generator.png?theme=light&brand=Summer&fontSize=275px&caption=Gotta%2520make%2520%25E2%2580%2598em%2520all"
+        description="Gotta make 'em all—a random idea generator for the Hack Club Summer of Making."
+        image="https://assets.hackclub.com/log/2020-06-18_summer-ideas.jpg"
       />
       <FullHeight
         as={Box}
