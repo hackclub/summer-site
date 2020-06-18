@@ -1,8 +1,5 @@
 import { Box, Card, Button, Heading, Text } from 'theme-ui'
-import usePrefersMotion from '../lib/use-prefers-motion'
-import useHasMounted from '../lib/use-has-mounted'
-import FadeOut from './fade-out'
-import SlideUp from './slide-up'
+import Icon from './icon'
 
 const Sheet = () => (
   <Card
@@ -49,13 +46,13 @@ const Sheet = () => (
     </Heading>
     <Text as="p" variant="subtitle" mt={3}>
       It’s not an event, or a program with a start/end date. It’s a theme for
-      the summer and a challenge to every teenager reading this: this summer,{' '}
-      <strong>what will you make?</strong> What will you learn?
+      the summer and a challenge to every teenager reading this:{' '}
+      <strong>What&nbsp;will you make?</strong> What will you learn?
     </Text>
     <Text as="p" variant="subtitle" mt={3}>
-      We’re doing a few big things to support you, including giving out $50,000
-      in free electronics (thanks GitHub!) and building a Snapchat streaks-like
-      system for learning, but really the Summer of&nbsp;Making is about you.
+      We’re doing a few big things to support you—giving out $50,000 in free
+      electronics (thanks GitHub!), building a Snapchat streaks-like system for
+      learning—but really the Summer of&nbsp;Making is about you.
     </Text>
     <Text as="p" variant="subtitle" mt={3}>
       We don’t want to descend from above with a “program” for you to do. If
@@ -69,87 +66,19 @@ const Static = () => (
   <Box
     as="header"
     sx={{
-      py: 6,
+      pt: 6,
+      pb: 3,
       px: 3,
       position: 'relative',
+
       backgroundImage: t => t.util.gradient('yellow', 'cyan')
     }}
   >
     <Sheet />
+    <Box sx={{ textAlign: 'center', pt: 3, display: ['none', null, 'block'] }}>
+      <Icon glyph="down-caret" size={48} color="slate" />
+    </Box>
   </Box>
 )
-
-const Header = () => {
-  const hasMounted = useHasMounted()
-  const prefersMotion = usePrefersMotion()
-  if (!hasMounted) return <Static />
-  if (prefersMotion) {
-    return (
-      <Box
-        as="header"
-        sx={{
-          py: 6,
-          px: 3,
-          overflow: 'hidden',
-          position: 'relative',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center'
-        }}
-      >
-        <Box
-          as="video"
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="slack-poster.png"
-          duration={2000}
-          sx={{
-            position: 'absolute',
-            bottom: 0,
-            top: 0,
-            left: 0,
-            right: 0,
-            height: '100%',
-            zIndex: -1
-          }}
-        >
-          <source
-            src="https://cdn.glitch.com/2d637c98-ed35-417a-bf89-cecc165d7398%2Foutput-no-duplicate-frames.hecv.mp4?v=1590780967658"
-            type="video/mp4; codecs=hevc"
-          />
-          <source
-            src="https://cdn.glitch.com/2d637c98-ed35-417a-bf89-cecc165d7398%2Foutput-no-duplicate-frames.webm?v=1590781698834"
-            type="video/webm; codecs=vp9,opus"
-          />
-          <source
-            src="https://cdn.glitch.com/2d637c98-ed35-417a-bf89-cecc165d7398%2Foutput-no-duplicate-frames.mov?v=1590781491717"
-            type="video/quicktime"
-          />
-        </Box>
-        <FadeOut
-          duration={8000}
-          sx={{
-            position: 'absolute',
-            bottom: 0,
-            top: 0,
-            left: 0,
-            right: 0,
-            backgroundImage: t => t.util.gradient('yellow', 'cyan'),
-            zIndex: -1
-          }}
-          start={1}
-          end={0.85}
-        />
-        <SlideUp duration={750}>
-          <Sheet />
-        </SlideUp>
-      </Box>
-    )
-  } else {
-    return <Static />
-  }
-}
 
 export default Static

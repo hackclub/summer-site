@@ -1,13 +1,5 @@
 {
   "public": true,
   "github": { "silent": true },
-  "headers": [
-    {
-      "source": "/api/prereg",
-      "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
-    }
-  ],
-  "rewrites": [
-    { "source": "/countdown", "destination": "/countdown.html" }
-  ]
+  "rewrites": [{ "source": "/countdown", "destination": "/countdown.html" }]
 }

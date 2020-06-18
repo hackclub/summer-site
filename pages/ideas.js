@@ -132,12 +132,15 @@ export default () => {
 
   const makeText = () =>
     `${platforms[indices[0]]} that ${verbs[indices[1]]} ${
-    subjects[indices[2]]
+      subjects[indices[2]]
     } using ${stacks[indices[3]]}`
   const [text, setText] = useState('')
-  useEffect(() => {
-    setText(makeText())
-  }, [indices])
+  useEffect(
+    () => {
+      setText(makeText())
+    },
+    [indices]
+  )
 
   return (
     <>
@@ -146,7 +149,9 @@ export default () => {
         variant="cards.translucent"
         sx={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 4 }}
       >
-        <Container sx={{ display: 'flex', alignItems: 'center', position: 'relative' }}>
+        <Container
+          sx={{ display: 'flex', alignItems: 'center', position: 'relative' }}
+        >
           <Flag />
           <Link href="/" passHref>
             <A
@@ -167,7 +172,7 @@ export default () => {
               }}
             >
               Summer of Making
-              </A>
+            </A>
           </Link>
         </Container>
       </Box>
@@ -232,7 +237,7 @@ export default () => {
                     text,
                     url: 'https://summer.hackclub.com/ideas'
                   })
-                } catch (e) { }
+                } catch (e) {}
               }}
             >
               <Icon glyph="share" size={32} />

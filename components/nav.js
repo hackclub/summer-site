@@ -29,8 +29,8 @@ const fixed = props =>
     border-bottom: 1px solid rgba(48, 48, 48, 0.125);
     @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
       background-color: ${props.transparent
-      ? 'transparent'
-      : rgbaBgColor(props, 0.75)};
+        ? 'transparent'
+        : rgbaBgColor(props, 0.75)};
       -webkit-backdrop-filter: saturate(180%) blur(20px);
       backdrop-filter: saturate(180%) blur(20px);
     }
@@ -160,7 +160,7 @@ class Header extends Component {
 
   static defaultProps = {
     color: 'black',
-    fixed: true,
+    fixed: true
   }
 
   componentDidMount() {

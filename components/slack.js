@@ -1,8 +1,6 @@
 import { Box, Container, Button, Heading, Text } from 'theme-ui'
 import usePrefersMotion from '../lib/use-prefers-motion'
 import useHasMounted from '../lib/use-has-mounted'
-import FadeOut from './fade-out'
-import SlideUp from './slide-up'
 
 const Sheet = () => (
   <Container
@@ -20,16 +18,12 @@ const Sheet = () => (
       Community Slack
     </Text>
     <Heading as="h2" variant="title">
-      Friends, mentors, & fun on the Slack.
+      Friends, mentors, and weekly events on Slack.
     </Heading>
     <Text as="p" variant="subtitle" my={3}>
-      We’re trying to make the Hack Club Slack the best place on the internet to
-      be a teenager into technology.
-    </Text>
-    <Text as="p" variant="subtitle" my={3}>
-      You’ll be entering an incredibly welcoming community of teenager makers.
-      All summer, we’re running weekly live events, including AMAs, coding
-      workshops, show & tells, office hours, and more.
+      You’ll be entering an incredibly welcoming community of 10K teenager
+      makers. All summer, we’re running weekly live events, including AMAs,
+      coding workshops, show & tells, office hours, and more.
     </Text>
     <Button
       as="a"
@@ -57,7 +51,7 @@ const Cover = () => (
       left: 0,
       right: 0,
       backgroundImage: t => t.util.gradient('blue', 'purple'),
-      opacity: 0.875,
+      opacity: 0.75,
       zIndex: 0
     }}
   />

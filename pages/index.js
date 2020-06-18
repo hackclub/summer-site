@@ -15,7 +15,6 @@ import {
 import Head from 'next/head'
 import Meta from '@hackclub/meta'
 import Nav from '../components/nav'
-import Icon from '../components/icon'
 import Stat from '../components/stat'
 
 import Header from '../components/header'
@@ -106,23 +105,21 @@ export default ({ scraps, images }) => (
     >
       <Grid
         columns={[null, '1fr 2fr']}
-        gap={3}
+        gap={[null, 2]}
         variant="layout.container"
         sx={{ maxWidth: [null, 980], gridColumnGap: [null, 4] }}
       >
-        <div>
-          <Text as="p" variant="eyebrow">
-            Hardware grants
-          </Text>
-          <Heading as="h2" variant="title" color="white">
-            Make it physical.
-          </Heading>
-        </div>
-        <Text as="p" variant="subtitle" color="smoke" mt={0}>
-          If building physical things sounds exciting, we highly encourage you
-          to dream something up. We want hardware hackers of any experience and
-          no experience—whether it’ll be your first time soldering or your
-          thousandth. Any 1) Plausible, 2) Cost-Effective, and 3) Inspired idea
+        <Text as="p" variant="eyebrow">
+          Hardware grants
+        </Text>
+        <div />
+        <Heading as="h2" variant="title" color="white" mb={[3, 0]}>
+          Make it physical.
+        </Heading>
+        <Text as="p" variant="subtitle" color="smoke" my={0}>
+          We want hardware hackers of any experience and no experience—whether
+          it’ll be your first time soldering or your thousandth. Any
+          1)&nbsp;Plausible, 2)&nbsp;Cost-Effective, and 3)&nbsp;Inspired idea
           is eligible.
         </Text>
         <div />
@@ -130,9 +127,10 @@ export default ({ scraps, images }) => (
           <Button
             as="a"
             variant="cta"
-            href="https://hack.af/hwp-apply/"
+            href="https://hack.af/hwp-apply"
             target="_blank"
             sx={{
+              mt: [4, 0],
               bg: 'green',
               backgroundImage: t => t.util.gradient('cyan', 'green'),
               color: 'darkless'
@@ -164,8 +162,8 @@ export default ({ scraps, images }) => (
             Share your daily progress.
           </Heading>
           <Text as="p" variant="subtitle" my={3}>
-            Every day this summer, as you learn & build projects, share short
-            video & photo updates each day. You can put custom CSS all over your
+            As you learn & make projects, share short photo/video updates each
+            day & build a streak. You can even put custom CSS all over your
             profile & use your domain.
           </Text>
           <Button
@@ -201,7 +199,7 @@ export default ({ scraps, images }) => (
         backgroundImage: t => [
           t.util.gradient('blue', 'purple'),
           `radial-gradient(ellipse farthest-corner at bottom center, ${
-          t.colors.pink
+            t.colors.pink
           } 5%, ${t.colors.orange}, ${t.colors.orange})`
         ],
         color: 'white',
@@ -278,8 +276,9 @@ export default ({ scraps, images }) => (
           A project by <A href="https://hackclub.com/">Hack Club</A>.
         </Heading>
         <Text as="p" variant="caption" mb={3}>
-          Thank you: Sam Poder, Max Wofford, Zach Latta, Lachlan Campbell, Matthew Stanciu, Chris Walker, Roshan Palakkal, Neel Redkar.
-          </Text>
+          Thank you: Sam Poder, Max Wofford, Zach Latta, Lachlan Campbell,
+          Matthew Stanciu, Chris Walker, Roshan Palakkal, Neel Redkar.
+        </Text>
         <Text as="p" variant="caption" mb={1}>
           Site by <A href="https://lachlanjc.com/">@lachlanjc</A>. Always{' '}
           <A href="https://github.com/hackclub/summer/">open source</A>. Graphic
@@ -310,10 +309,16 @@ export const getStaticProps = async () => {
     let posts = await fetch('https://scrapbook.hackclub.com/api/posts')
       .then(r => r.json())
       .then(posts => orderBy(posts, 'postedAt'))
-      .then(posts => filter(posts, p => ['image/jpg', 'image/jpeg', 'image/png'].includes(p.attachments?.[0].type)))
-    scraps = shuffle(take(posts, 14))
+      .then(posts =>
+        filter(posts, p =>
+          ['image/jpg', 'image/jpeg', 'image/png'].includes(
+            p.attachments?.[0].type
+          )
+        )
+      )
+    scraps = take(posts, 8)
     posts = shuffle(takeRight(posts, 3))
     images = map(posts, 'attachments[0].thumbnails.large.url')
-  } catch (err) { }
+  } catch (err) {}
   return { props: { scraps, images }, unstable_revalidate: 2 }
 }
