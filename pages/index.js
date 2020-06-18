@@ -358,7 +358,7 @@ export default props => (
             </Heading>
             <Text as="p" variant="subtitle">
               In the{' '}
-              <A href="https://hackclub.com/slack/" color="red">
+              <A href="https://hackclub.com/slack/" color="white" sx={{ fontWeight:'bold'}}>
                 Hack Club Slack
               </A>
               , join weekly events, mini-hackathons, biweekly AMAs with the most
