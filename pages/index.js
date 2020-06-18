@@ -48,10 +48,10 @@ const Collab = ({ img, alt }) => (
   </A>
 )
 
-function MouseOver(event) {
+function MouseOverCard(event) {
   event.target.style.background = 'red';
 }
-function MouseOut(event){
+function MouseOutCard(event){
   event.target.style.background="";
 }
 
