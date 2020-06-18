@@ -276,9 +276,8 @@ export default ({ scraps, images }) => (
           A project by <A href="https://hackclub.com/">Hack Club</A>.
         </Heading>
         <Text as="p" variant="caption" mb={3}>
-          Thank you: Sam Poder, Max Wofford, Zach Latta, Lachlan Campbell,
-          Matthew Stanciu, Chris Walker, Roshan Palakkal, Neel Redkar.
-          Thank you: Sam Poder for the idea + Lachlan Campbell, Zach Latta, Roshan Palakkal, Neel Redkar, Matthew Stanciu, Chris Walker, Max Wofford.
+          Thank you: Sam Poder for the idea + Lachlan Campbell, Zach Latta,
+          Roshan Palakkal, Neel Redkar, Matthew Stanciu, Chris Walker, Max Wofford.
         </Text>
         <Text as="p" variant="caption" mb={1}>
           Site by <A href="https://lachlanjc.com/">@lachlanjc</A>. Always{' '}
