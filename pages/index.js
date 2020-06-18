@@ -136,7 +136,7 @@ export default ({ scraps, images }) => (
               color: 'darkless'
             }}
           >
-            Apply now
+            Apply for hardware
           </Button>
         </div>
       </Grid>
@@ -224,7 +224,7 @@ export default ({ scraps, images }) => (
               have GitHub buy you electronics for a hardware project.
             </Text>
             <Button as="a" variant="cta" href="https://hack.af/hwp-apply">
-              Apply now
+              Apply for hardware
             </Button>
           </div>
           <div>
@@ -278,6 +278,7 @@ export default ({ scraps, images }) => (
         <Text as="p" variant="caption" mb={3}>
           Thank you: Sam Poder, Max Wofford, Zach Latta, Lachlan Campbell,
           Matthew Stanciu, Chris Walker, Roshan Palakkal, Neel Redkar.
+          Thank you: Sam Poder for the idea + Lachlan Campbell, Zach Latta, Roshan Palakkal, Neel Redkar, Matthew Stanciu, Chris Walker, Max Wofford.
         </Text>
         <Text as="p" variant="caption" mb={1}>
           Site by <A href="https://lachlanjc.com/">@lachlanjc</A>. Always{' '}
