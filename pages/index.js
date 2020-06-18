@@ -49,10 +49,10 @@ const Collab = ({ img, alt }) => (
 )
 
 function MouseOverCard(event) {
-  event.target.style.background = 'red';
+  event.target.style.transform = 'scale(1.1)';
 }
 function MouseOutCard(event){
-  event.target.style.background="";
+  event.target.style.transform = 'scale(1.0)';
 }
 
 export default ({ scraps }) => (
@@ -188,7 +188,7 @@ export default ({ scraps }) => (
         {scraps.map(url => (
           <Card
             key={url}
-            style={{ backgroundImage: `url(${url})`}}
+            style={{ backgroundImage: `url(${url})`, transition: `all .2s ease-in-out;`}}
             sx={{
               backgroundSize: 'cover',
               backgroundPosition: 'center',
