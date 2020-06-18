@@ -13,7 +13,7 @@ const bounce = keyframes`
   }
 `
 
-const Hardware = () => ([
+const Hardware = () => [
   <Box
     key="video"
     as="video"
@@ -86,6 +86,6 @@ const Hardware = () => ([
       </g>
     </g>
   </Box>
-])
+]
 
 export default Hardware

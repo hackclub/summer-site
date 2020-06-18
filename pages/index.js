@@ -20,6 +20,7 @@ import Stat from '../components/stat'
 
 import Header from '../components/header'
 import Hardware from '../components/hardware'
+import Slack from '../components/slack'
 
 const Contributor = ({ name, avatar }) => (
   <Flex sx={{ alignItems: 'center' }}>
@@ -37,10 +38,7 @@ const Contributor = ({ name, avatar }) => (
 
 const Collab = ({ img, alt }) => (
   <A
-    href={`https://${alt
-      .toLowerCase()
-      .split(' ')
-      .join('')}.com/`}
+    href={`https://${alt.toLowerCase()}.com/`}
     target="_blank"
     sx={{ display: 'block', mb: [3, 4] }}
   >
@@ -125,9 +123,14 @@ export default ({ scraps }) => (
         variant="layout.container"
         sx={{ maxWidth: [null, 980], gridColumnGap: [null, 4] }}
       >
-        <Heading as="h2" variant="title" color="white">
-          Calling beginners and pros.
-        </Heading>
+        <div>
+          <Text as="p" variant="eyebrow">
+            Hardware grants
+          </Text>
+          <Heading as="h2" variant="title" color="white">
+            Make it physical.
+          </Heading>
+        </div>
         <Text as="p" variant="subtitle" color="smoke" mt={0}>
           If building physical things sounds exciting, we highly encourage you
           to dream something up. We want hardware hackers of any experience and
@@ -143,8 +146,9 @@ export default ({ scraps }) => (
             href="https://hack.af/hwp-apply/"
             target="_blank"
             sx={{
-              bg: 'pink',
-              backgroundImage: t => t.util.gradient('pink', 'orange')
+              bg: 'green',
+              backgroundImage: t => t.util.gradient('cyan', 'green'),
+              color: 'darkless'
             }}
           >
             Apply now
@@ -154,28 +158,36 @@ export default ({ scraps }) => (
     </Box>
     <Box id="scrapbook" as="section" sx={{ bg: 'snow', py: [4, 5] }}>
       <Grid
-        columns={[null, 2, 5]}
+        columns={[2, 3, 5]}
         variant="layout.wide"
         gap={[3, 4]}
         sx={{ px: [3, 4, 5] }}
       >
-        <Box sx={{ gridColumn: [null, null, 'span 2'] }}>
-          <Text as="p" variant="eyebrow" color="orange">
-            Scrapbook
+        <Box sx={{ gridColumn: 'span 2' }}>
+          <Text
+            as="a"
+            href="https://scrapbook.hackclub.com/"
+            variant="eyebrow"
+            color="orange"
+            sx={{ textDecoration: 'none' }}
+          >
+            scrapbook.hackclub.com
           </Text>
           <Heading as="h2" variant="title">
-            Share updates of your learning every day.
+            Share your daily progress.
           </Heading>
           <Text as="p" variant="subtitle" my={3}>
-            Every day this summer, as you learn & build projects, share short video & photo updates each day. You can put custom CSS all over your profile & use your domain.
+            Every day this summer, as you learn & build projects, share short
+            video & photo updates each day. You can put custom CSS all over your
+            profile & use your domain.
           </Text>
           <Button
             as="a"
             variant="cta"
             href="https://scrapbook.hackclub.com/"
-            sx={{ backgroundImage: t => t.util.gradient('orange', 'purple') }}
+            sx={{ backgroundImage: t => t.util.gradient('pink', 'orange') }}
           >
-            Explore & start yours
+            See what everyone’s making
           </Button>
         </Box>
         {scraps.map(url => (
@@ -186,66 +198,14 @@ export default ({ scraps }) => (
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               minHeight: [256, 360],
-              ':nth-of-type(5)': { gridColumn: [null, 'span 2'] }
+              ':nth-of-type(6)': { gridColumn: [null, 'span 2'] },
+              ':last-of-type': { display: ['none', null, 'block'] }
             }}
           />
         ))}
       </Grid>
     </Box>
-    <Box
-      id="slack"
-      as="section"
-      sx={{
-        bg: 'snow',
-        backgroundImage: [
-          'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.125)), url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2F2020-05-16_screenshot.jpeg?v=1589633885855)',
-          'linear-gradient(to bottom, rgba(0,0,0,0.625), rgba(0,0,0,0.5) 66%, rgba(0,0,0,0) 100%), url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2F2020-05-16_screenshot.jpeg?v=1589633885855)'
-        ],
-        backgroundSize: 'cover',
-        backgroundPosition: 'top center'
-      }}
-    >
-      <Container
-        as="article"
-        sx={{
-          'h2,h3,p': { maxWidth: 'copy', textShadow: 'text' },
-          pt: [4, 5],
-          pb: [5, 6, 7],
-          color: 'white'
-        }}
-      >
-        <Text as="p" variant="eyebrow" color="cyan">
-          Community Slack
-        </Text>
-        <Heading as="h2" variant="title">
-          Friends, mentors, & fun on the Slack.
-        </Heading>
-        <Text as="p" variant="subtitle" my={3}>
-          We’re trying to make the Hack Club Slack the best place on the
-          internet to be a teenager into technology.
-        </Text>
-        <Text as="p" variant="subtitle" my={3}>
-          You’ll be entering an incredibly welcoming community of teenager
-          makers. All summer, we’re running weekly live events, including AMAs,
-          coding workshops, show & tells, office hours, and more.
-        </Text>
-        <Button
-          as="a"
-          variant="cta"
-          href="https://hackclub.com/slack/"
-          target="_blank"
-          mt={3}
-          mb={[null, 4, 5]}
-          sx={{
-            bg: 'cyan',
-            backgroundImage: t => t.util.gradient('cyan', 'green'),
-            color: 'slate'
-          }}
-        >
-          Join the Slack
-        </Button>
-      </Container>
-    </Box>
+    <Slack />
     <Box
       as="section"
       sx={{
@@ -253,8 +213,8 @@ export default ({ scraps }) => (
         backgroundImage: t => [
           t.util.gradient('blue', 'purple'),
           `radial-gradient(ellipse farthest-corner at bottom center, ${
-          t.colors.cyan
-          } 5%, ${t.colors.blue}, ${t.colors.purple})`
+            t.colors.pink
+          } 5%, ${t.colors.orange}, ${t.colors.orange})`
         ],
         color: 'white',
         py: [4, 5]
@@ -264,56 +224,57 @@ export default ({ scraps }) => (
         <Heading as="h2" variant="title">
           Let’s review.
         </Heading>
-        <Grid columns={[null, 3]} gap={[3, 4]} sx={{ mt: 3, a: { mt: 3 } }}>
-          <div>
-            <Heading as="h3" variant="headline">
-              A scrapbook you’re proud of.
-            </Heading>
-            <Text as="p" variant="subtitle">
-              Share updates of your learning every day: Every day this summer,
-              Hack Clubbers are learning & building projects, sharing short
-              video & photo updates each day. See the in-progress projects and
-              join.
-            </Text>
-          </div>
+        <Grid
+          columns={[null, 3]}
+          gap={[3, 4]}
+          sx={{ mt: 3, 'p + a': { mt: 3, color: 'pink', bg: 'white' } }}
+        >
           <div>
             <Heading as="h3" variant="headline">
               $50k in hardware grants.
             </Heading>
             <Text as="p" variant="subtitle">
               Whether it’s your first hardware project or hundredth, you can
-              apply for hardware grants, sponsored by GitHub, Adafruit, &
-              Arduino.
+              have GitHub buy you electronics for a hardware project.
             </Text>
+            <Button as="a" variant="cta" href="https://hack.af/hwp-apply">
+              Apply now
+            </Button>
           </div>
           <div>
             <Heading as="h3" variant="headline">
-              A summer of new friends.
+              Show up with daily updates.
             </Heading>
             <Text as="p" variant="subtitle">
-              In the{' '}
-              <A href="https://hackclub.com/slack/" color="inherit">
-                Hack Club Slack
-              </A>
-              , join weekly events, mini-hackathons, biweekly AMAs with the most
-              interesting people in tech, and a friendly community of 10k high
-              school hackers.
+              Share daily updates of your learning in a beautiful portfolio with
+              your own CSS—and build up a streak.
             </Text>
+            <Button as="a" variant="cta" href="https://hack.af/scrapbook">
+              Join now
+            </Button>
+          </div>
+          <div>
+            <Heading as="h3" variant="headline">
+              Zoom events with friends.
+            </Heading>
+            <Text as="p" variant="subtitle">
+              Join weekly live events, including coding workshops, show & tells,
+              office hours, biweekly AMAs, and more.
+            </Text>
+            <Button as="a" variant="cta" href="https://hackclub.com/slack">
+              Apply for Slack
+            </Button>
           </div>
         </Grid>
         <Heading
           as="h3"
           variant="eyebrow"
           id="about"
-          sx={{ color: 'white', py: 4 }}
+          sx={{ color: 'white', mt: 5, mb: 3 }}
         >
           In collaboration with
         </Heading>
         <Grid columns={[null, 2, 4]} gap={3}>
-          <Collab
-            alt="Hack Club"
-            img="https://assets.hackclub.com/flag-standalone.svg"
-          />
           <Collab alt="GitHub" img="/sponsors/github.svg" />
           <Collab alt="Adafruit" img="/sponsors/adafruit.png" />
           <Collab alt="Arduino" img="/sponsors/arduino.svg" />
@@ -326,7 +287,7 @@ export default ({ scraps }) => (
     >
       <Container>
         <Heading as="h3" variant="subheadline">
-          A project by <A href="https://hackclub.com/">Hack Club</A> students
+          A project by <A href="https://hackclub.com/">Hack Club</A>.
         </Heading>
         <Text as="p" variant="caption" mb={1}>
           Site by <A href="https://lachlanjc.com/">@lachlanjc</A>. Always{' '}
@@ -366,6 +327,6 @@ export const getStaticProps = async () => {
       )
     )
     scraps = map(posts, 'attachments[0].thumbnails.large.url')
-  } catch (err) { }
+  } catch (err) {}
   return { props: { scraps }, unstable_revalidate: 10 }
 }

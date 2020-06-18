@@ -9,25 +9,59 @@ const Sheet = () => (
     variant="translucent"
     sx={{
       variant: 'layout.container',
-      maxWidth: [null, 660, 660],
+      maxWidth: [null, 680, 680],
       borderRadius: 'extra',
       p: [3, 4],
+      position: 'relative',
       color: 'black'
     }}
   >
-    <Text as="p" variant="headline" sx={{ maxWidth: 600, mt: 0, color: 'muted' }}>
-      53 years ago, 100,000 people gathered in San&nbsp;Francisco for what was later called the Summer of Love.
-    </Text>
-    <Heading as="h2" variant="title" sx={{ color: 'orange', pb: 2 }}>
-      Now, we’ve entered the Hack Club{' '}
-      <Text as="span" sx={t => t.util.gradientText('pink', 'orange')}>Summer of Making.</Text>
-    </Heading>
-    <Text as="p" variant="subtitle" mb={4} sx={{ maxWidth: 600 }}>
-      It’s not an event, or a program with a start and end date. It’s a theme for this summer and a challenge to every teenager reading this: What will you make? What will you learn?
-    </Text>
-    <Button as="a" variant="cta" href="https://hack.af/som-stickers" sx={{ backgroundImage: t => t.util.gradient('yellow', 'pink') }}>
+    <Button
+      as="a"
+      variant="cta"
+      href="https://hack.af/som-stickers"
+      sx={{
+        backgroundImage: t => t.util.gradient('yellow', 'pink'),
+        position: 'absolute',
+        right: [0, -3],
+        top: -3,
+        transform: [
+          'translateY(-50%) rotate(8deg)',
+          'translateX(15%) rotate(12deg)'
+        ]
+      }}
+    >
       Get stickers
     </Button>
+    <Text as="p" variant="headline" sx={{ mt: 0, color: 'muted' }}>
+      53 years ago, 100,000 people gathered in San&nbsp;Francisco for the Summer
+      of Love.
+    </Text>
+    <Heading
+      as="h2"
+      variant="title"
+      sx={{ color: 'blue', span: { color: 'pink', display: 'block' } }}
+    >
+      Now, we’re entering the Hack Club{' '}
+      <Text as="span" sx={t => t.util.gradientText('orange', 'pink')}>
+        Summer of Making.
+      </Text>
+    </Heading>
+    <Text as="p" variant="subtitle" mt={3}>
+      It’s not an event, or a program with a start/end date. It’s a theme for
+      the summer and a challenge to every teenager reading this: this summer,{' '}
+      <strong>what will you make?</strong> What will you learn?
+    </Text>
+    <Text as="p" variant="subtitle" mt={3}>
+      We’re doing a few big things to support you, including giving out $50,000
+      in free electronics (thanks GitHub!) and building a Snapchat streaks-like
+      system for learning, but really the Summer of&nbsp;Making is about you.
+    </Text>
+    <Text as="p" variant="subtitle" mt={3}>
+      We don’t want to descend from above with a “program” for you to do. If
+      this is going to be the best summer ever, it’ll be because of what you all
+      choose to hack on & learn from.
+    </Text>
   </Card>
 )
 
@@ -37,11 +71,8 @@ const Static = () => (
     sx={{
       py: 6,
       px: 3,
-      minHeight: '100vh',
-      overflow: 'hidden',
       position: 'relative',
-      backgroundImage: 'url(slack-poster.png)',
-      backgroundSize: 'cover'
+      backgroundImage: t => t.util.gradient('yellow', 'cyan')
     }}
   >
     <Sheet />
@@ -59,7 +90,6 @@ const Header = () => {
         sx={{
           py: 6,
           px: 3,
-          minHeight: '100vh',
           overflow: 'hidden',
           position: 'relative',
           display: 'flex',
@@ -122,4 +152,4 @@ const Header = () => {
   }
 }
 
-export default Header
+export default Static
