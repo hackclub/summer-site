@@ -77,23 +77,6 @@ const Post = ({
                 }}
               />
             ))}
-            {filter(attachments, a => a.type.startsWith('video')).map(vid => (
-              <Box
-                as="video"
-                controls
-                preload="none"
-                alt={vid.filename}
-                src={vid.url}
-                key={vid.url}
-                sx={{
-                  gridColumn: 'span 2',
-                  width: '100%',
-                  maxHeight: 256,
-                  borderRadius: 'default',
-                  bg: 'sunken'
-                }}
-              />
-            ))}
           </Grid>
         </>
       )}

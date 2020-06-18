@@ -186,7 +186,6 @@ export default ({ scraps, images }) => (
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               minHeight: [256, 360],
-              ':nth-of-type(6)': { gridColumn: [null, 'span 2'] },
               ':last-of-type': { display: ['none', null, 'block'] }
             }}
           />
@@ -311,9 +310,9 @@ export const getStaticProps = async () => {
     let posts = await fetch('https://scrapbook.hackclub.com/api/posts')
       .then(r => r.json())
       .then(posts => orderBy(posts, 'postedAt'))
-      .then(posts => filter(posts, p => p.attachments?.[0].type.startsWith('image')))
+      .then(posts => filter(posts, p => ['image/jpg', 'image/jpeg', 'image/png'].includes(p.attachments?.[0].type)))
     scraps = shuffle(take(posts, 14))
-    posts = shuffle(takeRight(posts, 7))
+    posts = shuffle(takeRight(posts, 3))
     images = map(posts, 'attachments[0].thumbnails.large.url')
   } catch (err) { }
   return { props: { scraps, images }, unstable_revalidate: 2 }
