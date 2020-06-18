@@ -188,7 +188,7 @@ export default ({ scraps }) => (
               backgroundPosition: 'center',
               minHeight: [256, 360],
               ':nth-of-type(5)': { gridColumn: [null, 'span 2'],
-              '&:hover': {
+              ':hover': {
                 transform: 'scale(1.1)'
               }
              }
