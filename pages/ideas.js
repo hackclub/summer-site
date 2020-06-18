@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
-import { Container, Text, Box, Flex, Link as A, Button } from 'theme-ui'
+import { Container, Heading, Box, Flex, Link as A, Button } from 'theme-ui'
 import { random } from 'lodash'
 import Head from 'next/head'
 import Link from 'next/link'
 import Meta from '@hackclub/meta'
+import FullHeight from 'react-div-100vh'
 import Flag from '../components/flag'
 import Icon from '../components/icon'
 
@@ -17,7 +18,7 @@ const platforms = [
   'Fake robot',
   'ML model',
   'Ancient software',
-  'Smart watch',
+  'Smartwatch',
   'Smart camera',
   'Microcomputer',
   'Windows program',
@@ -131,7 +132,7 @@ export default () => {
 
   const makeText = () =>
     `${platforms[indices[0]]} that ${verbs[indices[1]]} ${
-      subjects[indices[2]]
+    subjects[indices[2]]
     } using ${stacks[indices[3]]}`
   const [text, setText] = useState('')
   useEffect(() => {
@@ -145,27 +146,29 @@ export default () => {
         variant="cards.translucent"
         sx={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 4 }}
       >
-        <Container sx={{ display: 'flex', alignItems: 'center' }}>
+        <Container sx={{ display: 'flex', alignItems: 'center', position: 'relative' }}>
           <Flag />
-          <Flex as="nav" sx={{ ml: 'auto', py: 2, alignItems: 'center' }}>
-            <Link href="/" passHref>
-              <A
-                sx={{
-                  fontSize: 1,
-                  textDecoration: 'none',
-                  mr: [3, 4],
-                  color: 'black',
-                  transition: '.125s color ease-in-out',
-                  ':hover,:focus': { color: 'orange' }
-                }}
-              >
-                Summer of Making
+          <Link href="/" passHref>
+            <A
+              sx={{
+                fontSize: 2,
+                textDecoration: 'none',
+                color: 'black',
+                textTransform: 'uppercase',
+                fontWeight: 'bold',
+                ml: 'auto',
+                transition: '.125s color ease-in-out',
+                ':hover,:focus': { color: 'orange' },
+                '@media (min-width: 32em)': {
+                  position: 'absolute',
+                  left: '50%',
+                  transform: 'translateX(-50%)'
+                }
+              }}
+            >
+              Summer of Making
               </A>
-            </Link>
-            <Button as="a" href="https://hack.af/som-apply" bg="orange">
-              Apply
-            </Button>
-          </Flex>
+          </Link>
         </Container>
       </Box>
       <Meta
@@ -174,14 +177,15 @@ export default () => {
         title="Idea Generator"
         image="https://workshop-cards.hackclub.com/Idea%20Generator.png?theme=light&brand=Summer&fontSize=275px&caption=Gotta%2520make%2520%25E2%2580%2598em%2520all"
       />
-      <Flex
+      <FullHeight
+        as={Box}
         sx={{
           minHeight: '100vh',
           width: '100%',
-          bg: '#ff2467',
-          backgroundImage:
-            'linear-gradient(to bottom right, rgb(91, 255, 205), rgb(24, 218, 255))',
-          color: 'white',
+          bg: 'cyan',
+          backgroundImage: t => t.util.gradient('yellow', 'cyan'),
+          color: 'black',
+          display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
@@ -190,7 +194,8 @@ export default () => {
       >
         <Container>
           <Icon glyph="idea" size={72} />
-          <Text
+          <Heading
+            as="h1"
             variant="title"
             sx={{ fontSize: [5, 6, 7], my: [3, 4] }}
             children={text}
@@ -201,9 +206,9 @@ export default () => {
               justifyContent: 'center',
               flexWrap: 'wrap',
               button: {
-                color: 'rgb(24, 218, 255)',
+                color: 'yellow',
                 backgroundImage: 'none',
-                bg: 'white',
+                bg: 'black',
                 fontSize: 3,
                 textTransform: 'uppercase',
                 py: 3,
@@ -227,7 +232,7 @@ export default () => {
                     text,
                     url: 'https://summer.hackclub.com/ideas'
                   })
-                } catch (e) {}
+                } catch (e) { }
               }}
             >
               <Icon glyph="share" size={32} />
@@ -235,7 +240,7 @@ export default () => {
             </Button>
           </Flex>
         </Container>
-      </Flex>
+      </FullHeight>
     </>
   )
 }
