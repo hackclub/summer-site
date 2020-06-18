@@ -48,6 +48,13 @@ const Collab = ({ img, alt }) => (
   </A>
 )
 
+function MouseOver(event) {
+  event.target.style.background = 'red';
+}
+function MouseOut(event){
+  event.target.style.background="";
+}
+
 export default ({ scraps }) => (
   <>
     <Meta
@@ -181,16 +188,18 @@ export default ({ scraps }) => (
         {scraps.map(url => (
           <Card
             key={url}
-            style={{ backgroundImage: `url(${url})`,':hover': {transform: 'scale(1.1)'},transition: 'all .2s ease-in-out'}}
+            style={{ backgroundImage: `url(${url})`}}
             sx={{
-              
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               minHeight: [256, 360],
               ':nth-of-type(5)': { gridColumn: [null, 'span 2'],
               
-             }
+             },
+             
             }}
+            onMouseOver={MouseOverCard} 
+            onMouseOut={MouseOutCard}
           />
         ))}
       </Grid>
