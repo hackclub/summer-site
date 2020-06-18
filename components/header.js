@@ -6,7 +6,7 @@ const Sheet = () => (
     variant="translucent"
     sx={{
       variant: 'layout.container',
-      maxWidth: [null, 680, 680],
+      maxWidth: [null, 600, 700],
       borderRadius: 'extra',
       p: [3, 4],
       position: 'relative',
@@ -37,16 +37,16 @@ const Sheet = () => (
     <Heading
       as="h2"
       variant="title"
-      sx={{ color: 'blue', span: { color: 'pink', display: 'block' } }}
+      sx={{ color: 'black', span: { color: 'pink', display: 'block' } }}
     >
-      Now, we’re entering the Hack Club{' '}
+      Today begins the{' '}
       <Text as="span" sx={t => t.util.gradientText('orange', 'pink')}>
         Summer of Making.
       </Text>
     </Heading>
     <Text as="p" variant="subtitle" mt={3}>
       It’s not an event, or a program with a start/end date. It’s a theme for
-      the summer and a challenge to every teenager reading this:{' '}
+      the summer as well as a challenge to every teenager reading this:{' '}
       <strong>What&nbsp;will you make?</strong> What will you learn?
     </Text>
     <Text as="p" variant="subtitle" mt={3}>
