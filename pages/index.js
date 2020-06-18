@@ -154,7 +154,7 @@ export default ({ scraps, images }) => (
             href="https://scrapbook.hackclub.com/"
             variant="eyebrow"
             color="orange"
-            sx={{ textDecoration: 'none' }}
+            sx={{ fontSize: [3, 4], textDecoration: 'none' }}
           >
             scrapbook.hackclub.com
           </Text>
