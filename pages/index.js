@@ -194,6 +194,7 @@ export default ({ scraps }) => (
           <Card
             key={url}
             style={{ backgroundImage: `url(${url})` }}
+            variant="interactive"
             sx={{
               backgroundSize: 'cover',
               backgroundPosition: 'center',
