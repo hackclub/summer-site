@@ -19,22 +19,9 @@ import Icon from '../components/icon'
 import Stat from '../components/stat'
 
 import Header from '../components/header'
+import Posts from '../components/posts'
 import Hardware from '../components/hardware'
 import Slack from '../components/slack'
-
-const Contributor = ({ name, avatar }) => (
-  <Flex sx={{ alignItems: 'center' }}>
-    <Avatar src={avatar} alt={name} size={64} mr={3} />
-    <Box>
-      <Text variant="subheadline" as="p" sx={{ mt: 0, mb: 1 }}>
-        {name}
-      </Text>
-      <Badge variant="default" as="span">
-        he/him
-      </Badge>
-    </Box>
-  </Flex>
-)
 
 const Collab = ({ img, alt }) => (
   <A
@@ -46,7 +33,7 @@ const Collab = ({ img, alt }) => (
   </A>
 )
 
-export default ({ scraps }) => (
+export default ({ scraps, images }) => (
   <>
     <Meta
       as={Head}
@@ -190,7 +177,7 @@ export default ({ scraps }) => (
             See what everyone’s making
           </Button>
         </Box>
-        {scraps.map(url => (
+        {images.map(url => (
           <Card
             key={url}
             style={{ backgroundImage: `url(${url})` }}
@@ -206,6 +193,7 @@ export default ({ scraps }) => (
         ))}
       </Grid>
     </Box>
+    <Posts data={scraps} />
     <Slack />
     <Box
       as="section"
@@ -214,7 +202,7 @@ export default ({ scraps }) => (
         backgroundImage: t => [
           t.util.gradient('blue', 'purple'),
           `radial-gradient(ellipse farthest-corner at bottom center, ${
-            t.colors.pink
+          t.colors.pink
           } 5%, ${t.colors.orange}, ${t.colors.orange})`
         ],
         color: 'white',
@@ -313,21 +301,17 @@ export default ({ scraps }) => (
 )
 
 export const getStaticProps = async () => {
+  let images = []
   let scraps = []
   try {
-    const { takeRight, filter, shuffle, orderBy, map } = require('lodash')
-    let posts = await fetch('https://scrapbook.hackclub.com/api/posts').then(
-      r => r.json()
-    )
-    posts = shuffle(
-      takeRight(
-        filter(orderBy(posts, 'postedAt'), p =>
-          p.attachments?.[0].type.startsWith('image')
-        ),
-        7
-      )
-    )
-    scraps = map(posts, 'attachments[0].thumbnails.large.url')
-  } catch (err) {}
-  return { props: { scraps }, unstable_revalidate: 10 }
+    const { take, takeRight, filter, shuffle, orderBy, map } = require('lodash')
+    let posts = await fetch('https://scrapbook.hackclub.com/api/posts')
+      .then(r => r.json())
+      .then(posts => orderBy(posts, 'postedAt'))
+      .then(posts => filter(posts, p => p.attachments?.[0].type.startsWith('image')))
+    scraps = shuffle(take(posts, 14))
+    posts = shuffle(takeRight(posts, 7))
+    images = map(posts, 'attachments[0].thumbnails.large.url')
+  } catch (err) { }
+  return { props: { scraps, images }, unstable_revalidate: 2 }
 }
