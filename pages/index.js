@@ -181,12 +181,13 @@ export default ({ scraps }) => (
         {scraps.map(url => (
           <Card
             key={url}
-            style={{ backgroundImage: `url(${url})` }}
+            style={{ backgroundImage: `url(${url})`,transition: 'all .2s ease-in-out' }}
             sx={{
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               minHeight: [256, 360],
-              ':nth-of-type(5)': { gridColumn: [null, 'span 2'] }
+              ':nth-of-type(5)': { gridColumn: [null, 'span 2'],
+             }
             }}
           />
         ))}
