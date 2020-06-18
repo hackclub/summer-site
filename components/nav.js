@@ -34,8 +34,8 @@ export default () => {
         <Flag />
         <Flex as="nav" sx={{ ml: 'auto', py: 2, alignItems: 'center' }}>
           <NavLink to="Hardware" />
-          <NavLink to="Slack" />
           <NavLink to="Scrapbook" />
+          <NavLink to="Slack" />
         </Flex>
       </Container>
     </Box>

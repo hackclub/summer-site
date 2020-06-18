@@ -1,6 +1,6 @@
 import {
   Box,
-  IconButton,
+  Card,
   Container,
   Image,
   Text,
@@ -48,12 +48,12 @@ const Collab = ({ img, alt }) => (
   </A>
 )
 
-export default props => (
+export default ({ scraps }) => (
   <>
     <Meta
       as={Head}
       title="Summer of Making"
-      description="Join Hack Club’s Summer of Making: professional mentorship, $50k in GitHub hardware grants, & an unparalleled online community. Starting June 18, ages 13–18."
+      description="Join Hack Club’s Summer of Making: $50k in GitHub hardware grants, a place to post daily updates, & weekly online events & community. Starting June 18, ages 13–18."
       image="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fsummer.jpg?v=1590594017411"
     />
     <Nav />
@@ -152,49 +152,46 @@ export default props => (
         </div>
       </Grid>
     </Box>
-    {/*
-    <Box
-      id="mentorship"
-      as="section"
-      sx={{
-        bg: 'snow',
-        backgroundImage: [
-          'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.125)), url(https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fmentorship-sm.jpg?v=1590592021018)',
-          'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.25) 66%, rgba(0,0,0,0) 100%), url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2Fmentorship.jpg?v=1590473261619)'
-        ],
-        backgroundSize: 'cover',
-        backgroundPosition: 'top center'
-      }}
-    >
-      <Container
-        as="article"
-        sx={{
-          'h2,h3,p': { maxWidth: 'copy', textShadow: 'text' },
-          pt: [4, 5],
-          pb: [5, 6, 7],
-          color: 'white'
-        }}
+    <Box id="scrapbook" as="section" sx={{ bg: 'snow', py: [4, 5] }}>
+      <Grid
+        columns={[null, 2, 5]}
+        variant="layout.wide"
+        gap={[3, 4]}
+        sx={{ px: [3, 4, 5] }}
       >
-        <Text as="p" variant="eyebrow" color="yellow">
-          Mentorship program
-        </Text>
-        <Heading as="h2" variant="title">
-          1-on-1 coaching with a professional.
-        </Heading>
-        <Text as="p" variant="subtitle" my={3}>
-          Our mentors are engineers from our partners as well as
-          invited industry professionals.
-        </Text>
-        <Text as="p" variant="subtitle" my={3}>
-          Throughout the summer, you’ll be able to hop on Zoom calls with our mentors.
-	  They’ll provide career advice, talk with you about your projects and discuss whatever you’d like.
-        </Text>
-        <Button as="a" variant="cta" href={APPLY_URL} mt={3} mb={[null, 4, 5]}>
-          Pre-register
-        </Button>
-      </Container>
+        <Box sx={{ gridColumn: [null, null, 'span 2'] }}>
+          <Text as="p" variant="eyebrow" color="orange">
+            Scrapbook
+          </Text>
+          <Heading as="h2" variant="title">
+            Share updates of your learning every day.
+          </Heading>
+          <Text as="p" variant="subtitle" my={3}>
+            Every day this summer, as you learn & build projects, share short video & photo updates each day. You can put custom CSS all over your profile & use your domain.
+          </Text>
+          <Button
+            as="a"
+            variant="cta"
+            href="https://scrapbook.hackclub.com/"
+            sx={{ backgroundImage: t => t.util.gradient('orange', 'purple') }}
+          >
+            Explore & start yours
+          </Button>
+        </Box>
+        {scraps.map(url => (
+          <Card
+            key={url}
+            style={{ backgroundImage: `url(${url})` }}
+            sx={{
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              minHeight: [256, 360],
+              ':nth-of-type(5)': { gridColumn: [null, 'span 2'] }
+            }}
+          />
+        ))}
+      </Grid>
     </Box>
-    */}
     <Box
       id="slack"
       as="section"
@@ -239,24 +236,44 @@ export default props => (
           target="_blank"
           mt={3}
           mb={[null, 4, 5]}
-          sx={{ bg: 'cyan', backgroundImage: t => t.util.gradient('cyan', 'green'), color: 'slate' }}
+          sx={{
+            bg: 'cyan',
+            backgroundImage: t => t.util.gradient('cyan', 'green'),
+            color: 'slate'
+          }}
         >
           Join the Slack
         </Button>
       </Container>
     </Box>
-    <Box as="section" sx={{ bg: 'purple', backgroundImage: t => t.util.gradient('blue', 'purple'), color: 'white', py: [4, 5] }}>
+    <Box
+      as="section"
+      sx={{
+        bg: 'purple',
+        backgroundImage: t => [
+          t.util.gradient('blue', 'purple'),
+          `radial-gradient(ellipse farthest-corner at bottom center, ${
+          t.colors.cyan
+          } 5%, ${t.colors.blue}, ${t.colors.purple})`
+        ],
+        color: 'white',
+        py: [4, 5]
+      }}
+    >
       <Container>
         <Heading as="h2" variant="title">
           Let’s review.
         </Heading>
-        <Grid columns={[null, 3]} gap={4} sx={{ mt: 3, a: { mt: 3 } }}>
+        <Grid columns={[null, 3]} gap={[3, 4]} sx={{ mt: 3, a: { mt: 3 } }}>
           <div>
             <Heading as="h3" variant="headline">
               A scrapbook you’re proud of.
             </Heading>
             <Text as="p" variant="subtitle">
-              Share updates of your learning every day: Every day this summer, Hack Clubbers are learning & building projects, sharing short video & photo updates each day. See the in-progress projects and join.
+              Share updates of your learning every day: Every day this summer,
+              Hack Clubbers are learning & building projects, sharing short
+              video & photo updates each day. See the in-progress projects and
+              join.
             </Text>
           </div>
           <div>
@@ -264,8 +281,9 @@ export default props => (
               $50k in hardware grants.
             </Heading>
             <Text as="p" variant="subtitle">
-              Whether it’s your first hardware project or hundredth, you can apply for
-              hardware grants, sponsored by GitHub, Adafruit, & Arduino.
+              Whether it’s your first hardware project or hundredth, you can
+              apply for hardware grants, sponsored by GitHub, Adafruit, &
+              Arduino.
             </Text>
           </div>
           <div>
@@ -274,7 +292,7 @@ export default props => (
             </Heading>
             <Text as="p" variant="subtitle">
               In the{' '}
-              <A href="https://hackclub.com/slack/" color="red">
+              <A href="https://hackclub.com/slack/" color="inherit">
                 Hack Club Slack
               </A>
               , join weekly events, mini-hackathons, biweekly AMAs with the most
@@ -331,3 +349,23 @@ export default props => (
     </Box>
   </>
 )
+
+export const getStaticProps = async () => {
+  let scraps = []
+  try {
+    const { takeRight, filter, shuffle, orderBy, map } = require('lodash')
+    let posts = await fetch('https://scrapbook.hackclub.com/api/posts').then(
+      r => r.json()
+    )
+    posts = shuffle(
+      takeRight(
+        filter(orderBy(posts, 'postedAt'), p =>
+          p.attachments?.[0].type.startsWith('image')
+        ),
+        7
+      )
+    )
+    scraps = map(posts, 'attachments[0].thumbnails.large.url')
+  } catch (err) { }
+  return { props: { scraps }, unstable_revalidate: 10 }
+}
