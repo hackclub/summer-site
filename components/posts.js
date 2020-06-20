@@ -121,7 +121,7 @@ const Posts = ({ data = [] }) => (
     </Masonry>
     <Box
       sx={{
-        bottomMargin: '30px',
+        paddingBottom: '30px',
         textAlign: 'center'
       }}
     >
