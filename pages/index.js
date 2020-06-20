@@ -308,7 +308,7 @@ export const getStaticProps = async () => {
     const { take, takeRight, filter, shuffle, orderBy, map } = require('lodash')
     let posts = await fetch('https://scrapbook.hackclub.com/api/posts')
       .then(r => r.json())
-      .then(posts => orderBy(posts, 'postedAt'))
+      .then(posts => orderBy(posts, 'postedAt', 'asc'))
       .then(posts =>
         filter(posts, p =>
           ['image/jpg', 'image/jpeg', 'image/png'].includes(
