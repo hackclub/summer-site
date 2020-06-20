@@ -305,10 +305,10 @@ export const getStaticProps = async () => {
   let images = []
   let scraps = []
   try {
-    const { take, takeRight, filter, shuffle, orderBy, map } = require('lodash')
+    const { take, takeRight, takeLeft, filter, shuffle, orderBy, map } = require('lodash')
     let posts = await fetch('https://scrapbook.hackclub.com/api/posts')
       .then(r => r.json())
-      .then(posts => orderBy(posts, 'postedAt'))
+      .then(posts => orderBy(posts, 'postedAt', 'desc'))
       .then(posts =>
         filter(posts, p =>
           ['image/jpg', 'image/jpeg', 'image/png'].includes(
@@ -317,7 +317,7 @@ export const getStaticProps = async () => {
         )
       )
     scraps = take(posts, 8)
-    posts = shuffle(takeRight(posts, 3))
+    posts = takeRight(shuffle(posts), 3)
     images = map(posts, 'attachments[0].thumbnails.large.url')
   } catch (err) {}
   return { props: { scraps, images }, unstable_revalidate: 2 }
