@@ -317,7 +317,7 @@ export const getStaticProps = async () => {
         )
       )
     scraps = take(posts, 8)
-    posts = shuffle(takeRight(takeLeft(posts, 11), 3))
+    posts = takeRight(shuffle(posts), 3)
     images = map(posts, 'attachments[0].thumbnails.large.url')
   } catch (err) {}
   return { props: { scraps, images }, unstable_revalidate: 2 }
