@@ -70,7 +70,7 @@ export default ({ scraps, images }) => (
           variant="title"
           sx={{ color: 'white', maxWidth: 'narrow', mx: 'auto', mb: 3 }}
         >
-          Free hardware from&nbsp;GitHub.
+          Free hardware from GitHub.
         </Heading>
         <Text as="p" variant="subtitle">
           GitHub is sponsoring $50k worth of hardware grants for student makers,
