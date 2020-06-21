@@ -276,12 +276,12 @@ export default ({ scraps, images }) => (
           A project by <A href="https://hackclub.com/">Hack Club</A>.
         </Heading>
         <Text as="p" variant="caption" mb={3}>
-          Thank you: Sam Poder for the idea + Lachlan Campbell, Zach Latta,
+          Thank you: Sam Poder, Lachlan Campbell, Zach Latta,
           Roshan Palakkal, Neel Redkar, Matthew Stanciu, Chris Walker, Max Wofford.
         </Text>
         <Text as="p" variant="caption" mb={1}>
           Site by <A href="https://lachlanjc.com/">@lachlanjc</A>. Always{' '}
-          <A href="https://github.com/hackclub/summer/">open source</A>. Graphic
+          <A href="https://github.com/hackclub/summer/">open source</A>. Graphics
           from <A href="https://github.com/fritzing/fritzing-parts">Fritzing</A>
           .
         </Text>
