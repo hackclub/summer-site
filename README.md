@@ -10,7 +10,7 @@ We don't want to descend from above with a "program" for you to do. If this is g
 
 Will you choose to push yourself outside your comfort zone, whether it's building your first website or a model rocket? What about using React.js for the first time or constructing a smart mirror?
 
-At HQ, we're going to do everything we can to support you. There are four ways to get started:
+At Hack Club, we're going to do everything we can to support you. There are four ways to get started:
 
 1. **Get a Summer of Making sticker in the mail**: [Request one here](https://hack.af/som-stickers). We are printing thousands and will be shipping to everyone who requests.
 2. **Have GitHub buy you electronics for your hardware project.** We are giving **$50,000 in hardware grants** from GitHub to fund electronics projects. Applications are open today. [Learn more](https://hack.af/hwp-learn-more) and [apply with an idea](https://hack.af/hwp-apply). Priority is given to existing Hack Club members. We are funding 500 projects.
