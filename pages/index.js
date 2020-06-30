@@ -261,7 +261,7 @@ export default ({ scraps, images }) => (
           In collaboration with
         </Heading>
         <Grid columns={[null, 2, 4]} gap={3}>
-          <Collab alt="GitHub" img="/sponsors/github.svg" />
+          <Collab alt="GitHub" img="/sponsors/github.svg" url="https://github.com/" />
           <Collab alt="Adafruit" img="/sponsors/adafruit.png" url="https://adafruit.com/" />
           <Collab alt="Arduino" img="/sponsors/arduino.svg" url="https://arduino.cc/" />
         </Grid>
