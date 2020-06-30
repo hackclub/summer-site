@@ -22,9 +22,9 @@ import Posts from '../components/posts'
 import Hardware from '../components/hardware'
 import Slack from '../components/slack'
 
-const Collab = ({ img, alt }) => (
+const Collab = ({ img, alt, url }) => (
   <A
-    href={`https://${alt.toLowerCase()}.com/`}
+    href={url}
     target="_blank"
     sx={{ display: 'block', mb: [3, 4] }}
   >
@@ -262,8 +262,8 @@ export default ({ scraps, images }) => (
         </Heading>
         <Grid columns={[null, 2, 4]} gap={3}>
           <Collab alt="GitHub" img="/sponsors/github.svg" />
-          <Collab alt="Adafruit" img="/sponsors/adafruit.png" />
-          <Collab alt="Arduino" img="/sponsors/arduino.svg" />
+          <Collab alt="Adafruit" img="/sponsors/adafruit.png" url="https://adafruit.com/" />
+          <Collab alt="Arduino" img="/sponsors/arduino.svg" url="https://arduino.cc/" />
         </Grid>
       </Container>
     </Box>
