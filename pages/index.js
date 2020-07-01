@@ -177,7 +177,7 @@ export default ({ scraps, images }) => (
         </Box>
         <Card
           key='https://scrapbook.hackclub.com/austin'
-          style={{ backgroundImage: `https://dl.airtable.com/.attachmentThumbnails/169f54f04aa5f292dc8fd2dbc99493ee/a7a1ce23` }}
+          style={{ backgroundImage: url('https://dl.airtable.com/.attachmentThumbnails/169f54f04aa5f292dc8fd2dbc99493ee/a7a1ce23') }}
           variant="interactive"
           sx={{
             backgroundSize: 'cover',
@@ -188,7 +188,7 @@ export default ({ scraps, images }) => (
         />
         <Card
           key='https://scrapbook.hackclub.com/ongzhizheng'
-          style={{ backgroundImage: `https://dl.airtable.com/.attachmentThumbnails/11e238585dc4cf7af50a80c6298cf5d2/a7942d49` }}
+          style={{ backgroundImage: url('https://dl.airtable.com/.attachmentThumbnails/11e238585dc4cf7af50a80c6298cf5d2/a7942d49') }}
           variant="interactive"
           sx={{
             backgroundSize: 'cover',
@@ -199,7 +199,7 @@ export default ({ scraps, images }) => (
         />
         <Card
           key='https://scrapbook.hackclub.com/elizabethjqiu'
-          style={{ backgroundImage: `https://dl.airtable.com/.attachmentThumbnails/2bac8828b908d77f9113121e292d53b1/36ee25e7` }}
+          style={{ backgroundImage: url('https://dl.airtable.com/.attachmentThumbnails/2bac8828b908d77f9113121e292d53b1/36ee25e7') }}
           variant="interactive"
           sx={{
             backgroundSize: 'cover',
@@ -210,7 +210,7 @@ export default ({ scraps, images }) => (
         />
       </Grid>
     </Box>
-    // <Posts data={scraps} />
+    // <!-- <Posts data={scraps} /> -->
     <Slack />
     <Box
       as="section"
