@@ -31,10 +31,6 @@ export default class extends Document {
             rel="stylesheet"
           />
           <meta name="format-detection" content="telephone=no" />
-          <script
-            src="https://embed.small.chat/T014PJR5A8ZG0149JRMDGD.js"
-            async
-          />
         </Head>
         <body>
           <Main />
