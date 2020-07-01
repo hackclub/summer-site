@@ -291,27 +291,27 @@ export default ({ scraps, images }) => (
       sx={{ bg: 'black', color: 'snow', py: [4, 5], a: { color: 'orange' } }}
     >
       <Container>
-        <Heading as="h3" variant="subheadline" mb={2}>
+        <Heading as="h3" variant="subheadline" mb={2} sx={{ color: 'snow' }}>
           A project by <A href="https://hackclub.com/">Hack Club</A>.
         </Heading>
-        <Text as="p" variant="caption" mb={3}>
+        <Text as="p" variant="caption" mb={3} sx={{ color: 'snow' }}>
           Thank you: Sam Poder, Lachlan Campbell, Zach Latta,
           Roshan Palakkal, Neel Redkar, Matthew Stanciu, Chris Walker, Max Wofford.
         </Text>
-        <Text as="p" variant="caption" mb={1}>
+        <Text as="p" variant="caption" mb={1} sx={{ color: 'snow' }}>
           Site by <A href="https://lachlanjc.com/">@lachlanjc</A>. Always{' '}
           <A href="https://github.com/hackclub/summer/">open source</A>. Graphics
           from <A href="https://github.com/fritzing/fritzing-parts">Fritzing</A>
           .
         </Text>
-        <Text as="p" variant="caption">
+        <Text as="p" variant="caption" sx={{ color: 'snow' }}>
           Following the{' '}
           <A href="https://hackclub.com/conduct/">Hack Club Code of Conduct</A>.
         </Text>
         <Text
           as="p"
           variant="caption"
-          sx={{ mt: 3, pt: 3, borderTop: '1px solid', borderColor: '#C0CCDA' }}
+          sx={{ mt: 3, pt: 3, borderTop: '1px solid', borderColor: '#C0CCDA', color: 'snow' }}
         >
           © 2020 Hack Club. 501(c)(3) nonprofit (EIN: 81-2908499)
         </Text>
