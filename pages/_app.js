@@ -12,7 +12,10 @@ const App = ({ Component, pageProps }) => {
   const router = useRouter()
 
   useEffect(() => {
-    Fathom.load('EWOQWHJD', { includedDomains: ['summer.hackclub.com'] })
+    // the hackclub.com code
+    Fathom.load('OGIMJEFA', {
+      includedDomains: ['summer.hackclub.com', 'hackclub.com']
+    })
     const onRouteChangeComplete = () => Fathom.trackPageview()
     router.events.on('routeChangeComplete', onRouteChangeComplete)
     return () => {

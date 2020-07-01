@@ -16,6 +16,7 @@ import Head from 'next/head'
 import Meta from '@hackclub/meta'
 import Nav from '../components/nav'
 import Stat from '../components/stat'
+import Footer from '../components/footer'
 
 import Header from '../components/header'
 import Posts from '../components/posts'
@@ -23,11 +24,7 @@ import Hardware from '../components/hardware'
 import Slack from '../components/slack'
 
 const Collab = ({ img, alt, url }) => (
-  <A
-    href={url}
-    target="_blank"
-    sx={{ display: 'block', mb: [3, 4] }}
-  >
+  <A href={url} target="_blank" sx={{ display: 'block', mb: [3, 4] }}>
     <Image src={img} alt={alt} sx={{ maxWidth: 256, maxHeight: 72 }} />
   </A>
 )
@@ -217,9 +214,7 @@ export default ({ scraps, images }) => (
         bg: 'purple',
         backgroundImage: t => [
           t.util.gradient('blue', 'purple'),
-          `radial-gradient(ellipse farthest-corner at bottom center, ${
-            t.colors.pink
-          } 5%, ${t.colors.orange}, ${t.colors.orange})`
+          `radial-gradient(ellipse farthest-corner at top left, ${t.colors.pink}, ${t.colors.orange})`
         ],
         color: 'white',
         py: [4, 5]
@@ -280,64 +275,52 @@ export default ({ scraps, images }) => (
           In collaboration with
         </Heading>
         <Grid columns={[null, 2, 4]} gap={3}>
-          <Collab alt="GitHub" img="/sponsors/github.svg" url="https://github.com/" />
-          <Collab alt="Adafruit" img="/sponsors/adafruit.png" url="https://adafruit.com/" />
-          <Collab alt="Arduino" img="/sponsors/arduino.svg" url="https://arduino.cc/" />
+          <Collab
+            alt="GitHub"
+            img="/sponsors/github.svg"
+            url="https://github.com/"
+          />
+          <Collab
+            alt="Adafruit"
+            img="/sponsors/adafruit.png"
+            url="https://adafruit.com/"
+          />
+          <Collab
+            alt="Arduino"
+            img="/sponsors/arduino.svg"
+            url="https://arduino.cc/"
+          />
         </Grid>
       </Container>
     </Box>
-    <Box
-      as="footer"
-      sx={{ bg: 'smoke', color: 'black', py: [4, 5], a: { color: 'orange' } }}
-    >
-      <Container>
-        <Heading as="h3" variant="subheadline" mb={2}>
-          A project by <A href="https://hackclub.com/">Hack Club</A>.
-        </Heading>
-        <Text as="p" variant="caption" mb={3}>
-          Thank you: Sam Poder, Lachlan Campbell, Zach Latta,
-          Roshan Palakkal, Neel Redkar, Matthew Stanciu, Chris Walker, Max Wofford.
-        </Text>
-        <Text as="p" variant="caption" mb={1}>
-          Site by <A href="https://lachlanjc.com/">@lachlanjc</A>. Always{' '}
-          <A href="https://github.com/hackclub/summer/">open source</A>. Graphics
-          from <A href="https://github.com/fritzing/fritzing-parts">Fritzing</A>
-          .
-        </Text>
-        <Text as="p" variant="caption">
-          Following the{' '}
-          <A href="https://hackclub.com/conduct/">Hack Club Code of Conduct</A>.
-        </Text>
-        <Text
-          as="p"
-          variant="caption"
-          sx={{ mt: 3, pt: 3, borderTop: '1px solid', borderColor: '#C0CCDA' }}
-        >
-          © 2020 Hack Club. 501(c)(3) nonprofit (EIN: 81-2908499)
-        </Text>
-      </Container>
-    </Box>
+    <Footer />
   </>
 )
 
 export const getStaticProps = async () => {
   let images = []
   let scraps = []
-  try {
-    const { take, takeRight, takeLeft, filter, shuffle, orderBy, map } = require('lodash')
-    let posts = await fetch('https://scrapbook.hackclub.com/api/posts')
-      .then(r => r.json())
-      .then(posts => orderBy(posts, 'postedAt', 'desc'))
-      .then(posts =>
-        filter(posts, p =>
-          ['image/jpg', 'image/jpeg', 'image/png'].includes(
-            p.attachments?.[0].type
-          )
+  const {
+    take,
+    takeRight,
+    takeLeft,
+    filter,
+    shuffle,
+    orderBy,
+    map
+  } = require('lodash')
+  let posts = await fetch('https://scrapbook.hackclub.com/api/posts/')
+    .then(r => r.json())
+    .then(posts => orderBy(posts, 'postedAt', 'desc'))
+    .then(posts =>
+      filter(posts, p =>
+        ['image/jpg', 'image/jpeg', 'image/png'].includes(
+          p.attachments?.[0]?.type
         )
       )
-    scraps = take(posts, 8)
-    posts = takeRight(shuffle(posts), 3)
-    images = map(posts, 'attachments[0].thumbnails.large.url')
-  } catch (err) {}
+    )
+  scraps = take(posts, 10)
+  posts = takeRight(shuffle(posts), 3)
+  images = map(posts, 'attachments[0].thumbnails.large.url')
   return { props: { scraps, images }, unstable_revalidate: 2 }
 }

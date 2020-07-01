@@ -39,7 +39,7 @@ const Sheet = () => (
       variant="title"
       sx={{ color: 'black', span: { color: 'pink', display: 'block' } }}
     >
-      Welcome now to the{' '}
+      Welcome to the{' '}
       <Text as="span" sx={t => t.util.gradientText('orange', 'pink')}>
         Summer of Making.
       </Text>
@@ -70,8 +70,13 @@ const Static = () => (
       pb: 3,
       px: 3,
       position: 'relative',
-
-      backgroundImage: t => t.util.gradient('yellow', 'cyan')
+      backgroundImage: [
+        'radial-gradient(at left top, rgba(247, 255, 0, 0.66), rgb(0, 255, 255, 0.66)), url(https://assets.hackclub.com/log/2020-06-29_flagship_1-sm.jpg)',
+        'radial-gradient(at left top, rgba(247, 255, 0, 0.66), rgb(0, 255, 255, 0.66)), url(https://assets.hackclub.com/log/2020-06-29_flagship_1.jpg)'
+      ],
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      '@media (hover: hover)': { backgroundAttachment: 'fixed' }
     }}
   >
     <Sheet />
