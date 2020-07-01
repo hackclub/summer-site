@@ -172,22 +172,41 @@ export default ({ scraps, images }) => (
             See what everyone’s making
           </Button>
         </Box>
-        {images.map(url => (
-          <Card
-            key={url}
-            style={{ backgroundImage: `url(${url})` }}
-            variant="interactive"
-            sx={{
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              minHeight: [256, 360],
-              ':last-of-type': { display: ['none', null, 'block'] }
-            }}
-          />
-        ))}
+        <Card
+          key='https://scrapbook.hackclub.com/austin'
+          style={{ backgroundImage: 'url(https://dl.airtable.com/.attachmentThumbnails/169f54f04aa5f292dc8fd2dbc99493ee/a7a1ce23)' }}
+          variant="interactive"
+          sx={{
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            minHeight: [256, 360],
+            ':last-of-type': { display: ['none', null, 'block'] }
+          }}
+        />
+        <Card
+          key='https://scrapbook.hackclub.com/ongzhizheng'
+          style={{ backgroundImage: 'url(https://dl.airtable.com/.attachmentThumbnails/11e238585dc4cf7af50a80c6298cf5d2/a7942d49)' }}
+          variant="interactive"
+          sx={{
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            minHeight: [256, 360],
+            ':last-of-type': { display: ['none', null, 'block'] }
+          }}
+        />
+        <Card
+          key='https://scrapbook.hackclub.com/elizabethjqiu'
+          style={{ backgroundImage: 'url(https://dl.airtable.com/.attachmentThumbnails/2bac8828b908d77f9113121e292d53b1/36ee25e7)'}}
+          variant="interactive"
+          sx={{
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            minHeight: [256, 360],
+            ':last-of-type': { display: ['none', null, 'block'] }
+          }}
+        />
       </Grid>
     </Box>
-    <Posts data={scraps} />
     <Slack />
     <Box
       as="section"

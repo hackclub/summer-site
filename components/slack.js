@@ -21,7 +21,7 @@ const Sheet = () => (
       Friends, mentors, and weekly events on Slack.
     </Heading>
     <Text as="p" variant="subtitle" my={3}>
-      You’ll be entering an incredibly welcoming community of 10K teenager
+      You’ll be entering an incredibly welcoming community of over 10K teenager
       makers. All summer, we’re running weekly live events, including AMAs,
       coding workshops, show & tells, office hours, and more.
     </Text>
