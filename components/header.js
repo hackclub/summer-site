@@ -39,7 +39,7 @@ const Sheet = () => (
       variant="title"
       sx={{ color: 'black', span: { color: 'pink', display: 'block' } }}
     >
-      TWelcome now to the{' '}
+      Welcome now to the{' '}
       <Text as="span" sx={t => t.util.gradientText('orange', 'pink')}>
         Summer of Making.
       </Text>
