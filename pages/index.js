@@ -288,7 +288,7 @@ export default ({ scraps, images }) => (
     </Box>
     <Box
       as="footer"
-      sx={{ bg: 'snow', color: 'black', py: [4, 5], a: { color: 'orange' } }}
+      sx={{ bg: 'black', color: 'snow', py: [4, 5], a: { color: 'orange' } }}
     >
       <Container>
         <Heading as="h3" variant="subheadline" mb={2}>
