@@ -210,7 +210,7 @@ export default ({ scraps, images }) => (
         />
       </Grid>
     </Box>
-    // <!-- <Posts data={scraps} /> -->
+    // <Posts data={scraps} /> -->
     <Slack />
     <Box
       as="section"
