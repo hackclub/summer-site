@@ -1157,25 +1157,6 @@
   resolved "https://registry.yarnpkg.com/@mdx-js/react/-/react-1.5.5.tgz#0036e65ec59521059f33292f535b9ef0d67bd0e6"
   integrity sha512-Qwvri4zyU9ZbhhXsH0wfSZ/J9b8mARRTB6GSCTnyKRffO2CaQXl9oLsvRAeQSLRei/onEARc+RexH+jMeNS1rw==
 
-"@ndhoule/each@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@ndhoule/each/-/each-2.0.1.tgz#bbed372a603e0713a3193c706a73ddebc5b426a9"
-  integrity sha1-u+03KmA+BxOjGTxwanPd68W0Jqk=
-  dependencies:
-    "@ndhoule/keys" "^2.0.0"
-
-"@ndhoule/keys@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@ndhoule/keys/-/keys-2.0.0.tgz#3d64ae677c65a261747bf3a457c62eb292a4e0ce"
-  integrity sha1-PWSuZ3xlomF0e/OkV8YuspKk4M4=
-
-"@ndhoule/map@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@ndhoule/map/-/map-2.0.1.tgz#f5ca0a47424ea67f46e2a6d499b9e9bc886aefa8"
-  integrity sha1-9coKR0JOpn9G4qbUmbnpvIhq76g=
-  dependencies:
-    "@ndhoule/each" "^2.0.1"
-
 "@next/react-dev-overlay@9.4.4":
   version "9.4.4"
   resolved "https://registry.yarnpkg.com/@next/react-dev-overlay/-/react-dev-overlay-9.4.4.tgz#4ae03ac839ff022b3ce5c695bd24b179d4ef459d"
@@ -1196,13 +1177,6 @@
   version "9.4.4"
   resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-9.4.4.tgz#d94cbb3b354a07f1f5b80e554d6b9e34aba99e41"
   integrity sha512-9nKENeWRI6kQk44TbeqleIVtNLfcS3klVUepzl/ZCqzR5Bi06uqBCD277hdVvG/wL1pxA+R/pgJQLqnF5E2wPQ==
-
-"@segment/snippet@^4.12.0":
-  version "4.12.0"
-  resolved "https://registry.yarnpkg.com/@segment/snippet/-/snippet-4.12.0.tgz#a31d1e31e9f7b78f805327a85474ce2a5973a922"
-  integrity sha512-9H+wgJAlbuTEKpDg1HUWeNEcSIQg+07M4PgI2FXe8qEiZ9KBDjd0ierm1EcBwmy7b9d8zvnRAvfEWBbQvAzimg==
-  dependencies:
-    "@ndhoule/map" "^2.0.1"
 
 "@styled-system/background@^5.1.2":
   version "5.1.2"
