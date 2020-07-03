@@ -19,17 +19,17 @@ import Stat from '../components/stat'
 import Footer from '../components/footer'
 
 import Header from '../components/header'
-import Posts from '../components/posts'
+// import Posts from '../components/posts'
 import Hardware from '../components/hardware'
 import Slack from '../components/slack'
 
 const Collab = ({ img, alt, url }) => (
-  <A href={url} target="_blank" sx={{ display: 'block', mb: [3, 4] }}>
-    <Image src={img} alt={alt} sx={{ maxWidth: 256, maxHeight: 72 }} />
+  <A href={url} target="_blank" sx={{ display: 'block', mx: 3, mb: [3, 4] }}>
+    <Image src={img} alt={alt} sx={{ maxWidth: 224, maxHeight: 84 }} />
   </A>
 )
 
-export default ({ scraps, images }) => (
+export default ({ images }) => (
   <>
     <Meta
       as={Head}
@@ -173,8 +173,11 @@ export default ({ scraps, images }) => (
           </Button>
         </Box>
         <Card
-          key='https://scrapbook.hackclub.com/austin'
-          style={{ backgroundImage: 'url(https://dl.airtable.com/.attachmentThumbnails/169f54f04aa5f292dc8fd2dbc99493ee/a7a1ce23)' }}
+          key="https://scrapbook.hackclub.com/austin"
+          style={{
+            backgroundImage:
+              'url(https://dl.airtable.com/.attachmentThumbnails/169f54f04aa5f292dc8fd2dbc99493ee/a7a1ce23)'
+          }}
           variant="interactive"
           sx={{
             backgroundSize: 'cover',
@@ -184,8 +187,11 @@ export default ({ scraps, images }) => (
           }}
         />
         <Card
-          key='https://scrapbook.hackclub.com/ongzhizheng'
-          style={{ backgroundImage: 'url(https://dl.airtable.com/.attachmentThumbnails/11e238585dc4cf7af50a80c6298cf5d2/a7942d49)' }}
+          key="https://scrapbook.hackclub.com/ongzhizheng"
+          style={{
+            backgroundImage:
+              'url(https://dl.airtable.com/.attachmentThumbnails/11e238585dc4cf7af50a80c6298cf5d2/a7942d49)'
+          }}
           variant="interactive"
           sx={{
             backgroundSize: 'cover',
@@ -195,8 +201,11 @@ export default ({ scraps, images }) => (
           }}
         />
         <Card
-          key='https://scrapbook.hackclub.com/elizabethjqiu'
-          style={{ backgroundImage: 'url(https://dl.airtable.com/.attachmentThumbnails/2bac8828b908d77f9113121e292d53b1/36ee25e7)'}}
+          key="https://scrapbook.hackclub.com/elizabethjqiu"
+          style={{
+            backgroundImage:
+              'url(https://dl.airtable.com/.attachmentThumbnails/2bac8828b908d77f9113121e292d53b1/36ee25e7)'
+          }}
           variant="interactive"
           sx={{
             backgroundSize: 'cover',
@@ -274,7 +283,7 @@ export default ({ scraps, images }) => (
         >
           In collaboration with
         </Heading>
-        <Grid columns={[null, 2, 4]} gap={3}>
+        <Flex sx={{ flexWrap: 'wrap', alignItems: 'flex-end', mx: -3 }}>
           <Collab
             alt="GitHub"
             img="/sponsors/github.svg"
@@ -290,7 +299,7 @@ export default ({ scraps, images }) => (
             img="/sponsors/arduino.svg"
             url="https://arduino.cc/"
           />
-        </Grid>
+        </Flex>
       </Container>
     </Box>
     <Footer />
@@ -299,7 +308,7 @@ export default ({ scraps, images }) => (
 
 export const getStaticProps = async () => {
   let images = []
-  let scraps = []
+  // let scraps = []
   const {
     take,
     takeRight,
@@ -319,8 +328,8 @@ export const getStaticProps = async () => {
         )
       )
     )
-  scraps = take(posts, 10)
+  // scraps = take(posts, 10)
   posts = takeRight(shuffle(posts), 3)
   images = map(posts, 'attachments[0].thumbnails.large.url')
-  return { props: { scraps, images }, unstable_revalidate: 2 }
+  return { props: { images }, unstable_revalidate: 8 }
 }
