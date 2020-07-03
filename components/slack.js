@@ -5,8 +5,10 @@ import useHasMounted from '../lib/use-has-mounted'
 const Sheet = () => (
   <Container
     as="article"
+    variant="copy"
     sx={{
-      'h2,h3,p': { maxWidth: 'copy', textShadow: 'text' },
+      'h2,h3,p': { textShadow: 'text' },
+      textAlign: [null, 'center'],
       pt: [4, 5],
       pb: [5, 6, 7],
       color: 'white',

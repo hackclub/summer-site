@@ -45,19 +45,14 @@ const Sheet = () => (
       </Text>
     </Heading>
     <Text as="p" variant="subtitle" mt={3}>
-      It’s not an event, or a program with a start/end date. It’s a theme for
-      the summer as well as a challenge to every teenager reading this:{' '}
-      <strong>What&nbsp;will you make?</strong> What will you learn?
+      It’s not an event or program. It’s a theme for the summer, a challenge to
+      every teenager reading this: <strong>What&nbsp;will you make?</strong>
     </Text>
     <Text as="p" variant="subtitle" mt={3}>
-      We’re doing a few big things to support you—giving out $50,000 in free
-      electronics (thanks GitHub!), building a Snapchat streaks-like system for
-      learning—but really the Summer of&nbsp;Making is about you.
-    </Text>
-    <Text as="p" variant="subtitle" mt={3}>
-      We don’t want to descend from above with a “program” for you to do. If
-      this is going to be the best summer ever, it’ll be because of what you all
-      choose to hack on & learn from.
+      To suppport you, we’re distributing $50,000 in free electronics (thanks
+      GitHub!) & building Snapchat streaks for coding—but really Summer
+      of&nbsp;Making is about you. If this will be the best summer ever, it’ll
+      be because of what you choose to hack on & learn from.
     </Text>
   </Card>
 )
