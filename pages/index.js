@@ -93,7 +93,7 @@ export default ({ images }) => (
     <Box
       as="section"
       sx={{
-        backgroundImage: 'url(/register-bg.svg)',
+        backgroundImage: 'url(https://summer.hackclub.com/register-bg.svg)',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         '@media (hover: hover)': { backgroundAttachment: 'fixed' },
@@ -286,17 +286,17 @@ export default ({ images }) => (
         <Flex sx={{ flexWrap: 'wrap', alignItems: 'flex-end', mx: -3 }}>
           <Collab
             alt="GitHub"
-            img="/sponsors/github.svg"
+            img="https://summer.hackclub.com/sponsors/github.svg"
             url="https://github.com/"
           />
           <Collab
             alt="Adafruit"
-            img="/sponsors/adafruit.png"
+            img="https://summer.hackclub.com/sponsors/adafruit.png"
             url="https://adafruit.com/"
           />
           <Collab
             alt="Arduino"
-            img="/sponsors/arduino.svg"
+            img="https://summer.hackclub.com/sponsors/arduino.svg"
             url="https://arduino.cc/"
           />
         </Flex>
