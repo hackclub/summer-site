@@ -286,17 +286,17 @@ export default ({ images }) => (
         <Flex sx={{ flexWrap: 'wrap', alignItems: 'flex-end', mx: -3 }}>
           <Collab
             alt="GitHub"
-            img="/sponsors/github.svg"
+            img="public/sponsors/github.svg"
             url="https://github.com/"
           />
           <Collab
             alt="Adafruit"
-            img="/sponsors/adafruit.png"
+            img="public/sponsors/adafruit.png"
             url="https://adafruit.com/"
           />
           <Collab
             alt="Arduino"
-            img="/sponsors/arduino.svg"
+            img="public/sponsors/arduino.svg"
             url="https://arduino.cc/"
           />
         </Flex>
