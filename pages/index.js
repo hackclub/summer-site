@@ -19,7 +19,7 @@ import Stat from '../components/stat'
 import Footer from '../components/footer'
 
 import Header from '../components/header'
-// import Posts from '../components/posts'
+import Posts from '../components/posts'
 import Hardware from '../components/hardware'
 import Slack from '../components/slack'
 
@@ -29,7 +29,7 @@ const Collab = ({ img, alt, url }) => (
   </A>
 )
 
-export default ({ images }) => (
+export default ({ scraps, images }) => (
   <>
     <Meta
       as={Head}
@@ -216,6 +216,7 @@ export default ({ images }) => (
         />
       </Grid>
     </Box>
+    <Posts data={scraps} />
     <Slack />
     <Box
       as="section"
@@ -308,7 +309,7 @@ export default ({ images }) => (
 
 export const getStaticProps = async () => {
   let images = []
-  // let scraps = []
+  let scraps = []
   const {
     take,
     takeRight,
@@ -328,8 +329,8 @@ export const getStaticProps = async () => {
         )
       )
     )
-  // scraps = take(posts, 10)
+  scraps = take(posts, 10)
   posts = takeRight(shuffle(posts), 3)
   images = map(posts, 'attachments[0].thumbnails.large.url')
-  return { props: { images }, unstable_revalidate: 8 }
+  return { props: { scraps, images }, unstable_revalidate: 2 }
 }
