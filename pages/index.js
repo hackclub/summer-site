@@ -318,7 +318,7 @@ export const getStaticProps = async () => {
     orderBy,
     map
   } = require('lodash')
-  let posts = await fetch('https://scrapbook.hackclub.com/api/posts/')
+  let posts = await fetch('https://scrapbook.hackclub.com/api/posts')
     .then(r => r.json())
     .then(posts => orderBy(posts, 'postedAt', 'desc'))
     .then(posts =>
