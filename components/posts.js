@@ -10,9 +10,47 @@ import {
   Flex
 } from 'theme-ui'
 import { formatDate } from '../lib/dates'
-import { filter } from 'lodash'
+import { filter, last } from 'lodash'
 import Masonry from 'react-masonry-css'
 import FadeIn from './fade-in'
+
+export const formatText = text =>
+// Credit to https://blog.rstankov.com/building-auto-link-component-in-react/
+  text
+    .split(
+      /(<.+?\|?\S+>)|(@\w+)|(`{3}[\S\s]+`{3})|(`[^`]+`)|(_[^_]+_)|(\*[^\*]+\*)/
+    )
+    .map((chunk, i) => {
+      if (chunk?.startsWith('@')) {
+        const username = chunk.replace('@', '')
+        return <Mention username={username} key={username + i} />
+      }
+      if (chunk?.startsWith('<')) {
+        const parts = chunk.match(/<((.+)\|)?(.+?)>/)
+        const url = parts?.[2] || last(parts)
+        const children = last(parts)
+          ?.replace(/https?:\/\//, '')
+          .replace(/\/$/, '')
+        return (
+          <a href={url} target="_blank" key={i}>
+            {children}
+          </a>
+        )
+      }
+      if (chunk?.startsWith('```')) {
+        return <pre key={i}>{chunk.replace(/```/g, '')}</pre>
+      }
+      if (chunk?.startsWith('`')) {
+        return <code key={i}>{chunk.replace(/`/g, '')}</code>
+      }
+      if (chunk?.startsWith('*')) {
+        return <strong key={i}>{chunk.replace(/\*/g, '')}</strong>
+      }
+      if (chunk?.startsWith('_')) {
+        return <i key={i}>{chunk.replace(/_/g, '')}</i>
+      }
+      return chunk?.replace('&amp;', '&')
+    })
 
 const Post = ({
   id = new Date().toISOString(),
@@ -67,7 +105,7 @@ const Post = ({
       </Text>
     </Flex>
     <Text as="p" fontSize={3}>
-      {text}
+      {formatText(text)}
     </Text>
     {attachments.length > 0 && (
       <>
