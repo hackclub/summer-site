@@ -272,7 +272,7 @@ export default ({ scraps, images }) => (
               office hours, biweekly AMAs, and more.
             </Text>
             <Button as="a" variant="cta" href="https://hackclub.com/slack/">
-              Apply for Slack
+              Join the Slack
             </Button>
           </div>
         </Grid>
