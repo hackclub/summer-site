@@ -13,6 +13,7 @@ import { formatDate } from '../lib/dates'
 import { filter, last } from 'lodash'
 import Masonry from 'react-masonry-css'
 import FadeIn from './fade-in'
+import Mention from './mention'
 
 export const formatText = text =>
 // Credit to https://blog.rstankov.com/building-auto-link-component-in-react/
