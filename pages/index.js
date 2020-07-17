@@ -260,7 +260,7 @@ export default ({ scraps, images }) => (
               your own CSS—and build up a streak.
             </Text>
             <Button as="a" variant="cta" href="https://scrapbook.hackclub.com/">
-              Join now
+              Explore
             </Button>
           </div>
           <div>
