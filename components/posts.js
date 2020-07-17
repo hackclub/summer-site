@@ -117,9 +117,9 @@ const Post = ({
         >
           {filter(attachments, a => a.type.startsWith('image')).map(img => (
             <Image
-              key={img.thumbnails.large.url}
+              key={img.url}
               alt={img.filename}
-              src={img.thumbnails.large.url}
+              src={img.url}
               sx={{
                 maxWidth: '100%',
                 maxHeight: 256,
