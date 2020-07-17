@@ -119,7 +119,7 @@ const Post = ({
             <Image
               key={img.url}
               alt={img.filename}
-              src={img.url}
+              src={img?.thumbnails?.large?.url || img.url}
               sx={{
                 maxWidth: '100%',
                 maxHeight: 256,
