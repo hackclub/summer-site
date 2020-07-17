@@ -14,7 +14,7 @@
     "@hackclub/meta": "^1.0.0",
     "@hackclub/theme": "^0.1.1",
     "fathom-client": "^3.0.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "next": "^9.4.4",
     "react": "^16.13.1",
     "react-div-100vh": "^0.3.8",
