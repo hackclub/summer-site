@@ -65,10 +65,8 @@ const Static = () => (
       pb: 3,
       px: 3,
       position: 'relative',
-      backgroundImage: [
-        'radial-gradient(at left top, rgba(247, 255, 0, 0.66), rgb(0, 255, 255, 0.66)), url(https://assets.hackclub.com/log/2020-06-29_flagship_1-sm.jpg)',
-        'radial-gradient(at left top, rgba(247, 255, 0, 0.66), rgb(0, 255, 255, 0.66)), url(https://assets.hackclub.com/log/2020-06-29_flagship_1.jpg)'
-      ],
+      backgroundImage:
+        'url(https://cloud-b1lcwtt35.vercel.app/2020-07-17_qayt1fypm314jwev4nh6yf52vr7hq4wh.jpeg)',
       backgroundPosition: 'center',
       backgroundSize: 'cover',
       '@media (hover: hover)': { backgroundAttachment: 'fixed' }
