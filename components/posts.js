@@ -15,8 +15,8 @@ import Masonry from 'react-masonry-css'
 import FadeIn from './fade-in'
 import Mention from './mention'
 
-export const formatText = text =>
-// Credit to https://blog.rstankov.com/building-auto-link-component-in-react/
+export const formatText = (text) =>
+  // Credit to https://blog.rstankov.com/building-auto-link-component-in-react/
   text
     .split(
       /(<.+?\|?\S+>)|(@\w+)|(`{3}[\S\s]+`{3})|(`[^`]+`)|(_[^_]+_)|(\*[^\*]+\*)/
@@ -115,7 +115,7 @@ const Post = ({
           columns={2}
           sx={{ alignItems: 'center', textAlign: 'center', mt: 2 }}
         >
-          {filter(attachments, a => a.type.startsWith('image')).map(img => (
+          {filter(attachments, (a) => a.type.startsWith('image')).map((img) => (
             <Image
               key={img.url}
               alt={img.filename}
@@ -139,7 +139,7 @@ const Posts = ({ data = [] }) => (
   <Box
     as="section"
     sx={{
-      backgroundImage: t => t.util.gradient('pink', 'orange'),
+      backgroundImage: (t) => t.util.gradient('pink', 'orange'),
       display: ['none', 'block'],
       position: 'relative'
     }}
@@ -154,7 +154,7 @@ const Posts = ({ data = [] }) => (
       className="masonry-posts"
       columnClassName="masonry-posts-column"
     >
-      {data.map(post => (
+      {data.map((post) => (
         <Post key={post.id} {...post} />
       ))}
     </Masonry>

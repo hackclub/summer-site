@@ -129,7 +129,7 @@ export default ({ scraps, images }) => (
             sx={{
               mt: [4, 0],
               bg: 'green',
-              backgroundImage: t => t.util.gradient('cyan', 'green'),
+              backgroundImage: (t) => t.util.gradient('cyan', 'green'),
               color: 'darkless'
             }}
           >
@@ -167,7 +167,7 @@ export default ({ scraps, images }) => (
             as="a"
             variant="cta"
             href="https://scrapbook.hackclub.com/"
-            sx={{ backgroundImage: t => t.util.gradient('pink', 'orange') }}
+            sx={{ backgroundImage: (t) => t.util.gradient('pink', 'orange') }}
           >
             See what everyone’s making
           </Button>
@@ -222,7 +222,7 @@ export default ({ scraps, images }) => (
       as="section"
       sx={{
         bg: 'purple',
-        backgroundImage: t => [
+        backgroundImage: (t) => [
           t.util.gradient('blue', 'purple'),
           `radial-gradient(ellipse farthest-corner at top left, ${t.colors.pink}, ${t.colors.orange})`
         ],
@@ -320,10 +320,10 @@ export const getStaticProps = async () => {
     map
   } = require('lodash')
   let posts = await fetch('https://scrapbook.hackclub.com/api/posts')
-    .then(r => r.json())
-    .then(posts => orderBy(posts, 'postedAt', 'desc'))
-    .then(posts =>
-      filter(posts, p =>
+    .then((r) => r.json())
+    .then((posts) => orderBy(posts, 'postedAt', 'desc'))
+    .then((posts) =>
+      filter(posts, (p) =>
         ['image/jpg', 'image/jpeg', 'image/png'].includes(
           p.attachments?.[0]?.type
         )

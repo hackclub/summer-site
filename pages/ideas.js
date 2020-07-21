@@ -121,7 +121,7 @@ const stacks = [
 ]
 
 export default () => {
-  const get = arr => random(0, arr.length - 1)
+  const get = (arr) => random(0, arr.length - 1)
   const randomize = () => [
     get(platforms),
     get(verbs),
@@ -135,12 +135,9 @@ export default () => {
       subjects[indices[2]]
     } using ${stacks[indices[3]]}`
   const [text, setText] = useState('')
-  useEffect(
-    () => {
-      setText(makeText())
-    },
-    [indices]
-  )
+  useEffect(() => {
+    setText(makeText())
+  }, [indices])
 
   return (
     <>
@@ -189,7 +186,7 @@ export default () => {
           minHeight: '100vh',
           width: '100%',
           bg: 'cyan',
-          backgroundImage: t => t.util.gradient('yellow', 'cyan'),
+          backgroundImage: (t) => t.util.gradient('yellow', 'cyan'),
           color: 'black',
           display: 'flex',
           flexDirection: 'column',

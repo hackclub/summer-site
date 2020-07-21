@@ -10,7 +10,10 @@
       name="twitter:image"
       content="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fsummer.jpg?v=1590594017411"
     />
-    <meta name="twitter:description" content="Countdown to Hack Club’s Summer of Making: 6 weeks of professional mentorship, $50k in GitHub hardware grants, & an unparalleled online community!">
+    <meta
+      name="twitter:description"
+      content="Countdown to Hack Club’s Summer of Making: 6 weeks of professional mentorship, $50k in GitHub hardware grants, & an unparalleled online community!"
+    />
     <meta
       property="og:image"
       content="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fsummer.jpg?v=1590594017411"
@@ -29,7 +32,7 @@
     />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Countdown to Summer of Making"/>
+    <meta name="twitter:title" content="Countdown to Summer of Making" />
     <link
       rel="icon"
       type="image/png"
@@ -71,21 +74,21 @@
         margin-top: 5vh;
       }
       @font-face {
-        font-family: "Phantom Sans";
-        src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff")
-            format("woff"),
-          url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2")
-            format("woff2");
+        font-family: 'Phantom Sans';
+        src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff')
+            format('woff'),
+          url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2')
+            format('woff2');
         font-weight: normal;
         font-style: normal;
         font-display: swap;
       }
       @font-face {
-        font-family: "Phantom Sans";
-        src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff")
-            format("woff"),
-          url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2")
-            format("woff2");
+        font-family: 'Phantom Sans';
+        src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff')
+            format('woff'),
+          url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2')
+            format('woff2');
         font-weight: bold;
         font-style: normal;
         font-display: swap;
@@ -133,7 +136,9 @@
     <div class="grid-container">
       <div
         class="grid-item"
-        style="background-image: url('https://cutewallpaper.org/21/starry-night-backgrounds/Starry-Night-Backgrounds-30-+-Background-Pictures-.png');"
+        style="
+          background-image: url('https://cutewallpaper.org/21/starry-night-backgrounds/Starry-Night-Backgrounds-30-+-Background-Pictures-.png');
+        "
       >
         <img
           id="moon"
@@ -147,11 +152,19 @@
       </div>
       <div
         class="grid-item"
-        style="background-image: url('https://cutewallpaper.org/21/starry-night-backgrounds/Starry-Night-Backgrounds-30-+-Background-Pictures-.png'); color: white"
+        style="
+          background-image: url('https://cutewallpaper.org/21/starry-night-backgrounds/Starry-Night-Backgrounds-30-+-Background-Pictures-.png');
+          color: white;
+        "
       >
         <div
-          style="margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%);
-    transform: translateY(-50%);"
+          style="
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+          "
         >
           <h3>
             Dream big this summer.
@@ -171,17 +184,17 @@
     </div>
 
     <script>
-      var d1 = new Date(); //"now"
-      var d2 = new Date("2020/06/18"); // some date
+      var d1 = new Date() //"now"
+      var d2 = new Date('2020/06/18') // some date
       var diff = Math.abs(
         (21 - (d2 - d1) / (60 * 60 * 24 * 1000)) * 4.0476190476
-      ); // difference in milliseconds
-      var days = Math.abs((d2 - d1) / (60 * 60 * 24 * 1000));
-      console.log(days);
-      console.log(diff);
-      document.getElementById("rocket").style.bottom = String(diff) + "vh";
-      document.getElementById("mainHeader").innerHTML =
-        "T-MINUS " + String(Math.round(days)) + " DAYS";
+      ) // difference in milliseconds
+      var days = Math.abs((d2 - d1) / (60 * 60 * 24 * 1000))
+      console.log(days)
+      console.log(diff)
+      document.getElementById('rocket').style.bottom = String(diff) + 'vh'
+      document.getElementById('mainHeader').innerHTML =
+        'T-MINUS ' + String(Math.round(days)) + ' DAYS'
     </script>
   </body>
 </html>

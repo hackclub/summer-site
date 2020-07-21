@@ -36,7 +36,7 @@ const Sheet = () => (
       mb={[null, 4, 5]}
       sx={{
         bg: 'cyan',
-        backgroundImage: t => t.util.gradient('cyan', 'blue')
+        backgroundImage: (t) => t.util.gradient('cyan', 'blue')
       }}
     >
       Join the Slack
@@ -52,7 +52,7 @@ const Cover = () => (
       top: 0,
       left: 0,
       right: 0,
-      backgroundImage: t => t.util.gradient('blue', 'purple'),
+      backgroundImage: (t) => t.util.gradient('blue', 'purple'),
       opacity: 0.75,
       zIndex: 0
     }}

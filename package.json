@@ -22,5 +22,8 @@
     "react-masonry-css": "^1.0.14",
     "react-scrolllock": "^5.0.1",
     "theme-ui": "^0.3.1"
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
   }
 }

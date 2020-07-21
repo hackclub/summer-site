@@ -15,13 +15,13 @@ const rgbaBgColor = (props, opacity) =>
     ${opacity}
   )`
 
-const unfixed = props =>
+const unfixed = (props) =>
   !props.unfixed &&
   css`
     position: absolute;
     top: 0;
   `
-const fixed = props =>
+const fixed = (props) =>
   (props.scrolled || props.toggled || props.fixed) &&
   css`
     position: fixed;
@@ -58,7 +58,7 @@ export const Content = styled(Container)`
   }
 `
 
-const hoverColor = name =>
+const hoverColor = (name) =>
   ({
     white: 'smoke',
     smoke: 'muted',
@@ -73,7 +73,7 @@ const slide = keyframes({
   to: { transform: 'translateY(0)', opacity: 1 }
 })
 
-const layout = props =>
+const layout = (props) =>
   props.isMobile
     ? css`
         display: ${props.toggled ? 'flex' : 'none'};
@@ -124,12 +124,12 @@ const NavBar = styled(Box)`
     padding: ${theme.space[3]}px;
     text-decoration: none;
     @media (min-width: 56em) {
-      color: ${props => theme.colors[props.color] || color};
+      color: ${(props) => theme.colors[props.color] || color};
     }
   }
 `
 
-const Navigation = props => (
+const Navigation = (props) => (
   <NavBar role="navigation" {...props}>
     <Link href="https://hackclub.com/clubs/" children="Clubs" />
     <Link href="https://workshops.hackclub.com/" children="Workshops" />
@@ -177,7 +177,7 @@ class Header extends Component {
     this.bindScroll(false)
   }
 
-  bindScroll = add => {
+  bindScroll = (add) => {
     if (typeof window !== 'undefined' && !this.props.unfixed) {
       window[add ? 'addEventListener' : 'removeEventListener'](
         'scroll',
@@ -196,7 +196,7 @@ class Header extends Component {
   }
 
   handleToggleMenu = () => {
-    this.setState(state => ({
+    this.setState((state) => ({
       toggled: !state.toggled
     }))
   }
@@ -207,13 +207,13 @@ class Header extends Component {
     const baseColor = dark
       ? color || 'white'
       : color === 'white' && scrolled
-        ? 'black'
-        : color
+      ? 'black'
+      : color
     const toggleColor = dark
       ? color || 'snow'
       : toggled || (color === 'white' && scrolled)
-        ? 'slate'
-        : color
+      ? 'slate'
+      : color
 
     return (
       <Root
