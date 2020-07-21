@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "format": "prettier --write .",
+    "checkFormat": "prettier --check ."
   },
   "dependencies": {
     "@hackclub/icons": "^0.0.3",
