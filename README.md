@@ -1,5 +1,8 @@
 # [Hack Club Summer of Making](https://summer.hackclub.com)
 
+![format](https://github.com/hackclub/summer-site/workflows/format/badge.svg)
+![build](https://github.com/hackclub/summer-site/workflows/build/badge.svg)
+
 53 years ago, 100,000 people gathered in San Francisco for what was later called the Summer of Love.
 
 Welcome to the [Hack Club Summer of Making](https://hack.af/summer-of-making). It’s not an event, or a program with a start/end date. It’s a theme for the summer and a challenge to everyone reading this: this summer, what will you make? What will you learn? What will you build?
