@@ -268,8 +268,8 @@ export default ({ scraps, images }) => (
               Zoom events with friends.
             </Heading>
             <Text as="p" variant="subtitle">
-              Join weekly live events, including coding workshops, show & tells,
-              office hours, biweekly AMAs, and more.
+              Join weekly live events, including virtual community gatherings,
+              fireside chats, biweekly AMAs, and more.
             </Text>
             <Button as="a" variant="cta" href="https://hackclub.com/slack/">
               Join the Slack
