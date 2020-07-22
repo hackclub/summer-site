@@ -35,7 +35,7 @@ export default ({ scraps, images }) => (
       as={Head}
       title="Summer of Making"
       description="$50k in GitHub hardware grants, daily streak system, Slack community with 10k hackers, & weekly online events. Open to teenagers worldwide. What will you make?"
-      image="https://cloud-o3y0ddbd5.vercel.app/2020-07-17_961728ay7j811jz14p1xx4rh1gtgt893.jpeg"
+      image="https://assets.hackclub.com/log/2020-06-18_summer.jpg"
     />
     <Nav />
     <Header />
