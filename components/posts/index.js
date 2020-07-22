@@ -1,5 +1,5 @@
 import { Button, Box, Card, Text, Image, Grid, Avatar, Flex } from 'theme-ui'
-import { formatDate } from '../lib/dates'
+import { formatDate } from '../../lib/dates'
 import { Fragment, memo } from 'react'
 import { last, filter } from 'lodash'
 import Masonry from 'react-masonry-css'
@@ -65,7 +65,7 @@ const Post = ({
         color: 'inherit',
         textDecoration: 'none',
         alignItems: 'center',
-        mb: 3
+        mb: 2
       }}
     >
       <Avatar loading="lazy" src={user.avatar} alt={user.username} mr={2} />
@@ -78,7 +78,17 @@ const Post = ({
         </Text>
       </Box>
     </Flex>
-    <Text as="p" fontSize={3} sx={{ a: { variant: 'styles.a' } }}>
+    <Text
+      as="p"
+      sx={{
+        fontSize: 2,
+        a: {
+          color: 'primary',
+          wordBreak: 'break-all',
+          wordWrap: 'break-word'
+        }
+      }}
+    >
       {formatText(text)}
     </Text>
     {attachments.length > 0 && (
