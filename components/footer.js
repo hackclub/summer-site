@@ -174,20 +174,7 @@ const Footer = ({ dark = false, children, ...props }) => (
           </Text>
         </Box>
       </Columns>
-      <Text as="p" fontSize={3} color="muted" mt={[3, 4]}>
-        Mail: 8605 Santa Monica Blvd #86294, West Hollywood, CA 90069
-      </Text>
-      <Text
-        as="p"
-        sx={{
-          borderTop: '1px solid',
-          borderColor: dark ? 'black' : 'smoke',
-          mt: 3,
-          pt: 2
-        }}
-        fontSize={3}
-        color="muted"
-      >
+      <Text as="p" variant="caption" sx={{ mt: 3 }} fontSize={3}>
         © {new Date().getFullYear()} Hack Club. 501(c)(3) nonprofit (EIN:
         81-2908499)
       </Text>

@@ -18,7 +18,7 @@ const Sheet = () => (
       variant="cta"
       href="https://hack.af/som-stickers"
       sx={{
-        backgroundImage: t => t.util.gradient('yellow', 'pink'),
+        backgroundImage: t => t.util.gx('yellow', 'pink'),
         position: 'absolute',
         right: [0, -3],
         top: -3,
@@ -40,7 +40,7 @@ const Sheet = () => (
       sx={{ color: 'black', span: { color: 'pink', display: 'block' } }}
     >
       Welcome to the{' '}
-      <Text as="span" sx={t => t.util.gradientText('orange', 'pink')}>
+      <Text as="span" sx={t => t.util.gxText('orange', 'pink')}>
         Summer of Making.
       </Text>
     </Heading>

@@ -1,14 +1,4 @@
-import {
-  Button,
-  Box,
-  Badge,
-  Card,
-  Text,
-  Image,
-  Grid,
-  Avatar,
-  Flex
-} from 'theme-ui'
+import { Button, Box, Card, Text, Image, Grid, Avatar, Flex } from 'theme-ui'
 import { formatDate } from '../lib/dates'
 import { filter, last } from 'lodash'
 import Masonry from 'react-masonry-css'
@@ -16,7 +6,7 @@ import FadeIn from './fade-in'
 import Mention from './mention'
 
 export const formatText = text =>
-// Credit to https://blog.rstankov.com/building-auto-link-component-in-react/
+  // Credit to https://blog.rstankov.com/building-auto-link-component-in-react/
   text
     .split(
       /(<.+?\|?\S+>)|(@\w+)|(`{3}[\S\s]+`{3})|(`[^`]+`)|(_[^_]+_)|(\*[^\*]+\*)/
@@ -83,27 +73,14 @@ const Post = ({
       }}
     >
       <Avatar loading="lazy" src={user.avatar} alt={user.username} mr={2} />
-      <Text variant="subheadline" my={0}>
-        @{user.username}
-      </Text>
-      {user.streakDisplay && (
-        <Badge
-          ml={2}
-          sx={{
-            bg: 'pink',
-            borderRadius: 'circle',
-            minWidth: 20,
-            lineHeight: '20px',
-            verticalAlign: 'middle',
-            textAlign: 'center'
-          }}
-        >
-          {user.streakCount}
-        </Badge>
-      )}
-      <Text as="time" variant="caption" sx={{ ml: 'auto' }}>
-        {formatDate(postedAt)}
-      </Text>
+      <Box>
+        <Text variant="subheadline" my={0} fontSize={[1, 1]}>
+          @{user.username}
+        </Text>
+        <Text as="time" variant="caption" fontSize={0}>
+          {formatDate(postedAt)}
+        </Text>
+      </Box>
     </Flex>
     <Text as="p" fontSize={3}>
       {formatText(text)}
@@ -139,7 +116,7 @@ const Posts = ({ data = [] }) => (
   <Box
     as="section"
     sx={{
-      backgroundImage: t => t.util.gradient('pink', 'orange'),
+      backgroundImage: t => t.util.gx('pink', 'orange'),
       display: ['none', 'block'],
       position: 'relative'
     }}

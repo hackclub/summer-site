@@ -32,11 +32,11 @@ const Sheet = () => (
       variant="cta"
       href="https://hackclub.com/slack/"
       target="_blank"
-      mt={3}
-      mb={[null, 4, 5]}
       sx={{
+        mt: 3,
+        mb: [null, 4, 5],
         bg: 'cyan',
-        backgroundImage: t => t.util.gradient('cyan', 'blue')
+        backgroundImage: t => t.util.gx('cyan', 'blue')
       }}
     >
       Join the Slack
@@ -52,7 +52,7 @@ const Cover = () => (
       top: 0,
       left: 0,
       right: 0,
-      backgroundImage: t => t.util.gradient('blue', 'purple'),
+      backgroundImage: t => t.util.gx('blue', 'purple'),
       opacity: 0.75,
       zIndex: 0
     }}

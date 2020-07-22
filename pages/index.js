@@ -9,7 +9,6 @@ import {
   Button,
   Grid,
   Avatar,
-  Badge,
   Link as A
 } from 'theme-ui'
 import Head from 'next/head'
@@ -129,7 +128,7 @@ export default ({ scraps, images }) => (
             sx={{
               mt: [4, 0],
               bg: 'green',
-              backgroundImage: t => t.util.gradient('cyan', 'green'),
+              backgroundImage: t => t.util.gx('cyan', 'green'),
               color: 'darkless'
             }}
           >
@@ -167,7 +166,7 @@ export default ({ scraps, images }) => (
             as="a"
             variant="cta"
             href="https://scrapbook.hackclub.com/"
-            sx={{ backgroundImage: t => t.util.gradient('pink', 'orange') }}
+            sx={{ backgroundImage: t => t.util.gx('pink', 'orange') }}
           >
             See what everyone’s making
           </Button>
@@ -223,8 +222,8 @@ export default ({ scraps, images }) => (
       sx={{
         bg: 'purple',
         backgroundImage: t => [
-          t.util.gradient('blue', 'purple'),
-          `radial-gradient(ellipse farthest-corner at top left, ${t.colors.pink}, ${t.colors.orange})`
+          t.util.gx('blue', 'purple'),
+          t.util.gx('pink', 'orange')
         ],
         color: 'white',
         py: [4, 5]
