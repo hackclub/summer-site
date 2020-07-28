@@ -136,6 +136,7 @@ const Navigation = props => (
     <Link href="https://scrapbook.hackclub.com/" children="Scrapbook" />
     <Link href="https://hackclub.com/bank/" children="Bank" />
     <Link href="https://hackclub.com/donate/" children="Donate" />
+    <Link href="https://hackclub.com/slack/" children="Slack" />
   </NavBar>
 )
 
