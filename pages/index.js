@@ -24,6 +24,7 @@ import Scrapbook from '../components/scrapbook'
 import HardwareGrants from '../components/hardwaregrants'
 import ShoulderBot from '../components/shoulderbot'
 import KawasakiDetector from '../components/kawasakiDetector'
+import LedMusic from '../components/ledMusic'
 
 export default () => (
   <Box>
@@ -86,6 +87,7 @@ export default () => (
     <HardwareGrants />
     <ShoulderBot />
     <KawasakiDetector />
+    <LedMusic />
     <Box as="footer" sx={{ py: [4, 5], a: { color: 'orange' } }}>
       <Container>
         <Heading as="h3" variant="subheadline" mb={2}>

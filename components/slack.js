@@ -19,7 +19,7 @@ const Sheet = () => (
     <Text as="p" variant="eyebrow" color="cyan">
       Community Slack
     </Text>
-    <Heading as="h2" variant="title">
+    <Heading as="h2" variant="title" color="white">
       Friends, mentors, and weekly events on Slack.
     </Heading>
     <Text as="p" variant="subtitle" my={3}>

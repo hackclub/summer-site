@@ -16,7 +16,7 @@ import Meta from '@hackclub/meta'
 import Nav from '../components/nav'
 import Stat from '../components/stat'
 import Footer from '../components/footer'
-
+import theme from '../lib/theme2'
 import Header from '../components/header'
 import Posts from '../components/posts'
 import Hardware from '../components/hardware'
@@ -154,7 +154,7 @@ export default ({ scraps, images }) => (
           >
             scrapbook.hackclub.com
           </Text>
-          <Heading as="h2" variant="title">
+          <Heading as="h2" variant="title" color="white">
             Share your daily progress.
           </Heading>
           <Text as="p" variant="subtitle" my={3}>
@@ -230,7 +230,7 @@ export default ({ scraps, images }) => (
       }}
     >
       <Container>
-        <Heading as="h2" variant="title">
+        <Heading as="h2" variant="title" color="white">
           Let’s review.
         </Heading>
         <Grid
@@ -239,10 +239,10 @@ export default ({ scraps, images }) => (
           sx={{ mt: 3, 'p + a': { mt: 3, color: 'pink', bg: 'white' } }}
         >
           <div>
-            <Heading as="h3" variant="headline">
+            <Heading as="h3" variant="headline" color="white">
               $50k in hardware grants.
             </Heading>
-            <Text as="p" variant="subtitle">
+            <Text as="p" variant="subtitle" color="white">
               Whether it’s your first hardware project or hundredth, you can
               have GitHub buy you electronics for a hardware project.
             </Text>
@@ -251,10 +251,10 @@ export default ({ scraps, images }) => (
             </Button>
           </div>
           <div>
-            <Heading as="h3" variant="headline">
+            <Heading as="h3" variant="headline" color="white">
               Show up with daily updates.
             </Heading>
-            <Text as="p" variant="subtitle">
+            <Text as="p" variant="subtitle" >
               Share daily updates of your learning in a beautiful portfolio with
               your own CSS—and build up a streak.
             </Text>
@@ -263,7 +263,7 @@ export default ({ scraps, images }) => (
             </Button>
           </div>
           <div>
-            <Heading as="h3" variant="headline">
+            <Heading as="h3" variant="headline" color="white">
               Zoom events with friends.
             </Heading>
             <Text as="p" variant="subtitle">
@@ -331,5 +331,5 @@ export const getStaticProps = async () => {
   scraps = take(posts, 12)
   posts = takeRight(shuffle(posts), 3)
   images = map(posts, 'attachments[0].thumbnails.large.url')
-  return { props: { scraps, images }, unstable_revalidate: 2 }
+  return { props: { scraps, images }, revalidate: 2 }
 }
