@@ -32,7 +32,7 @@ export default () => (
       height: '75%',
       backgroundRepeat: 'no-repeat',
       backgroundSize: '100%',
-      backgroundColor: '#33d6a6',
+      backgroundColor: '#a633d6',
       clear: 'both'
     }}
   >
@@ -42,10 +42,10 @@ export default () => (
         mt: [3, 4],
         mb: [3, 4],
         textAlign: 'center',
-        fontSize: 9
+        fontSize: 4
       }}
     >
-      3,500
+      We shipped hardware to
     </Heading>
     <Heading
       as="h1"
@@ -53,10 +53,21 @@ export default () => (
         mt: [3, 4],
         mb: [3, 4],
         textAlign: 'center',
-        fontSize: 4
+        fontSize: 7
       }}
     >
-      Scrapbook Entries Shared
+      Twenty Eight
+    </Heading>
+    <Heading
+      as="h1"
+      sx={{
+        mt: [3, 4],
+        mb: [3, 4],
+        textAlign: 'center',
+        fontSize: 3
+      }}
+    >
+      different countries and every inhabited continent.
     </Heading>
     <Container>
       <Grid
@@ -78,7 +89,7 @@ export default () => (
           <Card
             sx={{
               backgroundImage:
-                "url('https://dl.airtable.com/.attachmentThumbnails/169f54f04aa5f292dc8fd2dbc99493ee/a7a1ce23')",
+                "url('https://dl.airtable.com/.attachmentThumbnails/734b97f53ea8e220d8cdae14889d07a0/eb1ec9d7')",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
@@ -97,7 +108,7 @@ export default () => (
             }}
             p={[1, 2]}
           >
-            Made by <Mention username="austin" key="austini" />
+            <Mention username="nikhiljose" key="nikhiljosei" />'s package
           </Text>
         </Card>
         <Card
@@ -113,7 +124,7 @@ export default () => (
           <Card
             sx={{
               backgroundImage:
-                "url('https://dl.airtable.com/.attachmentThumbnails/169f54f04aa5f292dc8fd2dbc99493ee/a7a1ce23')",
+                "url('https://dl.airtable.com/.attachmentThumbnails/734b97f53ea8e220d8cdae14889d07a0/eb1ec9d7')",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
@@ -132,7 +143,7 @@ export default () => (
             }}
             p={[1, 2]}
           >
-            Made by <Mention username="austin" key="austini" />
+            <Mention username="nikhiljose" key="nikhiljosei" />'s package
           </Text>
         </Card>
         <Card
@@ -148,7 +159,7 @@ export default () => (
           <Card
             sx={{
               backgroundImage:
-                "url('https://dl.airtable.com/.attachmentThumbnails/169f54f04aa5f292dc8fd2dbc99493ee/a7a1ce23')",
+                "url('https://dl.airtable.com/.attachmentThumbnails/734b97f53ea8e220d8cdae14889d07a0/eb1ec9d7')",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
@@ -167,7 +178,7 @@ export default () => (
             }}
             p={[1, 2]}
           >
-            Made by <Mention username="austin" key="austini" />
+            <Mention username="nikhiljose" key="nikhiljosei" />'s package
           </Text>
         </Card>
       </Grid>
