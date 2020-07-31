@@ -124,7 +124,7 @@ export default () => (
           <Card
             sx={{
               backgroundImage:
-                "url('https://dl.airtable.com/.attachmentThumbnails/734b97f53ea8e220d8cdae14889d07a0/eb1ec9d7')",
+                "url('https://dl.airtable.com/.attachmentThumbnails/f7b5c52f36d4b8ae87a453e6ca9ba66d/e5c86c96')",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
@@ -143,7 +143,7 @@ export default () => (
             }}
             p={[1, 2]}
           >
-            <Mention username="nikhiljose" key="nikhiljosei" />'s package
+            <Mention username="dinaelhanan" key="dinaelhanani" />'s package
           </Text>
         </Card>
         <Card
@@ -159,7 +159,7 @@ export default () => (
           <Card
             sx={{
               backgroundImage:
-                "url('https://dl.airtable.com/.attachmentThumbnails/734b97f53ea8e220d8cdae14889d07a0/eb1ec9d7')",
+                "url('https://dl.airtable.com/.attachmentThumbnails/71051472c4c75d3be2db6fc4324fc3ca/36873df8')",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
@@ -178,7 +178,7 @@ export default () => (
             }}
             p={[1, 2]}
           >
-            <Mention username="nikhiljose" key="nikhiljosei" />'s package
+            <Mention username="blucashbaugh" key="blucashbaughi" />'s package
           </Text>
         </Card>
       </Grid>
