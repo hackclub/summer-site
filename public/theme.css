@@ -16,3 +16,8 @@ a{
   text-decoration: none;
   color:white;
 }
+
+.ledHoverEffect:hover {
+  color: #338eda;
+  text-shadow: 0 0 15px #338eda;
+}

@@ -46,7 +46,7 @@ export default () => (
         >
           <Heading>Using hardware to</Heading>
           <Heading as="h1" sx={{ fontSize: 7 }}>
-            have fun
+            have <span className="ledHoverEffect">fun</span>
           </Heading>
           <Text sx={{ fontSize: 2 }}>
             <br />
