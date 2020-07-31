@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import { InitializeColorMode } from 'theme-ui'
 
 export default class extends Document {
   static async getInitialProps(ctx) {
@@ -10,9 +9,19 @@ export default class extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <style
+            dangerouslySetInnerHTML={{
+              __html: `html { scroll-behavior: smooth; }`
+            }}
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Shrikhand&display=swap"
+            rel="stylesheet"
+          />
+          <meta name="format-detection" content="telephone=no" />
+        </Head>
         <body>
-          <InitializeColorMode />
           <Main />
           <NextScript />
         </body>
