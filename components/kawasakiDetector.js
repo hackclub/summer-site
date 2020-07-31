@@ -29,36 +29,12 @@ export default () => (
       position: 'relative',
       overflow: 'hidden',
       height: '75%',
+      background: '#ff8c37',
       clear: 'both'
     }}
   >
     <Container>
-      <Grid
-        columns={[null, 2]}
-        gap={3}
-        mt={[4, 5]}
-        mb={[3, 4]}
-      >
-        <Card
-          sx={{
-            backgroundSize: 'cover',
-            clear: 'both',
-            background: 'none',
-            backgroundPosition: 'center'
-          }}
-          p={[0]}
-        >
-          <Heading>Using hardware to</Heading>
-          <Heading as="h1" sx={{fontSize: 7}}>help others</Heading>
-          <Text sx={{fontSize: 2}}>
-            <br />
-            Ray Rumore, a 13 years old from New York, is using his hardware grant to learn how to program a microcontroller and build a “shoulder bot” to help his minimally-verbal sister (and others like her) to communicate. 
-          </Text>
-          <br />
-          <Button>
-            Watch a video
-          </Button>
-        </Card>
+      <Grid columns={[null, 2]} gap={3} mt={[4, 5]} mb={[3, 4]}>
         <Card
           sx={{
             backgroundSize: 'cover',
@@ -72,7 +48,7 @@ export default () => (
           <Card
             sx={{
               backgroundImage:
-                "url('https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fdl.airtable.com%2F.attachments%2F60ad2208ccd0e6b089aaaedcfea3e7b3%2F9a5f647b%2F197E6FBE-1A90-4071-875C-12DFBD724400.jpeg')",
+                "url('https://img.jakpost.net/c/2020/02/20/2020_02_20_87052_1582184356._large.jpg')",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
@@ -91,10 +67,34 @@ export default () => (
             }}
             p={[1, 2]}
           >
-            Their sketch from the planning process
+            fake filler image ignore
           </Text>
         </Card>
-        
+        <Card
+          sx={{
+            backgroundSize: 'cover',
+            textAlign: 'right',
+            color: 'white',
+            clear: 'both',
+            background: 'none',
+            backgroundPosition: 'center'
+          }}
+          p={[0]}
+        >
+          <Heading>Using hardware to</Heading>
+          <Heading as="h1" sx={{ fontSize: 7 }}>
+            save lives
+          </Heading>
+          <Text sx={{ fontSize: 2 }}>
+            <br />
+            Ellen Xu, a 15 year old from San Diego, is developing a machine
+            learning algorithm which can run on a Raspberry Pi in order to help
+            people diagnose Kawasaki disease, the #1 heart disease in children
+            in the U.S. and Japan.
+          </Text>
+          <br />
+          <Button>Watch a video</Button>
+        </Card>
       </Grid>
     </Container>
   </Box>

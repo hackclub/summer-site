@@ -56,7 +56,7 @@ export default () => (
         fontSize: 7
       }}
     >
-      Twenty Eight
+      twenty eight
     </Heading>
     <Heading
       as="h1"
