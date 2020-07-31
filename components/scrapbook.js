@@ -50,7 +50,6 @@ export default () => (
       <Grid
         columns={[null, 2, 3]}
         gap={3}
-        sx={{ code: { mt: 1, ml: -1, fontSize: 0 } }}
         mt={[3, 4]}
         mb={[3, 4]}
       >
@@ -159,6 +158,39 @@ export default () => (
             Made by <Mention username="austin" key="austini" />
           </Text>
         </Card>
+      </Grid>
+      <Grid
+        columns={[null, 4, 6]}
+        gap={1.5}
+        sx={{ textAlign: 'center;' }}
+        mt={[3, 4]}
+        mb={[3, 4]}
+      >
+        <Text>
+          <Heading as="h1" sx={{fontSize: 6}}>360</Heading>
+          Makers
+        </Text>
+        <Text>
+          <Heading as="h1" sx={{fontSize: 6}}>972</Heading>
+          Git Commits
+        </Text>
+        <Text>
+          <Heading as="h1" sx={{fontSize: 6}}>1AM</Heading>
+          Most Common Post Time
+        </Text>
+        <Text>
+          <Heading as="h1" sx={{fontSize: 6}}>45</Heading>
+          Highest Streak
+        </Text>
+        <Text>
+          <Heading as="h1" sx={{fontSize: 6}}>104</Heading>
+          Most Individual Scraps
+        </Text>
+        <Text>
+          <Heading as="h1" sx={{fontSize: 6}}>34</Heading>
+          Different Timezones
+        </Text>
+        
       </Grid>
     </Container>
   </Box>
