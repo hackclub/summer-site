@@ -36,9 +36,30 @@ export default () => (
       <Grid
         columns={[null, 2]}
         gap={3}
-        mt={[3, 4]}
+        mt={[4, 5]}
         mb={[3, 4]}
       >
+        <Card
+          sx={{
+            backgroundSize: 'cover',
+            color: 'white',
+            clear: 'both',
+            background: 'none',
+            backgroundPosition: 'center'
+          }}
+          p={[0]}
+        >
+          <Heading>Using hardware to</Heading>
+          <Heading as="h1" sx={{fontSize: 7}}>help others</Heading>
+          <Text sx={{fontSize: 2}}>
+            <br />
+            Ray Rumore, 13 years old from New York, is using his hardware grant to learn how to program a microcontroller and build a “shoulder bot” to help his minimally-verbal sister (and others like her) to communicate. 
+          </Text>
+          <br />
+          <Button>
+            Watch a video
+          </Button>
+        </Card>
         <Card
           sx={{
             backgroundSize: 'cover',
@@ -71,44 +92,10 @@ export default () => (
             }}
             p={[1, 2]}
           >
-            <Mention username="nikhiljose" key="nikhiljosei" />'s package
+            Their sketch from the planning process
           </Text>
         </Card>
-        <Card
-          sx={{
-            backgroundSize: 'cover',
-            color: 'white',
-            clear: 'both',
-            backgroundPosition: 'center',
-            borderRadius: '20px'
-          }}
-          p={[0]}
-        >
-          <Card
-            sx={{
-              backgroundImage:
-                "url('https://dl.airtable.com/.attachmentThumbnails/71051472c4c75d3be2db6fc4324fc3ca/36873df8')",
-              backgroundSize: 'cover',
-              color: 'white',
-              clear: 'both',
-              height: '400px',
-              width: '100%',
-              backgroundPosition: 'center',
-              borderTopLeftRadius: '20px',
-              borderTopRightRadius: '20px'
-            }}
-            p={[3, 4]}
-          ></Card>
-          <Text
-            sx={{
-              position: 'relative',
-              textAlign: 'center'
-            }}
-            p={[1, 2]}
-          >
-            <Mention username="blucashbaugh" key="blucashbaughi" />'s package
-          </Text>
-        </Card>
+        
       </Grid>
     </Container>
   </Box>
