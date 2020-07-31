@@ -190,28 +190,28 @@ export default () => (
         mb={[3, 4]}
       >
         <Text>
-          <Heading as="h1" sx={{fontSize: 6}}>360</Heading>
-          Makers
+          <Heading as="h1" sx={{fontSize: 6}}>201</Heading>
+          Makers Supported
         </Text>
         <Text>
-          <Heading as="h1" sx={{fontSize: 6}}>972</Heading>
-          Git Commits
+          <Heading as="h1" sx={{fontSize: 6}}>51</Heading>
+          Arduino Projects
         </Text>
         <Text>
-          <Heading as="h1" sx={{fontSize: 6}}>1AM</Heading>
-          Most Common Post Time
+          <Heading as="h1" sx={{fontSize: 6}}>16</Heading>
+          Average Maker Age
         </Text>
         <Text>
-          <Heading as="h1" sx={{fontSize: 6}}>45</Heading>
-          Highest Streak
+          <Heading as="h1" sx={{fontSize: 6}}>1595</Heading>
+          Shopping Carts Made
         </Text>
         <Text>
-          <Heading as="h1" sx={{fontSize: 6}}>104</Heading>
-          Most Individual Scraps
+          <Heading as="h1" sx={{fontSize: 6}}>56</Heading>
+          Retailers Used
         </Text>
         <Text>
-          <Heading as="h1" sx={{fontSize: 6}}>34</Heading>
-          Different Timezones
+          <Heading as="h1" sx={{fontSize: 6}}>85</Heading>
+          Different Cities
         </Text>
         
       </Grid>
