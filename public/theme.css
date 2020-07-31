@@ -1,0 +1,18 @@
+.mention {
+  display: inline-flex;
+  align-items: baseline;
+  text-decoration: none;
+}
+.mention-avatar {
+  border-radius: 50%;
+  margin-right: 4px;
+  align-self: flex-end;
+}
+.post-text-mention{
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}

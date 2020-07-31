@@ -1,7 +1,7 @@
 {
-  "name": "@hackclub/summer",
-  "version": "1.0.0",
-  "author": "Lachlan Campbell <lachlan@hackclub.com>",
+  "name": "@hackclub/summer-recap",
+  "version": "0.0.0",
+  "author": "Sam Poder <hi@sampoder.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -10,6 +10,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@babel/core": "^7.11.0",
     "@hackclub/icons": "^0.0.3",
     "@hackclub/meta": "^1.0.0",
     "@hackclub/theme": "^0.2.0",
@@ -19,7 +20,6 @@
     "react": "^16.13.1",
     "react-div-100vh": "^0.3.8",
     "react-dom": "^16.13.1",
-    "react-masonry-css": "^1.0.14",
     "react-scrolllock": "^5.0.1",
     "theme-ui": "^0.3.1"
   }
