@@ -160,7 +160,7 @@ export default () => (
         </Card>
       </Grid>
       <Grid
-        columns={[null, 4, 6]}
+        columns={[2, 3, 6]}
         gap={1.5}
         sx={{ textAlign: 'center;' }}
         mt={[3, 4]}
