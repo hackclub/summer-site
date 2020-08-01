@@ -44,13 +44,13 @@ export default () => (
             backgroundSize: 'cover',
             clear: 'both',
             background: 'none',
-            backgroundPosition: 'center'
+            backgroundPosition: 'center',
           }}
           p={[0]}
         >
           <Heading>Using hardware to</Heading>
           <Heading as="h1" sx={{fontSize: 7}}>help others</Heading>
-          <Text sx={{fontSize: 2}}>
+          <Text sx={{fontSize: 2, width: '85%', width: '85%'}}>
             <br />
             Ray Rumore, a 13 years old from New York, is using his hardware grant to learn how to program a microcontroller and build a “shoulder bot” to help his minimally-verbal sister (and others like her) to communicate. 
           </Text>

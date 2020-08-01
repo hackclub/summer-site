@@ -25,6 +25,8 @@ import HardwareGrants from '../components/hardwaregrants'
 import ShoulderBot from '../components/shoulderbot'
 import KawasakiDetector from '../components/kawasakiDetector'
 import LedMusic from '../components/ledMusic'
+import Arts from '../components/arts'
+import AMA from '../components/AMA'
 
 export default () => (
   <Box>
@@ -88,6 +90,8 @@ export default () => (
     <ShoulderBot />
     <KawasakiDetector />
     <LedMusic />
+    <Arts />
+    <AMA />
     <Box as="footer" sx={{ py: [4, 5], a: { color: 'orange' } }}>
       <Container>
         <Heading as="h3" variant="subheadline" mb={2}>

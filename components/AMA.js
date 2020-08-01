@@ -20,7 +20,7 @@ import {
   Textarea
 } from 'theme-ui'
 import ColorSwitcher from './color-switcher'
-import Mention from './mention'
+import Mention from './mentionAMA'
 
 export default () => (
   <Box
@@ -29,7 +29,6 @@ export default () => (
       position: 'relative',
       overflow: 'hidden',
       height: '75%',
-      background: '#ff8c37',
       clear: 'both'
     }}
   >
@@ -47,8 +46,7 @@ export default () => (
         >
           <Card
             sx={{
-              backgroundImage:
-                "url('https://img.jakpost.net/c/2020/02/20/2020_02_20_87052_1582184356._large.jpg')",
+              backgroundImage: "url('https://i.imgur.com/5VEiUbc.mp4')",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
@@ -67,33 +65,61 @@ export default () => (
             }}
             p={[1, 2]}
           >
-            fake filler image ignore
+            AMA with Limor Fried
           </Text>
         </Card>
         <Card
           sx={{
             backgroundSize: 'cover',
             textAlign: 'right',
-            color: 'white',
             clear: 'both',
             background: 'none',
             backgroundPosition: 'center'
           }}
           p={[0]}
         >
-          <Heading>Using hardware to</Heading>
-          <Heading as="h1" sx={{ fontSize: 7 }}>
-            save lives
+          <Heading sx={{ fontSize: 2 }}>
+            Chatting with influential people in tech on
           </Heading>
-          <Text sx={{ fontSize: 2, paddingLeft: '15%', right: 0 }}>
+          <Heading as="h1" sx={{ fontSize: '74px' }}>
+            inspiring AMAs
+          </Heading>
+          <Text sx={{ fontSize: 2 }}>
             <br />
-            Ellen Xu, a 15 year old from San Diego, is developing a machine
-            learning algorithm which can run on a Raspberry Pi in order to help
-            people diagnose Kawasaki disease, the #1 heart disease in children
-            in the U.S. and Japan.
+            <Mention
+              sx={{ color: 'black' }}
+              name="Limor Fried (June 26th)"
+              url="https://google.com"
+              img="https://usasciencefestival.org/wp-content/uploads/2018/01/Limor-Fried-600x600.jpg"
+            />
+            <br />
+            <br />
+            <Mention
+              sx={{ color: 'black' }}
+              name="Dylan Field (July 10th)"
+              url="https://google.com"
+              img="https://dl.airtable.com/.attachmentThumbnails/10060ecb0494cc79d6000ceb95ca07c3/cbbb4caf"
+            />
+            <br />
+            <br />
+
+            <Mention
+              sx={{ color: 'black' }}
+              name="Tommy DeVoss (July 24th)"
+              url="https://google.com"
+              img="https://dl.airtable.com/.attachmentThumbnails/c2945a6e36439be2d1f9aae336ec6181/55c890d5.png"
+            />
+            <br />
+            <br />
+
+            <Mention
+              sx={{ color: 'black' }}
+              name="Alex Stamos (Aug 7th)"
+              url="https://google.com"
+              img="https://dl.airtable.com/.attachmentThumbnails/df51be717dd8e09204ec23b27336f4a7/acff2db0"
+            />
           </Text>
           <br />
-          <Button>Watch a video</Button>
         </Card>
       </Grid>
     </Container>
