@@ -40,6 +40,7 @@ export default () => (
             backgroundSize: 'cover',
             textAlign: 'left',
             clear: 'both',
+            color: 'white',
             background: 'none',
             backgroundPosition: 'center'
           }}

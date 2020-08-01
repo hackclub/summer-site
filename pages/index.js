@@ -28,6 +28,7 @@ import LedMusic from '../components/ledMusic'
 import Arts from '../components/arts'
 import AMA from '../components/AMA'
 import Connect from '../components/connect'
+import CommunityEvents from '../components/communityevents'
 
 export default () => (
   <Box>
@@ -94,6 +95,7 @@ export default () => (
     <Arts />
     <AMA />
     <Connect />
+    <CommunityEvents />
     <Box as="footer" sx={{ py: [4, 5], a: { color: 'orange' } }}>
       <Container>
         <Heading as="h3" variant="subheadline" mb={2}>
