@@ -55,8 +55,7 @@ export default () => (
             themselves stuck at home as a pandemic raged on outside.
             Participation in the Hack Club Slack skyrocketed, increasing by
             450%. Throughout the summer, we hosted events for Hack Clubbers to
-            connect with one another. We had Hack Nights, Kahoots, wikipedia
-            races, drawing challenges and coding workshops.
+            connect with one another.
             
           </Text>
           <br />
