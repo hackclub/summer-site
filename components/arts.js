@@ -33,7 +33,7 @@ export default () => (
       height: '75%',
       backgroundRepeat: 'no-repeat',
       backgroundSize: '100%',
-      backgroundColor: '#a633d6',
+      backgroundColor: '#3b47a8',
       clear: 'both'
     }}
   >

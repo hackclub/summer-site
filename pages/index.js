@@ -27,6 +27,7 @@ import KawasakiDetector from '../components/kawasakiDetector'
 import LedMusic from '../components/ledMusic'
 import Arts from '../components/arts'
 import AMA from '../components/AMA'
+import Connect from '../components/connect'
 
 export default () => (
   <Box>
@@ -92,6 +93,7 @@ export default () => (
     <LedMusic />
     <Arts />
     <AMA />
+    <Connect />
     <Box as="footer" sx={{ py: [4, 5], a: { color: 'orange' } }}>
       <Container>
         <Heading as="h3" variant="subheadline" mb={2}>
