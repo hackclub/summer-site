@@ -50,7 +50,7 @@ export default () => (
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
-              height: '420px',
+              height: '440px',
               width: '100%',
               backgroundPosition: 'center',
               borderTopLeftRadius: '20px',
