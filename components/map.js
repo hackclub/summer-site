@@ -19,7 +19,7 @@ import {
   Text,
   Textarea
 } from 'theme-ui'
-import ColorSwitcher from '../components/color-switcher'
+import ColorSwitcher from './color-switcher'
 
 export default () => (
   <Box
@@ -44,7 +44,7 @@ export default () => (
       }}
     />
     <Image
-      src="https://i.imgur.com/AJZKVSF.png"
+      src="https://i.imgur.com/KzojkeC.png"
       sx={{
         
         mt: [3, 4],
