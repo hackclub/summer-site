@@ -29,7 +29,6 @@ export default () => (
       position: 'relative',
       overflow: 'hidden',
       height: '75%',
-      background: '#338eda',
       clear: 'both'
     }}
   >
@@ -40,7 +39,6 @@ export default () => (
             backgroundSize: 'cover',
             textAlign: 'left',
             clear: 'both',
-            color: 'white',
             background: 'none',
             backgroundPosition: 'center'
           }}
@@ -57,7 +55,6 @@ export default () => (
             Participation in the Hack Club Slack skyrocketed, increasing by
             450%. Throughout the summer, we hosted events for Hack Clubbers to
             connect with one another.
-            
           </Text>
           <br />
           <Button>Join the Slack</Button>

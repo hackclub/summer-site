@@ -45,7 +45,7 @@ export default () => (
       backdropFilter: 'blur(20px)',
     }}>
     <Heading className="map-center-text">
-      Makers from all over the world joint in!
+     THANK YOU FOR JOINING!
     </Heading>
     </Container>
   </Box>

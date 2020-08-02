@@ -29,6 +29,8 @@ import Arts from '../components/arts'
 import AMA from '../components/AMA'
 import Connect from '../components/connect'
 import CommunityEvents from '../components/communityevents'
+import Map from '../components/map'
+import Thanks from '../components/thankyou'
 
 export default () => (
   <Box>
@@ -60,7 +62,7 @@ export default () => (
         to hack on & learn from.
       </Text>
     </Container>
-    <Scrapbook />
+    <Map />
     <Container
       variant="copy"
       sx={{
@@ -92,9 +94,39 @@ export default () => (
     <ShoulderBot />
     <KawasakiDetector />
     <LedMusic />
-    <Arts />
+    <KawasakiDetector />
+    <Container
+      variant="copy"
+      sx={{
+        my: 3,
+        py: 3,
+        border: '2px dashed',
+        borderColor: 'sunken',
+        borderRadius: 'default',
+        mt: [3, 4],
+        mb: [3, 4]
+      }}
+    >
+      <Text
+        sx={{
+          fontSize: '24px'
+        }}
+      >
+        This will be changed to smth about scrapppyyyyy :) 53 years ago, 100,000 people gathered in San
+        Francisco for the Summer of Love. Welcome to the Summer of Making. It’s
+        not an event or program. It’s a theme for the summer, a challenge to
+        every teenager reading this: What will you make? To suppport you, we’re
+        distributing $50,000 in free electronics (thanks GitHub!) & building
+        Snapchat streaks for coding—but really Summer of Making is about you. If
+        this will be the best summer ever, it’ll be because of what you choose
+        to hack on & learn from.
+      </Text>
+    </Container>
+    <Scrapbook />
     <AMA />
+    <Arts />
     <Connect />
+    <Thanks />
     <Box as="footer" sx={{ py: [4, 5], a: { color: 'orange' } }}>
       <Container>
         <Heading as="h3" variant="subheadline" mb={2}>
