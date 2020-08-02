@@ -82,7 +82,13 @@ export default () => (
             color: 'white',
             clear: 'both',
             backgroundPosition: 'center',
-            borderRadius: '20px'
+            borderRadius: '20px',
+            boxShadow: '0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)',
+            transition:
+              'transform .125s ease-in-out, box-shadow .125s ease-in-out',
+            ':hover,:focus': {
+              transform: 'scale(1.0625)',
+            }
           }}
           p={[0]}
         >
@@ -117,7 +123,13 @@ export default () => (
             color: 'white',
             clear: 'both',
             backgroundPosition: 'center',
-            borderRadius: '20px'
+            borderRadius: '20px',
+            boxShadow: '0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)',
+            transition:
+              'transform .125s ease-in-out, box-shadow .125s ease-in-out',
+            ':hover,:focus': {
+              transform: 'scale(1.0625)',
+            }
           }}
           p={[0]}
         >
@@ -152,7 +164,13 @@ export default () => (
             color: 'white',
             clear: 'both',
             backgroundPosition: 'center',
-            borderRadius: '20px'
+            borderRadius: '20px',
+            boxShadow: '0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)',
+            transition:
+              'transform .125s ease-in-out, box-shadow .125s ease-in-out',
+            ':hover,:focus': {
+              transform: 'scale(1.0625)',
+            }
           }}
           p={[0]}
         >

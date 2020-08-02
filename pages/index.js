@@ -95,7 +95,6 @@ export default () => (
     <Arts />
     <AMA />
     <Connect />
-    <CommunityEvents />
     <Box as="footer" sx={{ py: [4, 5], a: { color: 'orange' } }}>
       <Container>
         <Heading as="h3" variant="subheadline" mb={2}>

@@ -59,19 +59,62 @@ export default () => (
       Scrapbook Entries Shared
     </Heading>
     <Container>
-      <Grid
-        columns={[null, 2, 3]}
-        gap={3}
-        mt={[3, 4]}
-        mb={[3, 4]}
-      >
+      <Grid columns={[null, 2, 3]} gap={3} mt={[3, 4]} mb={[3, 4]}>
         <Card
           sx={{
             backgroundSize: 'cover',
             color: 'white',
             clear: 'both',
             backgroundPosition: 'center',
-            borderRadius: '20px'
+            borderRadius: '20px',
+            boxShadow: '0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)',
+            transition:
+              'transform .125s ease-in-out, box-shadow .125s ease-in-out',
+            ':hover,:focus': {
+              transform: 'scale(1.0625)',
+            }
+          }}
+          p={[0]}
+        >
+          <Card
+            sx={{
+              backgroundImage:
+                "url('https://dl.airtable.com/.attachmentThumbnails/169f54f04aa5f292dc8fd2dbc99493ee/a7a1ce23')",
+              backgroundSize: 'cover',
+              color: 'white',
+              clear: 'both',
+              height: '400px',
+              width: '100%',
+              backgroundPosition: 'center',
+              borderTopLeftRadius: '20px',
+              borderTopRightRadius: '20px'
+            }}
+            p={[3, 4]}
+            variant="secondary"
+          ></Card>
+          <Text
+            sx={{
+              position: 'relative',
+              textAlign: 'center'
+            }}
+            p={[1, 2]}
+          >
+            Made by <Mention username="austin" key="austini" />
+          </Text>
+        </Card>
+        <Card
+          sx={{
+            backgroundSize: 'cover',
+            color: 'white',
+            clear: 'both',
+            backgroundPosition: 'center',
+            borderRadius: '20px',
+            boxShadow: '0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)',
+            transition:
+              'transform .125s ease-in-out, box-shadow .125s ease-in-out',
+            ':hover,:focus': {
+              transform: 'scale(1.0625)',
+            }
           }}
           p={[0]}
         >
@@ -106,42 +149,13 @@ export default () => (
             color: 'white',
             clear: 'both',
             backgroundPosition: 'center',
-            borderRadius: '20px'
-          }}
-          p={[0]}
-        >
-          <Card
-            sx={{
-              backgroundImage:
-                "url('https://dl.airtable.com/.attachmentThumbnails/169f54f04aa5f292dc8fd2dbc99493ee/a7a1ce23')",
-              backgroundSize: 'cover',
-              color: 'white',
-              clear: 'both',
-              height: '400px',
-              width: '100%',
-              backgroundPosition: 'center',
-              borderTopLeftRadius: '20px',
-              borderTopRightRadius: '20px'
-            }}
-            p={[3, 4]}
-          ></Card>
-          <Text
-            sx={{
-              position: 'relative',
-              textAlign: 'center'
-            }}
-            p={[1, 2]}
-          >
-            Made by <Mention username="austin" key="austini" />
-          </Text>
-        </Card>
-        <Card
-          sx={{
-            backgroundSize: 'cover',
-            color: 'white',
-            clear: 'both',
-            backgroundPosition: 'center',
-            borderRadius: '20px'
+            borderRadius: '20px',
+            boxShadow: '0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)',
+            transition:
+              'transform .125s ease-in-out, box-shadow .125s ease-in-out',
+            ':hover,:focus': {
+              transform: 'scale(1.0625)',
+            }
           }}
           p={[0]}
         >
@@ -179,30 +193,41 @@ export default () => (
         mb={[3, 4]}
       >
         <Text>
-          <Heading as="h1" sx={{fontSize: 6}}>360</Heading>
+          <Heading as="h1" sx={{ fontSize: 6 }}>
+            360
+          </Heading>
           Makers
         </Text>
         <Text>
-          <Heading as="h1" sx={{fontSize: 6}}>972</Heading>
+          <Heading as="h1" sx={{ fontSize: 6 }}>
+            972
+          </Heading>
           Git Commits
         </Text>
         <Text>
-          <Heading as="h1" sx={{fontSize: 6}}>1AM</Heading>
+          <Heading as="h1" sx={{ fontSize: 6 }}>
+            1AM
+          </Heading>
           Most Common Post Time
         </Text>
         <Text>
-          <Heading as="h1" sx={{fontSize: 6}}>45</Heading>
+          <Heading as="h1" sx={{ fontSize: 6 }}>
+            45
+          </Heading>
           Highest Streak
         </Text>
         <Text>
-          <Heading as="h1" sx={{fontSize: 6}}>104</Heading>
+          <Heading as="h1" sx={{ fontSize: 6 }}>
+            104
+          </Heading>
           Most Individual Scraps
         </Text>
         <Text>
-          <Heading as="h1" sx={{fontSize: 6}}>34</Heading>
+          <Heading as="h1" sx={{ fontSize: 6 }}>
+            34
+          </Heading>
           Different Timezones
         </Text>
-        
       </Grid>
     </Container>
   </Box>
