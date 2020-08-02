@@ -74,6 +74,7 @@ export default () => (
             borderRadius: '20px'
           }}
           p={[0]}
+          variant="interactive"
         >
           <Card
             sx={{
@@ -109,6 +110,7 @@ export default () => (
             borderRadius: '20px'
           }}
           p={[0]}
+          variant="interactive"
         >
           <Card
             sx={{
@@ -144,6 +146,7 @@ export default () => (
             borderRadius: '20px'
           }}
           p={[0]}
+          variant="interactive"
         >
           <Card
             sx={{
