@@ -52,14 +52,14 @@ export default () => (
           fontSize: '24px'
         }}
       >
-        This will be changed :) 53 years ago, 100,000 people gathered in San
-        Francisco for the Summer of Love. Welcome to the Summer of Making. It’s
-        not an event or program. It’s a theme for the summer, a challenge to
-        every teenager reading this: What will you make? To suppport you, we’re
-        distributing $50,000 in free electronics (thanks GitHub!) & building
-        Snapchat streaks for coding—but really Summer of Making is about you. If
-        this will be the best summer ever, it’ll be because of what you choose
-        to hack on & learn from.
+        In 1967, 100,000 people gathered in San Francisco for the Summer of
+        Love. In 2020, we at Hack Club hosted the Summer of Making. It wasn't an
+        event or a program. It’s was a theme for the summer and a challenge for
+        students to take on. It was also a summer like no other, with hackers
+        around the world stuck at home. To support makers, we distributed
+        $50,000 in free electronics (thanks GitHub!) & built Snapchat streaks
+        for coding—but really Summer of Making was about the makers. We left it
+        them to get hacking & they built some pretty awesome things...
       </Text>
     </Container>
     <Map />
@@ -83,11 +83,12 @@ export default () => (
         We focus a lot on software at Hack Club. It's soft, after all.
         Comfortable. This summer we left our comfort zone. Global
         pandemic—generally a bad start to summer—left us with $50k of unused
-        grant money from GitHub. We thought about saving it. Instead we
-        gave it away to students as a kind of fun experiment. One thing we liked about
+        grant money from GitHub. We thought about saving it. Instead we gave it
+        away to students as a kind of fun experiment. One thing we liked about
         hardware grants was that bits—however magical—are ultimately constrained
-        by atoms. It seemed right to connect over building physical things during
-        a summer when personal connections relied on the internet more than ever.
+        by atoms. It seemed right to connect over building physical things
+        during a summer when personal connections relied on the internet more
+        than ever.
       </Text>
     </Container>
     <HardwareGrants />
@@ -112,14 +113,14 @@ export default () => (
           fontSize: '24px'
         }}
       >
-        This will be changed to smth about scrapppyyyyy :) 53 years ago, 100,000 people gathered in San
-        Francisco for the Summer of Love. Welcome to the Summer of Making. It’s
-        not an event or program. It’s a theme for the summer, a challenge to
-        every teenager reading this: What will you make? To suppport you, we’re
-        distributing $50,000 in free electronics (thanks GitHub!) & building
-        Snapchat streaks for coding—but really Summer of Making is about you. If
-        this will be the best summer ever, it’ll be because of what you choose
-        to hack on & learn from.
+        This will be changed to smth about scrapppyyyyy :) 53 years ago, 100,000
+        people gathered in San Francisco for the Summer of Love. Welcome to the
+        Summer of Making. It’s not an event or program. It’s a theme for the
+        summer, a challenge to every teenager reading this: What will you make?
+        To suppport you, we’re distributing $50,000 in free electronics (thanks
+        GitHub!) & building Snapchat streaks for coding—but really Summer of
+        Making is about you. If this will be the best summer ever, it’ll be
+        because of what you choose to hack on & learn from.
       </Text>
     </Container>
     <Scrapbook />
