@@ -45,6 +45,10 @@ a{
   text-align: center;
 }
 
+.topHeaderSubtitle {
+  margin-block-end: 0.67em;
+}
+
 .ledHoverEffect:hover {
   color: #338eda;
   text-shadow: 0 0 15px #338eda;

@@ -40,17 +40,16 @@ export default () => (
       as="h1"
       sx={{
         mt: [3, 4],
-        mb: [3, 4],
         textAlign: 'center',
         fontSize: 4
       }}
+      className="topHeaderSubtitle"
     >
       We shipped hardware to
     </Heading>
     <Heading
       as="h1"
       sx={{
-        mt: [3, 4],
         mb: [3, 4],
         textAlign: 'center',
         fontSize: 7
