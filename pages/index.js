@@ -113,14 +113,12 @@ export default () => (
           fontSize: '24px'
         }}
       >
-        This will be changed to smth about scrapppyyyyy :) 53 years ago, 100,000
-        people gathered in San Francisco for the Summer of Love. Welcome to the
-        Summer of Making. It’s not an event or program. It’s a theme for the
-        summer, a challenge to every teenager reading this: What will you make?
-        To suppport you, we’re distributing $50,000 in free electronics (thanks
-        GitHub!) & building Snapchat streaks for coding—but really Summer of
-        Making is about you. If this will be the best summer ever, it’ll be
-        because of what you choose to hack on & learn from.
+        As part of Summer of Making we built Scrapbook. The idea is to share
+        updates of what you’re working on every day: every day this summer, Hack
+        Clubbers are learning & building projects, sharing short video or photo
+        updates via a Slack channel. Through a Slack bot, an Airtable, & a
+        Next.js website that makes everything browsable. The response was
+        amazing and the site is full of amazing things build this summer.
       </Text>
     </Container>
     <Scrapbook />
