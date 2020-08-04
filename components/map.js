@@ -35,14 +35,12 @@ export default () => (
       objectFit: 'cover',
       minHeight: '500px',
       maxHeight: '850px',
-      backdropFilter: 'blur(20px)',
       backgroundPosition: 'center center',
       backgroundImage: 'radial-gradient(at left top,rgba(247,255,0,0.66),rgb(0,255,255,0.66)),url(https://i.imgur.com/KzojkeC.png)'
     }}
   >
     <Container sx={{
       height: '100%',
-      backdropFilter: 'blur(20px)',
     }}>
     <Heading className="map-center-text">
       Makers from all over the world joint in!

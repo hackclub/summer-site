@@ -47,7 +47,7 @@ export default () => (
         >
           <Card
             sx={{
-              backgroundImage: "url('https://i.imgur.com/5VEiUbc.mp4')",
+              backgroundImage: "url(https://i.imgur.com/5VEiUbc.gif)",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',

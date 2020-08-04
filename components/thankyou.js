@@ -43,7 +43,7 @@ export default () => (
       backdropFilter: 'blur(20px)',
       backgroundPosition: 'center center',
       backgroundImage:
-        'radial-gradient(at left top,rgba(247,255,0,0.66),rgb(0,255,255,0.66)), url("https://i.imgur.com/12W8mFe.mp4")'
+        'radial-gradient(at left top,rgba(247,255,0,0.66),rgb(0,255,255,0.66)), url("https://s7.gifyu.com/images/ezgif-4-727ac1653cd9.gif")'
     }}
   >
     <Container
