@@ -37,7 +37,7 @@ export default () => (
       clear: 'both'
     }}
   >
-    <Container>
+    <Container sx={{ fontFamily: "'Merienda', cursive" }}>
       <Container>
         <Heading
           as="h1"
@@ -45,6 +45,7 @@ export default () => (
             mt: [3, 4],
             mb: [3],
             textAlign: 'left',
+            fontFamily: "'Merienda', cursive",
             fontSize: 4
           }}
         >
@@ -54,7 +55,9 @@ export default () => (
           as="h1"
           sx={{
             textAlign: 'left',
-            fontSize: 7
+            mt: [3, 4],
+            fontSize: 7,
+            fontFamily: "'Merienda', cursive"
           }}
         >
           Arts Week
@@ -62,7 +65,7 @@ export default () => (
         <Button
           as="a"
           href="https://scrapbook.hackclub.com/"
-          sx={{ color: 'white', mt: [3] }}
+          sx={{ color: 'white', mt: [4] }}
         >
           Explore the gala →
         </Button>
