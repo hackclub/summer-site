@@ -16,14 +16,12 @@ export default () => (
         Dina Elhanan, Chaleb Pommells, Annlee Fores, Michael Destefanis, Melody & Christina Asquith.
       </Text>
       <Text as="p" variant="caption" mb={1}>
-        Site by <a href="https://lachlanjc.com/">@lachlanjc</a>. Always{' '}
+        Recap site by <a href="https://sampoder.com/">@sampoder</a>. Always{' '}
         <a href="https://github.com/hackclub/summer-site/">open source</a>.
-        Graphics from{' '}
-        <a href="https://github.com/fritzing/fritzing-parts">Fritzing</a>.
       </Text>
       <Text as="p" variant="caption">
-        Following the{' '}
-        <a href="https://hackclub.com/conduct/">Hack Club Code of Conduct</a>.
+        View the{' '}
+        <a href="/landing"> original site</a>.
       </Text>
       <Text
         as="p"
