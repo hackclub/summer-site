@@ -56,7 +56,7 @@ export default () => (
             fontSize: 7
           }}
         >
-          3,500 creations
+          3500 creations
         </Heading>
         <Button
           as="a"
