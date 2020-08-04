@@ -46,11 +46,10 @@ export default () => (
     <Image
       src="https://i.imgur.com/AJZKVSF.png"
       sx={{
-        
         mt: [3, 4],
         mb: [3, 4],
         objectFit: 'cover',
-        minHeight: '200px',
+        minHeight: ['130px','200px','200px'],
         maxHeight: '400px'
       }}
     />

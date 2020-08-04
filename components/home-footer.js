@@ -10,7 +10,7 @@ export default () => (
       <Heading as="h3" variant="subheadline" mb={2}>
         A project by <a href="https://hackclub.com/">Hack Club</a>.
       </Heading>
-      <Text as="p" variant="caption" mb={3} sx={{ width: '60%'}}>
+      <Text as="p" variant="caption" mb={3} sx={{ width: ['85%','75%','60%']}}>
         Thank you: Sam Poder, Lachlan Campbell, Zach Latta, Roshan Palakkal,
         Neel Redkar, Matthew Stanciu, Chris Walker, Max Wofford, Athul Blesson, Amogh Chaubey,
         Dina Elhanan, Chaleb Pommells, Annlee Fores, Michael Destefanis, Melody & Christina Asquith.

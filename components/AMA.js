@@ -33,14 +33,15 @@ export default () => (
     }}
   >
     <Container>
-      <Grid columns={[null, 2]} gap={3} mt={[4, 5]} mb={[3, 4]}>
+      <Grid columns={[null, null, 2]} gap={3} mt={[4, 5]} mb={[3, 4]}>
         <Card
           sx={{
             backgroundSize: 'cover',
             color: 'white',
             clear: 'both',
             backgroundPosition: 'center',
-            borderRadius: '20px'
+            borderRadius: '20px',
+            mb: ['10px', '10px', null]
           }}
           p={[0]}
         >
@@ -71,7 +72,7 @@ export default () => (
         <Card
           sx={{
             backgroundSize: 'cover',
-            textAlign: 'right',
+            textAlign: ['left', 'center', 'right'],
             clear: 'both',
             background: 'none',
             backgroundPosition: 'center'
@@ -85,39 +86,41 @@ export default () => (
             inspiring AMAs
           </Heading>
           <Text sx={{ fontSize: 2 }}>
-            <br />
-            <Mention
-              sx={{ color: 'black' }}
-              name="Limor Fried (June 26th)"
-              url="https://google.com"
-              img="https://usasciencefestival.org/wp-content/uploads/2018/01/Limor-Fried-600x600.jpg"
-            />
-            <br />
-            <br />
-            <Mention
-              sx={{ color: 'black' }}
-              name="Dylan Field (July 10th)"
-              url="https://google.com"
-              img="https://dl.airtable.com/.attachmentThumbnails/10060ecb0494cc79d6000ceb95ca07c3/cbbb4caf"
-            />
-            <br />
-            <br />
+            <Grid
+              columns={[null, null, null, 2]}
+              gap={3}
+              mt={[3, 3]}
+              mb={[3, 4]}
+              sx={{
+                paddingLeft: ['null', null, '6%']
+              }}
+            >
+              <Mention
+                sx={{ color: 'black' }}
+                name="Limor Fried"
+                url="https://google.com"
+                img="https://usasciencefestival.org/wp-content/uploads/2018/01/Limor-Fried-600x600.jpg"
+              />
+              <Mention
+                sx={{ color: 'black' }}
+                name="Dylan Field"
+                url="https://google.com"
+                img="https://dl.airtable.com/.attachmentThumbnails/10060ecb0494cc79d6000ceb95ca07c3/cbbb4caf"
+              />
+              <Mention
+                sx={{ color: 'black' }}
+                name="Tommy DeVoss"
+                url="https://google.com"
+                img="https://dl.airtable.com/.attachmentThumbnails/c2945a6e36439be2d1f9aae336ec6181/55c890d5.png"
+              />
 
-            <Mention
-              sx={{ color: 'black' }}
-              name="Tommy DeVoss (July 24th)"
-              url="https://google.com"
-              img="https://dl.airtable.com/.attachmentThumbnails/c2945a6e36439be2d1f9aae336ec6181/55c890d5.png"
-            />
-            <br />
-            <br />
-
-            <Mention
-              sx={{ color: 'black' }}
-              name="Alex Stamos (Aug 7th)"
-              url="https://google.com"
-              img="https://dl.airtable.com/.attachmentThumbnails/df51be717dd8e09204ec23b27336f4a7/acff2db0"
-            />
+              <Mention
+                sx={{ color: 'black' }}
+                name="Alex Stamos"
+                url="https://google.com"
+                img="https://dl.airtable.com/.attachmentThumbnails/df51be717dd8e09204ec23b27336f4a7/acff2db0"
+              />
+            </Grid>
           </Text>
           <br />
         </Card>

@@ -51,7 +51,7 @@ export default () => (
         mt: [3, 4],
         mb: [3, 4],
         textAlign: 'center',
-        fontSize: 7
+        fontSize: [6,7,7]
       }}
     >
       exciting events

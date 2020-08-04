@@ -34,14 +34,15 @@ export default () => (
     }}
   >
     <Container>
-      <Grid columns={[null, 2]} gap={3} mt={[4, 5]} mb={[3, 4]}>
+      <Grid columns={[null, null, 2]} gap={3} mt={[4, 5]} mb={[3, 4]}>
         <Card
           sx={{
             backgroundSize: 'cover',
             color: 'white',
             clear: 'both',
             backgroundPosition: 'center',
-            borderRadius: '20px'
+            borderRadius: '20px',
+            mb:['10px','10px',null]
           }}
           p={[0]}
         >
@@ -76,16 +77,17 @@ export default () => (
             textAlign: 'right',
             color: 'white',
             clear: 'both',
+            textAlign: ['left', 'center', 'right'],
             background: 'none',
             backgroundPosition: 'center'
           }}
           p={[0]}
         >
           <Heading>Using hardware to</Heading>
-          <Heading as="h1" sx={{ fontSize: 7 }}>
+          <Heading as="h1" sx={{ fontSize: [6,7,7] }}>
             save lives
           </Heading>
-          <Text sx={{ fontSize: 2, paddingLeft: '15%', right: 0 }}>
+          <Text sx={{ fontSize: 2, paddingLeft: ['0%','0%','15%'], right: 0 }}>
             <br />
             Ellen Xu, a 15 year old from San Diego, is developing a machine
             learning algorithm which can run on a Raspberry Pi in order to help

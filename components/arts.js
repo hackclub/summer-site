@@ -38,13 +38,17 @@ export default () => (
     }}
   >
     <Container>
-      <Container>
+      <Container
+        sx={{
+          textAlign: ['left', 'center', 'center'],
+          p:[0]
+        }}
+      >
         <Heading
           as="h1"
           sx={{
             mt: [3, 4],
             mb: [3],
-            textAlign: 'left',
             fontSize: 4
           }}
         >
@@ -53,8 +57,7 @@ export default () => (
         <Heading
           as="h1"
           sx={{
-            textAlign: 'left',
-            fontSize: 7
+            fontSize: [6,7,7]
           }}
         >
           Arts Week
