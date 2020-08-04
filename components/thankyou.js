@@ -35,7 +35,7 @@ export default () => (
       position: 'relative',
       overflow: 'hidden',
       backgroundRepeat: 'no-repeat',
-      backgroundSize: '100%',
+      backgroundSize: 'cover',
       backgroundColor: '#338eda',
       clear: 'both',
       objectFit: 'cover',
@@ -43,7 +43,7 @@ export default () => (
       backdropFilter: 'blur(20px)',
       backgroundPosition: 'center center',
       backgroundImage:
-        'radial-gradient(at left top,rgba(247,255,0,0.66),rgb(0,255,255,0.66))'
+        'radial-gradient(at left top,rgba(247,255,0,0.66),rgb(0,255,255,0.66)), url("https://media3.giphy.com/media/FnGdcQzqypBaE/200.gif")'
     }}
   >
     <Container
