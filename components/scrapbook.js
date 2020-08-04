@@ -36,36 +36,36 @@ export default () => (
       clear: 'both'
     }}
   >
-    <Heading
-      as="h1"
-      sx={{
-        mt: [3, 4],
-        textAlign: 'center',
-        fontSize: 4
-      }}
-    >
-      Hack Clubbers shared
-    </Heading>
-    <Heading
-      as="h1"
-      sx={{
-        textAlign: 'center',
-        fontSize: 9
-      }}
-    >
-      3,500
-    </Heading>
-    <Heading
-      as="h1"
-      sx={{
-        mb: [3, 4],
-        textAlign: 'center',
-        fontSize: 4
-      }}
-    >
-      creations on Scrapbook
-    </Heading>
     <Container>
+      <Container>
+        <Heading
+          as="h1"
+          sx={{
+            mt: [3, 4],
+            mb: [3],
+            textAlign: 'left',
+            fontSize: 4
+          }}
+        >
+          Hack Clubbers shared
+        </Heading>
+        <Heading
+          as="h1"
+          sx={{
+            textAlign: 'left',
+            fontSize: 7
+          }}
+        >
+          3,500 creations
+        </Heading>
+        <Button
+          as="a"
+          href="https://scrapbook.hackclub.com/"
+          sx={{ color: 'white', mt: [3] }}
+        >
+          Explore Scrapbook →
+        </Button>
+      </Container>
       <Grid columns={[null, 2, 3]} gap={3} mt={[3, 4]} mb={[3, 4]}>
         <Card
           sx={{
@@ -195,20 +195,6 @@ export default () => (
           </Text>
         </Card>
       </Grid>
-      <Box
-        sx={{
-          paddingBottom: '30px',
-          textAlign: 'center'
-        }}
-      >
-        <Button
-          as="a"
-          href="https://scrapbook.hackclub.com/"
-          sx={{ color: 'white' }}
-        >
-          Explore more →
-        </Button>
-      </Box>
       <Grid
         columns={[2, 3, 6]}
         gap={1.5}

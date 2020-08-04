@@ -37,28 +37,36 @@ export default () => (
       clear: 'both'
     }}
   >
-    <Heading
-      as="h1"
-      sx={{
-        mt: [3, 4],
-        textAlign: 'center',
-        fontSize: 4
-      }}
-      className="topHeaderSubtitle"
-    >
-      Fine art was produced during
-    </Heading>
-    <Heading
-      as="h1"
-      sx={{
-        mb: [3, 4],
-        textAlign: 'center',
-        fontSize: 7
-      }}
-    >
-      Arts Week
-    </Heading>
     <Container>
+      <Container>
+        <Heading
+          as="h1"
+          sx={{
+            mt: [3, 4],
+            mb: [3],
+            textAlign: 'left',
+            fontSize: 4
+          }}
+        >
+          Fine art was produced during
+        </Heading>
+        <Heading
+          as="h1"
+          sx={{
+            textAlign: 'left',
+            fontSize: 7
+          }}
+        >
+          Arts Week
+        </Heading>
+        <Button
+          as="a"
+          href="https://scrapbook.hackclub.com/"
+          sx={{ color: 'white', mt: [3] }}
+        >
+          Explore the gala →
+        </Button>
+      </Container>
       <Grid
         columns={[null, 2, 3]}
         gap={3}
@@ -68,7 +76,7 @@ export default () => (
       >
         <Card
           className="pictureFrame"
-          sx={{ background: 'white', m: 4, color: 'black!important' }}
+          sx={{ background: 'white', m: 3, color: 'black!important' }}
         >
           <img
             width="100%"
@@ -86,7 +94,7 @@ export default () => (
         </Card>
         <Card
           className="pictureFrame"
-          sx={{ background: 'white', m: 4, color: 'black!important' }}
+          sx={{ background: 'white', m: 3, color: 'black!important' }}
         >
           <img
             width="100%"
@@ -104,7 +112,7 @@ export default () => (
         </Card>
         <Card
           className="pictureFrame"
-          sx={{ background: 'white', m: 4, color: 'black!important' }}
+          sx={{ background: 'white', m: 3, color: 'black!important' }}
         >
           <img
             width="100%"
@@ -121,20 +129,6 @@ export default () => (
           <br />
         </Card>
       </Grid>
-      <Box
-        sx={{
-          paddingBottom: '30px',
-          textAlign: 'center'
-        }}
-      >
-        <Button
-          as="a"
-          href="https://arts-gala.hackclub.dev"
-          sx={{ color: 'white' }}
-        >
-          Explore more →
-        </Button>
-      </Box>
     </Container>
   </Box>
 )

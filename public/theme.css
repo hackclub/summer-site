@@ -51,7 +51,7 @@ a{
 }
 
 .topHeaderSubtitle {
-  margin-block-end: 0.67em;
+  margin-block-end: 1em;
 }
 
 .ledHoverEffect:hover {
@@ -63,7 +63,7 @@ a{
   position: relative;
   border: 40px solid rgb(255, 255, 255);
   border-bottom: 0px solid rgb(255, 255, 255);
-  outline: 20px solid black;
+  outline: 10px solid black;
 }
 
 .pictureFrame:before {
