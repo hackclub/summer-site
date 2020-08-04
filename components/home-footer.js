@@ -21,7 +21,7 @@ export default () => (
       </Text>
       <Text as="p" variant="caption">
         View the{' '}
-        <a href="/landing"> original site</a>.
+        <a href="/landing"> original site</a> by <a href="https://lachlanjc.com/">@lachlanjc</a>.
       </Text>
       <Text
         as="p"
