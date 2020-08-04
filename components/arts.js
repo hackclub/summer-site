@@ -101,14 +101,14 @@ export default () => (
         >
           <img
             width="100%"
-            src="https://dl.airtable.com/.attachmentThumbnails/e4ed4d3cb696687f506d60aed5fa0988/36a8507d"
+            src="https://dl.airtable.com/.attachmentThumbnails/8d0e717964dd2ac4de571cb8aa20d6bc/c4a2189f"
           />
           <br />
           <Text sx={{ color: 'black!important', mt: 1, mb: 1 }}>
             <Mention
               sx={{ color: 'black' }}
-              username="e-lee-za"
-              key="e-lee-zai"
+              username="malte"
+              key="maltei"
             />
           </Text>
           <br />
@@ -119,14 +119,14 @@ export default () => (
         >
           <img
             width="100%"
-            src="https://dl.airtable.com/.attachmentThumbnails/e4ed4d3cb696687f506d60aed5fa0988/36a8507d"
+            src="https://dl.airtable.com/.attachmentThumbnails/79b3ebfda143d3145ecb1b1ea46aafe0/5bdcc39c"
           />
           <br />
           <Text sx={{ color: 'black!important', mt: 1, mb: 1 }}>
             <Mention
               sx={{ color: 'black' }}
-              username="e-lee-za"
-              key="e-lee-zai"
+              username="clairebookworm"
+              key="clairebookwormi"
             />
           </Text>
           <br />

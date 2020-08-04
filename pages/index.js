@@ -43,7 +43,7 @@ export default () => (
     <Meta
       as={Head}
       title="Summer of Making"
-      description="$50k in GitHub hardware grants, daily streak system, Slack community with 10k hackers, & weekly online events. Open to teenagers worldwide. What will you make?"
+      description="A recap of an action packed summer full of hardware, Zoom calls, making friends, art and hacking!"
       image="https://assets.hackclub.com/log/2020-06-18_summer.jpg"
     />
     <Banner />

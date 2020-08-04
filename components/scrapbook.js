@@ -77,15 +77,16 @@ export default () => (
           url="https://dl.airtable.com/.attachmentThumbnails/169f54f04aa5f292dc8fd2dbc99493ee/a7a1ce23"
         />
         <ImageCard
-          content="Made by"
-          mention="austin"
-          url="https://dl.airtable.com/.attachmentThumbnails/169f54f04aa5f292dc8fd2dbc99493ee/a7a1ce23"
+          content="Taken by"
+          mention="rishi"
+          url="https://dl.airtable.com/.attachmentThumbnails/eaf99a91323fd7d2cd06fea92f5fee16/60cacb4b"
         />
         <ImageCard
           content="Made by"
-          mention="austin"
-          url="https://dl.airtable.com/.attachmentThumbnails/169f54f04aa5f292dc8fd2dbc99493ee/a7a1ce23"
+          mention="lskaling"
+          url="https://dl.airtable.com/.attachmentThumbnails/22cf4e8d252cdfd8000d9c36690f714d/35ebbc64"
         />
+        
       </Grid>
       <Grid
         columns={[2, 3, 6]}
