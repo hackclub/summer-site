@@ -45,6 +45,11 @@ a{
   text-align: center;
 }
 
+.thank-you-text {
+  font-size: 4em;
+  text-align: center;
+}
+
 .topHeaderSubtitle {
   margin-block-end: 0.67em;
 }

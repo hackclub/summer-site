@@ -40,7 +40,15 @@ export default () => (
       as="h1"
       sx={{
         mt: [3, 4],
-        mb: [3, 4],
+        textAlign: 'center',
+        fontSize: 4
+      }}
+    >
+      Hack Clubbers shared
+    </Heading>
+    <Heading
+      as="h1"
+      sx={{
         textAlign: 'center',
         fontSize: 9
       }}
@@ -50,13 +58,12 @@ export default () => (
     <Heading
       as="h1"
       sx={{
-        mt: [3, 4],
         mb: [3, 4],
         textAlign: 'center',
         fontSize: 4
       }}
     >
-      Scrapbook Entries Shared
+      creations on Scrapbook
     </Heading>
     <Container>
       <Grid columns={[null, 2, 3]} gap={3} mt={[3, 4]} mb={[3, 4]}>
@@ -67,11 +74,12 @@ export default () => (
             clear: 'both',
             backgroundPosition: 'center',
             borderRadius: '20px',
-            boxShadow: '0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)',
+            boxShadow:
+              '0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)',
             transition:
               'transform .125s ease-in-out, box-shadow .125s ease-in-out',
             ':hover,:focus': {
-              transform: 'scale(1.0625)',
+              transform: 'scale(1.0625)'
             }
           }}
           p={[0]}
@@ -109,11 +117,12 @@ export default () => (
             clear: 'both',
             backgroundPosition: 'center',
             borderRadius: '20px',
-            boxShadow: '0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)',
+            boxShadow:
+              '0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)',
             transition:
               'transform .125s ease-in-out, box-shadow .125s ease-in-out',
             ':hover,:focus': {
-              transform: 'scale(1.0625)',
+              transform: 'scale(1.0625)'
             }
           }}
           p={[0]}
@@ -150,11 +159,12 @@ export default () => (
             clear: 'both',
             backgroundPosition: 'center',
             borderRadius: '20px',
-            boxShadow: '0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)',
+            boxShadow:
+              '0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)',
             transition:
               'transform .125s ease-in-out, box-shadow .125s ease-in-out',
             ':hover,:focus': {
-              transform: 'scale(1.0625)',
+              transform: 'scale(1.0625)'
             }
           }}
           p={[0]}
@@ -185,6 +195,21 @@ export default () => (
           </Text>
         </Card>
       </Grid>
+      <Box
+        sx={{
+          paddingBottom: '30px',
+          textAlign: 'center'
+        }}
+      >
+        <Button
+          as="a"
+          variant="cta"
+          href="https://scrapbook.hackclub.com/"
+          sx={{ color: 'white' }}
+        >
+          Explore more →
+        </Button>
+      </Box>
       <Grid
         columns={[2, 3, 6]}
         gap={1.5}
@@ -232,5 +257,3 @@ export default () => (
     </Container>
   </Box>
 )
-
-

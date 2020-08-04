@@ -41,17 +41,16 @@ export default () => (
       as="h1"
       sx={{
         mt: [3, 4],
-        mb: [3, 4],
         textAlign: 'center',
         fontSize: 4
       }}
+      className="topHeaderSubtitle"
     >
       Fine art was produced during
     </Heading>
     <Heading
       as="h1"
       sx={{
-        mt: [3, 4],
         mb: [3, 4],
         textAlign: 'center',
         fontSize: 7
@@ -122,6 +121,21 @@ export default () => (
           <br />
         </Card>
       </Grid>
+      <Box
+        sx={{
+          paddingBottom: '30px',
+          textAlign: 'center'
+        }}
+      >
+        <Button
+          as="a"
+          variant="cta"
+          href="https://scrapbook.hackclub.com/"
+          sx={{ color: 'white' }}
+        >
+          Explore more →
+        </Button>
+      </Box>
     </Container>
   </Box>
 )
