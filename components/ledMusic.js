@@ -43,6 +43,7 @@ export default () => (
             backgroundPosition: 'center'
           }}
           p={[0]}
+          className="ledborder"
         >
           <Heading>Using hardware to</Heading>
           <Heading as="h1" sx={{ fontSize: 7 }}>

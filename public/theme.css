@@ -76,3 +76,29 @@ a{
   bottom: 5px;
   border: 5px solid #ffea00;
 }
+
+/* container */
+
+
+
+@keyframes animateBordeer {
+  from {border: 5px dashed #ffea00;}
+  to {
+    border: 5px dashed red;
+  }
+}
+
+.ledborder {
+  position:relative;
+}
+.ledborder:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: -20px;
+  left: -20px;
+  right: 15px;
+  bottom: 0px;
+  border: 5px dashed #ffea00;
+  animation: 1s animateBordeer infinite;
+}

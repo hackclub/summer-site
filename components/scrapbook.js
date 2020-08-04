@@ -203,7 +203,6 @@ export default () => (
       >
         <Button
           as="a"
-          variant="cta"
           href="https://scrapbook.hackclub.com/"
           sx={{ color: 'white' }}
         >

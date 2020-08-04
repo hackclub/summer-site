@@ -129,7 +129,6 @@ export default () => (
       >
         <Button
           as="a"
-          variant="cta"
           href="https://arts-gala.hackclub.dev"
           sx={{ color: 'white' }}
         >
