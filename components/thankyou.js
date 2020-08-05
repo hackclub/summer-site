@@ -23,7 +23,7 @@ import ColorSwitcher from './color-switcher'
 
 const Collab = ({ img, alt, url }) => (
   <Link href={url} target="_blank" sx={{ display: 'block', mx: 3, mb: [3, 4] }}>
-    <Image src={img} alt={alt} sx={{ maxWidth: 224, maxHeight: 84 }} />
+    <Image src={img} alt={alt} sx={{ maxWidth: [112,224,224], maxHeight: [42,84,84] }} />
   </Link>
 )
 
@@ -54,7 +54,7 @@ export default () => (
       className="thank-you-text"
     >
       <br />
-      <Heading mb={[3, 4]}>
+      <Heading mb={[3, 4]} sx={{ fontSize: [7,null,null] }}>
         Thank you for joining!
       </Heading>
       <Heading
