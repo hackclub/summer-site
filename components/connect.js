@@ -85,8 +85,7 @@ export default () => (
           <Heading as="h1" sx={{ fontSize: [6,7,7]}}>
             connect
           </Heading>
-          <Text sx={{ fontSize: 2, width: ['100%','100%','85%'] }}>
-            <br />
+          <Text sx={{ fontSize: 2, width: ['100%','100%','85%'], mt:[2] }}>
             This summer was like no other, over a billion teenagers found
             themselves stuck at home as a pandemic raged on outside.
             Participation in the Hack Club Slack skyrocketed, increasing by

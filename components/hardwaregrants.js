@@ -50,7 +50,6 @@ export default () => (
     <Heading
       as="h1"
       sx={{
-        mb: [3, 4],
         textAlign: 'center',
         fontSize: [6,7,7]
       }}
@@ -60,7 +59,7 @@ export default () => (
     <Heading
       as="h1"
       sx={{
-        mt: [3, 4],
+        mt: "10px",
         mb: [3, 4],
         textAlign: 'center',
         fontSize: 3

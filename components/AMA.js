@@ -86,6 +86,7 @@ export default () => (
             inspiring AMAs
           </Heading>
           <Text sx={{ fontSize: 2 }}>
+            <br />
             <Grid
               columns={[null, null, null, 2]}
               gap={3}

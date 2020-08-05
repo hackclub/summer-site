@@ -87,8 +87,7 @@ export default () => (
           <Heading as="h1" sx={{ fontSize: [6,7,7] }}>
             save lives
           </Heading>
-          <Text sx={{ fontSize: 2, paddingLeft: ['0%','0%','15%'], right: 0 }}>
-            <br />
+          <Text sx={{ fontSize: 2, paddingLeft: ['0%','0%','15%'], right: 0, mt:[2] }}>
             Ellen Xu, a 15 year old from San Diego, is developing a machine
             learning algorithm which can run on a Raspberry Pi in order to help
             people diagnose Kawasaki disease, the #1 heart disease in children
