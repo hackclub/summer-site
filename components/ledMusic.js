@@ -86,7 +86,7 @@ export default () => (
           <Heading as="h1" sx={{ fontSize: [6, 7, 7] }}>
             have <span className="ledHoverEffect">fun</span>
           </Heading>
-          <Text sx={{ fontSize: 2, width: ['100%','100%','85%'], mt:[2] }}>
+          <Text sx={{ fontSize: [2,2,3], width: ['100%','100%','85%'], mt:[2] }}>
             Everyone loves LEDs, and they were super popular this summer!
             Patrick & Addison from Illinois worked on a Smart Album Cover
             Display, that detects the currently playing song through a
