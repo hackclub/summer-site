@@ -8,6 +8,7 @@ import theme from '../lib/theme'
 import { ThemeProvider } from 'theme-ui'
 import * as Fathom from 'fathom-client'
 import '../public/theme.css'
+import '@hackclub/theme/fonts/reg-bold.css'
 
 const App = ({ Component, pageProps }) => {
   const router = useRouter()
