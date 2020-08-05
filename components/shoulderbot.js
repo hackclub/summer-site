@@ -86,7 +86,7 @@ export default () => (
           <Heading as="h1" sx={{ fontSize: [6, 7, 7] }}>
             help others
           </Heading>
-          <Text sx={{ fontSize: 2, width: ['100%','100%','85%'], mt:[2] }}>
+          <Text sx={{ fontSize: [2,2,3], width: ['100%','100%','85%'], mt:[2] }}>
             Ray Rumore, a 13 years old from New York, is using his hardware
             grant to learn how to program a microcontroller and build a
             “shoulder bot” to help his minimally-verbal sister (and others like

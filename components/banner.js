@@ -35,14 +35,7 @@ export default () => (
       clear: 'both'
     }}
   >
-    <ColorSwitcher
-      sx={{
-        color: 'white',
-        position: 'absolute',
-        top: [2, 3],
-        right: [3, 4]
-      }}
-    />
+
     <Image
       src="https://i.imgur.com/AJZKVSF.png"
       sx={{
