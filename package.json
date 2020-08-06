@@ -10,9 +10,11 @@
     "start": "next start"
   },
   "dependencies": {
-    "@hackclub/icons": "^0.0.3",
+    "@hackclub/icons": "0.0.3",
     "@hackclub/meta": "^1.0.0",
     "@hackclub/theme": "^0.2.0",
+    "@mdx-js/loader": "^1.6.16",
+    "@next/mdx": "^9.5.1",
     "fathom-client": "^3.0.0",
     "lodash": "^4.17.19",
     "next": "^9.4.4",
