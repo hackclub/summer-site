@@ -43,7 +43,7 @@ export default () => (
       height: '100%',
     }}>
     <Heading className="map-center-text">
-      Makers from all over the world joint in!
+      Makers from all over the world  joined in!
     </Heading>
     </Container>
   </Box>
