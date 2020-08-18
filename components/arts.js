@@ -64,7 +64,7 @@ export default () => (
         </Heading>
         <Button
           as="a"
-          href="https://scrapbook.hackclub.com/"
+          href="https://arts-gala.hackclub.dev"
           sx={{ color: 'white', mt: [3] }}
         >
           Explore the gala →
