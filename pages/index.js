@@ -199,8 +199,8 @@ export default ({ scraps, images }) => (
               Whether it’s your first hardware project or hundredth, you can
               have GitHub buy you electronics for a hardware project.
             </Text>
-            <Button as="a" variant="cta" href="https://hack.af/hwp-apply">
-              Apply for hardware
+            <Button as="a" variant="cta">
+              Applications have closed
             </Button>
           </div>
           <div>
