@@ -70,8 +70,8 @@ export default ({ scraps, images }) => (
         </Heading>
         <Text as="p" variant="subtitle">
           GitHub sponsored $50k worth of hardware grants for student makers,
-          alongside support from Adafruit & Arduino. Sorry, applications 
-          are now closed.
+          alongside support from Adafruit & Arduino. (Applications are now
+          closed.)
         </Text>
       </Container>
       <Box
