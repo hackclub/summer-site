@@ -69,8 +69,8 @@ export default ({ scraps, images }) => (
           Free hardware from GitHub.
         </Heading>
         <Text as="p" variant="subtitle">
-          GitHub is sponsored $50k worth of hardware grants for student makers,
-          alongside support from Adafruit & Arduino for gear. Sorry, applications 
+          GitHub sponsored $50k worth of hardware grants for student makers,
+          alongside support from Adafruit & Arduino. Sorry, applications 
           are now closed.
         </Text>
       </Container>
