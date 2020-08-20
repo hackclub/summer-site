@@ -49,7 +49,7 @@ export default () => (
           <Card
             sx={{
               backgroundImage:
-                "url('https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fdl.airtable.com%2F.attachments%2F60ad2208ccd0e6b089aaaedcfea3e7b3%2F9a5f647b%2F197E6FBE-1A90-4071-875C-12DFBD724400.jpeg')",
+                "url('https://i.imgur.com/BHg8YFV.png')",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
@@ -82,18 +82,17 @@ export default () => (
           }}
           p={[0]}
         >
-          <Heading>Using hardware to</Heading>
+          <Heading>Using hardware to store</Heading>
           <Heading as="h1" sx={{ fontSize: [6, 7, 7] }}>
-            help others
+            memories
           </Heading>
           <Text sx={{ fontSize: [2,2,3], width: ['100%','100%','85%'], mt:[2] }}>
-            Ray Rumore, a 13-year-old from New York, is using his hardware
-            grant to learn how to program a microcontroller and build a
-            “shoulder bot” to help his minimally-verbal sister (and others like
-            her) to communicate.
+            Sulthan Nizarudin, a 18-year-old from Kerala (India), used his hardware to create a
+            polaroid-style camera to take fun photos with friends! The project uses a Raspberry Pi,
+             a camera module, thermal printer and more!
           </Text>
           <br />
-          <Button>Watch a video</Button>
+          <Button as='a' href="https://www.youtube.com/c/CraftCoderbySulthanNizarudin">Watch a video</Button>
         </Card>
         <Card
           sx={{
@@ -109,7 +108,7 @@ export default () => (
           <Card
             sx={{
               backgroundImage:
-                "url('https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fdl.airtable.com%2F.attachments%2F60ad2208ccd0e6b089aaaedcfea3e7b3%2F9a5f647b%2F197E6FBE-1A90-4071-875C-12DFBD724400.jpeg')",
+                "url('https://i.imgur.com/8iHFgW3.png')",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
@@ -128,7 +127,7 @@ export default () => (
             }}
             p={[1, 2]}
           >
-            Their sketch from the planning process
+            The camera part of the finished product
           </Text>
         </Card>
       </Grid>

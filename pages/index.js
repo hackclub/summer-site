@@ -23,7 +23,7 @@ import Banner from '../components/banner'
 import Head from 'next/head'
 import Scrapbook from '../components/scrapbook'
 import HardwareGrants from '../components/hardwaregrants'
-import ShoulderBot from '../components/shoulderbot'
+import Polaroid from '../components/polaroid'
 import KawasakiDetector from '../components/kawasakiDetector'
 import LedMusic from '../components/ledMusic'
 import Arts from '../components/arts'
@@ -37,6 +37,7 @@ import Footer from '../components/home-footer'
 import Intro from '../components/intro'
 import HardwareIntro from '../components/hardware-intro'
 import ScrapbookIntro from '../components/scrapbook-intro'
+import Nav from '../components/nav'
 
 export default () => (
   <Box>
@@ -46,12 +47,13 @@ export default () => (
       description="A recap of an action packed summer full of hardware, Zoom calls, making friends, art and hacking!"
       image="https://assets.hackclub.com/log/2020-06-18_summer.jpg"
     />
+    <Nav />
     <Banner />
     <Intro />
     <Map />
     <HardwareIntro />
     <HardwareGrants />
-    <ShoulderBot />
+    <Polaroid />
     <KawasakiDetector />
     <LedMusic />
     <KawasakiDetector />
