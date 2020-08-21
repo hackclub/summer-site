@@ -19,7 +19,6 @@ import {
   Text,
   Textarea
 } from 'theme-ui'
-import ColorSwitcher from './color-switcher'
 import Mention from './mentionAMA'
 
 export default () => (

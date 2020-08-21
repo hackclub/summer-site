@@ -19,8 +19,7 @@ import {
   Text,
   Textarea
 } from 'theme-ui'
-import ColorSwitcher from './color-switcher'
-import Mention from './mentionAMA'
+import Mention from '../mention'
 
 export default () => (
   <Box
@@ -34,30 +33,31 @@ export default () => (
   >
     <Container>
       <Grid columns={[null, null, 2]} gap={3} mt={[4, 5]} mb={[3, 4]}>
-      <Card
+        <Card
           sx={{
             backgroundSize: 'cover',
             color: 'white',
             clear: 'both',
             backgroundPosition: 'center',
             borderRadius: '20px',
-            mb:['10px','10px',null],
-            display: [null,null,'none'],
+            mb: ['10px', '10px', null],
+            display: [null, null, 'none']
           }}
-          
           p={[0]}
         >
           <Card
             sx={{
-              backgroundImage: "url('https://i.imgur.com/QJcio5r.png')",
+              backgroundImage:
+                "url('https://i.imgur.com/BHg8YFV.png')",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
-              height: '420px',
+              height: '400px',
               width: '100%',
               backgroundPosition: 'center',
               borderTopLeftRadius: '20px',
               borderTopRightRadius: '20px'
+              
             }}
             p={[3, 4]}
           ></Card>
@@ -68,7 +68,7 @@ export default () => (
             }}
             p={[1, 2]}
           >
-            Hack Night (Jul 26th)
+            Their sketch from the planning process
           </Text>
         </Card>
         <Card
@@ -81,19 +81,17 @@ export default () => (
           }}
           p={[0]}
         >
-          <Heading>Finding new ways to</Heading>
-          <Heading as="h1" sx={{ fontSize: [6,7,7]}}>
-            connect
+          <Heading>Using hardware to store</Heading>
+          <Heading as="h1" sx={{ fontSize: [6, 7, 7] }}>
+            memories
           </Heading>
           <Text sx={{ fontSize: [2,2,3], width: ['100%','100%','85%'], mt:[2] }}>
-            This summer was like no other, over a billion teenagers found
-            themselves stuck at home as a pandemic raged on outside.
-            Participation in the Hack Club Slack skyrocketed, increasing by
-            450%. Throughout the summer, we hosted events for Hack Clubbers to
-            connect with one another.
+            Sulthan Nizarudin, a 18-year-old from Kerala (India), used his hardware to create a
+            polaroid-style camera to take fun photos with friends! The project uses a Raspberry Pi,
+             a camera module, thermal printer and more!
           </Text>
           <br />
-          <Button>Join the Slack</Button>
+          <Button as='a' href="https://youtu.be/-SiU1nOm9JY">Watch a video</Button>
         </Card>
         <Card
           sx={{
@@ -102,18 +100,18 @@ export default () => (
             clear: 'both',
             backgroundPosition: 'center',
             borderRadius: '20px',
-            mb:['10px','10px',null],
-            display: ['none','none','block'],
+            display: ['none', 'none', 'block']
           }}
           p={[0]}
         >
           <Card
             sx={{
-              backgroundImage: "url('https://i.imgur.com/QJcio5r.png')",
+              backgroundImage:
+                "url('https://i.imgur.com/8iHFgW3.png')",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
-              height: '420px',
+              height: '400px',
               width: '100%',
               backgroundPosition: 'center',
               borderTopLeftRadius: '20px',
@@ -128,12 +126,10 @@ export default () => (
             }}
             p={[1, 2]}
           >
-            Hack Night (Jul 26th)
+            The camera part of the finished product
           </Text>
         </Card>
       </Grid>
     </Container>
   </Box>
 )
-
-

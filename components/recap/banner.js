@@ -19,7 +19,7 @@ import {
   Text,
   Textarea
 } from 'theme-ui'
-import ColorSwitcher from '../components/color-switcher'
+import ColorSwitcher from '../color-switcher'
 
 export default () => (
   <Box

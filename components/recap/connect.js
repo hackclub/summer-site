@@ -19,8 +19,7 @@ import {
   Text,
   Textarea
 } from 'theme-ui'
-import ColorSwitcher from './color-switcher'
-import Mention from './mention'
+import Mention from './mentionAMA'
 
 export default () => (
   <Box
@@ -34,26 +33,26 @@ export default () => (
   >
     <Container>
       <Grid columns={[null, null, 2]} gap={3} mt={[4, 5]} mb={[3, 4]}>
-        <Card
+      <Card
           sx={{
             backgroundSize: 'cover',
             color: 'white',
             clear: 'both',
             backgroundPosition: 'center',
             borderRadius: '20px',
-            mb: ['10px', '10px', null],
-            display: [null, null, 'none']
+            mb:['10px','10px',null],
+            display: [null,null,'none'],
           }}
+          
           p={[0]}
         >
           <Card
             sx={{
-              backgroundImage:
-                "url('https://pbs.twimg.com/media/EeCmpifXoAEN3vo?format=jpg&name=large')",
+              backgroundImage: "url('https://i.imgur.com/QJcio5r.png')",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
-              height: '400px',
+              height: '420px',
               width: '100%',
               backgroundPosition: 'center',
               borderTopLeftRadius: '20px',
@@ -68,32 +67,32 @@ export default () => (
             }}
             p={[1, 2]}
           >
-            fake filler image ignore
+            Hack Night (Jul 26th)
           </Text>
         </Card>
         <Card
           sx={{
             backgroundSize: 'cover',
-            textAlign: ['left', 'center', 'left'],
             clear: 'both',
             background: 'none',
-            backgroundPosition: 'center'
+            backgroundPosition: 'center',
+            textAlign: ['left', 'center', 'left'],
           }}
           p={[0]}
-          className="ledborder"
         >
-          <Heading>Using hardware to</Heading>
-          <Heading as="h1" sx={{ fontSize: [6, 7, 7] }}>
-            have <span className="ledHoverEffect">fun</span>
+          <Heading>Finding new ways to</Heading>
+          <Heading as="h1" sx={{ fontSize: [6,7,7]}}>
+            connect
           </Heading>
           <Text sx={{ fontSize: [2,2,3], width: ['100%','100%','85%'], mt:[2] }}>
-            Everyone loves LEDs, and they were super popular this summer!
-            Patrick & Addison from Illinois worked on a Smart Album Cover
-            Display, that detects the currently playing song through a
-            microphone and shows the album art.
+            This summer was like no other, over a billion teenagers found
+            themselves stuck at home as a pandemic raged on outside.
+            Participation in the Hack Club Slack skyrocketed, increasing by
+            450%. Throughout the summer, we hosted events for Hack Clubbers to
+            connect with one another.
           </Text>
           <br />
-          <Button>Watch a video</Button>
+          <Button>Join the Slack</Button>
         </Card>
         <Card
           sx={{
@@ -102,18 +101,18 @@ export default () => (
             clear: 'both',
             backgroundPosition: 'center',
             borderRadius: '20px',
-            display: ['none', 'none', 'block']
+            mb:['10px','10px',null],
+            display: ['none','none','block'],
           }}
           p={[0]}
         >
           <Card
             sx={{
-              backgroundImage:
-                "url('https://pbs.twimg.com/media/EeCmpifXoAEN3vo?format=jpg&name=large')",
+              backgroundImage: "url('https://i.imgur.com/QJcio5r.png')",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
-              height: '400px',
+              height: '420px',
               width: '100%',
               backgroundPosition: 'center',
               borderTopLeftRadius: '20px',
@@ -128,10 +127,12 @@ export default () => (
             }}
             p={[1, 2]}
           >
-            fake filler image ignore
+            Hack Night (Jul 26th)
           </Text>
         </Card>
       </Grid>
     </Container>
   </Box>
 )
+
+

@@ -19,7 +19,6 @@ import {
   Text,
   Textarea
 } from 'theme-ui'
-import ColorSwitcher from './color-switcher'
 
 const Collab = ({ img, alt, url }) => (
   <Link href={url} target="_blank" sx={{ display: 'block', mx: 3, mb: [3, 4] }}>

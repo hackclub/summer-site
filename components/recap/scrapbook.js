@@ -19,8 +19,7 @@ import {
   Text,
   Textarea
 } from 'theme-ui'
-import ColorSwitcher from './color-switcher'
-import Mention from './mention'
+import Mention from '../mention'
 import ImageCard from './imagecard'
 
 export default () => (

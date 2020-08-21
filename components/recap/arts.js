@@ -20,7 +20,6 @@ import {
   Textarea,
   jsx
 } from 'theme-ui'
-import ColorSwitcher from './color-switcher'
 import Mention from './mentionFancy'
 
 export default () => (

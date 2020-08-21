@@ -2,8 +2,8 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { Box, Container, Card, Image, Grid, Heading, Link, Text } from 'theme-ui'
 import theme from '@hackclub/theme'
-import Icon from './icon'
-import Mention from './mention'
+import Icon from '../icon'
+import Mention from '../mention'
 
 export default ({ content, url, mention, aftercontent }) => (
   <Card
