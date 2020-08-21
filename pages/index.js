@@ -69,8 +69,9 @@ export default ({ scraps, images }) => (
           Free hardware from GitHub.
         </Heading>
         <Text as="p" variant="subtitle">
-          GitHub is sponsoring $50k worth of hardware grants for student makers,
-          alongside support from Adafruit & Arduino for gear.
+          GitHub sponsored $50k worth of hardware grants for student makers,
+          alongside support from Adafruit & Arduino. (Applications are now
+          closed.)
         </Text>
       </Container>
       <Box
@@ -88,54 +89,6 @@ export default ({ scraps, images }) => (
         <Stat value={100} unit="$" label="Per project" color="white" />
         <Stat value="∞" label="Possibilities" color="white" />
       </Box>
-    </Box>
-    <Box
-      as="section"
-      sx={{
-        backgroundImage: 'url(https://summer.hackclub.com/register-bg.svg)',
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        '@media (hover: hover)': { backgroundAttachment: 'fixed' },
-        py: 5
-      }}
-    >
-      <Grid
-        columns={[null, '1fr 2fr']}
-        gap={[null, 2]}
-        variant="layout.container"
-        sx={{ maxWidth: [null, 980], gridColumnGap: [null, 4] }}
-      >
-        <Text as="p" variant="eyebrow">
-          Hardware grants
-        </Text>
-        <div />
-        <Heading as="h2" variant="title" color="white" mb={[3, 0]}>
-          Make it physical.
-        </Heading>
-        <Text as="p" variant="subtitle" color="smoke" my={0}>
-          We want hardware hackers of any experience and no experience—whether
-          it’ll be your first time soldering or your thousandth. Any
-          1)&nbsp;Plausible, 2)&nbsp;Cost-Effective, and 3)&nbsp;Inspired idea
-          is eligible.
-        </Text>
-        <div />
-        <div>
-          <Button
-            as="a"
-            variant="cta"
-            href="https://hack.af/hwp-apply"
-            target="_blank"
-            sx={{
-              mt: [4, 0],
-              bg: 'green',
-              backgroundImage: t => t.util.gx('cyan', 'green'),
-              color: 'darkless'
-            }}
-          >
-            Apply for hardware
-          </Button>
-        </div>
-      </Grid>
     </Box>
     <Box id="scrapbook" as="section" sx={{ bg: 'snow', py: [4, 5] }}>
       <Grid
@@ -246,8 +199,8 @@ export default ({ scraps, images }) => (
               Whether it’s your first hardware project or hundredth, you can
               have GitHub buy you electronics for a hardware project.
             </Text>
-            <Button as="a" variant="cta" href="https://hack.af/hwp-apply">
-              Apply for hardware
+            <Button as="a" variant="cta">
+              Applications have closed
             </Button>
           </div>
           <div>
