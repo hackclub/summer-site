@@ -3,6 +3,7 @@
   "github": { "silent": true },
   "rewrites": [
     { "source": "/countdown", "destination": "/countdown.html" },
+    { "source": "/closed", "destination": "/closed.html" },
     {
       "source": "/summer/_next/:path*",
       "destination": "/_next/:path*"
