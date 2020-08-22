@@ -35,7 +35,7 @@ export default () => (
       minHeight: '500px',
       maxHeight: '850px',
       backgroundPosition: 'center center',
-      backgroundImage: 'radial-gradient(at left top,rgba(247,255,0,0.66),rgb(0,255,255,0.66)),url(https://i.imgur.com/KzojkeC.png)'
+      backgroundImage: 'radial-gradient(at left top,rgba(247,255,0,0.66),rgb(0,255,255,0.66)),url(http://cloud-dpbz2xfgh.vercel.app/kzojkec.png)'
     }}
   >
     <Container sx={{

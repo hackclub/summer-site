@@ -37,7 +37,7 @@ export default () => (
   >
 
     <Image
-      src="https://i.imgur.com/AJZKVSF.png"
+      src="http://cloud-igjwtmiu6.vercel.app/ajzkvsf.png"
       sx={{
         mt: [5, '80px'],
         mb: [3, 4],
