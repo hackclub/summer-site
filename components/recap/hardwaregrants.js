@@ -20,11 +20,6 @@ import {
   Textarea
 } from 'theme-ui'
 import Mention from '../mention'
-const Collab = ({ img, alt, url }) => (
-  <Link href={url} target="_blank" sx={{ display: 'block', mx: 3, mb: [3, 4] }}>
-    <Image src={img} alt={alt} sx={{ maxWidth: [112,224,224], maxHeight: [42,84,84] }} />
-  </Link>
-)
 
 export default () => (
   <Box
@@ -235,47 +230,6 @@ export default () => (
         </Text>
         
       </Grid>
-      
-      <Flex
-        sx={{
-          flexWrap: 'wrap',
-          alignItems: 'center',
-          justifyContent: 'center',
-          mx: 'auto'
-        }}
-      >
-        <Heading
-          as="h3"
-          variant="eyebrow"
-          id="about"
-          sx={{ color: 'white', mb: [3,4], mt: [4,5]}}
-        >
-          Thank You to
-        </Heading>
-        <Collab
-          alt="GitHub"
-          img="https://summer.hackclub.com/sponsors/github.svg"
-          url="https://github.com/"
-        />
-        <Collab
-          alt="Adafruit"
-          img="https://summer.hackclub.com/sponsors/adafruit.png"
-          url="https://adafruit.com/"
-        />
-        <Collab
-          alt="Arduino"
-          img="https://summer.hackclub.com/sponsors/arduino.svg"
-          url="https://arduino.cc/"
-        />
-        <Heading
-          as="h3"
-          variant="eyebrow"
-          id="about"
-          sx={{ color: 'white', mb: [3,4], mt: [4,5]}}
-        >
-          Thank You to
-        </Heading>
-      </Flex>
     </Container>
   </Box>
 )
