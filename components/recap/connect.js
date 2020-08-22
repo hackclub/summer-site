@@ -85,14 +85,12 @@ export default () => (
             connect
           </Heading>
           <Text sx={{ fontSize: [2,2,3], width: ['100%','100%','85%'], mt:[2] }}>
-            This summer was like no other, over a billion teenagers found
-            themselves stuck at home as a pandemic raged on outside.
+            Thanks to COVID-19, this summer was like no other with billions of teenagers stuck at home.
             Participation in the Hack Club Slack skyrocketed, increasing by
-            450%. Throughout the summer, we hosted events for Hack Clubbers to
-            connect with one another.
+            450%. It allowed hackers to connect with one another during a time when everyone was apart.
           </Text>
           <br />
-          <Button>Join the Slack</Button>
+          <Button variant="cta">Join the Slack</Button>
         </Card>
         <Card
           sx={{
