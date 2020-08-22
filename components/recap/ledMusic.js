@@ -47,7 +47,7 @@ export default () => (
           <Card
             sx={{
               backgroundImage:
-                "url('https://files.slack.com/files-tmb/T0266FRGM-F017CLP29GE-382795ec17/837dfd43-c3aa-4911-8ef7-15fc193fc89f_1_105_c_720.jpg')",
+                "url('https://i.imgur.com/d5FlOBT.jpg')",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
@@ -66,7 +66,7 @@ export default () => (
             }}
             p={[1, 2]}
           >
-            fake filler image ignore
+            That is Hold On, We’re Going Home by Drake being displayed
           </Text>
         </Card>
         <Card

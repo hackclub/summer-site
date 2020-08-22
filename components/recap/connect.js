@@ -33,17 +33,16 @@ export default () => (
   >
     <Container>
       <Grid columns={[null, null, 2]} gap={3} mt={[4, 5]} mb={[3, 4]}>
-      <Card
+        <Card
           sx={{
             backgroundSize: 'cover',
             color: 'white',
             clear: 'both',
             backgroundPosition: 'center',
             borderRadius: '20px',
-            mb:['10px','10px',null],
-            display: [null,null,'none'],
+            mb: ['10px', '10px', null],
+            display: [null, null, 'none']
           }}
-          
           p={[0]}
         >
           <Card
@@ -76,18 +75,22 @@ export default () => (
             clear: 'both',
             background: 'none',
             backgroundPosition: 'center',
-            textAlign: ['left', 'center', 'left'],
+            textAlign: ['left', 'center', 'left']
           }}
           p={[0]}
         >
           <Heading>Finding new ways to</Heading>
-          <Heading as="h1" sx={{ fontSize: [6,7,7]}}>
+          <Heading as="h1" sx={{ fontSize: [6, 7, 7], mt: '-20px' }}>
             connect
           </Heading>
-          <Text sx={{ fontSize: [2,2,3], width: ['100%','100%','85%'], mt:[2] }}>
-            Thanks to COVID-19, this summer was like no other with billions of teenagers stuck at home.
-            Participation in the Hack Club Slack skyrocketed, increasing by
-            450%. It allowed hackers to connect with one another during a time when everyone was apart.
+          <Text
+            sx={{ fontSize: [2, 2, 3], width: ['100%', '100%', '85%'], mt: [] }}
+          >
+            Thanks to COVID-19, this summer was like no other with billions of
+            teenagers stuck at home. From treasure hunts to late night Zoom
+            hangouts to a mini hackathon, the community was filled with fun
+            events. Alongside events, the Slack served
+            as a global makerspace (open 24/7) where hackers could hangout.
           </Text>
           <br />
           <Button variant="cta">Join the Slack</Button>
@@ -99,8 +102,8 @@ export default () => (
             clear: 'both',
             backgroundPosition: 'center',
             borderRadius: '20px',
-            mb:['10px','10px',null],
-            display: ['none','none','block'],
+            mb: ['10px', '10px', null],
+            display: ['none', 'none', 'block']
           }}
           p={[0]}
         >
@@ -132,5 +135,3 @@ export default () => (
     </Container>
   </Box>
 )
-
-
