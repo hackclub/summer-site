@@ -113,3 +113,32 @@ a {
     rgba(243, 234, 164, 0.1)
   );
 }
+
+.nav-mention-text{
+  color: black;
+}
+
+.nav-mention-avatar{
+  margin-right: 0px
+}
+
+.nav-mention-start-hidden{
+  display: none;
+  margin-right: 8px;
+  padding-top: 7px!important;
+  padding-bottom: 9px!important;
+  padding-left: 16px!important;
+}
+
+.mention-nav:hover .nav-mention-start-hidden{
+  display: block;
+}
+
+.mention-nav-button{
+  border-radius: 99999px!important;
+  transition: transform .125s ease-in-out;
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+  padding-top: 0px!important;
+  padding-bottom: 0px!important;
+}
