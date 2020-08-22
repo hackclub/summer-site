@@ -25,6 +25,7 @@ import Scrapbook from '../components/recap/scrapbook'
 import HardwareGrants from '../components/recap/hardwaregrants'
 import Polaroid from '../components/recap/polaroid'
 import KawasakiDetector from '../components/recap/kawasakiDetector'
+import EnergyMeter from '../components/recap/energyMeter'
 import LedMusic from '../components/recap/ledMusic'
 import Arts from '../components/recap/arts'
 import AMA from '../components/recap/AMA'
@@ -55,7 +56,7 @@ export default () => (
     <Polaroid />
     <KawasakiDetector />
     <LedMusic />
-    <KawasakiDetector />
+    <EnergyMeter />
     <ScrapbookIntro />
     <Scrapbook />
     <AMA />

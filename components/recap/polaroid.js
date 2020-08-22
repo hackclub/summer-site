@@ -91,7 +91,7 @@ export default () => (
              a camera module, thermal printer and more!
           </Text>
           <br />
-          <Button as='a' href="https://youtu.be/-SiU1nOm9JY">Watch a video</Button>
+          <Button as='a' href="https://youtu.be/-SiU1nOm9JY">Watch a Demo</Button>
         </Card>
         <Card
           sx={{

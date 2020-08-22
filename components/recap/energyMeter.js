@@ -48,7 +48,7 @@ export default () => (
           <Card
             sx={{
               backgroundImage:
-                "url('https://i.imgur.com/IVVaFwd.jpg')",
+                "url('https://i.imgur.com/bJmUqbJ.png')",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
@@ -67,7 +67,7 @@ export default () => (
             }}
             p={[1, 2]}
           >
-            Her final product using a Pi camera
+            His final product running at his house
           </Text>
         </Card>
         <Card
@@ -82,18 +82,17 @@ export default () => (
           }}
           p={[0]}
         >
-          <Heading>Using hardware to</Heading>
+          <Heading>Using hardware to help fix</Heading>
           <Heading as="h1" sx={{ fontSize: [6,7,7] }}>
-            save lives
+            society
           </Heading>
           <Text sx={{ fontSize: [2,2,3], paddingLeft: ['0%','0%','15%'], right: 0, mt:[2] }}>
-            Ellen Xu, a 15 year old from San Diego, is developing a machine
-            learning algorithm which can run on a Raspberry Pi in order to help
-            people diagnose Kawasaki disease, the #1 heart disease in children
-            in the U.S. and Japan.
+            Akash Hari, a 17 year old from India, has built a Smart Energy Meter that monitors 
+            power usage and alerts a house owner when power consumption when it reaches particular threshold. 
+            It helps save energy and makes the energy billing for efficient.
           </Text>
           <br />
-          <Button>Let them teach you more about KD</Button>
+          <Button>Watch a Demo</Button>
         </Card>
       </Grid>
     </Container>

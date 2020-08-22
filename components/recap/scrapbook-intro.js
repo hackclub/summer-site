@@ -22,7 +22,8 @@ export default () => (
         fontSize: '24px'
       }}
     >
-      As part of Summer of Making we built Scrapbook. The idea is to <span className ="highlight">share
+      As part of Summer of Making we built <a href ="https://scrapbook.hackclub.com">Scrapbook</a>. 
+      The idea is to <span className ="highlight">share
       updates of what you’re working on every day:</span> every day this summer, Hack
       Clubbers are learning & building projects, sharing short video or photo
       updates via a Slack channel. Through a Slack bot, an Airtable, & a Next.js
