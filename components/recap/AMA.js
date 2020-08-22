@@ -89,7 +89,7 @@ export default () => (
             <Grid
               columns={[null, null, null, 2]}
               gap={3}
-              mt={[3, 3]}
+              mt={[2, 2]}
               mb={[3, 4]}
               sx={{
                 paddingLeft: ['null', null, '6%']
@@ -98,27 +98,40 @@ export default () => (
               <Mention
                 sx={{ color: 'black' }}
                 name="Limor Fried"
-                url="https://google.com"
+                url="https://www.youtube.com/watch?v=IWFtj9cCaB0"
                 img="https://usasciencefestival.org/wp-content/uploads/2018/01/Limor-Fried-600x600.jpg"
               />
               <Mention
                 sx={{ color: 'black' }}
                 name="Dylan Field"
-                url="https://google.com"
+                url="https://www.youtube.com/watch?v=fDKYjX37cbo"
                 img="https://dl.airtable.com/.attachmentThumbnails/10060ecb0494cc79d6000ceb95ca07c3/cbbb4caf"
               />
               <Mention
                 sx={{ color: 'black' }}
                 name="Tommy DeVoss"
-                url="https://google.com"
+                url="https://www.youtube.com/watch?v=tDtBCcLJ2xU"
                 img="https://dl.airtable.com/.attachmentThumbnails/c2945a6e36439be2d1f9aae336ec6181/55c890d5.png"
               />
 
               <Mention
                 sx={{ color: 'black' }}
                 name="Alex Stamos"
-                url="https://google.com"
+                url="https://www.youtube.com/watch?v=thXsjHVcxx4"
                 img="https://dl.airtable.com/.attachmentThumbnails/df51be717dd8e09204ec23b27336f4a7/acff2db0"
+              />
+               <Mention
+                sx={{ color: 'black' }}
+                name="Nicky Case"
+                url="https://www.youtube.com/watch?v=KKEYTSUvsS8"
+                img="https://dl.airtable.com/.attachmentThumbnails/43c443b80f58f0f3dd3f81124bf2bf6e/9a1a83c4"
+              />
+
+              <Mention
+                sx={{ color: 'black' }}
+                name="View more"
+                url="https://www.youtube.com/channel/UCQzO0jpcRkP-9eWKMpJyB0w"
+                img="https://i.imgur.com/rXFcdi1.png"
               />
             </Grid>
           </Text>
