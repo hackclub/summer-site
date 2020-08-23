@@ -4,11 +4,40 @@ import { Box, Container, Image, Grid, Heading, Link, Text } from 'theme-ui'
 import theme from '@hackclub/theme'
 import Icon from '../icon'
 
+const Blinking = styled('p')`
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  &:before,
+  &:after {
+    content: '${(props) => props.children}';
+    position: absolute;
+    top: 0;
+    color: ${theme.colors.smoke};
+    background: ${theme.colors.dark};
+    overflow: hidden;
+    clip: rect(0, 512px, 0, 0);
+  }
+  &:after {
+    left: 2px;
+    text-shadow: -2px 0 ${theme.colors.primary};
+    animation: glitch2 4s infinite linear alternate-reverse;
+    
+  }
+  &:before {
+    left: -2px;
+    text-shadow: -2px 0 ${theme.colors.info};
+    animation: glitch2 4s infinite linear alternate-reverse;
+    
+  }
+`
+
+
 export default () => (
   <Box as="footer" sx={{ py: [4, 5], a: { color: 'orange' } }}>
     <Container>
       <Heading as="h3" variant="subheadline" mb={2}>
-        A project by <a href="https://hackclub.com/">Hack Club</a>.
+        <a href="/landing"> ⏮</a>  A project by <a href="https://hackclub.com/">Hack Club</a>.
       </Heading>
       <Text as="p" variant="caption" mb={3} sx={{ width: ['85%','75%','60%']}}>
         Thank you: Sam Poder, Lachlan Campbell, Zach Latta, Roshan Palakkal,

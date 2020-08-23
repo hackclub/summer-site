@@ -13,7 +13,7 @@ import {
 } from 'theme-ui'
 import Head from 'next/head'
 import Meta from '@hackclub/meta'
-import Nav from '../components/nav'
+import Nav from '../components/nav-og'
 import Stat from '../components/stat'
 import Footer from '../components/footer'
 import theme from '../lib/theme2'
@@ -107,7 +107,7 @@ export default ({ scraps, images }) => (
           >
             scrapbook.hackclub.com
           </Text>
-          <Heading as="h2" variant="title" color="white">
+          <Heading as="h2" variant="title" color="black">
             Share your daily progress.
           </Heading>
           <Text as="p" variant="subtitle" my={3}>
