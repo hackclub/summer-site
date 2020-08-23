@@ -34,7 +34,7 @@ const Blinking = styled('p')`
 
 
 export default () => (
-  <Box as="footer" sx={{ py: [4, 5], a: { color: 'orange' } }}>
+  <Box as="footer" sx={{ py: [4, 5], a: { color: 'orange' } }} className="theFooter">
     <Container>
       <Heading as="h3" variant="subheadline" mb={2}>
         <a href="/landing"> ⏮</a>  A project by <a href="https://hackclub.com/">Hack Club</a>.
@@ -42,7 +42,7 @@ export default () => (
       <Text as="p" variant="caption" mb={3} sx={{ width: ['85%','75%','60%']}}>
         Thank you: Sam Poder, Lachlan Campbell, Zach Latta, Roshan Palakkal,
         Neel Redkar, Matthew Stanciu, Chris Walker, Max Wofford, Athul Blesson, Amogh Chaubey,
-        Dina Elhanan, Chaleb Pommells, Annlee Fores, Michael Destefanis, Melody & Christina Asquith.
+        Dina Elhanan, Chaleb Pommells, Annlee Fores, Michael Destefanis, <span className="magicalhover">some textt</span> & Christina Asquith.
       </Text>
       <Text as="p" variant="caption" mb={1}>
         Recap site by <a href="https://sampoder.com/">@sampoder</a>. Always{' '}
