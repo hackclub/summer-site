@@ -20,7 +20,6 @@ import {
   Textarea
 } from 'theme-ui'
 import Mention from '../mention'
-import useSound from 'use-sound';
 export default () => (
   <Box
     as="header"
