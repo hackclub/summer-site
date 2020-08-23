@@ -170,12 +170,12 @@ aside {
 aside h3 {
   /* Abs positioning makes it not take up vert space */
   position: absolute;
-  top: 150px;
-  left: 50px;
+  bottom: 35px;
+  left: 8px;
 
   /* Border is the new background */
 
   /* Rotate from top left corner (not default) */
   transform-origin: 0 0;
-  transform: rotate(90deg);
+  transform: rotate(270deg);
 }

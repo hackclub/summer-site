@@ -20,7 +20,7 @@ import {
   Textarea
 } from 'theme-ui'
 import Mention from '../mention'
-
+import useSound from 'use-sound';
 export default () => (
   <Box
     as="header"
@@ -28,7 +28,7 @@ export default () => (
       position: 'relative',
       overflow: 'hidden',
       height: '75%',
-      background: '#ff8c37',
+      background: '#33d6a6',
       clear: 'both'
     }}
   >
@@ -100,6 +100,8 @@ export default () => (
             epic beats!
           </Text>
           <br />
+          <Button>Watch a Demo</Button>
+          
         </Card>
       </Grid>
     </Container>
