@@ -47,7 +47,7 @@ export default () => (
           <Card
             sx={{
               backgroundImage:
-                "url('http://cloud-ishp8i88g.vercel.app/d5flobt.jpg')",
+                "url('http://cloud-hdaoelc0g.vercel.app/ezgif-4-2e8542881d0b.gif')",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
@@ -66,7 +66,7 @@ export default () => (
             }}
             p={[1, 2]}
           >
-            That is Hold On, We’re Going Home by Drake being displayed
+            Cycling through songs and seeing the album cover change
           </Text>
         </Card>
         <Card
@@ -107,7 +107,7 @@ export default () => (
           <Card
             sx={{
               backgroundImage:
-                "url('https://i.imgur.com/d5FlOBT.jpg')",
+                "url('http://cloud-hdaoelc0g.vercel.app/ezgif-4-2e8542881d0b.gif')",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
@@ -126,7 +126,7 @@ export default () => (
             }}
             p={[1, 2]}
           >
-            That is Hold On, We’re Going Home by Drake being displayed
+            Cycling through songs and seeing the album cover change
           </Text>
         </Card>
       </Grid>

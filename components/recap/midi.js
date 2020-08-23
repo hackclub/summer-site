@@ -67,7 +67,7 @@ export default () => (
             }}
             p={[1, 2]}
           >
-            His final product running at his house
+            Making music with the device!
           </Text>
         </Card>
         <Card
