@@ -162,6 +162,12 @@ aside h3 {
   -webkit-text-fill-color: transparent;
 }
 
+@media screen and (max-width: 1400px) {
+  aside h3 {
+    display:none;
+  }
+}
+
 /* Class name via Modernizr */
 aside {
   border-left: 34px solid rgba(255, 255, 255, 0);
