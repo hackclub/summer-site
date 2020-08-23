@@ -39,7 +39,9 @@ export default () => (
       backgroundColor: '#a633d6',
       clear: 'both'
     }}
-  >
+  ><aside>
+    <h3>&nbsp; Funded by GitHub<br /><span style={{fontSize: '22px'}}> with support from Adafruit & Arduino </span></h3>
+    <Box sx={{ marginLeft:'-44px'}}>
     <Heading
       as="h1"
       sx={{
@@ -235,48 +237,8 @@ export default () => (
         </Text>
         
       </Grid>
-      
-      <Flex
-        sx={{
-          flexWrap: 'wrap',
-          alignItems: 'center',
-          justifyContent: 'center',
-          mx: 'auto'
-        }}
-      >
-        <Heading
-          as="h3"
-          variant="eyebrow"
-          id="about"
-          sx={{ color: 'white', mb: [3,4], mt: [4,5]}}
-        >
-          Thank You to
-        </Heading>
-        <Collab
-          alt="GitHub"
-          img="https://summer.hackclub.com/sponsors/github.svg"
-          url="https://github.com/"
-        />
-        <Collab
-          alt="Adafruit"
-          img="https://summer.hackclub.com/sponsors/adafruit.png"
-          url="https://adafruit.com/"
-        />
-        <Collab
-          alt="Arduino"
-          img="https://summer.hackclub.com/sponsors/arduino.svg"
-          url="https://arduino.cc/"
-        />
-        <Heading
-          as="h3"
-          variant="eyebrow"
-          id="about"
-          sx={{ color: 'white', mb: [3,4], mt: [4,5]}}
-        >
-          Thank You to
-        </Heading>
-      </Flex>
-    </Container>
+
+    </Container></Box></aside>
   </Box>
 )
 

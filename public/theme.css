@@ -142,3 +142,40 @@ a {
   padding-top: 0px!important;
   padding-bottom: 0px!important;
 }
+
+aside {
+  display: block;
+  position: relative;
+  margin: 0 ;
+}
+
+aside h3 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0 0 10px 0;
+  line-height: 24px;
+  background: -webkit-linear-gradient(45deg, #9e9add, #00ff95 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Class name via Modernizr */
+aside {
+  border-left: 34px solid rgba(255, 255, 255, 0);
+  padding-left: 10px;
+}
+aside h3 {
+  /* Abs positioning makes it not take up vert space */
+  position: absolute;
+  top: 150px;
+  left: 50px;
+
+  /* Border is the new background */
+
+  /* Rotate from top left corner (not default) */
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+}

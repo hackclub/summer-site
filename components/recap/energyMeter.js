@@ -20,6 +20,9 @@ import {
   Textarea
 } from 'theme-ui'
 import Mention from '../mention'
+import Audio from './audio'
+
+
 
 export default () => (
   <Box
@@ -41,14 +44,14 @@ export default () => (
             clear: 'both',
             backgroundPosition: 'center',
             borderRadius: '20px',
-            mb:['10px','10px',null]
+            mb: ['10px', '10px', null]
           }}
           p={[0]}
         >
           <Card
             sx={{
               backgroundImage:
-                "url('https://i.imgur.com/bJmUqbJ.png')",
+                "url('http://cloud-5j62j8pal.vercel.app/img_20200729_102402.jpg')",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
@@ -82,21 +85,27 @@ export default () => (
           }}
           p={[0]}
         >
-          <Heading>Using hardware to help fix</Heading>
-          <Heading as="h1" sx={{ fontSize: [6,7,7] }}>
-            society
+          <Heading>Using hardware to make</Heading>
+          <Heading as="h1" sx={{ fontSize: [6, 7, 7] }}>
+            epic beats
           </Heading>
-          <Text sx={{ fontSize: [2,2,3], paddingLeft: ['0%','0%','15%'], right: 0, mt:[2] }}>
-            Akash Hari, a 17 year old from India, has built a Smart Energy Meter that monitors 
-            power usage and alerts a house owner when power consumption when it reaches particular threshold. 
-            It helps save energy and makes the energy billing for efficient.
+          <Text
+            sx={{
+              fontSize: [2, 2, 3],
+              paddingLeft: ['0%', '0%', '15%'],
+              right: 0,
+              mt: [2]
+            }}
+          >
+            Onur Sertgil, a 17 year old from Turkey, had always wanted to get
+            started with digital music production. Using his hardware grant he
+            built a fully custom MIDI controller that's capable of making some
+            epic beats!
           </Text>
           <br />
-          <Button>Watch a Demo</Button>
+          <Audio />
         </Card>
       </Grid>
     </Container>
   </Box>
 )
-
-
