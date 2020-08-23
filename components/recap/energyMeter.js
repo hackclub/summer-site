@@ -100,7 +100,6 @@ export default () => (
             epic beats!
           </Text>
           <br />
-          <Audio />
         </Card>
       </Grid>
     </Container>
