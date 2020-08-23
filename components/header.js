@@ -49,7 +49,7 @@ const Sheet = () => (
       every teenager reading this: <strong>What&nbsp;will you make?</strong>
     </Text>
     <Text as="p" variant="subtitle" mt={3}>
-      To suppport you, we’re distributing $50,000 in free electronics (thanks
+      To support you, we’re distributing $50,000 in free electronics (thanks
       GitHub!) & building Snapchat streaks for coding—but really Summer
       of&nbsp;Making is about you. If this will be the best summer ever, it’ll
       be because of what you choose to hack on & learn from.
