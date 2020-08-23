@@ -107,26 +107,25 @@ export default () => (
           }}
           p={[0]}
         >
-          <Card
-            sx={{
-              backgroundImage: "url('http://cloud-17duvco1r.vercel.app/qjcio5r.png')",
-              backgroundSize: 'cover',
+          <object data="/hacknight.svg" type="image/svg+xml" style={{
               color: 'white',
               clear: 'both',
               height: '420px',
+              background: 'black',
               width: '100%',
               backgroundPosition: 'center',
               borderTopLeftRadius: '20px',
-              borderTopRightRadius: '20px'
-            }}
-            p={[3, 4]}
-          ></Card>
+              borderTopRightRadius: '20px',
+              padding: '0px'
+            }}>
+          </object>
           <Text
             sx={{
               position: 'relative',
-              textAlign: 'center'
+              textAlign: 'center',
             }}
             p={[1, 2]}
+            pt={[0, 0]}
           >
             Hack Night (Jul 26th)
           </Text>
