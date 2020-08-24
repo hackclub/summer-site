@@ -185,7 +185,3 @@ aside h3 {
   transform-origin: 0 0;
   transform: rotate(270deg);
 }
-
-.magicalhover:hover footer{
-  background-color: black!important;
-}
