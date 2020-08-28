@@ -17,11 +17,7 @@ export default () => (
       mb: [3, 4]
     }}
   >
-    <Text
-      sx={{
-        fontSize: '24px'
-      }}
-    >
+    <Text sx={{ fontSize: '24px' }}>
       In 1967, 100,000 people gathered in San Francisco for the Summer of Love.
       In 2020, we at Hack Club hosted the Summer of Making. It wasn't an event
       or a program.{' '}
@@ -33,7 +29,7 @@ export default () => (
       (thanks GitHub!) & built Snapchat streaks for coding—
       <span className="highlight">
         but really Summer of Making was about the{' '}
-        <div class="tooltip">
+        <div className="tooltip">
           <span
             dangerouslySetInnerHTML={{
               __html: `
@@ -69,13 +65,10 @@ export default () => (
               &nbsp;@\`+users[randome][0]+'</a></a> from '+users[randome][2]+'\'\"> makers </span>`
             }}
           ></span>
-          <span class="tooltiptext" id="tooltiptext">
-  
-          </span>
+          <span class="tooltiptext" id="tooltiptext"></span>
         </div>
       </span>
-      . We left it them to get hacking & they built some pretty awesome
-      things...
+      . We left it them to get hacking & they built some pretty awesome things…
     </Text>
   </Container>
 )
