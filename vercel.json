@@ -3,9 +3,10 @@
   "github": { "silent": true },
   "rewrites": [
     { "source": "/countdown", "destination": "/countdown.html" },
-    { "source": "/super-og", "destination": "https://summer-hackclub.now.sh/" },
-    { "source": "/summer.jpg", "destination": "https://summer-hackclub.now.sh/summer.jpg" },
-    { "source": "/orpheus_flag.svg", "destination": "https://summer-hackclub.now.sh/orpheus_flag.svg" },
+    { "source": "/super-og", "destination": "https://summer.hackclub.dev/" },
+    { "source": "/summer.jpg", "destination": "https://summer.hackclub.dev/summer.jpg" },
+    { "source": "/orpheus_flag.svg", "destination": "https://summer.hackclub.dev/orpheus_flag.svg" },
+    { "source": "/closed", "destination": "/closed.html" },
     {
       "source": "/summer/_next/:path*",
       "destination": "/_next/:path*"
