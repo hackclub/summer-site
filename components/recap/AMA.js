@@ -81,7 +81,7 @@ export default () => (
         <Mention
           name="Tommy DeVoss"
           url="https://www.youtube.com/watch?v=tDtBCcLJ2xU"
-          img="https://dl.airtable.com/.attachmentThumbnails/c2945a6e36439be2d1f9aae336ec6181/55c890d5.png"
+          img="https://cloud-j5284260u.vercel.app/55c890d5-2.png"
         />
         <Mention
           name="Alex Stamos"

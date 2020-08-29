@@ -38,7 +38,7 @@ export default () => (
 
     <Image
       alt="Large banner with icons representing summer and text saying Summer of Making. Colourful."
-      src="https://cloud-igjwtmiu6.vercel.app/ajzkvsf.png"
+      src="https://cloud-bb2ask6b1.vercel.app/ajzkvsf-2-2.png"
       sx={{
         mt: [5, '80px'],
         mb: [3, 4],

@@ -1,23 +1,7 @@
 import {
-  Badge,
   Box,
-  Button,
-  Card,
-  Checkbox,
   Container,
-  Flex,
-  Grid,
   Heading,
-  Input,
-  Label,
-  Link,
-  NavLink,
-  Radio,
-  Select,
-  Slider,
-  Image,
-  Text,
-  Textarea
 } from 'theme-ui'
 
 export default () => (
@@ -35,7 +19,7 @@ export default () => (
       minHeight: '500px',
       maxHeight: '850px',
       backgroundPosition: 'center center',
-      backgroundImage: 'radial-gradient(at left top,rgba(247,255,0,0.66),rgb(0,255,255,0.66)),url(https://cloud-dpbz2xfgh.vercel.app/kzojkec.png)'
+      backgroundImage: 'radial-gradient(at left top,rgba(247,255,0,0.66),rgb(0,255,255,0.66)),url(https://cloud-pfqlpiv8t.vercel.app/kzojkec-2.png)'
     }}
   >
     <Container sx={{
