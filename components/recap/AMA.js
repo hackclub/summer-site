@@ -32,7 +32,7 @@ export default () => (
     >
       <Card
         sx={{
-          backgroundImage: 'url(http://cloud-37aj9j4hm.vercel.app/oztd3qt.gif)',
+          backgroundImage: 'url(https://cloud-37aj9j4hm.vercel.app/oztd3qt.gif)',
           backgroundSize: 'cover',
           height: '440px',
           width: '100%',
@@ -71,7 +71,7 @@ export default () => (
         <Mention
           name="Limor Fried"
           url="https://www.youtube.com/watch?v=IWFtj9cCaB0"
-          img="http://cloud-ek9x97n7m.vercel.app/limor-fried-600x600.jpg"
+          img="https://cloud-ek9x97n7m.vercel.app/limor-fried-600x600.jpg"
         />
         <Mention
           name="Dylan Field"
@@ -96,7 +96,7 @@ export default () => (
         <Mention
           name="View more"
           url="https://www.youtube.com/channel/UCQzO0jpcRkP-9eWKMpJyB0w"
-          img="http://cloud-l3duqdxde.vercel.app/rxfcdi1.png"
+          img="https://cloud-l3duqdxde.vercel.app/rxfcdi1.png"
         />
       </Grid>
     </Box>
