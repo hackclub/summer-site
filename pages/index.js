@@ -1,26 +1,7 @@
-import {
-  Badge,
-  Box,
-  Button,
-  Card,
-  Checkbox,
-  Container,
-  Flex,
-  Grid,
-  Heading,
-  Input,
-  Label,
-  Link,
-  NavLink,
-  Radio,
-  Select,
-  Slider,
-  Image,
-  Text,
-  Textarea
-} from 'theme-ui'
-import Banner from '../components/recap/banner'
 import Head from 'next/head'
+import Meta from '@hackclub/meta'
+import Nav from '../components/nav'
+import Banner from '../components/recap/banner'
 import Scrapbook from '../components/recap/scrapbook'
 import HardwareGrants from '../components/recap/hardwaregrants'
 import Polaroid from '../components/recap/polaroid'
@@ -32,15 +13,13 @@ import AMA from '../components/recap/AMA'
 import Connect from '../components/recap/connect'
 import Map from '../components/recap/map'
 import Thanks from '../components/recap/thankyou'
-import Meta from '@hackclub/meta'
-import Footer from '../components/recap/footer'
 import Intro from '../components/recap/intro'
 import HardwareIntro from '../components/recap/hardware-intro'
 import ScrapbookIntro from '../components/recap/scrapbook-intro'
-import Nav from '../components/nav'
+import Footer from '../components/recap/footer'
 
 export default () => (
-  <Box>
+  <>
     <Meta
       as={Head}
       title="Summer of Making"
@@ -64,5 +43,5 @@ export default () => (
     <Connect />
     <Thanks />
     <Footer />
-  </Box>
+  </>
 )
