@@ -71,7 +71,7 @@ export default () => (
         <Mention
           name="Limor Fried"
           url="https://www.youtube.com/watch?v=IWFtj9cCaB0"
-          img="https://cloud-ek9x97n7m.vercel.app/limor-fried-600x600.jpg"
+          img="https://cloud-8be4hh8an.vercel.app/limor-fried-600x600-2-2.jpg"
         />
         <Mention
           name="Dylan Field"
