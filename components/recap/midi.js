@@ -48,7 +48,7 @@ export default () => (
           <Card
             sx={{
               backgroundImage:
-                "url('http://cloud-dl99wfbej.vercel.app/ezgif-4-491751e2fbf8.gif')",
+                "url('https://cloud-dl99wfbej.vercel.app/ezgif-4-491751e2fbf8.gif')",
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
