@@ -21,7 +21,7 @@ import {
 } from 'theme-ui'
 
 const Collab = ({ img, alt, url }) => (
-  <Link href={url} target="_blank" sx={{ display: 'block', mx: 3, mb: [3, 4] }}>
+  <Link href={url} rel="noopener" target="_blank" sx={{ display: 'block', mx: 3, mb: [3, 4] }}>
     <Image src={img} alt={alt} sx={{ maxWidth: [112,224,224], maxHeight: [42,84,84] }} />
   </Link>
 )
