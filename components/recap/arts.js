@@ -65,7 +65,7 @@ export default () => (
           <img
             width="100%"
             alt="A digitally drawn character with a bright background and wearing a dress. Modern style."
-            src="https://cloud-4so38ediy.vercel.app/c4a2189f-2.png"
+            src="https://dl.airtable.com/.attachmentThumbnails/e4ed4d3cb696687f506d60aed5fa0988/36a8507d"
           />
           <Text sx={{ color: 'black!important', mt: 1, mb: 1 }}>
             <Mention sx={{ color: 'black' }} username="e-lee-za" />
