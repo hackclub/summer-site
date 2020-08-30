@@ -42,7 +42,6 @@ export default () => (
           borderTopRightRadius: '20px'
         }}
       />
-
       <Text
         sx={{
           position: 'relative',
