@@ -1,4 +1,3 @@
-import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import Meta from '@hackclub/meta'
 import Nav from '../components/nav'
@@ -6,10 +5,7 @@ import Banner from '../components/recap/banner'
 import Scrapbook from '../components/recap/scrapbook'
 import HardwareGrants from '../components/recap/hardwaregrants'
 import Polaroid from '../components/recap/polaroid'
-const KawasakiDetector = dynamic(
-  () => import('../components/recap/kawasakiDetector'),
-  { loading: () => <p>...</p> }
-)
+import KawasakiDetector from '../components/recap/kawasakiDetector'
 import MIDI from '../components/recap/midi'
 import LedMusic from '../components/recap/ledMusic'
 import Arts from '../components/recap/arts'
