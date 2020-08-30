@@ -16,7 +16,7 @@ const Stat = ({
     sx={{
       flexDirection: reversed ? 'column-reverse' : 'column',
       lineHeight: 1,
-      mb: 2,
+      mb: 2, 
       ...props.sx
     }}
   >
