@@ -14,7 +14,6 @@ import Mention from './mentionAMA'
 import Video from './video'
 
 export default () => (
-  
     
     <Box
       sx={{
