@@ -17,7 +17,7 @@ const Video = ({ mux, ...props }) => {
     const video = videoRef.current
     if (!video) return
 
-    video.controls = false
+    video.controls = true
     let hls
 
     if (video.canPlayType('application/vnd.apple.mpegurl')) {
@@ -49,6 +49,7 @@ const Video = ({ mux, ...props }) => {
       loop
       autoPlay
       muted
+      controls
       preload="metadata"
       {...props}
     />

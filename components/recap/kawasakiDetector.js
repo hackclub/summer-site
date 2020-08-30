@@ -69,8 +69,6 @@ export default () => (
             people diagnose Kawasaki disease, the #1 heart disease in children
             in the U.S. and Japan.
           </Text>
-          <br />
-          <Button>Let them teach you more about KD</Button>
         </Card>
       </Grid>
     </Container>

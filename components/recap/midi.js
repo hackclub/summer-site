@@ -65,8 +65,6 @@ export default () => (
             built a fully custom MIDI controller that's capable of making some
             epic beats!
           </Text>
-          <br />
-          <Button>Watch a Demo</Button>
           
         </Card>
       </Grid>

@@ -63,6 +63,13 @@ export default () => (
           url="https://www.youtube.com/watch?v=KKEYTSUvsS8"
           img="https://dl.airtable.com/.attachmentThumbnails/43c443b80f58f0f3dd3f81124bf2bf6e/9a1a83c4"
         />
+        <Box sx={{display: [null, null, 'none']}}>
+        <Mention
+          name="View more"
+          url="https://www.youtube.com/channel/UCQzO0jpcRkP-9eWKMpJyB0w"
+          img="https://cloud-l3duqdxde.vercel.app/rxfcdi1.png"
+        /></Box>
       </Grid>
+      <Button>Watch a Demo</Button>
     </Box>
 )
