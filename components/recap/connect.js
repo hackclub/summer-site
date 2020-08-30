@@ -95,18 +95,7 @@ export default () => (
           <br />
           <Button variant="cta">Join the Slack</Button>
         </Card>
-        <Card
-          sx={{
-            backgroundSize: 'cover',
-            color: 'white',
-            clear: 'both',
-            backgroundPosition: 'center',
-            borderRadius: '20px',
-            mb: ['10px', '10px', null],
-            display: ['none', 'none', 'block']
-          }}
-          p={[0]}
-        >
+        
           <Card
             sx={{
               backgroundImage: "url('http://cloud-17duvco1r.vercel.app/qjcio5r.png')",
@@ -121,16 +110,7 @@ export default () => (
             }}
             p={[3, 4]}
           ></Card>
-          <Text
-            sx={{
-              position: 'relative',
-              textAlign: 'center'
-            }}
-            p={[1, 2]}
-          >
-            Hack Night (Jul 26th)
-          </Text>
-        </Card>
+          
       </Grid>
     </Container>
   </Box>
