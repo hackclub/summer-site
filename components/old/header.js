@@ -1,7 +1,7 @@
 import { Box, Card, Button, Grid, Heading, Text } from 'theme-ui'
 import theme from './old-theme'
-import usePrefersMotion from './use-prefers-motion'
-import useHasMounted from './use-has-mounted'
+import usePrefersMotion from '../../lib/use-prefers-motion'
+import useHasMounted from '../../lib/use-has-mounted'
 import FadeOut from '../fade-out'
 import SlideUp from '../slide-up'
 

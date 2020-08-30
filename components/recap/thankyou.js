@@ -20,8 +20,8 @@ import {
   Textarea
 } from 'theme-ui'
 
-import usePrefersMotion from './use-prefers-motion'
-import useHasMounted from './use-has-mounted'
+import usePrefersMotion from '../../lib/use-prefers-motion'
+import useHasMounted from '../../lib/use-has-mounted'
 
 const Collab = ({ img, alt, url }) => (
   <Link
@@ -151,7 +151,7 @@ const MAINPART = () => {
             muted
             loop
             playsInline
-            poster="slack-poster.png"
+            poster="https://cloud-r135419pm.vercel.app/screenshot_2020-08-30_at_9.17.45_am.png"
             duration={2000}
             sx={{
               position: 'absolute',
