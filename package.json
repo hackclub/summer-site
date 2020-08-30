@@ -22,6 +22,7 @@
     "react": "^16.13.1",
     "react-div-100vh": "^0.5.0",
     "react-dom": "^16.13.1",
+    "react-lazy-images": "^1.1.0",
     "react-masonry-css": "^1.0.14",
     "react-scrolllock": "^5.0.1",
     "theme-ui": "^0.3.1"

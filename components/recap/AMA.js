@@ -11,6 +11,7 @@ import {
   Text
 } from 'theme-ui'
 import Mention from './mentionAMA'
+import { LazyImage } from "react-lazy-images"
 
 export default () => (
   <Grid
@@ -30,16 +31,35 @@ export default () => (
         mb: ['10px', '10px', null]
       }}
     >
-      <Card
-        sx={{
-          backgroundImage: 'url(https://cloud-37aj9j4hm.vercel.app/oztd3qt.gif)',
-          backgroundSize: 'cover',
-          height: '440px',
-          width: '100%',
-          backgroundPosition: 'center',
-          borderTopLeftRadius: '20px',
-          borderTopRightRadius: '20px'
-        }}
+      
+      <LazyImage
+        placeholder={
+          <Card
+            sx={{
+              backgroundImage: 'url(https://cloud-74dwdhy5y.vercel.app/screenshot_2020-08-30_at_8.17.36_am.png)',
+              backgroundSize: 'cover',
+              height: '440px',
+              width: '100%',
+              backgroundPosition: 'center',
+              borderTopLeftRadius: '20px',
+              borderTopRightRadius: '20px'
+            }}
+          />
+        }
+        // This is rendered once in view; we use the src and alt above for consistency
+        actual={
+          <Card
+            sx={{
+              backgroundImage: 'url(https://cloud-37aj9j4hm.vercel.app/oztd3qt.gif)',
+              backgroundSize: 'cover',
+              height: '440px',
+              width: '100%',
+              backgroundPosition: 'center',
+              borderTopLeftRadius: '20px',
+              borderTopRightRadius: '20px'
+            }}
+          />
+        }
       />
       <Text
         sx={{
