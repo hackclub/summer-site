@@ -159,7 +159,7 @@ const MAINPART = () => {
               top: 0,
               left: 0,
               right: 0,
-              height: '100% !important',
+              height: 'auto !important',
               width: '100% !important',
               maxHeight: '56.25vw !important',
               zIndex: -1
