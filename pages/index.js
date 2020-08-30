@@ -10,22 +10,10 @@ const KawasakiDetector = dynamic(
   () => import('../components/recap/kawasakiDetector'),
   { loading: () => <p>...</p> }
 )
-const MIDI = dynamic(
-  () => import('../components/recap/midi'),
-  { loading: () => <p>...</p> }
-)
-const LedMusic = dynamic(
-  () => import('../components/recap/ledMusic'),
-  { loading: () => <p>...</p> }
-)
-const Arts = dynamic(
-  () => import('../components/recap/arts'),
-  { loading: () => <p>...</p> }
-)
-const AMA = dynamic(
-  () => import('../components/recap/AMA'),
-  { loading: () => <p>...</p> }
-)
+import MIDI from '../components/recap/midi'
+import LedMusic from '../components/recap/ledMusic'
+import Arts from '../components/recap/arts'
+import AMA from '../components/recap/AMA'
 import Connect from '../components/recap/connect'
 import Map from '../components/recap/map'
 import Thanks from '../components/recap/thankyou'
