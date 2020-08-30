@@ -29,7 +29,7 @@ export default () => (
       <Heading sx={{ fontSize: 2 }}>
         Chatting with influential people in tech on
       </Heading>
-      <Heading as="h1" sx={{ fontSize: '74px' }}>
+      <Heading as="h1" sx={{ fontSize: [6, 7, 7] }}>
         inspiring AMAs
       </Heading>
       <Grid
@@ -38,38 +38,27 @@ export default () => (
         mt={[3, 4]}
         sx={{ alignItems: 'center', justifyContent: 'center' }}
       >
-        <Mention
-          name="Limor Fried"
-          url="https://www.youtube.com/watch?v=IWFtj9cCaB0"
-          img="https://cloud-8be4hh8an.vercel.app/limor-fried-600x600-2-2.jpg"
-        />
-        <Mention
-          name="Dylan Field"
-          url="https://www.youtube.com/watch?v=fDKYjX37cbo"
-          img="https://dl.airtable.com/.attachmentThumbnails/10060ecb0494cc79d6000ceb95ca07c3/cbbb4caf"
-        />
-        <Mention
-          name="Tommy DeVoss"
-          url="https://www.youtube.com/watch?v=tDtBCcLJ2xU"
-          img="https://cloud-j5284260u.vercel.app/55c890d5-2.png"
-        />
-        <Mention
-          name="Alex Stamos"
-          url="https://www.youtube.com/watch?v=thXsjHVcxx4"
-          img="https://dl.airtable.com/.attachmentThumbnails/df51be717dd8e09204ec23b27336f4a7/acff2db0"
-        />
-        <Mention
-          name="Nicky Case"
-          url="https://www.youtube.com/watch?v=KKEYTSUvsS8"
-          img="https://dl.airtable.com/.attachmentThumbnails/43c443b80f58f0f3dd3f81124bf2bf6e/9a1a83c4"
-        />
-        <Box sx={{display: [null, null, 'none']}}>
-        <Mention
-          name="View more"
-          url="https://www.youtube.com/channel/UCQzO0jpcRkP-9eWKMpJyB0w"
-          img="https://cloud-l3duqdxde.vercel.app/rxfcdi1.png"
-        /></Box>
+        <Box style={{position: 'relative'}} as="a" href="https://www.youtube.com/watch?v=IWFtj9cCaB0">
+          <Image src="https://cloud-8be4hh8an.vercel.app/limor-fried-600x600-2-2.jpg" style={{ borderRadius: '10px' }} />
+          <p style={{position: 'absolute', bottom: '0', width:'100%', textAlign: 'center', background: 'rgba(0, 0, 0, 0.3)', color: 'white', marginBlockEnd: '0.4em', borderRadius: '10px'}}>Limor Fried</p>
+        </Box>
+        <Box style={{position: 'relative'}} as="a" href="https://www.youtube.com/watch?v=fDKYjX37cbo">
+          <Image src="https://cloud-b3z9crw81.vercel.app/4946a9bca0943aa959cb6c8b72c0cc17-2.png" style={{ borderRadius: '10px' }} />
+          <p style={{position: 'absolute', bottom: '0', width:'100%', textAlign: 'center', background: 'rgba(0, 0, 0, 0.3)', color: 'white', marginBlockEnd: '0.4em', borderRadius: '10px'}}>Dylan Field</p>
+        </Box>
+        <Box style={{position: 'relative'}} as="a" href="https://www.youtube.com/watch?v=tDtBCcLJ2xU">
+          <Image src="https://cloud-lrygi0a7b.vercel.app/tommy-devoss_trans__nwjyn5afh1f8m-ugcq32yesxdvobhlbzzp-a_kknc4m-2.jpg" style={{ borderRadius: '10px' }} />
+          <p style={{position: 'absolute', bottom: '0', width:'100%', textAlign: 'center', background: 'rgba(0, 0, 0, 0.3)', color: 'white', marginBlockEnd: '0.4em', borderRadius: '10px'}}>Tommy DeVoss</p>
+        </Box>
+        <Box style={{position: 'relative'}} as="a" href="https://www.youtube.com/watch?v=thXsjHVcxx4">
+          <Image src="https://dl.airtable.com/.attachmentThumbnails/df51be717dd8e09204ec23b27336f4a7/acff2db0" style={{ borderRadius: '10px' }} />
+          <p style={{position: 'absolute', bottom: '0', width:'100%', textAlign: 'center', background: 'rgba(0, 0, 0, 0.6)', color: 'white', marginBlockEnd: '0.4em', borderRadius: '10px'}}>Alex Stamos</p>
+        </Box>
+        <Box style={{position: 'relative'}} as="a" href="https://www.youtube.com/watch?v=KKEYTSUvsS8">
+          <Image src="https://cloud-n74ym17dx.vercel.app/540px-nicky_case_-_game_developers_conference_2019_-_03.jpg" style={{ borderRadius: '10px' }} />
+          <p style={{position: 'absolute', bottom: '0', width:'100%', textAlign: 'center', background: 'rgba(0, 0, 0, 0.3)', color: 'white', marginBlockEnd: '0.4em', borderRadius: '10px'}}>Nicky Case</p>
+        </Box>
       </Grid>
-      <Button>Watch a Demo</Button>
+      <Button mt={3,4} as="a" href="https://www.youtube.com/channel/UCQzO0jpcRkP-9eWKMpJyB0w">Watch more on Youtube</Button>
     </Box>
 )
