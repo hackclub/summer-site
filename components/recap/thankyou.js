@@ -24,12 +24,8 @@ import usePrefersMotion from './use-prefers-motion'
 import useHasMounted from './use-has-mounted'
 
 const Collab = ({ img, alt, url }) => (
-  <Link href={url} target="_blank" sx={{ display: 'block', mx: 3, mb: [3, 4] }}>
-    <Image
-      src={img}
-      alt={alt}
-      sx={{ maxWidth: [112, 224, 224], maxHeight: [42, 84, 84] }}
-    />
+  <Link href={url} rel="noopener" target="_blank" sx={{ display: 'block', mx: 3, mb: [3, 4] }}>
+    <Image src={img} alt={alt} sx={{ maxWidth: [112,224,224], maxHeight: [42,84,84] }} />
   </Link>
 )
 
@@ -49,7 +45,7 @@ const SheetOLd = () => (
       backdropFilter: 'blur(20px)',
       backgroundPosition: 'center center',
       backgroundImage:
-        'radial-gradient(at left top,rgba(247,255,0,0.66),rgb(0,255,255,0.66)), url("http://cloud-7gqzbafhd.vercel.app/ezgif-4-727ac1653cd9-2.gif")'
+        'radial-gradient(at left top,rgba(247,255,0,0.66),rgb(0,255,255,0.66)), url("https://cloud-qmfmc6mn0.vercel.app/ezgif-4-727ac1653cd9-2.gif")'
     }}
   >
     <Container

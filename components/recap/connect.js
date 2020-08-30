@@ -107,7 +107,7 @@ export default () => (
           }}
           p={[0]}
         >
-          <object data="/hacknight.svg" type="image/svg+xml" style={{
+          <object alt="People on a Zoom call having fun, some people have cameras on some people have cameras off." data="/hacknight.svg" type="image/svg+xml" style={{
               color: 'white',
               clear: 'both',
               height: '420px',

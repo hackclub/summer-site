@@ -30,7 +30,7 @@ const Mention = memo(({ username }) => {
   }, [])
   return (
     <a sx={{textDecoration:'none'}} href={`https://scrapbook.hackclub.com/${username}`}>
-      <a sx={{textDecoration:'none'}} className="mention post-text-mentionfancy">
+      <a className="mention post-text-mentionfancy" href={`https://scrapbook.hackclub.com/${username}`}>
         {img && (
           <img
             src={img}
