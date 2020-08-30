@@ -45,7 +45,6 @@ const Video = ({ mux, ...props }) => {
     <video
       ref={videoRef}
       poster={`https://image.mux.com/${mux}/thumbnail.jpg?width=512&fit_mode=pad&time=0`}
-      className="post-attachment"
       id={mux}
       loop
       autoPlay
