@@ -42,7 +42,7 @@ const Video = ({ mux, ...props }) => {
       id={mux}
       controls
       loop
-      autoplay
+      autoPlay
       muted
       preload="metadata"
       {...props}
