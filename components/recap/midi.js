@@ -35,7 +35,7 @@ export default () => (
   >
     <Container>
       <Grid columns={[null, null, 2]} gap={3} mt={[4, 5]} mb={[3, 4]}>
-        <Video style={{width: "100%", borderRadius: '10px'}} mux="uzmqHFNDz7tghgSSLUpMjOC9tMgQED024qzVyTK2oKhs" />
+        <Video style={{width: "100%", borderRadius: '10px'}} mux="v4hGsiJSJCZ011cdjpaMde2qU3kerXBS9WQf95pzaFOE" />
         <Card
           sx={{
             backgroundSize: 'cover',

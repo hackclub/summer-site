@@ -33,7 +33,15 @@ export default () => (
   >
     <Container>
       <Grid columns={[null, null, 2]} gap={3} mt={[4, 5]} mb={[3, 4]}>
-        <Video style={{width: "100%", borderRadius: '10px'}} mux="uzmqHFNDz7tghgSSLUpMjOC9tMgQED024qzVyTK2oKhs" />
+        <Box sx={{
+            width: ['80%', '100%', 'none'],
+            borderRadius: '10px',
+            display: [null, null, 'none']
+          }}>
+        <Video
+          mux="51pEN301006xaiYL8m00IFulJpgzVRisfEh1cKIgfd15Ro"
+          style={{width: '100%', borderRadius: '10px'}}
+        /></Box>
         <Card
           sx={{
             backgroundSize: 'cover',
@@ -56,9 +64,16 @@ export default () => (
             microphone and shows the album art.
           </Text>
           <br />
-          <Button>Watch a Demo</Button>
         </Card>
-        <Video style={{width: "100%", borderRadius: '10px'}} mux="uzmqHFNDz7tghgSSLUpMjOC9tMgQED024qzVyTK2oKhs" />
+        <Box sx={{
+            width: '100%',
+            borderRadius: '10px',
+            display: ['none', 'none', 'block']
+          }}>
+        <Video
+          mux="51pEN301006xaiYL8m00IFulJpgzVRisfEh1cKIgfd15Ro"
+          style={{width: '100%', borderRadius: '10px'}}
+        /></Box>
       </Grid>
     </Container>
   </Box>
