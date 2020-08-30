@@ -29,20 +29,19 @@ const Mention = memo(({ username }) => {
     } catch (e) {}
   }, [])
   return (
-    <a sx={{textDecoration:'none'}} href={`https://scrapbook.hackclub.com/${username}`}>
-      <a className="mention post-text-mentionfancy" href={`https://scrapbook.hackclub.com/${username}`}>
-        {img && (
-          <img
-            src={img}
-            alt={username}
-            width={30}
-            height={30}
-            className="mention-avatar post-text-mention-avatar"
-          />
-        )}
-        @{username}
-      </a>
+    <a className="mention post-text-mentionfancy" href={`https://scrapbook.hackclub.com/${username}`}>
+      {img && (
+        <img
+          src={img}
+          alt={username}
+          width={30}
+          height={30}
+          className="mention-avatar post-text-mention-avatar"
+        />
+      )}
+      @{username}
     </a>
+
   )
 })
 
