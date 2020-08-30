@@ -19,6 +19,7 @@ import {
   Text,
   Textarea
 } from 'theme-ui'
+import Video from './video'
 import Mention from '../mention'
 
 export default () => (
@@ -45,31 +46,7 @@ export default () => (
           }}
           p={[0]}
         >
-          <Card
-            sx={{
-              backgroundImage:
-                "url('https://cloud-qmfmc6mn0.vercel.app/ezgif-4-c2ab0bc72ca5.gif')",
-              backgroundSize: 'cover',
-              color: 'white',
-              clear: 'both',
-              height: '400px',
-              width: '100%',
-              backgroundPosition: 'center',
-              borderTopLeftRadius: '20px',
-              borderTopRightRadius: '20px'
-              
-            }}
-            p={[3, 4]}
-          ></Card>
-          <Text
-            sx={{
-              position: 'relative',
-              textAlign: 'center'
-            }}
-            p={[1, 2]}
-          >
-            Their sketch from the planning process
-          </Text>
+          <Video mux="Ngi8j702tkHpmf8deWb7MrJyvVte02XsRx00Ok7XV00UAuk" />
         </Card>
         <Card
           sx={{
@@ -91,44 +68,8 @@ export default () => (
              a camera module, thermal printer and more!
           </Text>
           <br />
-          <Button as='a' href="https://youtu.be/-SiU1nOm9JY">Watch a Demo</Button>
         </Card>
-        <Card
-          sx={{
-            backgroundSize: 'cover',
-            color: 'white',
-            clear: 'both',
-            backgroundPosition: 'center',
-            borderRadius: '20px',
-            display: ['none', 'none', 'block']
-          }}
-          p={[0]}
-        >
-          <Card
-            sx={{
-              backgroundImage:
-                "url('https://cloud-9hwthpo8l.vercel.app/ezgif-4-c2ab0bc72ca5.gif')",
-              backgroundSize: 'cover',
-              color: 'white',
-              clear: 'both',
-              height: '400px',
-              width: '100%',
-              backgroundPosition: 'center',
-              borderTopLeftRadius: '20px',
-              borderTopRightRadius: '20px'
-            }}
-            p={[3, 4]}
-          ></Card>
-          <Text
-            sx={{
-              position: 'relative',
-              textAlign: 'center'
-            }}
-            p={[1, 2]}
-          >
-            The camera part of the finished product
-          </Text>
-        </Card>
+        <Video style={{width: "100%", borderRadius: '10px'}} mux="uzmqHFNDz7tghgSSLUpMjOC9tMgQED024qzVyTK2oKhs" />
       </Grid>
     </Container>
   </Box>

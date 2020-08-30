@@ -17,6 +17,7 @@
     "@mdx-js/loader": "^1.6.16",
     "@next/mdx": "^9.5.2",
     "fathom-client": "^3.0.0",
+    "hls.js": "^0.14.10",
     "lodash": "^4.17.20",
     "next": "^9.5",
     "react": "^16.13.1",

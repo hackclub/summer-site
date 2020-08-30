@@ -11,6 +11,7 @@ import {
   Text
 } from 'theme-ui'
 import Mention from './mentionAMA'
+import Video from './video'
 
 export default () => (
   <Grid
@@ -22,37 +23,7 @@ export default () => (
     mb={[3, 4]}
     sx={{ alignItems: 'start' }}
   >
-    <Box
-      sx={{
-        borderRadius: '20px',
-        bg: 'red',
-        color: 'white',
-        mb: ['10px', '10px', null]
-      }}
-    >
-      <Card
-        sx={{
-          backgroundImage:
-            'url(https://cloud-qmfmc6mn0.vercel.app/oztd3qt.gif)',
-          backgroundSize: 'cover',
-          height: '440px',
-          width: '100%',
-          backgroundPosition: 'center',
-          borderTopLeftRadius: '20px',
-          borderTopRightRadius: '20px'
-        }}
-      />
-
-      <Text
-        sx={{
-          position: 'relative',
-          textAlign: 'center'
-        }}
-        p={[1, 2]}
-      >
-        AMA with Limor Fried
-      </Text>
-    </Box>
+    <Video style={{width: "100%", borderRadius: '10px'}} mux="uzmqHFNDz7tghgSSLUpMjOC9tMgQED024qzVyTK2oKhs" />
     <Box
       sx={{
         textAlign: ['left', 'center', 'right']

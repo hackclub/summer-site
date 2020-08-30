@@ -35,17 +35,7 @@ export default () => (
   >
     <Container>
       <Grid columns={[null, null, 2]} gap={3} mt={[4, 5]} mb={[3, 4]}>
-        <Card
-          sx={{
-            backgroundSize: 'cover',
-            color: 'white',
-            clear: 'both',
-            backgroundPosition: 'center',
-            borderRadius: '20px',
-            mb:['10px','10px',null]
-          }}
-          p={[0]}
-        >
+        
           <Card
             sx={{
               backgroundImage: "url('https://cloud-fx1vo1lur.vercel.app/ivvafwd-2-2.jpg')",
@@ -55,21 +45,10 @@ export default () => (
               height: '400px',
               width: '100%',
               backgroundPosition: 'center',
-              borderTopLeftRadius: '20px',
-              borderTopRightRadius: '20px'
+              borderRadius: '10px',
             }}
             p={[3, 4]}
           ></Card>
-          <Text
-            sx={{
-              position: 'relative',
-              textAlign: 'center'
-            }}
-            p={[1, 2]}
-          >
-            Her final product using a Pi camera
-          </Text>
-        </Card>
         <Card
           sx={{
             backgroundSize: 'cover',
