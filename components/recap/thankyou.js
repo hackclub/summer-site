@@ -113,7 +113,7 @@ const Static = () => (
     sx={{
       position: 'relative',
       overflow: 'hidden',
-      backgroundImage: 'url(slack-poster.png)',
+      backgroundImage: 'url(https://cloud-r135419pm.vercel.app/screenshot_2020-08-30_at_9.17.45_am.png)',
       backgroundSize: 'cover'
     }}
   >
