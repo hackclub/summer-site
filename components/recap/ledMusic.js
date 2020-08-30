@@ -32,43 +32,7 @@ export default () => (
   >
     <Container>
       <Grid columns={[null, null, 2]} gap={3} mt={[4, 5]} mb={[3, 4]}>
-        <Card
-          sx={{
-            backgroundSize: 'cover',
-            color: 'white',
-            clear: 'both',
-            backgroundPosition: 'center',
-            borderRadius: '20px',
-            mb: ['10px', '10px', null],
-            display: [null, null, 'none']
-          }}
-          p={[0]}
-        >
-          <Card
-            sx={{
-              backgroundImage:
-                "url('https://cloud-hdaoelc0g.vercel.app/ezgif-4-2e8542881d0b.gif')",
-              backgroundSize: 'cover',
-              color: 'white',
-              clear: 'both',
-              height: '400px',
-              width: '100%',
-              backgroundPosition: 'center',
-              borderTopLeftRadius: '20px',
-              borderTopRightRadius: '20px'
-            }}
-            p={[3, 4]}
-          ></Card>
-          <Text
-            sx={{
-              position: 'relative',
-              textAlign: 'center'
-            }}
-            p={[1, 2]}
-          >
-            Cycling through songs and seeing the album cover change
-          </Text>
-        </Card>
+        <Video style={{width: "100%", borderRadius: '10px'}} mux="uzmqHFNDz7tghgSSLUpMjOC9tMgQED024qzVyTK2oKhs" />
         <Card
           sx={{
             backgroundSize: 'cover',
@@ -93,42 +57,7 @@ export default () => (
           <br />
           <Button>Watch a Demo</Button>
         </Card>
-        <Card
-          sx={{
-            backgroundSize: 'cover',
-            color: 'white',
-            clear: 'both',
-            backgroundPosition: 'center',
-            borderRadius: '20px',
-            display: ['none', 'none', 'block']
-          }}
-          p={[0]}
-        >
-          <Card
-            sx={{
-              backgroundImage:
-                "url('https://cloud-qmfmc6mn0.vercel.app/ezgif-4-2e8542881d0b.gif')",
-              backgroundSize: 'cover',
-              color: 'white',
-              clear: 'both',
-              height: '400px',
-              width: '100%',
-              backgroundPosition: 'center',
-              borderTopLeftRadius: '20px',
-              borderTopRightRadius: '20px'
-            }}
-            p={[3, 4]}
-          ></Card>
-          <Text
-            sx={{
-              position: 'relative',
-              textAlign: 'center'
-            }}
-            p={[1, 2]}
-          >
-            Cycling through songs and seeing the album cover change
-          </Text>
-        </Card>
+        <Video style={{width: "100%", borderRadius: '10px'}} mux="uzmqHFNDz7tghgSSLUpMjOC9tMgQED024qzVyTK2oKhs" />
       </Grid>
     </Container>
   </Box>

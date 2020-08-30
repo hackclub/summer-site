@@ -46,7 +46,7 @@ export default () => (
           }}
           p={[0]}
         >
-          <Video mux="Ngi8j702tkHpmf8deWb7MrJyvVte02XsRx00Ok7XV00UAuk" />
+          <Video style={{width: "100%", borderRadius: '10px'}} mux="uzmqHFNDz7tghgSSLUpMjOC9tMgQED024qzVyTK2oKhs" />
         </Card>
         <Card
           sx={{
