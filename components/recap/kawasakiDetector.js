@@ -42,12 +42,10 @@ export default () => (
               backgroundSize: 'cover',
               color: 'white',
               clear: 'both',
-              height: '400px',
               width: '100%',
               backgroundPosition: 'center',
               borderRadius: '10px',
             }}
-            p={[3, 4]}
           ></Card>
         <Card
           sx={{
@@ -78,5 +76,3 @@ export default () => (
     </Container>
   </Box>
 )
-
-

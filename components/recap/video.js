@@ -1,6 +1,13 @@
 // Credit to https://github.com/vercel/next.js/blob/canary/examples/with-mux-video/components/video-player.js
 import { useEffect, useRef } from 'react'
 import Hls from 'hls.js'
+const VisibilitySensor = require('react-visibility-sensor');
+
+function onChange (isVisible) {
+  if(isVisible){
+
+  }
+}
 
 const Video = ({ mux, ...props }) => {
   const videoRef = useRef(null)
@@ -10,7 +17,7 @@ const Video = ({ mux, ...props }) => {
     const video = videoRef.current
     if (!video) return
 
-    video.controls = true
+    video.controls = false
     let hls
 
     if (video.canPlayType('application/vnd.apple.mpegurl')) {
@@ -40,11 +47,11 @@ const Video = ({ mux, ...props }) => {
       poster={`https://image.mux.com/${mux}/thumbnail.jpg?width=512&fit_mode=pad&time=0`}
       className="post-attachment"
       id={mux}
-      controls
       loop
       autoPlay
       muted
       preload="metadata"
+      onChange={e => e.target.play()}
       {...props}
     />
   )
