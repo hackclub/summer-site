@@ -19,6 +19,7 @@ import {
   Text,
   Textarea
 } from 'theme-ui'
+import Video from './video'
 import Mention from '../mention'
 export default () => (
   <Box
