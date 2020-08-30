@@ -14,20 +14,17 @@ import Mention from './mentionAMA'
 import Video from './video'
 
 export default () => (
-  <Grid
-    as="section"
-    variant="layout.container"
-    columns={[null, null, 2]}
-    gap={[3, 4]}
-    mt={[4, 5]}
-    mb={[3, 4]}
-    sx={{ alignItems: 'start' }}
-  >
-    <Video style={{width: "100%", borderRadius: '10px'}} mux="uzmqHFNDz7tghgSSLUpMjOC9tMgQED024qzVyTK2oKhs" />
+  
+    
     <Box
       sx={{
-        textAlign: ['left', 'center', 'right']
+        textAlign: 'center',
+        maxWidth: '1200px',
+        marginLeft: 'auto',
+        marginRight: 'auto'
       }}
+      mt={[3, 4]}
+      mb={[3, 4]}
     >
       <Heading sx={{ fontSize: 2 }}>
         Chatting with influential people in tech on
@@ -36,8 +33,8 @@ export default () => (
         inspiring AMAs
       </Heading>
       <Grid
-        columns={2}
-        gap={3}
+        columns={[2,3,5]}
+        gap={2}
         mt={[3, 4]}
         sx={{ alignItems: 'center', justifyContent: 'center' }}
       >
@@ -66,12 +63,6 @@ export default () => (
           url="https://www.youtube.com/watch?v=KKEYTSUvsS8"
           img="https://dl.airtable.com/.attachmentThumbnails/43c443b80f58f0f3dd3f81124bf2bf6e/9a1a83c4"
         />
-        <Mention
-          name="View more"
-          url="https://www.youtube.com/channel/UCQzO0jpcRkP-9eWKMpJyB0w"
-          img="https://cloud-l3duqdxde.vercel.app/rxfcdi1.png"
-        />
       </Grid>
     </Box>
-  </Grid>
 )

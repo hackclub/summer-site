@@ -50,7 +50,6 @@ const Video = ({ mux, ...props }) => {
       autoPlay
       muted
       preload="metadata"
-      onChange={e => e.target.play()}
       {...props}
     />
   )
