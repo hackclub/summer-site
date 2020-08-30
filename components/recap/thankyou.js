@@ -24,8 +24,17 @@ import usePrefersMotion from './use-prefers-motion'
 import useHasMounted from './use-has-mounted'
 
 const Collab = ({ img, alt, url }) => (
-  <Link href={url} rel="noopener" target="_blank" sx={{ display: 'block', mx: 3, mb: [3, 4] }}>
-    <Image src={img} alt={alt} sx={{ maxWidth: [112,224,224], maxHeight: [42,84,84] }} />
+  <Link
+    href={url}
+    rel="noopener"
+    target="_blank"
+    sx={{ display: 'block', mx: 3, mb: [3, 4] }}
+  >
+    <Image
+      src={img}
+      alt={alt}
+      sx={{ maxWidth: [112, 224, 224], maxHeight: [42, 84, 84] }}
+    />
   </Link>
 )
 
@@ -35,10 +44,10 @@ const Sheet = () => (
       height: '100%',
       fontSize: [4, 6],
       backgroundImage:
-      'radial-gradient(at left top,rgba(247,255,0,0.66),rgb(0,255,255,0.66))',
+        'radial-gradient(at left top,rgba(247,255,0,0.66),rgb(0,255,255,0.66))',
       marginLeft: '0px',
       marginRight: '0px',
-      width:'100%',
+      width: '100%',
       maxWidth: '100000px'
     }}
     className="thank-you-text"
@@ -132,44 +141,38 @@ const MAINPART = () => {
             left: 0,
             right: 0,
             height: '100%',
-            zIndex: -1,
-          }}
-        ></Box>
-        <Box
-          as="video"
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="slack-poster.png"
-          duration={2000}
-          sx={{
-            position: 'absolute',
-            bottom: 0,
-            top: 0,
-            left: 0,
-            right: 0,
-            height: '100%',
-            width: '100%',
             zIndex: -1
           }}
-        >
-          <source
-            src="https://cdn.glitch.com/2d637c98-ed35-417a-bf89-cecc165d7398%2Foutput-no-duplicate-frames.hecv.mp4?v=1590780967658"
-            type="video/mp4; codecs=hevc"
-          />
-          <source
-            src="https://cdn.glitch.com/2d637c98-ed35-417a-bf89-cecc165d7398%2Foutput-no-duplicate-frames.webm?v=1590781698834"
-            type="video/webm; codecs=vp9,opus"
-          />
-          <source
-            src="https://cdn.glitch.com/2d637c98-ed35-417a-bf89-cecc165d7398%2Foutput-no-duplicate-frames.mov?v=1590781491717"
-            type="video/quicktime"
-          />
-        </Box>
+        ></Box>
+        
+          <Box
+            as="video"
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster="slack-poster.png"
+            duration={2000}
+            sx={{
+              position: 'absolute',
+              bottom: 0,
+              top: 0,
+              left: 0,
+              right: 0,
+              height: '100% !important',
+              width: '100% !important',
+              maxHeight: '56.25vw !important',
+              zIndex: -1
+            }}
+          >
+            <source
+              src="https://stream.mux.com/sQNBvox02JMiGWeVF4YzfOyfIcAv6d1fo3sii02GudNXw.m3u8"
+            />
+          </Box>
+        
         <Cover />
         <Sheet />
-      </Box>
+        </Box>
     )
   } else {
     return <Static />
