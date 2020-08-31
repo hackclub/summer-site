@@ -95,37 +95,37 @@ export default () => (
       >
         <Text>
           <Heading as="h1" sx={{ fontSize: 6 }}>
-            360
+            414
           </Heading>
           Makers
         </Text>
         <Text>
           <Heading as="h1" sx={{ fontSize: 6 }}>
-            972
+            1,002
           </Heading>
           Git Commits
         </Text>
         <Text>
           <Heading as="h1" sx={{ fontSize: 6 }}>
-            1AM
+            11PM
           </Heading>
           Most Common Post Time
         </Text>
         <Text>
           <Heading as="h1" sx={{ fontSize: 6 }}>
-            45
+            74
           </Heading>
           Highest Streak
         </Text>
         <Text>
           <Heading as="h1" sx={{ fontSize: 6 }}>
-            104
+            133
           </Heading>
           Most Individual Scraps
         </Text>
         <Text>
           <Heading as="h1" sx={{ fontSize: 6 }}>
-            34
+            35
           </Heading>
           Different Timezones
         </Text>
