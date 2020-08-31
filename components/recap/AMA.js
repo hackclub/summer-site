@@ -26,7 +26,7 @@ export default () => (
     <Heading sx={{ fontSize: 2 }}>
       Chatting with influential people in tech on
     </Heading>
-    <Heading as="h1" sx={{ fontSize: [6, 7] }}>
+    <Heading as="h1" sx={{ fontSize: [6, 7], fontFamily: 'display' }}>
       inspiring AMAs
     </Heading>
     <Grid

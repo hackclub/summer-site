@@ -13,15 +13,15 @@ export default () => (
   >
     <Box sx={{ textAlign: ['left', 'center', 'left'] }}>
       <Heading>Finding new ways to</Heading>
-      <Heading as="h1" sx={{ fontSize: [6, 7, 7], mt: -3 }}>
+      <Heading as="h1" sx={{ fontSize: [6, 7], mt: -2, fontFamily: 'display' }}>
         connect
       </Heading>
       <Text as="p" sx={{ fontSize: [2, 2, 3], mb: [3, 4] }}>
-        Thanks to COVID-19, this summer was like no other with billions of
-        teenagers stuck at home. From treasure hunts to late night Zoom hangouts
-        to a mini hackathon, the community was filled with fun events. Alongside
-        events, the Slack served as a global makerspace (open 24/7) where
-        hackers could hangout.
+        Thanks to COVID-19, this summer was like no other with so many teenagers
+        stuck at home. From treasure hunts to late night Zoom hangouts to a mini
+        hackathon, the community was filled with fun events. Alongside events,
+        the Slack served as a global makerspace (open 24/7) where hackers could
+        hang out.
       </Text>
       <Button as="a" href="https://hackclub.com/slack/">
         <Icon glyph="slack" />

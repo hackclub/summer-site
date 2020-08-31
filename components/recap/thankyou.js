@@ -1,25 +1,4 @@
-import {
-  Badge,
-  Box,
-  Button,
-  Card,
-  Checkbox,
-  Container,
-  Flex,
-  Grid,
-  Heading,
-  Input,
-  Label,
-  Link,
-  NavLink,
-  Radio,
-  Select,
-  Slider,
-  Image,
-  Text,
-  Textarea
-} from 'theme-ui'
-
+import { Box, Card, Container, Flex, Image, Link, Heading } from 'theme-ui'
 import usePrefersMotion from '../../lib/use-prefers-motion'
 import useHasMounted from '../../lib/use-has-mounted'
 
@@ -41,19 +20,18 @@ const Collab = ({ img, alt, url }) => (
 const Sheet = () => (
   <Box
     sx={{
-      height: '100%',
+      position: 'relative',
+      zIndex: 9,
       fontSize: [4, 6],
-      backgroundImage:
-        'radial-gradient(at left top,rgba(247,255,0,0.66),rgb(0,255,255,0.66))',
-      marginLeft: '0px',
-      marginRight: '0px',
-      width: '100%',
-      maxWidth: '100000px'
+      py: [4, 5, 6],
+      textShadow: 'text'
     }}
     className="thank-you-text"
   >
-    <br />
-    <Heading mb={[3, 4]} sx={{ color: 'white', fontSize: [7, null, null] }}>
+    <Heading
+      mb={[3, 4]}
+      sx={{ color: 'white', fontSize: [6, 7], fontFamily: 'display' }}
+    >
       Thank you for joining!
     </Heading>
     <Heading
@@ -101,7 +79,8 @@ const Cover = () => (
       right: 0,
       opacity: 0.75,
       zIndex: 0,
-      color: 'white'
+      backgroundImage:
+        'radial-gradient(at left top,rgba(247,255,0,0.66),rgb(0,255,255,0.66))'
     }}
   />
 )
@@ -113,7 +92,8 @@ const Static = () => (
     sx={{
       position: 'relative',
       overflow: 'hidden',
-      backgroundImage: 'url(https://cloud-r135419pm.vercel.app/screenshot_2020-08-30_at_9.17.45_am.png)',
+      backgroundImage:
+        'url(https://cloud-r135419pm.vercel.app/screenshot_2020-08-30_at_9.17.45_am.png)',
       backgroundSize: 'cover'
     }}
   >
@@ -134,45 +114,30 @@ const MAINPART = () => {
         sx={{ overflow: 'hidden', position: 'relative' }}
       >
         <Box
+          as="video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="https://cloud-r135419pm.vercel.app/screenshot_2020-08-30_at_9.17.45_am.png"
+          duration={2000}
           sx={{
             position: 'absolute',
             bottom: 0,
             top: 0,
             left: 0,
             right: 0,
-            height: '100%',
+            height: 'auto !important',
+            width: '100% !important',
+            maxHeight: '56.25vw !important',
             zIndex: -1
           }}
-        ></Box>
-        
-          <Box
-            as="video"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster="https://cloud-r135419pm.vercel.app/screenshot_2020-08-30_at_9.17.45_am.png"
-            duration={2000}
-            sx={{
-              position: 'absolute',
-              bottom: 0,
-              top: 0,
-              left: 0,
-              right: 0,
-              height: 'auto !important',
-              width: '100% !important',
-              maxHeight: '56.25vw !important',
-              zIndex: -1
-            }}
-          >
-            <source
-              src="https://stream.mux.com/sQNBvox02JMiGWeVF4YzfOyfIcAv6d1fo3sii02GudNXw.m3u8"
-            />
-          </Box>
-        
+        >
+          <source src="https://stream.mux.com/sQNBvox02JMiGWeVF4YzfOyfIcAv6d1fo3sii02GudNXw.m3u8" />
+        </Box>
         <Cover />
         <Sheet />
-        </Box>
+      </Box>
     )
   } else {
     return <Static />

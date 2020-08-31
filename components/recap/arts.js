@@ -37,12 +37,7 @@ export default () => (
       >
         Fine art was produced during
       </Heading>
-      <Heading
-        as="h1"
-        sx={{
-          fontSize: [6, 7, 7]
-        }}
-      >
+      <Heading as="h1" sx={{ fontSize: [6, 7], fontFamily: 'display' }}>
         Arts Week
       </Heading>
       <Button

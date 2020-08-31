@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import NextApp from 'next/app'
-import Head from 'next/head'
 
 import Meta from '@hackclub/meta'
 import theme from '../lib/theme'
+import theme2 from '../lib/theme2'
 import { ThemeProvider } from 'theme-ui'
 import * as Fathom from 'fathom-client'
 import '../public/theme.css'
@@ -26,7 +26,7 @@ const App = ({ Component, pageProps }) => {
   }, [])
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={router.pathname === '/' ? theme2 : theme}>
       <Component {...pageProps} />
     </ThemeProvider>
   )

@@ -33,17 +33,6 @@ a {
   text-decoration: none;
 }
 
-.map-center-text {
-  font-size: 4em;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
 .thank-you-text {
   font-size: 4em;
   text-align: center;
@@ -114,39 +103,39 @@ a {
   );
 }
 
-.nav-mention-text{
+.nav-mention-text {
   color: black;
 }
 
-.nav-mention-avatar{
-  margin-right: 0px
+.nav-mention-avatar {
+  margin-right: 0px;
 }
 
-.nav-mention-start-hidden{
+.nav-mention-start-hidden {
   display: none;
   margin-right: 8px;
-  padding-top: 7px!important;
-  padding-bottom: 9px!important;
-  padding-left: 16px!important;
+  padding-top: 7px !important;
+  padding-bottom: 9px !important;
+  padding-left: 16px !important;
 }
 
-.mention-nav:hover .nav-mention-start-hidden{
+.mention-nav:hover .nav-mention-start-hidden {
   display: block;
 }
 
-.mention-nav-button{
-  border-radius: 99999px!important;
-  transition: transform .125s ease-in-out;
-  padding-left: 0px!important;
-  padding-right: 0px!important;
-  padding-top: 0px!important;
-  padding-bottom: 0px!important;
+.mention-nav-button {
+  border-radius: 99999px !important;
+  transition: transform 0.125s ease-in-out;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }
 
 aside {
   display: block;
   position: relative;
-  margin: 0 ;
+  margin: 0;
 }
 
 aside h3 {
@@ -164,7 +153,7 @@ aside h3 {
 
 @media screen and (max-width: 1400px) {
   aside h3 {
-    display:none;
+    display: none;
   }
 }
 
@@ -207,7 +196,7 @@ aside h3 {
   z-index: 1;
   width: 360px;
   top: 100%;
-  left: 50%; 
+  left: 50%;
   margin-left: -180px; /* Use half of the width (120/2 = 60), to center the tooltip */
 }
 
@@ -216,6 +205,6 @@ aside h3 {
   visibility: visible;
 }
 
-.black-color{
-  color: black
+.black-color {
+  color: black;
 }

@@ -1,17 +1,5 @@
-import React from 'react'
-import styled from '@emotion/styled'
-import {
-  Box,
-  Container,
-  Card,
-  Image,
-  Grid,
-  Heading,
-  Link,
-  Text
-} from 'theme-ui'
-import theme from '@hackclub/theme'
-import Icon from '../icon'
+import { Box, Card, Image, Text } from 'theme-ui'
+import { isEmpty } from 'lodash'
 import Mention from '../mention'
 
 export default ({ content, url, mention, aftercontent }) => (
@@ -19,7 +7,7 @@ export default ({ content, url, mention, aftercontent }) => (
     as="figure"
     sx={{
       backgroundSize: 'cover',
-      color: 'white',
+      overflow: 'hidden',
       backgroundPosition: 'center',
       borderRadius: '20px',
       boxShadow: '0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)',
@@ -30,27 +18,27 @@ export default ({ content, url, mention, aftercontent }) => (
       }
     }}
   >
-    <Card
+    <Image
+      src={url}
+      alt={[content, mention, aftercontent].filter(n => !isEmpty(n)).join(' ')}
       sx={{
-        backgroundImage: `url('${url}')`,
-        backgroundSize: 'cover',
+        objectPosition: 'center',
+        objectFit: 'cover',
         height: '400px',
         width: '100%',
-        backgroundPosition: 'center',
         borderTopLeftRadius: '20px',
-        borderTopRightRadius: '20px',
-        maxHeight: '432px'
+        borderTopRightRadius: '20px'
       }}
-      p={[3, 4]}
-      variant="secondary"
     />
     <Text
       as="figcaption"
       sx={{
         position: 'relative',
-        textAlign: 'center'
+        textAlign: 'center',
+        color: 'white',
+        px: 2,
+        pb: [1, 2]
       }}
-      p={[1, 2]}
     >
       {content} {mention && <Mention username={mention} />} {aftercontent}
     </Text>

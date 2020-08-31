@@ -37,7 +37,7 @@ export default () => (
       <Heading as="h1" sx={{ fontSize: 4 }} className="topHeaderSubtitle">
         We shipped hardware to
       </Heading>
-      <Heading as="h1" sx={{ fontSize: [6, 7, 7] }}>
+      <Heading as="h1" sx={{ fontSize: [6, 7, 7], fontFamily: 'display' }}>
         twenty eight
       </Heading>
       <Heading
