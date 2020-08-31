@@ -1,19 +1,17 @@
-import { Container, Text } from 'theme-ui'
+import { Container, Link, Text } from 'theme-ui'
 
 export default () => (
   <Container
     variant="copy"
     sx={{
-      my: 3,
-      py: 3,
+      my: [3, 4],
+      py: [3, 4],
       border: '2px dashed',
       borderColor: 'sunken',
-      borderRadius: 'default',
-      mt: [3, 4],
-      mb: [3, 4]
+      borderRadius: 'default'
     }}
   >
-    <Text sx={{ fontSize: '24px' }}>
+    <Text as="p" sx={{ fontSize: '24px' }}>
       We focus a lot on software at Hack Club. It’s soft, after all.
       Comfortable. This summer we left our comfort zone. Global
       pandemic—generally a bad start to summer—left us with{' '}

@@ -33,6 +33,7 @@ const NavMention = memo(({ username }) => {
     <Button
       variant="secondary"
       className="mention-nav-button"
+      as="span"
       sx={{ height: '40px', display: ['none', 'none', 'inline-block'] }}
     >
       <a
