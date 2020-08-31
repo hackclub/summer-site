@@ -217,13 +217,13 @@ export default () => (
           >
             <Text>
               <Heading as="h1" sx={{ fontSize: 6 }}>
-                201
+                268
               </Heading>
               Makers Supported
             </Text>
             <Text>
               <Heading as="h1" sx={{ fontSize: 6 }}>
-                51
+                81
               </Heading>
               Arduino Projects
             </Text>
@@ -235,19 +235,19 @@ export default () => (
             </Text>
             <Text>
               <Heading as="h1" sx={{ fontSize: 6 }}>
-                1595
+                1950
               </Heading>
               Shopping Carts Made
             </Text>
             <Text>
               <Heading as="h1" sx={{ fontSize: 6 }}>
-                56
+                70
               </Heading>
               Retailers Used
             </Text>
             <Text>
               <Heading as="h1" sx={{ fontSize: 6 }}>
-                85
+                143
               </Heading>
               Different Cities
             </Text>
