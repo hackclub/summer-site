@@ -12,9 +12,9 @@ export default () => (
     }}
   >
     <Text as="p" sx={{ fontSize: '24px' }}>
-      We focus a lot on software at Hack Club. It’s soft, after all.
-      Comfortable. This summer we left our comfort zone. Global
-      pandemic—generally a bad start to summer—left us with{' '}
+      We focus a lot on software at Hack Club. It’s soft, after all. This summer
+      we left our comfort zone. Global pandemic—generally a bad start to
+      summer—left us with{' '}
       <span className="highlight">$50k of unused grant money from GitHub</span>.
       We thought about saving it. Instead we gave it away to students as a kind
       of fun experiment:{' '}

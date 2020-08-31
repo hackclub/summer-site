@@ -65,7 +65,7 @@ export default () => (
               &nbsp;@\`+users[randome][0]+'</a></a> from '+users[randome][2]+'\'\"> makers </span>`
             }}
           ></span>
-          <span class="tooltiptext" id="tooltiptext"></span>
+          <span className="tooltiptext" id="tooltiptext"></span>
         </div>
       </span>
       . We left it them to get hacking & they built some pretty awesome things…

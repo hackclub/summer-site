@@ -24,8 +24,8 @@ export default () => (
           textShadow: 'text'
         }}
       >
-        Shipping to everywhere from the bustling streets of Lagos to the middle
-        of the Indian Ocean…
+        Shipping hardware grants to everywhere from the bustling streets of
+        Lagos to the middle of Los Angeles…
       </Heading>
     </Container>
   </Box>
