@@ -46,7 +46,26 @@ const Service = ({ href, icon, ...props }) => (
   />
 )
 
-const Footer = ({ dark = false, children, ...props }) => (
+const Credit = () => (
+  <Box sx={{ a: { color: 'orange' }, pb: 4 }}>
+    <Heading as="h3" variant="subheadline" mb={2}>
+      <a href="/prelaunch"> ⏮</a> A project by{' '}
+      <a href="https://hackclub.com/">Hack Club</a>.
+    </Heading>
+    <Text as="p" variant="caption" mb={3} sx={{ width: ['85%', '75%', '60%'] }}>
+      Thank you: Sam Poder, Lachlan Campbell, Zach Latta, Roshan Palakkal, Neel
+      Redkar, Matthew Stanciu, Chris Walker, Max Wofford, Athul Blesson, Amogh
+      Chaubey, Dina Elhanan, Chaleb Pommells, Annlee Fores, Michael Destefanis,
+      Melody & Christina Asquith.
+    </Text>
+    <Text as="p" variant="caption" mb={1}>
+      Landing site by <a href="https://lachlanjc.com/">@lachlanjc</a>. Always{' '}
+      <a href="https://github.com/hackclub/summer-site/">open source</a>.
+    </Text>
+  </Box>
+)
+
+const Footer = ({ dark = false, children = <Credit />, ...props }) => (
   <Base
     color={dark ? 'muted' : 'slate'}
     py={[4, 5]}
@@ -55,8 +74,8 @@ const Footer = ({ dark = false, children, ...props }) => (
     as="footer"
     {...props}
   >
-    {children}
     <Container px={[3, null, 4]}>
+      {children}
       <Grid
         as="article"
         gap={[2, 4]}

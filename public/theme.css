@@ -1,0 +1,210 @@
+.mention {
+  display: inline-flex;
+  align-items: baseline;
+  text-decoration: none;
+  color: inherit;
+}
+.mention-avatar {
+  border-radius: 50%;
+  margin-right: 4px;
+  align-self: flex-end;
+}
+.mention-avatar-ama {
+  border-radius: 50%;
+  margin-right: 8px;
+  align-self: flex-end;
+}
+.post-text-mention {
+  color: white;
+}
+.post-text-mentionama {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+.post-text-mentionfancy {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.thank-you-text {
+  font-size: 4em;
+  text-align: center;
+}
+
+.topHeaderSubtitle {
+  margin-block-end: 1em;
+}
+
+.ledHoverEffect:hover {
+  color: #338eda;
+  text-shadow: 0 0 15px #338eda;
+}
+
+.pictureFrame {
+  position: relative;
+  border: 40px solid rgb(255, 255, 255);
+  border-bottom: 0px solid rgb(255, 255, 255);
+  outline: 10px solid black;
+}
+
+.pictureFrame:before {
+  content: ' ';
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 5px solid #ffea00;
+}
+
+/* container */
+
+@keyframes animateBordeer {
+  from {
+    border: 5px dashed #ffea00;
+  }
+  to {
+    border: 5px dashed red;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .ledborder {
+    position: relative;
+  }
+  .ledborder:before {
+    content: ' ';
+    position: absolute;
+    z-index: -1;
+    top: -20px;
+    left: -20px;
+    right: 15px;
+    bottom: 0px;
+    border: 5px dashed #ffea00;
+    animation: 1s animateBordeer infinite;
+  }
+}
+
+.highlight {
+  border-radius: 1em;
+  background-image: linear-gradient(
+    -100deg,
+    rgba(243, 234, 164, 0.33),
+    rgba(243, 234, 164, 0.95),
+    rgba(243, 234, 164, 0.1)
+  );
+}
+
+.nav-mention-text {
+  color: black;
+}
+
+.nav-mention-avatar {
+  margin-right: 0px;
+}
+
+.nav-mention-start-hidden {
+  display: none;
+  margin-right: 8px;
+  padding-top: 7px !important;
+  padding-bottom: 9px !important;
+  padding-left: 16px !important;
+}
+
+.mention-nav:hover .nav-mention-start-hidden {
+  display: block;
+}
+
+.mention-nav-button {
+  border-radius: 99999px !important;
+  transition: transform 0.125s ease-in-out;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+aside {
+  display: block;
+  position: relative;
+  margin: 0;
+}
+
+aside h3 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0 0 10px 0;
+  line-height: 24px;
+  background: -webkit-linear-gradient(45deg, #9e9add, #00ff95 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1400px) {
+  aside h3 {
+    display: none;
+  }
+}
+
+/* Class name via Modernizr */
+aside {
+  border-left: 34px solid rgba(255, 255, 255, 0);
+  padding-left: 10px;
+}
+aside h3 {
+  /* Abs positioning makes it not take up vert space */
+  position: absolute;
+  bottom: 35px;
+  left: 8px;
+
+  /* Border is the new background */
+
+  /* Rotate from top left corner (not default) */
+  transform-origin: 0 0;
+  transform: rotate(270deg);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  font-size: 16px;
+  visibility: hidden;
+  width: 120px;
+  background-color: lightgoldenrodyellow;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  width: 360px;
+  top: 100%;
+  left: 50%;
+  margin-left: -180px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.black-color {
+  color: black;
+}

@@ -5,7 +5,6 @@ import { Box, Container, Flex, Link } from 'theme-ui'
 import theme from '../lib/theme'
 import Icon from './icon'
 import Flag from './flag'
-import NavMention from './nav-mention'
 import ScrollLock from 'react-scrolllock'
 
 const rgbaBgColor = (props, opacity) =>
@@ -237,7 +236,6 @@ class Header extends Component {
           <ToggleContainer color={toggleColor} onClick={this.handleToggleMenu}>
             <Icon glyph={toggled ? 'view-close' : 'menu'} />
           </ToggleContainer>
-          <NavMention username='sampoder' scrolled={scrolled || fixed}/>
         </Content>
         <Navigation
           as="nav"

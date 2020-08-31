@@ -10,19 +10,24 @@
     "start": "next start"
   },
   "dependencies": {
+    "@babel/core": "^7.11.4",
     "@hackclub/icons": "^0.0.3",
     "@hackclub/meta": "^1.0.0",
-    "@hackclub/theme": "^0.2.0",
+    "@hackclub/theme": "^0.3.0",
     "@mdx-js/loader": "^1.6.16",
-    "@next/mdx": "^9.5.1",
+    "@next/mdx": "^9.5.2",
     "fathom-client": "^3.0.0",
-    "lodash": "^4.17.19",
-    "next": "^9.4.4",
+    "hls.js": "^0.14.10",
+    "lodash": "^4.17.20",
+    "next": "^9.5",
     "react": "^16.13.1",
-    "react-div-100vh": "^0.3.8",
+    "react-div-100vh": "^0.5.0",
     "react-dom": "^16.13.1",
+    "react-lazy-images": "^1.1.0",
+    "react-lazyload": "^3.0.0",
     "react-masonry-css": "^1.0.14",
     "react-scrolllock": "^5.0.1",
+    "react-visibility-sensor": "^5.1.1",
     "theme-ui": "^0.3.1"
   }
 }

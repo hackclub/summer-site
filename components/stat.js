@@ -16,7 +16,7 @@ const Stat = ({
     sx={{
       flexDirection: reversed ? 'column-reverse' : 'column',
       lineHeight: 1,
-      mb: 2,
+      mb: 2, 
       ...props.sx
     }}
   >
@@ -45,7 +45,7 @@ const Stat = ({
         sx={{
           color,
           fontSize: lg ? [5, 6, 7] : [4, 5, 6],
-          fontFamily: 'display',
+          fontFamily: 'Phantom Sans',
           fontWeight: 'heading',
           letterSpacing: 'title',
           my: 0
