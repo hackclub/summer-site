@@ -1,117 +1,36 @@
-import {
-  Badge,
-  Box,
-  Button,
-  Card,
-  Checkbox,
-  Container,
-  Flex,
-  Grid,
-  Heading,
-  Input,
-  Label,
-  Link,
-  NavLink,
-  Radio,
-  Select,
-  Slider,
-  Image,
-  Text,
-  Textarea
-} from 'theme-ui'
+import { Box, Button, Grid, Heading, Text } from 'theme-ui'
+import Icon from '@hackclub/icons'
+import Image from './imagecard'
 import Mention from './mentionAMA'
 
 export default () => (
-  <Box
-    as="header"
-    sx={{
-      position: 'relative',
-      overflow: 'hidden',
-      height: '75%',
-      clear: 'both'
-    }}
+  <Grid
+    as="section"
+    py={[4, 5]}
+    variant="layout.container"
+    columns={[null, null, 2]}
+    gap={[3, 4]}
   >
-    <Container>
-      <Grid columns={[null, null, 2]} gap={3} mt={[4, 5]} mb={[3, 4]}>
-        <Card
-          sx={{
-            backgroundSize: 'cover',
-            color: 'white',
-            clear: 'both',
-            backgroundPosition: 'center',
-            borderRadius: '20px',
-            mb: ['10px', '10px', null],
-            display: [null, null, 'none']
-          }}
-          p={[0]}
-        >
-          <Card
-            sx={{
-              backgroundImage: "url('https://i.imgur.com/QJcio5r.png')",
-              backgroundSize: 'cover',
-              color: 'white',
-              clear: 'both',
-              height: '420px',
-              width: '100%',
-              backgroundPosition: 'center',
-              borderTopLeftRadius: '20px',
-              borderTopRightRadius: '20px'
-            }}
-            p={[3, 4]}
-          ></Card>
-          <Text
-            sx={{
-              position: 'relative',
-              textAlign: 'center'
-            }}
-            p={[1, 2]}
-          >
-            Hack Night (Jul 26th)
-          </Text>
-        </Card>
-        <Card
-          sx={{
-            backgroundSize: 'cover',
-            clear: 'both',
-            background: 'none',
-            backgroundPosition: 'center',
-            textAlign: ['left', 'center', 'left']
-          }}
-          p={[0]}
-        >
-          <Heading>Finding new ways to</Heading>
-          <Heading as="h1" sx={{ fontSize: [6, 7, 7], mt: '-20px' }}>
-            connect
-          </Heading>
-          <Text
-            sx={{ fontSize: [2, 2, 3], width: ['100%', '100%', '85%'], mt: [] }}
-          >
-            Thanks to COVID-19, this summer was like no other with billions of
-            teenagers stuck at home. From treasure hunts to late night Zoom
-            hangouts to a mini hackathon, the community was filled with fun
-            events. Alongside events, the Slack served
-            as a global makerspace (open 24/7) where hackers could hangout.
-          </Text>
-          <br />
-          <Button variant="cta">Join the Slack</Button>
-        </Card>
-        
-          <Card
-            sx={{
-              backgroundImage: "url('https://cloud-59h42tfmp.vercel.app/qjcio5r-3-2.png')",
-              backgroundSize: 'cover',
-              color: 'white',
-              clear: 'both',
-              height: '420px',
-              width: '100%',
-              backgroundPosition: 'center',
-              borderTopLeftRadius: '20px',
-              borderTopRightRadius: '20px'
-            }}
-            p={[3, 4]}
-          ></Card>
-          
-      </Grid>
-    </Container>
-  </Box>
+    <Box sx={{ textAlign: ['left', 'center', 'left'] }}>
+      <Heading>Finding new ways to</Heading>
+      <Heading as="h1" sx={{ fontSize: [6, 7, 7], mt: -3 }}>
+        connect
+      </Heading>
+      <Text as="p" sx={{ fontSize: [2, 2, 3], mb: [3, 4] }}>
+        Thanks to COVID-19, this summer was like no other with billions of
+        teenagers stuck at home. From treasure hunts to late night Zoom hangouts
+        to a mini hackathon, the community was filled with fun events. Alongside
+        events, the Slack served as a global makerspace (open 24/7) where
+        hackers could hangout.
+      </Text>
+      <Button as="a" href="https://hackclub.com/slack/">
+        <Icon glyph="slack" />
+        Join the Slack →
+      </Button>
+    </Box>
+    <Image
+      url="https://cloud-3hv9rbzjd.vercel.app/2020-08-30_27kycym0vumu57gncfgj0dckpkqf4t3t.jpeg"
+      content="Hack Night (Jul 26th)"
+    />
+  </Grid>
 )

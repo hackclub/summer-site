@@ -1,13 +1,7 @@
 // Credit to https://github.com/vercel/next.js/blob/canary/examples/with-mux-video/components/video-player.js
 import { useEffect, useRef } from 'react'
 import Hls from 'hls.js'
-const VisibilitySensor = require('react-visibility-sensor');
-
-function onChange (isVisible) {
-  if(isVisible){
-
-  }
-}
+// import VisibilitySensor from 'react-visibility-sensor'
 
 const Video = ({ mux, ...props }) => {
   const videoRef = useRef(null)
@@ -48,6 +42,7 @@ const Video = ({ mux, ...props }) => {
       id={mux}
       loop
       autoPlay
+      playsInline
       muted
       controls
       preload="metadata"

@@ -17,7 +17,7 @@ import Thanks from '../components/recap/thankyou'
 import Intro from '../components/recap/intro'
 import HardwareIntro from '../components/recap/hardware-intro'
 import ScrapbookIntro from '../components/recap/scrapbook-intro'
-import Footer from '../components/recap/footer'
+import Footer from '../components/footer'
 
 export default () => (
   <>
