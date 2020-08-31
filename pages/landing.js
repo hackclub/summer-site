@@ -22,6 +22,9 @@ import Posts from '../components/posts'
 import Hardware from '../components/hardware'
 import Slack from '../components/slack'
 
+import t from '@hackclub/theme'
+const { util } = t
+
 const Collab = ({ img, alt, url }) => (
   <A href={url} target="_blank" sx={{ display: 'block', mx: 3, mb: [3, 4] }}>
     <Image src={img} alt={alt} sx={{ maxWidth: 224, maxHeight: 84 }} />
@@ -69,9 +72,9 @@ export default ({ scraps, images }) => (
           Free hardware from GitHub.
         </Heading>
         <Text as="p" variant="subtitle">
-        GitHub sponsored $50k worth of hardware grants for student makers,
-           alongside support from Adafruit & Arduino. (Applications are now
-           closed.)
+          GitHub sponsored $50k worth of hardware grants for student makers,
+          alongside support from Adafruit & Arduino. (Applications are now
+          closed.)
         </Text>
       </Container>
       <Box
@@ -119,7 +122,7 @@ export default ({ scraps, images }) => (
             as="a"
             variant="cta"
             href="https://scrapbook.hackclub.com/"
-            sx={{ backgroundImage: t => t.util.gx('pink', 'orange') }}
+            sx={{ backgroundImage: util.gx('pink', 'orange') }}
           >
             See what everyone’s making
           </Button>
@@ -174,10 +177,7 @@ export default ({ scraps, images }) => (
       as="section"
       sx={{
         bg: 'purple',
-        backgroundImage: t => [
-          t.util.gx('blue', 'purple'),
-          t.util.gx('pink', 'orange')
-        ],
+        backgroundImage: [util.gx('blue', 'purple'), util.gx('pink', 'orange')],
         color: 'white',
         py: [4, 5]
       }}
@@ -207,7 +207,7 @@ export default ({ scraps, images }) => (
             <Heading as="h3" variant="headline" color="white">
               Show up with daily updates.
             </Heading>
-            <Text as="p" variant="subtitle" >
+            <Text as="p" variant="subtitle">
               Share daily updates of your learning in a beautiful portfolio with
               your own CSS—and build up a streak.
             </Text>
