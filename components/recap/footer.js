@@ -5,7 +5,8 @@ import Footer from '../footer'
 const Credit = () => (
   <Box sx={{ a: { color: 'orange' }, pb: 4 }}>
     <Heading as="h3" variant="subheadline" mb={2}>
-      A project by <a href="https://hackclub.com/">Hack Club</a>.
+      <a href="/landing"> ⏮</a> A project by{' '}
+      <a href="https://hackclub.com/">Hack Club</a>.
     </Heading>
     <Text as="p" variant="caption" mb={3} sx={{ width: ['85%', '75%', '60%'] }}>
       Thank you: Sam Poder, Lachlan Campbell, Zach Latta, Roshan Palakkal, Neel
@@ -15,11 +16,7 @@ const Credit = () => (
     </Text>
     <Text as="p" variant="caption" mb={1}>
       Recap site by <a href="https://sampoder.com/">@sampoder</a>. Always{' '}
-      <a href="https://github.com/hackclub/summer-site">open source</a>.{' '}
-      <Link href="/landing">
-        <a>Original site</a>
-      </Link>{' '}
-      by <a href="https://lachlanjc.com/">@lachlanjc</a>.
+      <a href="https://github.com/hackclub/summer-site">open source</a>.
     </Text>
   </Box>
 )
