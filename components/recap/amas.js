@@ -44,6 +44,8 @@ export default () => (
       >
         <Image
           src="https://cloud-8be4hh8an.vercel.app/limor-fried-600x600-2-2.jpg"
+          loading="lazy"
+          alt="Limor Fried"
           style={{ borderRadius: '10px' }}
         />
         <p
@@ -61,13 +63,15 @@ export default () => (
         </p>
       </Card>
       <Card
-        style={{ position: 'relative', height: '200px', background: 'none' }}
+        style={{ height: '200px', bg: 'none' }}
         as="a"
         href="https://www.youtube.com/watch?v=fDKYjX37cbo"
         variant="interactive"
       >
         <Image
-          src="https://cloud-b3z9crw81.vercel.app/4946a9bca0943aa959cb6c8b72c0cc17-2.png"
+          src="https://cloud-qhfqp5xvu.vercel.app/2020-08-31_9p70chuf0mgb95ujqe8hb8p9va29vpj0.png"
+          loading="lazy"
+          alt="Dylan Field"
           style={{ borderRadius: '10px' }}
         />
         <p
@@ -92,6 +96,8 @@ export default () => (
       >
         <Image
           src="https://cloud-lrygi0a7b.vercel.app/tommy-devoss_trans__nwjyn5afh1f8m-ugcq32yesxdvobhlbzzp-a_kknc4m-2.jpg"
+          loading="lazy"
+          alt="Tommy DeVoss"
           style={{ borderRadius: '10px' }}
         />
         <p
@@ -116,6 +122,8 @@ export default () => (
       >
         <Image
           src="https://dl.airtable.com/.attachmentThumbnails/df51be717dd8e09204ec23b27336f4a7/acff2db0"
+          loading="lazy"
+          alt="Alex Stamos"
           style={{ borderRadius: '10px' }}
         />
         <p
@@ -140,6 +148,8 @@ export default () => (
       >
         <Image
           src="https://cloud-n74ym17dx.vercel.app/540px-nicky_case_-_game_developers_conference_2019_-_03.jpg"
+          loading="lazy"
+          alt="Nicky Case"
           style={{ borderRadius: '10px' }}
         />
         <p

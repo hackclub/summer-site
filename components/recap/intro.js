@@ -1,8 +1,4 @@
-import React from 'react'
-import styled from '@emotion/styled'
 import { Box, Container, Image, Grid, Heading, Link, Text } from 'theme-ui'
-import theme from '@hackclub/theme'
-import Icon from '../icon'
 
 export default () => (
   <Container

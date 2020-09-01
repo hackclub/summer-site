@@ -30,7 +30,7 @@ export default () => (
     </Box>
     <Image
       url="https://cloud-3hv9rbzjd.vercel.app/2020-08-30_27kycym0vumu57gncfgj0dckpkqf4t3t.jpeg"
-      content="Hack Night (Jul 26th)"
+      content="Mini-AMA with Max Stoiber, July 15"
     />
   </Grid>
 )

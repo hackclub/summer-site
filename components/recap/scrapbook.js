@@ -47,17 +47,17 @@ export default () => (
         <ImageCard
           content="Made by"
           mention="austin"
-          url="https://dl.airtable.com/.attachmentThumbnails/169f54f04aa5f292dc8fd2dbc99493ee/a7a1ce23"
+          url="https://cloud-kcog3qz8z.vercel.app/2020-08-31_0uunxvj3c33xvzy5m0farwq6a2e153tu.png"
         />
         <ImageCard
           content="Taken by"
           mention="rishi"
-          url="https://dl.airtable.com/.attachmentThumbnails/eaf99a91323fd7d2cd06fea92f5fee16/60cacb4b"
+          url="https://cloud-hzo68gbaf.vercel.app/2020-08-31_gr1dzcvwjkwzxqjrrpnqv4q63w7fkedk.png"
         />
         <ImageCard
           content="Made by"
           mention="lskaling"
-          url="https://dl.airtable.com/.attachmentThumbnails/22cf4e8d252cdfd8000d9c36690f714d/35ebbc64"
+          url="https://cloud-89yy3g1be.vercel.app/2020-08-31_8r3f8r82cpcvnumu6xvx2ncbh364aw9d.png"
         />
       </Grid>
       <Grid columns={[2, 3, 6]} gap={1} sx={{ textAlign: 'center' }}>

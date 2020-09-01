@@ -20,6 +20,7 @@ export default ({ content, url, mention, aftercontent }) => (
   >
     <Image
       src={url}
+      loading="lazy"
       alt={[content, mention, aftercontent].filter(n => !isEmpty(n)).join(' ')}
       sx={{
         objectPosition: 'center',

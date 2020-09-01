@@ -1,52 +1,16 @@
-import {
-  Badge,
-  Box,
-  Button,
-  Card,
-  Checkbox,
-  Container,
-  Flex,
-  Grid,
-  Heading,
-  Input,
-  Label,
-  Link,
-  NavLink,
-  Radio,
-  Select,
-  Slider,
-  Image,
-  Text,
-  Textarea
-} from 'theme-ui'
-import ColorSwitcher from '../color-switcher'
+import { Box, Image } from 'theme-ui'
 
 export default () => (
-  <Box
-    as="header"
-    sx={{
-      color: 'white',
-      position: 'relative',
-      overflow: 'hidden',
-      height: '75%',
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: '100%',
-      backgroundColor: '#5bc0de',
-      clear: 'both'
-    }}
-  >
-
+  <Box as="header" sx={{ bg: '#5bc0de', pt: 5, pb: 3 }}>
     <Image
-      alt="Large banner with icons representing summer and text saying Summer of Making. Colourful."
-      src="https://cloud-bb2ask6b1.vercel.app/ajzkvsf-2-2.png"
+      alt="Colorful banner with icons representing summer saying Summer of Making"
+      src="https://cloud-ojx6pu56d.vercel.app/2020-08-31_99x9nb7jy2ujuh4af097wqw5w5dcmt7w.png"
       sx={{
-        mt: [5, '80px'],
-        mb: [3, 4],
         objectFit: 'cover',
-        minHeight: ['130px','200px','200px'],
-        maxHeight: '400px'
+        minHeight: ['130px', '200px', '200px'],
+        maxHeight: '400px',
+        pt: 3
       }}
     />
   </Box>
 )
-
