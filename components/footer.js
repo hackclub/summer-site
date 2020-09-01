@@ -49,7 +49,7 @@ const Service = ({ href, icon, ...props }) => (
 const Credit = () => (
   <Box sx={{ a: { color: 'orange' }, pb: 4 }}>
     <Heading as="h3" variant="subheadline" mb={2}>
-      <a href="/prelaunch"> ⏮</a> A project by{' '}
+      <a href="https://summer.hackclub.com/prelaunch"> ⏮</a> A project by{' '}
       <a href="https://hackclub.com/">Hack Club</a>.
     </Heading>
     <Text as="p" variant="caption" mb={3} sx={{ width: ['85%', '75%', '60%'] }}>

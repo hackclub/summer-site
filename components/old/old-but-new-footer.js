@@ -4,7 +4,7 @@ export default () => (
   <Box as="footer" sx={{ py: [4, 5], a: { color: 'orange' } }}>
     <Container>
       <Heading as="h3" variant="subheadline" mb={2}>
-        <a href="/super-og"> ⏮</a> A project by{' '}
+        <a href="https://summer.hackclub.com/super-og"> ⏮</a> A project by{' '}
         <a href="https://hackclub.com/">Hack Club</a>.
       </Heading>
       <Text
