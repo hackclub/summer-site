@@ -15,7 +15,7 @@ const AMA = ({ name, href, src }) => (
       lineHeight: 0
     }}
   >
-    <Image src={src} alt={name} loading="lazy" sx={{ height: '100%' }} />
+    <Image src={src} alt={name} loading="lazy" sx={{ height: 'auto' }} />
     <Text
       as="p"
       sx={{
