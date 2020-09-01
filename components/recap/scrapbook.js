@@ -47,17 +47,17 @@ export default () => (
         <ImageCard
           content="Made by"
           mention="austin"
-          url="https://cloud-kcog3qz8z.vercel.app/2020-08-31_0uunxvj3c33xvzy5m0farwq6a2e153tu.png"
+          url="https://cloud-phhtxfxge.vercel.app/2020-08-31_0xzgt3dffnk7bxbqrfnh3jm298q3r8au.png"
         />
         <ImageCard
           content="Taken by"
           mention="rishi"
-          url="https://cloud-hzo68gbaf.vercel.app/2020-08-31_gr1dzcvwjkwzxqjrrpnqv4q63w7fkedk.png"
+          url="https://cloud-cnh98g99z.vercel.app/2020-08-31_ntpge5m4h8419pt8phz7hk55rwzvvh9x.png"
         />
         <ImageCard
           content="Made by"
           mention="lskaling"
-          url="https://cloud-89yy3g1be.vercel.app/2020-08-31_8r3f8r82cpcvnumu6xvx2ncbh364aw9d.png"
+          url="https://cloud-ikt7dd0jq.vercel.app/2020-08-31_ujnfuhdp3k51vnjrauxw04eq7437ht8c.png"
         />
       </Grid>
       <Grid columns={[2, 3, 6]} gap={1} sx={{ textAlign: 'center' }}>

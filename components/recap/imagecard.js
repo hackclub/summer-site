@@ -41,7 +41,9 @@ export default ({ content, url, mention, aftercontent }) => (
         pb: [1, 2]
       }}
     >
-      {content} {mention && <Mention username={mention} />} {aftercontent}
+      {content}
+      {mention && <Mention username={mention} />}
+      {aftercontent}
     </Text>
   </Card>
 )

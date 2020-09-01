@@ -1,19 +1,10 @@
-import {
-  Box,
-  Card,
-  Container,
-  Flex,
-  Grid,
-  Heading,
-  Link,
-  Image,
-  Text
-} from 'theme-ui'
+import { Box, Card, Container, Grid, Heading, Text } from 'theme-ui'
 import Mention from '../mention'
+import Image from './imagecard'
 
 export default () => (
   <Box
-    as="header"
+    as="section"
     sx={{
       py: [4, 5],
       color: 'white',
@@ -48,96 +39,21 @@ export default () => (
           mb={[3, 4]}
           color="white"
         >
-          <Card
-            sx={{
-              borderRadius: '20px',
-              overflow: 'hidden',
-              boxShadow:
-                '0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)',
-              transition:
-                'transform .125s ease-in-out, box-shadow .125s ease-in-out',
-              ':hover,:focus': {
-                transform: 'scale(1.0625)'
-              }
-            }}
-            p={[0]}
-          >
-            <Card
-              sx={{
-                backgroundImage:
-                  "url('https://dl.airtable.com/.attachmentThumbnails/734b97f53ea8e220d8cdae14889d07a0/eb1ec9d7')",
-                backgroundPosition: 'center',
-                backgroundSize: 'cover',
-                height: '400px',
-                width: '100%'
-              }}
-              p={[3, 4]}
-            />
-            <Text p={[1, 2]}>
-              <Mention username="nikhiljose" />
-              ’s package
-            </Text>
-          </Card>
-          <Card
-            sx={{
-              borderRadius: '20px',
-              overflow: 'hidden',
-              boxShadow:
-                '0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)',
-              transition:
-                'transform .125s ease-in-out, box-shadow .125s ease-in-out',
-              ':hover,:focus': {
-                transform: 'scale(1.0625)'
-              }
-            }}
-            p={[0]}
-          >
-            <Card
-              sx={{
-                backgroundImage:
-                  "url('https://dl.airtable.com/.attachmentThumbnails/f7b5c52f36d4b8ae87a453e6ca9ba66d/e5c86c96')",
-                backgroundPosition: 'center',
-                backgroundSize: 'cover',
-                height: '400px',
-                width: '100%'
-              }}
-              p={[3, 4]}
-            />
-            <Text p={[1, 2]}>
-              <Mention username="dinaelhanan" key="dinaelhanani" />
-              ’s package
-            </Text>
-          </Card>
-          <Card
-            sx={{
-              overflow: 'hidden',
-              borderRadius: '20px',
-              boxShadow:
-                '0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)',
-              transition:
-                'transform .125s ease-in-out, box-shadow .125s ease-in-out',
-              ':hover,:focus': {
-                transform: 'scale(1.0625)'
-              }
-            }}
-            p={[0]}
-          >
-            <Card
-              sx={{
-                backgroundImage:
-                  "url('https://dl.airtable.com/.attachmentThumbnails/71051472c4c75d3be2db6fc4324fc3ca/36873df8')",
-                backgroundPosition: 'center',
-                backgroundSize: 'cover',
-                height: '400px',
-                width: '100%'
-              }}
-              p={[3, 4]}
-            />
-            <Text p={[1, 2]}>
-              <Mention username="blucashbaugh" key="blucashbaughi" />
-              ’s package
-            </Text>
-          </Card>
+          <Image
+            mention="nikhiljose"
+            aftercontent="’s package"
+            url="https://cloud-liqd6vevy.vercel.app/2020-08-31_zh7w9kq9n8p7cbwznarrr06f2m77mvav.png"
+          />
+          <Image
+            mention="blucashbaugh"
+            aftercontent="’s package"
+            url="https://cloud-56n7wxiuz.vercel.app/2020-08-31_ujnm8wfhvjaw9e9ceqdjz9vf1n6k5203.png"
+          />
+          <Image
+            mention="dinaelhanan"
+            aftercontent="’s package"
+            url="https://cloud-rdtss80ch.vercel.app/2020-08-31_5xe3z8akcda73annhkzga1ehe1zeqygz.png"
+          />
         </Grid>
         <Grid columns={[2, 3, 6]} gap={1}>
           <Text>

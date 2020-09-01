@@ -13,7 +13,11 @@ export default () => (
   >
     <Text as="p" sx={{ fontSize: '24px' }}>
       As part of Summer of Making we built{' '}
-      <Link color="orange" href="https://scrapbook.hackclub.com">
+      <Link
+        color="orange"
+        href="https://scrapbook.hackclub.com"
+        sx={{ textDecoration: 'none' }}
+      >
         Scrapbook
       </Link>
       . The idea:{' '}
