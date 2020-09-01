@@ -45,17 +45,17 @@ export default () => (
       </Container>
       <Grid columns={[null, 2, 3]} gap={3} py={[3, 4]}>
         <ImageCard
-          content="Made by"
+          content="Made by "
           mention="austin"
           url="https://cloud-phhtxfxge.vercel.app/2020-08-31_0xzgt3dffnk7bxbqrfnh3jm298q3r8au.png"
         />
         <ImageCard
-          content="Taken by"
+          content="Taken by "
           mention="rishi"
           url="https://cloud-cnh98g99z.vercel.app/2020-08-31_ntpge5m4h8419pt8phz7hk55rwzvvh9x.png"
         />
         <ImageCard
-          content="Made by"
+          content="Made by "
           mention="lskaling"
           url="https://cloud-ikt7dd0jq.vercel.app/2020-08-31_ujnfuhdp3k51vnjrauxw04eq7437ht8c.png"
         />
