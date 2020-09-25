@@ -21,4 +21,4 @@ It's a strange time. So why not make something?
 
 ---
 
-By [@lachlanjc](https://lachlanjc.com) for Hack Club, 2020. MIT License.
+By [@sampoder](https://github.com/sampoder) & [@lachlanjc](https://lachlanjc.com) for Hack Club, 2020. MIT License.
