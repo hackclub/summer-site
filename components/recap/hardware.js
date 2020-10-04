@@ -58,7 +58,7 @@ export default () => (
         <Grid columns={[2, 3, 6]} gap={1}>
           <Text>
             <Heading as="h1" sx={{ fontSize: 6 }}>
-              268
+              300
             </Heading>
             Makers Supported
           </Text>
