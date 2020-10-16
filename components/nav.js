@@ -237,7 +237,6 @@ class Header extends Component {
           <ToggleContainer color={toggleColor} onClick={this.handleToggleMenu}>
             <Icon glyph={toggled ? 'view-close' : 'menu'} />
           </ToggleContainer>
-          <NavMention username='sampoder' scrolled={scrolled || fixed}/>
         </Content>
         <Navigation
           as="nav"
