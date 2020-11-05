@@ -28,9 +28,8 @@ export default () => (
       updates go into a Slack channel. Through a Slack bot, an Airtable, & a
       Next.js website making everything browsable, we made a site{' '}
       <span className="highlight">
-        full of amazing things built this summer
+        full of amazing things built this summer.
       </span>
-      .
     </Text>
   </Container>
 )
