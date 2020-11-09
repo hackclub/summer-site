@@ -5,6 +5,7 @@ const AMA = ({ name, href, src }) => (
   <Card
     as="a"
     href={href}
+    target="_blank"
     variant="interactive"
     sx={{
       position: 'relative',
@@ -88,7 +89,7 @@ export default () => (
       as="a"
       href="https://www.youtube.com/channel/UCQzO0jpcRkP-9eWKMpJyB0w"
     >
-      Watch more on YouTube →
+      Watch them on YouTube →
     </Button>
   </Box>
 )
