@@ -7,7 +7,7 @@ export default () => (
       <Box className="ledborder">
         <Heading>Using hardware to</Heading>
         <Heading as="h1" sx={{ fontSize: [6, 7, 7], fontFamily: 'display' }}>
-          have <span className="ledHoverEffect">fun</span>
+          have <span className="ledHoverEffect">fun</span> 😎
         </Heading>
         <Text
           sx={{ fontSize: [2, 2, 3], width: ['100%', '100%', '85%'], mt: [2] }}

@@ -7,7 +7,7 @@ export default () => (
       <Box>
         <Heading>Using hardware to store</Heading>
         <Heading as="h1" sx={{ fontSize: [6, 7, 7], fontFamily: 'display' }}>
-          memories
+          memories 📸
         </Heading>
         <Text
           sx={{

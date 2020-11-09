@@ -14,8 +14,8 @@ export default () => (
     <Box sx={{ textAlign: ['left', 'center', 'left'] }}>
       <Heading>Finding new ways to</Heading>
       <Heading as="h1" sx={{ fontSize: [6, 7], mt: -2, fontFamily: 'display' }}>
-        connect
-      </Heading>
+        connect 📹
+      </Heading> 
       <Text as="p" sx={{ fontSize: [2, 2, 3], mb: [3, 4] }}>
         Thanks to COVID-19, this summer was like no other with so many teenagers
         stuck at home. From treasure hunts to late night Zoom hangouts to a mini

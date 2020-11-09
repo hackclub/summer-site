@@ -77,7 +77,7 @@ const Cover = () => (
       top: 0,
       left: 0,
       right: 0,
-      opacity: 0.75,
+      opacity: 0.9,
       zIndex: 0,
       backgroundImage:
         'radial-gradient(at left top,rgba(247,255,0,0.66),rgb(0,255,255,0.66))'

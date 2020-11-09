@@ -15,7 +15,7 @@ const Credit = () => (
       Melody & Christina Asquith.
     </Text>
     <Text as="p" variant="caption" mb={1}>
-      Recap site by <a href="https://sampoder.com/">@sampoder</a>. Always{' '}
+      Recap site made with ☀️💖 by <a href="https://sampoder.com/">@sampoder</a>. Always{' '}
       <a href="https://github.com/hackclub/summer-site">open source</a>.
     </Text>
   </Box>

@@ -19,7 +19,7 @@ export default () => (
       <Box sx={{ color: 'white' }}>
         <Heading>Using hardware to make</Heading>
         <Heading as="h1" sx={{ fontSize: [6, 7, 7], fontFamily: 'display' }}>
-          fire beats
+          fire beats 🎶
         </Heading>
         <Text
           sx={{
