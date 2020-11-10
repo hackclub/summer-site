@@ -42,7 +42,7 @@ export default () => (
       </Heading>
       <Button
         as="a"
-        href="https://events.hackclub.com/arts-gala"
+        href="https://arts-gala.hackclub.dev"
         sx={{ color: 'white', mt: 3 }}
       >
         Explore the gala →
