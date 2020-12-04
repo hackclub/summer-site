@@ -196,11 +196,11 @@ export default () => {
         }}
       >
         <Container>
-          <Icon glyph="idea" size={72} />
+          <Icon glyph="idea" size={72} sx={{ marginTop: '100px' }} />
           <Heading
             as="h1"
             variant="title"
-            sx={{ fontSize: [5, 6, 7], my: [3, 4] }}
+            sx={{ fontSize: [5, 6, 7], my: [3, 4], letterSpacing: '2px' }}
             children={text}
           />
           <Flex
