@@ -195,7 +195,7 @@ export default () => {
           textAlign: 'center'
         }}
       >
-        <Container>
+        <Container sx={{ textAlign: 'center' }}>
           <Icon glyph="idea" size={72} sx={{ marginTop: '100px' }} />
           <Heading
             as="h1"
