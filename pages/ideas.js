@@ -182,7 +182,7 @@ export default () => {
       />
       <FullHeight
         as={Box}
-        sx={{
+        style={{
           minHeight: '100vh',
           width: '100%',
           bg: 'cyan',
