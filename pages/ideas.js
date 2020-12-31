@@ -200,7 +200,7 @@ export default () => {
           <Heading
             as="h1"
             variant="title"
-            sx={{ fontSize: [5, 6, 7], my: [3, 4], letterSpacing: '2px' }}
+            sx={{ fontSize: [5, 6, 7], my: [3, 4], letterSpacing: '2px', textAlign: 'center' }}
             children={text}
           />
           <Flex
