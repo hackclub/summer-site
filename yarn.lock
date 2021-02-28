@@ -3776,10 +3776,10 @@ he@1.1.1:
   resolved "https://registry.yarnpkg.com/he/-/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
   integrity sha1-k0EP0hsAlzUVH4howvJx80J+I/0=
 
-hls.js@^0.14.10:
-  version "0.14.10"
-  resolved "https://registry.yarnpkg.com/hls.js/-/hls.js-0.14.10.tgz#51365ecc2764066e6b4379587aee64c1e181f683"
-  integrity sha512-muBt5Gxhapgk2uV8aEKRYe9GJ6AI5niFfDuOd8ZXHga519RNJ0+QAeRPdEpl1QKMqj1lT/6r/WKVnLL+ePB6ow==
+hls.js@^0.14.17:
+  version "0.14.17"
+  resolved "https://registry.yarnpkg.com/hls.js/-/hls.js-0.14.17.tgz#0127cff2ec2f994a54eb955fe669ef6153a8e317"
+  integrity sha512-25A7+m6qqp6UVkuzUQ//VVh2EEOPYlOBg32ypr34bcPO7liBMOkKFvbjbCBfiPAOTA/7BSx1Dujft3Th57WyFg==
   dependencies:
     eventemitter3 "^4.0.3"
     url-toolkit "^2.1.6"
