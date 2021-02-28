@@ -5,7 +5,7 @@ import Footer from '../footer'
 const Credit = () => (
   <Box sx={{ a: { color: 'orange' }, pb: 4 }}>
     <Heading as="h3" variant="subheadline" mb={2}>
-      <a href="https://summer.hackclub.com/landing"> ⏮</a> A project by{' '}
+      <a href="https://summer.hackclub.com/landing" title="Rewind back to the main landing page."> ⏮</a> A project by{' '}
       <a href="https://hackclub.com/">Hack Club</a>.
     </Heading>
     <Text as="p" variant="caption" mb={3} sx={{ width: ['85%', '75%', '60%'] }}>
