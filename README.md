@@ -17,7 +17,7 @@ At Hack Club, we're going to do everything we can to support you. There are four
 3. **Show up every day in** [**#scrapbook**](https://hackclub.slack.com/archives/C01504DCLVD), sharing photo and video updates from your learning and getting a beautiful portfolio. See the in-progress projects at [**scrapbook.hackclub.com**](https://scrapbook.hackclub.com/) ([see Zach's](https://scrapbook.hackclub.com/zrl/)). You can even customize your CSS and set up a custom domain.
 4. **Weekly Zoom events shared in** [**#announcements**](https://hackclub.slack.com/archives/C0266FRGT): All summer, [Melody](https://hack.af/som-melody) & others from the Hack Club team are running weekly live events, including coding workshops, show & tells, office hours, how to customize your [scrapbook](https://hack.af/som-scrapbook) with custom CSS, and more. [Log on to the Hack Club Slack to participate.](https://hack.af/som-slack/)
 
-It's a strange time. So why not make something?
+It's a strange time. So why not make something? (*Thu, Jun 18, 2020*)
 
 ---
 
