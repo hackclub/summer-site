@@ -21,7 +21,7 @@
     "lodash": "^4.17.20",
     "next": "^10.0.7",
     "react": "^16.14.0",
-    "react-div-100vh": "^0.5.0",
+    "react-div-100vh": "^0.5.6",
     "react-dom": "^16.13.1",
     "react-lazy-images": "^1.1.0",
     "react-lazyload": "^3.2.0",
