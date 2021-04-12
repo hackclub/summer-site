@@ -2494,10 +2494,10 @@ raw-body@2.4.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-div-100vh@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/react-div-100vh/-/react-div-100vh-0.5.0.tgz#493c5fc3a5dd49b92232f91464c6e2129246eb2e"
-  integrity sha512-2qEYAS83bfHPmzvucMbtCugSiDou4XG6zZZBkF53o5n3Ce1/Zpn6SJxsmCNq8TSb8yInxqjvIwf/yIsoLypVfA==
+react-div-100vh@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/react-div-100vh/-/react-div-100vh-0.6.0.tgz#577972d8ac17693edcd44061c1a4b5a7578e49ec"
+  integrity sha512-ErV0VTNXUd8jZqofC0ExZr5u+XDD2kN2te4SbwtqsyTm0UOjVYu53kP+FalGQrTe+DoMG8VYR2dITcAFu7c/5w==
 
 react-dom@^16.14.0:
   version "16.14.0"
