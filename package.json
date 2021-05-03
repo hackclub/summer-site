@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.13.16",
+    "@emotion/core": "^11.0.0",
     "@hackclub/icons": "^0.0.3",
     "@hackclub/meta": "^1.1.0",
     "@hackclub/theme": "^0.3.1",
