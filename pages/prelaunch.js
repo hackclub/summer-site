@@ -13,7 +13,7 @@ import {
   Link as A
 } from 'theme-ui'
 import Footer from '../components/old/old-but-new-footer'
-import { keyframes } from '@emotion/core'
+import { keyframes } from '@emotion/react'
 import Head from 'next/head'
 import Meta from '@hackclub/meta'
 import Nav from '../components/old/nav'
