@@ -10,7 +10,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@babel/core": "^7.14.6",
+    "@babel/core": "^7.15.0",
     "@emotion/core": "^11.0.0",
     "@hackclub/icons": "^0.0.3",
     "@hackclub/meta": "^1.1.0",
