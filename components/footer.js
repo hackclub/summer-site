@@ -119,7 +119,7 @@ const Footer = ({ dark = false, children = <Credit />, ...props }) => (
           <Link href="https://events.hackclub.com/" children="Events" />
           <Link href="https://workshops.hackclub.com/" children="Workshops" />
           <Link href="https://hackathons.hackclub.com/" children="Hackathons" />
-          <Link href="https://hackclub.com/bank/" children="Bank" />
+          <Link href="https://hackclub.com/hcb/" children="Fiscal Sponsorship" />
           <Link href="https://hackclub.com/map/" children="Clubs Map" />
         </Box>
         <Box
