@@ -75,7 +75,7 @@ export default () => (
         name="Tommy DeVoss"
       />
       <AMA
-        src="https://dl.airtable.com/.attachmentThumbnails/df51be717dd8e09204ec23b27336f4a7/acff2db0"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmEbZYfGIoDH7e_8vwEWJbc0Dq7GRrLxK6cQ&s"
         href="https://www.youtube.com/watch?v=thXsjHVcxx4"
         name="Alex Stamos"
       />
