@@ -18,7 +18,7 @@ export default () => (
       py={[4, 5]}
     >
       <Image
-        url="https://cloud-4dmacf3kw.vercel.app/2020-08-31_hnfp7f3b3ajgfcxqbp0c3g3z8ayv92b1.jpeg"
+        url="https://cdn.hackclub.com/019d441c-eb12-77fc-a79b-5dea934328f4/2020-08-31_hnfp7f3b3ajgfcxqbp0c3g3z8ayv92b1.jpeg"
         content="Ellen’s Raspberry Pi creation"
       />
       <Box>

@@ -42,17 +42,17 @@ export default () => (
           <Image
             mention="nikhiljose"
             aftercontent="’s package"
-            url="https://cloud-liqd6vevy.vercel.app/2020-08-31_zh7w9kq9n8p7cbwznarrr06f2m77mvav.png"
+            url="https://cdn.hackclub.com/019d441d-ff8c-7e76-bd63-e7ec03db88fc/2020-08-31_zh7w9kq9n8p7cbwznarrr06f2m77mvav.png"
           />
           <Image
             mention="blucashbaugh"
             aftercontent="’s package"
-            url="https://cloud-56n7wxiuz.vercel.app/2020-08-31_ujnm8wfhvjaw9e9ceqdjz9vf1n6k5203.png"
+            url="https://cdn.hackclub.com/019d441f-2ae4-7a39-bb4c-930e4822dbaa/2020-08-31_ujnm8wfhvjaw9e9ceqdjz9vf1n6k5203.png"
           />
           <Image
             mention="dinaelhanan"
             aftercontent="’s package"
-            url="https://cloud-rdtss80ch.vercel.app/2020-08-31_5xe3z8akcda73annhkzga1ehe1zeqygz.png"
+            url="https://cdn.hackclub.com/019d441f-dcd2-74ed-9cb2-29e315f52fe4/2020-08-31_5xe3z8akcda73annhkzga1ehe1zeqygz.png"
           />
         </Grid>
         <Grid columns={[2, 3, 6]} gap={1}>

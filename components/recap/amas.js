@@ -61,27 +61,27 @@ export default () => (
     >
       <AMA
         name="Limor Fried"
-        src="https://cloud-8be4hh8an.vercel.app/limor-fried-600x600-2-2.jpg"
+        src="https://cdn.hackclub.com/019d4420-d602-7578-b644-3433cd299d46/limor-fried-600x600-2-2%20(1).jpg"
         href="https://www.youtube.com/watch?v=IWFtj9cCaB0"
       />
       <AMA
         name="Dylan Field"
         href="https://www.youtube.com/watch?v=fDKYjX37cbo"
-        src="https://cloud-qhfqp5xvu.vercel.app/2020-08-31_9p70chuf0mgb95ujqe8hb8p9va29vpj0.png"
+        src="https://cdn.hackclub.com/019d4422-c165-7395-a073-bd49dee99509/2020-08-31_9p70chuf0mgb95ujqe8hb8p9va29vpj0.png"
       />
       <AMA
-        src="https://cloud-lrygi0a7b.vercel.app/tommy-devoss_trans__nwjyn5afh1f8m-ugcq32yesxdvobhlbzzp-a_kknc4m-2.jpg"
+        src="https://cdn.hackclub.com/019d4421-e974-7e2a-a003-ba54b0ecb97c/tommy-devoss_trans__nwjyn5afh1f8m-ugcq32yesxdvobhlbzzp-a_kknc4m-2%20(1).jpg"
         href="https://www.youtube.com/watch?v=tDtBCcLJ2xU"
         name="Tommy DeVoss"
       />
       <AMA
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmEbZYfGIoDH7e_8vwEWJbc0Dq7GRrLxK6cQ&s"
+        src="https://cdn.hackclub.com/019d4422-3b79-7bd0-900f-02133202933b/images.jpeg"
         href="https://www.youtube.com/watch?v=thXsjHVcxx4"
         name="Alex Stamos"
       />
       <AMA
         href="https://www.youtube.com/watch?v=KKEYTSUvsS8"
-        src="https://cloud-n74ym17dx.vercel.app/540px-nicky_case_-_game_developers_conference_2019_-_03.jpg"
+        src="https://cdn.hackclub.com/019d4422-8016-7d3f-9ce2-9382a9782d68/540px-nicky_case_-_game_developers_conference_2019_-_03.webp"
         name="Nicky Case"
       />
     </Grid>

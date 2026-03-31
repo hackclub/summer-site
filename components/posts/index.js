@@ -5,6 +5,7 @@ import { last, filter } from 'lodash'
 import Masonry from 'react-masonry-css'
 import Mention from './mention'
 import Emoji from './emoji'
+import { gx } from '../../lib/gradients'
 
 const dataDetector = /(<.+?\|?\S+>)|(@\S+)|(`{3}[\S\s]+`{3})|(`[^`]+`)|(_[^_]+_)|(\*[^\*]+\*)|(:[^:\s]{2,24}:)/
 
@@ -121,7 +122,7 @@ const Posts = ({ data = [] }) => (
   <Box
     as="section"
     sx={{
-      backgroundImage: t => t.util.gx('pink', 'orange'),
+      backgroundImage: gx('pink', 'orange'),
       display: ['none', 'block'],
       position: 'relative'
     }}

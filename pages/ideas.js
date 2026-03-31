@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Container, Heading, Box, Flex, Link as A, Button } from 'theme-ui'
+import { gx } from '../lib/gradients'
 import { random } from 'lodash'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -150,7 +151,7 @@ export default () => {
           sx={{ display: 'flex', alignItems: 'center', position: 'relative' }}
         >
           <Flag />
-          <Link href="/" passHref>
+          <Link href="/" legacyBehavior passHref>
             <A
               sx={{
                 fontSize: 2,
@@ -186,7 +187,7 @@ export default () => {
           minHeight: '100vh',
           width: '100%',
           bg: 'cyan',
-          backgroundImage: t => t.util.gx('yellow', 'cyan'),
+          backgroundImage: gx('yellow', 'cyan'),
           color: 'black',
           display: 'flex',
           flexDirection: 'column',

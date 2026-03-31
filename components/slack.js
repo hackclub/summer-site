@@ -1,6 +1,7 @@
 import { Box, Container, Button, Heading, Text } from 'theme-ui'
 import usePrefersMotion from '../lib/use-prefers-motion'
 import useHasMounted from '../lib/use-has-mounted'
+import { gx } from '../lib/gradients'
 
 const Sheet = () => (
   <Container
@@ -36,7 +37,7 @@ const Sheet = () => (
         mt: 3,
         mb: [null, 4, 5],
         bg: 'cyan',
-        backgroundImage: t => t.util.gx('cyan', 'blue')
+        backgroundImage: gx('cyan', 'blue')
       }}
     >
       Join the Slack
@@ -52,7 +53,7 @@ const Cover = () => (
       top: 0,
       left: 0,
       right: 0,
-      backgroundImage: t => t.util.gx('blue', 'purple'),
+      backgroundImage: gx('blue', 'purple'),
       opacity: 0.75,
       zIndex: 0
     }}

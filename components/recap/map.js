@@ -10,7 +10,7 @@ export default () => (
       backgroundColor: '#338eda',
       backgroundPosition: 'center center',
       backgroundImage:
-        'radial-gradient(at left top,rgba(247,255,0,0.66),rgb(0,255,255,0.66)),url(https://cloud-pfqlpiv8t.vercel.app/kzojkec-2.png)'
+        'radial-gradient(at left top,rgba(247,255,0,0.66),rgb(0,255,255,0.66)),url(https://cdn.hackclub.com/019d441c-0ac0-7867-81e9-f8f5ba59998d/kzojkec-2%20(1).png)'
     }}
   >
     <Container variant="copy">

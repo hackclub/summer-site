@@ -5,7 +5,7 @@ import { Button } from 'theme-ui'
 
 export const StaticMention = memo(
   ({ user = {}, className = '', children, ...props }) => (
-    <Link href="/[username]" as={`/${user.username}`}>
+    <Link href="/[username]" as={`/${user.username}`} legacyBehavior>
       <a className={`mention ${className}`} {...props}>
         <img
           src={user.avatar}

@@ -1,5 +1,6 @@
 import { Box, Card, Button, Heading, Text } from 'theme-ui'
 import Icon from './icon'
+import { gx, gxText } from '../lib/gradients'
 
 const Sheet = () => (
   <Card
@@ -18,7 +19,7 @@ const Sheet = () => (
       variant="cta"
       href="https://hack.af/som-stickers"
       sx={{
-        backgroundImage: t => t.util.gx('yellow', 'pink'),
+        backgroundImage: gx('yellow', 'pink'),
         position: 'absolute',
         right: [0, -3],
         top: -3,
@@ -40,7 +41,7 @@ const Sheet = () => (
       sx={{ color: 'black', span: { color: 'pink', display: 'block' } }}
     >
       Welcome to the{' '}
-      <Text as="span" sx={t => t.util.gxText('orange', 'pink')}>
+      <Text as="span" sx={gxText('orange', 'pink')}>
         Summer of Making.
       </Text>
     </Heading>

@@ -53,7 +53,7 @@ const Contributor = ({ name, avatar }) => (
 
 const Collab = ({ img, alt }) => (
   <A
-    href={`https://${alt.toLowerCase().split(' ').join('')}.com/`}
+    href={img}
     target="_blank"
     sx={{ display: 'block', mb: [3, 4] }}
   >
@@ -296,8 +296,8 @@ export default props => (
       sx={{
         bg: 'snow',
         backgroundImage: [
-          'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.125)), url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2F2020-05-16_screenshot.jpeg?v=1589633885855)',
-          'linear-gradient(to bottom, rgba(0,0,0,0.625), rgba(0,0,0,0.375) 66%, rgba(0,0,0,0) 100%), url(https://cdn.glitch.com/a7605379-7582-4aac-8f44-45bbdfca0cfa%2F2020-05-16_screenshot.jpeg?v=1589633885855)'
+          'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.125)), url(https://cdn.hackclub.com/019d4426-afce-72f0-9175-68e909ae7b0f/a7605379-7582-4aac-8f44-45bbdfca0cfa_2020-05-16_screenshot.jpeg)',
+          'linear-gradient(to bottom, rgba(0,0,0,0.625), rgba(0,0,0,0.375) 66%, rgba(0,0,0,0) 100%), url(https://cdn.hackclub.com/019d4426-afce-72f0-9175-68e909ae7b0f/a7605379-7582-4aac-8f44-45bbdfca0cfa_2020-05-16_screenshot.jpeg)'
         ],
         backgroundSize: 'cover',
         backgroundPosition: 'top center'
@@ -368,7 +368,7 @@ export default props => (
             }}
           >
             <Avatar
-              src="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fsam.jpg?v=1590595277523"
+              src="https://cdn.hackclub.com/019d4425-f194-782c-a525-6f27425935aa/sam.jpg"
               alt="Sam Poder avatar"
               size={72}
             />
@@ -418,11 +418,11 @@ export default props => (
           <Grid columns={[null, 2]} gap={[3, 4]} sx={{ maxWidth: 'copyPlus' }}>
             <Contributor
               name="Roshan Palakkal"
-              avatar="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Froshan.jpg?v=1590595332922"
+              avatar="https://cdn.hackclub.com/019d4425-021e-7c5f-8eea-69376fdd1d47/roshan.jpg"
             />
             <Contributor
               name="Neel Redkar"
-              avatar="https://cdn.glitch.com/3899929b-9aed-4dae-b1e6-230ef0ed4d51%2Fneel.jpg?v=1590595277246"
+              avatar="https://cdn.hackclub.com/019d4425-8b6c-7861-a9c6-176238fbe1fd/neel.jpg"
             />
           </Grid>
         </div>

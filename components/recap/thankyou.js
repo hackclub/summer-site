@@ -52,17 +52,17 @@ const Sheet = () => (
     >
       <Collab
         alt="GitHub"
-        img="https://summer.hackclub.com/sponsors/github.svg"
+        img="/sponsors/github.svg"
         url="https://github.com/"
       />
       <Collab
         alt="Adafruit"
-        img="https://summer.hackclub.com/sponsors/adafruit.png"
+        img="/sponsors/adafruit.png"
         url="https://adafruit.com/"
       />
       <Collab
         alt="Arduino"
-        img="https://summer.hackclub.com/sponsors/arduino.svg"
+        img="/sponsors/arduino.svg"
         url="https://arduino.cc/"
       />
     </Flex>
@@ -93,7 +93,7 @@ const Static = () => (
       position: 'relative',
       overflow: 'hidden',
       backgroundImage:
-        'url(https://cloud-r135419pm.vercel.app/screenshot_2020-08-30_at_9.17.45_am.png)',
+        'url(https://cdn.hackclub.com/019d441b-4726-7e83-80c6-c4a22f60b3f5/screenshot_2020-08-30_at_9.17.45_am%20(2).png)',
       backgroundSize: 'cover'
     }}
   >
@@ -119,7 +119,7 @@ const MAINPART = () => {
           muted
           loop
           playsInline
-          poster="https://cloud-r135419pm.vercel.app/screenshot_2020-08-30_at_9.17.45_am.png"
+          poster="https://cdn.hackclub.com/019d4417-9b0c-748b-8928-fa6f691c3b9d/screenshot_2020-08-30_at_9.17.45_am%20(1).png"
           duration={2000}
           sx={{
             position: 'absolute',

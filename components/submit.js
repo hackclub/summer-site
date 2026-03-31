@@ -1,22 +1,23 @@
 import { Button } from 'theme-ui'
 import theme from '../lib/theme'
+import { gx } from '../lib/gradients'
 
 const bg = {
   default: {
     bg: 'blue',
-    backgroundImage: theme.util.gx('cyan', 'blue')
+    backgroundImage: gx('cyan', 'blue')
   },
   submitting: {
     bg: 'blue',
-    backgroundImage: theme.util.gx('cyan', 'blue')
+    backgroundImage: gx('cyan', 'blue')
   },
   success: {
     bg: 'green',
-    backgroundImage: theme.util.gx('green', 'cyan')
+    backgroundImage: gx('green', 'cyan')
   },
   error: {
     bg: 'orange',
-    backgroundImage: theme.util.gx('orange', 'red'),
+    backgroundImage: gx('orange', 'red'),
     boxShadow: `0 0 0 1px ${theme.colors.white}, 0 0 0 4px ${theme.colors.primary}`
   }
 }

@@ -29,7 +29,7 @@ export default () => (
       </Button>
     </Box>
     <Image
-      url="https://cloud-3hv9rbzjd.vercel.app/2020-08-30_27kycym0vumu57gncfgj0dckpkqf4t3t.jpeg"
+      url="https://cdn.hackclub.com/019d441a-996a-7eff-968c-d0c24857c5f7/2020-08-30_27kycym0vumu57gncfgj0dckpkqf4t3t.jpeg"
       content="Mini-AMA with Max Stoiber, July 15"
     />
   </Grid>

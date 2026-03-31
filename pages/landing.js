@@ -21,9 +21,8 @@ import Header from '../components/header'
 import Posts from '../components/posts'
 import Hardware from '../components/hardware'
 import Slack from '../components/slack'
+import { gx } from '../lib/gradients'
 
-import t from '@hackclub/theme'
-const { util } = t
 
 const Collab = ({ img, alt, url }) => (
   <A href={url} target="_blank" sx={{ display: 'block', mx: 3, mb: [3, 4] }}>
@@ -122,7 +121,7 @@ export default ({ scraps, images }) => (
             as="a"
             variant="cta"
             href="https://scrapbook.hackclub.com/"
-            sx={{ backgroundImage: util.gx('pink', 'orange') }}
+            sx={{ backgroundImage: gx('pink', 'orange') }}
           >
             See what everyone’s making
           </Button>
@@ -177,7 +176,7 @@ export default ({ scraps, images }) => (
       as="section"
       sx={{
         bg: 'purple',
-        backgroundImage: [util.gx('blue', 'purple'), util.gx('pink', 'orange')],
+        backgroundImage: [gx('blue', 'purple'), gx('pink', 'orange')],
         color: 'white',
         py: [4, 5]
       }}
